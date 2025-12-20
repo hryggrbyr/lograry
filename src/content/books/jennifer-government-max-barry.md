@@ -1,0 +1,37 @@
+---
+tags: []
+title: Jennifer Government
+subtitle: " "
+author:
+  - Max Barry
+publisher:
+published:
+page_count:
+isbn:
+description: ""
+coverUrl: https://covers.openlibrary.org/b/olid/OL9727187M-M.jpg
+shelf: to-read
+owned: false
+start_date:
+end_date:
+rating:
+recommended_by:
+  name:
+  url:
+created: 2022-12-22
+reviewUrl:
+bookshopUrl:
+---
+
+# Jennifer Government by Max Barry
+
+![Book Cover Art](https://covers.openlibrary.org/b/olid/OL9727187M-M.jpg)
+
+_ _
+
+| Shelf | to-read |
+| --- | --- |
+| Genre |  |
+| Started |  |
+| Finished |  |
+| Rating | /5 |

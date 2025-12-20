@@ -1,0 +1,37 @@
+---
+tags: []
+title: Golden son
+subtitle: " "
+author:
+  - Pierce Brown
+publisher:
+published:
+page_count:
+isbn:
+description: ""
+coverUrl: https://covers.openlibrary.org/b/olid/OL27171457M-M.jpg
+shelf: to-read
+owned: false
+start_date:
+end_date:
+rating:
+recommended_by:
+  name:
+  url:
+created: 2024-08-28
+reviewUrl:
+bookshopUrl:
+---
+
+# Golden son by Pierce Brown
+
+![Book Cover Art](https://covers.openlibrary.org/b/olid/OL27171457M-M.jpg)
+
+_ _
+
+| Shelf | to-read |
+| --- | --- |
+| Genre |  |
+| Started |  |
+| Finished |  |
+| Rating | /5 |

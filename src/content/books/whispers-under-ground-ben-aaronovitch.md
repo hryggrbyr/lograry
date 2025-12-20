@@ -1,0 +1,41 @@
+---
+tags:
+  - UrbanFantasy
+  - crime
+  - police
+  - Religon
+title: Whispers Under Ground
+subtitle: Rivers of London 3
+author:
+  - Ben Aaronovitch
+publisher:
+published:
+page_count:
+isbn:
+description: ""
+coverUrl: https://covers.openlibrary.org/b/olid/OL26053512M-M.jpg
+shelf: read
+owned: true
+start_date: 2021-05-07
+end_date: 2021-06-01
+rating: 4
+recommended_by:
+  name:
+  url:
+created: 2021-04-22
+reviewUrl:
+bookshopUrl:
+---
+
+# Whispers Under Ground by Ben Aaronovitch
+
+![Book Cover Art](https://covers.openlibrary.org/b/olid/OL26053512M-M.jpg)
+
+_Rivers of London 3_
+
+| Shelf | read |
+| --- | --- |
+| Genre | UrbanFantasy,crime,police,Religon |
+| Started | 2021-05-07T00:00:00.000+01:00 |
+| Finished | 2021-06-01T00:00:00.000+01:00 |
+| Rating | 4/5 |

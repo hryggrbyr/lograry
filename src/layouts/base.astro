@@ -1,0 +1,27 @@
+---
+// src/layouts/base.astro
+import '../styles/global.css';
+const { title = "Lograry" } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <header style="margin-block-end: 2lh; padding-block: 1lh;">
+      <div class="wrapper gutters">
+        <a rel="home" href="/">lograry</a>
+      </div>
+    </header>
+    <main class="wrapper gutters flow">
+      <slot />
+    </main>
+    <footer style="margin-block-start: 4lh; padding-block: 1lh;">
+      <div class="wrapper gutters">
+        Made by <a href="https://thomasrigby.com">Thomas Rigby</a>
+      </div>
+    </footer>
+  </body>
+</html>

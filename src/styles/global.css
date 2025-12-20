@@ -1,0 +1,54 @@
+:root {
+  color-scheme: dark light;
+  font-family: system-ui;
+  font-size: 125%;
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.gutters {
+  padding-inline: clamp(1rem, 5vw, 5rem);
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-gap, 1lh);
+}
+
+.card-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-grid .card {
+  flex-basis: 20rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.card {
+  padding: 1lh;
+  border: 1px solid currentColor;
+}
+
+.card.read {
+  opacity: 0.3;
+  border-color: mediumspringgreen;
+}
+
+.card.reading {
+  border-width: 4px;
+  border-color: goldenrod;
+}
+
+.card.to-read {
+  border-color: indianred;
+}

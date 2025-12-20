@@ -1,0 +1,10 @@
+.
+├── content
+│   ├── books
+│   │   ├── [...book titles].md
+│   └── config.ts
+├── pages
+│   └── index.astro
+└── src.txt
+
+4 directories, 619 files
