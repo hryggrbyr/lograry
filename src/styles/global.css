@@ -1,8 +1,53 @@
 :root {
-  color-scheme: dark light;
+  color-scheme: light dark;
   font-family: system-ui;
   font-size: 125%;
   line-height: 1.6;
+  /* The Seed */
+  --accent-color: cornflowerblue;
+
+  /* 1. The Accent Scale (100 - 900) */
+  /* We use 'from' to destructure the seed, then adjust Lightness (l) */
+  --accent-100: oklch(from var(--accent-color) 0.95 c h);
+  --accent-200: oklch(from var(--accent-color) 0.85 c h);
+  --accent-300: oklch(from var(--accent-color) 0.75 c h);
+  --accent-400: oklch(from var(--accent-color) 0.65 c h);
+  --accent-500: oklch(from var(--accent-color) l c h); /* The Original */
+  --accent-600: oklch(from var(--accent-color) 0.45 c h);
+  --accent-700: oklch(from var(--accent-color) 0.35 c h);
+  --accent-800: oklch(from var(--accent-color) 0.25 c h);
+  --accent-900: oklch(from var(--accent-color) 0.15 c h);
+
+  /* 2. Near-Black and Near-White */
+  /* We keep a tiny hint of the chroma (c) and hue (h) so it feels cohesive */
+  --accent-white: oklch(from var(--accent-color) 0.98 0.01 h);
+  --accent-black: oklch(from var(--accent-color) 0.02 0.02 h);
+
+  /* 3. The Secondary (Complementary) Scale */
+  /* We rotate the Hue (h) by 180 degrees */
+  --secondary-seed: oklch(from var(--accent-color) l c calc(h + 180));
+
+  --secondary-100: oklch(from var(--secondary-seed) 0.95 c h);
+  --secondary-500: oklch(from var(--secondary-seed) l c h);
+  --secondary-900: oklch(from var(--secondary-seed) 0.15 c h);
+
+  /* 4. Semantic Colors */
+  /* We keep the Lightness and Chroma of your accent but swap the Hue */
+  /* Green: ~140, Yellow: ~85, Blue: ~250, Red/Failure: ~25 */
+  --color-success: oklch(from var(--accent-color) l c 140);
+  --color-warning: oklch(from var(--accent-color) l c 85);
+  --color-notice: oklch(from var(--accent-color) l c 250);
+  --color-failure: oklch(from var(--accent-color) l c 25);
+
+  background: var(--accent-white);
+  color: var(--accent-black);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background: var(--accent-black);
+    color: var(--accent-white);
+  }
 }
 
 .wrapper {
@@ -25,7 +70,7 @@
   gap: 1rem;
   list-style-type: none;
   padding: 0;
-  margin: 0;
+  margin-inline: 0;
 }
 
 .card-grid .card {
@@ -40,8 +85,7 @@
 }
 
 .card.read {
-  opacity: 0.3;
-  border-color: mediumspringgreen;
+  border-color: var(--accent-500);
 }
 
 .card.reading {
@@ -50,5 +94,28 @@
 }
 
 .card.to-read {
-  border-color: indianred;
+  border-color: var(--secondary-500);
+}
+
+.filter-controls {
+  display: flex;
+  gap: 1ch;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 6px 12px;
+  border: 1px solid var(--accent-500);
+  background: var(--accent-500);
+  color: var(--accent-100);
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: inherit;
+  text-transform: uppercase;
+}
+
+.filter-btn.active {
+  background: var(--secondary-500);
+  color: var(--secondary-100);
+  border-color: var(--secondary-500);
 }
