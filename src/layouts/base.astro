@@ -6,11 +6,49 @@ const { title = "Lograry" } = Astro.props;
 
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
     <title>{title}</title>
+    <meta name="description" content="Just another blog" />
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="application-name"
+      content="lograry"
+      data-name="lograry"
+      data-version="2.0.4"
+      data-geoid="en-GB"
+    />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src * 'unsafe-inline' gap:; style-src 'self' 'unsafe-inline'; style-src-elem api.fontshare.com 'self' 'unsafe-inline'; media-src *; img-src 'self' metapixl.com placedog.net en.gravatar.com scrummable.com lastfm.freetls.fastly.net bookwyrm-social.sfo3.digitaloceanspaces.com d2fltix0v2e0sb.cloudfront.net gitpets.herokuapp.com data:;api.applause-button.com;"
+    />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="date=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta name="format-detection" content="email=no" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#222730" />
+    <meta
+      name="robots"
+      content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+    />
+    <meta property="referrer" name="referrer" content="unsafe-url" />
+    <link rel="canonical" href="https://lograry.netlify.app/" />
+    <link rel="icon" href="images/favicons/favicon.ico" />
+    <meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett" />
+    <script>
+      /*to prevent Firefox FOUC, this must be here*/
+      let FF_FOUC_FIX;
+    </script>
+    <style>
+      @view-transition {
+        navigation: auto;
+      }
+    </style>
   </head>
   <body>
-    <header style="margin-block-end: 2lh; padding-block: 1lh;">
+    <header style="margin-block-end: 2lh; padding-block: 1lh">
       <div class="wrapper gutters">
         <a rel="home" href="/">lograry</a>
       </div>
@@ -18,7 +56,7 @@ const { title = "Lograry" } = Astro.props;
     <main class="wrapper gutters flow">
       <slot />
     </main>
-    <footer style="margin-block-start: 4lh; padding-block: 1lh;">
+    <footer style="margin-block-start: 4lh; padding-block: 1lh">
       <div class="wrapper gutters">
         Made by <a href="https://thomasrigby.com">Thomas Rigby</a>
       </div>
