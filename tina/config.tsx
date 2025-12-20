@@ -1,6 +1,3 @@
-/** @jsxImportSource react */
-import * as React from "react";
-
 import { defineConfig } from "tinacms";
 
 const branch =
@@ -11,8 +8,8 @@ const branch =
 
 export default defineConfig({
   branch,
-  clientId: null,
-  token: null,
+  clientId: process.env.TINA_PUBLIC_CLIENT_ID, // Get from Tina Cloud
+  token: process.env.TINA_TOKEN, // Get from Tina Cloud
   build: {
     outputFolder: "admin",
     publicFolder: "public",
