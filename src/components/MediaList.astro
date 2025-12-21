@@ -23,7 +23,7 @@ const shelves = [...new Set(items.map(x => x.data.shelf))];
   <div class="filter-controls">
     <button class="filter-btn active" data-filter="all">All</button>
     {shelves.map(shelf => (
-    <button class="filter-btn" data-filter="{shelf}">{shelf}</button>
+    <button class="filter-btn" data-filter={shelf}>{shelf}</button>
     ))}
     <button class="filter-btn" data-filter="wishlist">Wishlist</button>
   </div>
