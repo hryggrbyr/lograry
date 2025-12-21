@@ -18,15 +18,9 @@ const books = defineCollection({
       tags: z.array(z.string()).default([]),
       shelf: z.enum(["to-read", "reading", "read", "abandoned"]),
       owned: z.boolean().default(false),
-      history: z
-        .array(
-          z.object({
-            start_date: smartDate,
-            end_date: smartDate,
-            rating: z.number().min(0).max(5).optional().nullable(),
-          })
-        )
-        .default([]),
+      start_date: smartDate,
+      end_date: smartDate,
+      rating: z.number().min(0).max(5).optional().nullable(),
       publisher: z.string().optional().nullable(),
       published: smartDate,
       page_count: z.number().optional().nullable(),
@@ -71,7 +65,6 @@ const books = defineCollection({
 
       return {
         ...data,
-        read_count: data.history.length,
         sort_title: sort_title.trim(),
         sort_author: sort_author.trim(),
       };

@@ -1,0 +1,23 @@
+---
+interface Props {
+  item: any[];
+}
+const { item } = Astro.props;
+
+---
+
+<article class:list={[
+        "card",
+       "flow",
+        item.data.shelf,
+        { "wishlist": item.data.shelf === 'to-read' && !item.data.owned,
+          "owned": item.data.owned }
+      ]}>
+  <h3 style="font-size: 2em;" set:html={item.data.title} />
+  {item.data.author && <p class="author">{item.data.author.join(', ')}</p>}
+
+  <p><small
+    >Status: {item.data.shelf} | Owned: {item.data.owned ? '✅' :
+    '❌'}</small
+  ></p>
+</article>

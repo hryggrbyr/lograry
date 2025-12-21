@@ -1,0 +1,74 @@
+---
+import BaseLayout from '../layouts/base.astro';
+import { getCollection } from 'astro:content';
+const allBooks = await getCollection('books');
+const stats = { total: allBooks.length };
+const sortedBooks = allBooks.sort((a, b) => a.data.sort_title.localeCompare(b.data.sort_title));
+const shelves = [...new Set(allBooks.map(b => b.data.shelf))];
+---
+
+<BaseLayout title="My Library">
+  <h1>My Library</h1>
+
+  <p class="book-count">
+    Showing <strong>{allBooks.length}</strong> titles in your library.
+  </p>
+
+
+
+  <div class="filter-controls">
+      <button class="filter-btn active" data-filter="all">All</button>
+      {shelves.map(shelf => (
+        <button class="filter-btn" data-filter={shelf}>{shelf}</button>
+      ))}
+      <button class="filter-btn" data-filter="wishlist">Wishlist</button>
+  </div>
+
+  <ul class="card-grid">
+    {sortedBooks.map(book => (
+    <li class:list={[
+            "card",
+           "flow",
+            book.data.shelf,
+            { "wishlist": book.data.shelf === 'to-read' && !book.data.owned,
+              "owned": book.data.owned }
+          ]}>
+      <p><strong set:html={book.data.title} />
+      {book.data.author &&
+      <span class="author">by {book.data.author.join(', ')}</span>}</p>
+
+      <p><small
+        >Status: {book.data.shelf} | Owned: {book.data.owned ? '✅' :
+        '❌'}</small
+      ></p>
+    </li>
+    ))}
+  </ul>
+  <script lang="ts">
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const filter = btn.getAttribute('data-filter');
+
+        // Update button UI
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        // Filter cards
+        cards.forEach(card => {
+          if (filter === 'all') {
+            card.style.display = 'block';
+          } else if (filter === 'wishlist') {
+            // Only show if it has the 'wishlist' class we added in the map
+            card.style.display = card.classList.contains('wishlist') ? 'block' : 'none';
+          } else {
+            // Match the shelf class
+            card.style.display = card.classList.contains(filter) ? 'block' : 'none';
+          }
+        });
+      });
+    });
+  </script>
+</BaseLayout>

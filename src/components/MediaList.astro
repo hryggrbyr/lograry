@@ -1,0 +1,72 @@
+---
+import BookCard from './BookCard.astro';
+import MovieCard from './MovieCard.astro';
+import SeriesCard from './SeriesCard.astro';
+
+interface Props {
+  items: any[];
+}
+
+// Map your YAML 'type' strings to the actual Astro Components
+const components = {
+  book: BookCard,
+  movie: MovieCard,
+  series: SeriesCard,
+};
+
+const { items } = Astro.props;
+const shelves = [...new Set(items.map(x => x.data.shelf))];
+
+---
+
+<section class="media-container flow">
+  <div class="filter-controls">
+    <button class="filter-btn active" data-filter="all">All</button>
+    {shelves.map(shelf => (
+    <button class="filter-btn" data-filter="{shelf}">{shelf}</button>
+    ))}
+    <button class="filter-btn" data-filter="wishlist">Wishlist</button>
+  </div>
+
+  <div class="card-grid">
+    {items.map(item => {
+      // Determine the type from YAML, fallback to 'book'
+      const itemType = item.data.type || 'book';
+      const Card = components[itemType as keyof typeof components] || BookCard;
+      return (
+        <Card item={item} />
+      );
+    })}
+  </>
+</section>
+<script lang="ts">
+  const buttons = document.querySelectorAll(".filter-btn");
+  const cards = document.querySelectorAll(".card");
+
+  buttons.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const filter = btn.getAttribute("data-filter");
+
+      // Update button UI
+      buttons.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      // Filter cards
+      cards.forEach((card) => {
+        if (filter === "all") {
+          card.style.display = "block";
+        } else if (filter === "wishlist") {
+          // Only show if it has the 'wishlist' class we added in the map
+          card.style.display = card.classList.contains("wishlist")
+            ? "block"
+            : "none";
+        } else {
+          // Match the shelf class
+          card.style.display = card.classList.contains(filter)
+            ? "block"
+            : "none";
+        }
+      });
+    });
+  });
+</script>

@@ -79,7 +79,7 @@ const points = data.map((count, i) => {
 
     <polyline
       fill="none"
-      stroke="var(--accent-color)"
+      stroke="var(--secondary-900)"
       stroke-width="3"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -90,23 +90,10 @@ const points = data.map((count, i) => {
 </div>
 
 <style>
-  .stats-container {
-    background: var(--accent-black);
-    border: 1px solid var(--accent-200);
-    padding: 1.5rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    font-family: monospace;
-    box-shadow: inset 0 0 20px rgba(0,0,0,0.5);
-  }
   .graph-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1.5rem;
-    color: var(--accent-color);
-    text-transform: uppercase;
-    font-size: 0.75rem;
   }
   .divider { margin: 0 0.5rem; opacity: 0.3; }
   .graph-svg {

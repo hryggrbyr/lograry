@@ -1,6 +1,5 @@
 ---
-// src/layouts/base.astro
-import '../styles/global.css';
+import '@styles/global.css';
 const { title = "Lograry" } = Astro.props;
 ---
 
@@ -42,6 +41,10 @@ const { title = "Lograry" } = Astro.props;
         navigation: auto;
       }
     </style>
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@300&f[]=boska@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header style="margin-block-end: 2lh; padding-block: 1lh">

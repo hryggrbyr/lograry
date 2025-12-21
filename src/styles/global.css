@@ -1,10 +1,9 @@
+@import "reset.css";
+
 :root {
-  color-scheme: light dark;
-  font-family: system-ui;
-  font-size: 125%;
-  line-height: 1.6;
+  color-scheme: dark;
   /* The Seed */
-  --accent-color: cornflowerblue;
+  --accent-color: #ffe9ce;
 
   /* 1. The Accent Scale (100 - 900) */
   /* We use 'from' to destructure the seed, then adjust Lightness (l) */
@@ -20,8 +19,8 @@
 
   /* 2. Near-Black and Near-White */
   /* We keep a tiny hint of the chroma (c) and hue (h) so it feels cohesive */
-  --accent-white: oklch(from var(--accent-color) 0.98 0.01 h);
-  --accent-black: oklch(from var(--accent-color) 0.02 0.02 h);
+  --accent-white: oklch(from var(--accent-color) 0.98 0.025 h);
+  --accent-black: oklch(from var(--accent-color) 0.02 0.125 h);
 
   /* 3. The Secondary (Complementary) Scale */
   /* We rotate the Hue (h) by 180 degrees */
@@ -39,15 +38,76 @@
   --color-notice: oklch(from var(--accent-color) l c 250);
   --color-failure: oklch(from var(--accent-color) l c 25);
 
+  --color-interactive-base: var(--accent-500);
+  --color-interactive-visited: var(--accent-600);
+  --color-interactive-hover: var(--accent-300);
+  --color-interactive-active: var(--accent-100);
+
   background: var(--accent-white);
   color: var(--accent-black);
+
+  --font-accent: "Boska", serif;
+  --font-main: "General Sans", system-ui;
+  font-family: var(--font-main);
+  font-size: 125%;
+  line-height: 1.6;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    background: var(--accent-black);
-    color: var(--accent-white);
-  }
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-accent);
+  line-height: 1.1;
+}
+
+a {
+  color: var(--color-interactive-base);
+}
+a:visited {
+  color: var(--color-interactive-visited);
+}
+a:hover {
+  color: var(--color-interactive-hover);
+}
+a:active {
+  color: var(--color-interactive-active);
+}
+
+button {
+  --button-color: var(--color-interactive-base);
+  padding: 0.25lh 2ch;
+  border: 1px solid var(--button-color);
+  background: var(--button-color);
+  color: var(--accent-black);
+  cursor: pointer;
+  font-size: inherit;
+  transition: ease-in-out 150ms;
+}
+button:visited {
+  --button-color: var(--color-interactive-visited);
+}
+button:hover {
+  --button-color: var(--color-interactive-hover);
+}
+button:active {
+  --button-color: var(--color-interactive-active);
+}
+
+section > header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1lh;
+  align-items: center;
+  justify-content: center;
+  padding: 1lh;
+  border: 1px solid var(--accent-200);
+}
+
+section > header > * {
+  flex-basis: fit-content;
+}
+
+section > header > h2 {
+  flex-grow: 999;
 }
 
 .wrapper {
@@ -61,6 +121,10 @@
 
 .flow > * + * {
   margin-block-start: var(--flow-gap, 1lh);
+}
+
+.flow > :is(h1, h2, h3, h4, h5, h6) + * {
+  margin-block-start: 0.5lh;
 }
 
 .card-grid {
@@ -80,21 +144,23 @@
 }
 
 .card {
+  --border-color: currentColor;
   padding: 1lh;
-  border: 1px solid currentColor;
+  border: 1px solid rgb(from var(--border-color) r g b/0.5);
+  border-bottom: 4px solid var(--border-color);
+  text-align: center;
 }
 
 .card.read {
-  border-color: var(--accent-500);
+  --border-color: var(--accent-500);
 }
 
 .card.reading {
-  border-width: 4px;
-  border-color: goldenrod;
+  --border-color: goldenrod;
 }
 
 .card.to-read {
-  border-color: var(--secondary-500);
+  --border-color: var(--secondary-500);
 }
 
 .filter-controls {
@@ -104,18 +170,9 @@
 }
 
 .filter-btn {
-  padding: 6px 12px;
-  border: 1px solid var(--accent-500);
-  background: var(--accent-500);
-  color: var(--accent-100);
-  cursor: pointer;
-  border-radius: 4px;
-  font-size: inherit;
   text-transform: uppercase;
 }
 
 .filter-btn.active {
-  background: var(--secondary-500);
-  color: var(--secondary-100);
-  border-color: var(--secondary-500);
+  --button-color: var(--secondary-500);
 }
