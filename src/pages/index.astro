@@ -12,12 +12,21 @@ const stats = { total: allBooks.length };
 
   <!--<a href="/archive/">View by years</a>-->
 
-  <section class="flow">
+  <section class="page-section flow">
     <header>
       <h2>Books</h2>
       <a href="/all-books">View all books ({stats.total})</a>
     </header>
     <YearlyGraph data={allBooks.filter(b => b.data.shelf === 'read')} />
-    <MediaList items={allBooks.filter(b => b.data.shelf === 'read' && b.data.end_date).sort((a, b) => new Date(b.data.end_date).getTime() - new Date(a.data.end_date).getTime()).slice(0, 12)} />
+    <h3>Read this year</h3>
+    <MediaList items={allBooks.filter(b => {
+      const dateStr = b.data.history?.end_date || b.data.end_date;
+      if (!dateStr || b.data.shelf !== 'read') return false;
+      return new Date(dateStr).getFullYear() === 2025;
+    }).sort((a, b) => {
+      const dateA = new Date(a.data.history?.end_date || a.data.end_date).getTime();
+      const dateB = new Date(b.data.history?.end_date || b.data.end_date).getTime();
+      return dateB - dateA;
+    })} />
   </section>
 </BaseLayout>

@@ -58,6 +58,11 @@
   line-height: 1.1;
 }
 
+h1 {
+  padding-block: 0.5lh;
+  border-bottom: 1px solid var(--accent-200);
+}
+
 a {
   color: var(--color-interactive-base);
 }
@@ -91,6 +96,10 @@ button:active {
   --button-color: var(--color-interactive-active);
 }
 
+.page-section {
+  --flow-gap: 4lh;
+}
+
 section > header {
   display: flex;
   flex-direction: row;
@@ -98,8 +107,6 @@ section > header {
   gap: 1lh;
   align-items: center;
   justify-content: center;
-  padding: 1lh;
-  border: 1px solid var(--accent-200);
 }
 
 section > header > * {
