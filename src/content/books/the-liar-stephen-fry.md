@@ -18,7 +18,7 @@ shelf: read
 owned: false
 start_date: 2004-02-02
 end_date: 2004-02-24
-rating: ""
+rating: 
 recommended_by:
   name:
   url:

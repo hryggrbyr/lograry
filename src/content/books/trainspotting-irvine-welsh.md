@@ -19,7 +19,7 @@ shelf: read
 owned: false
 start_date: ""
 end_date: 1996-09-26
-rating: ""
+rating: 
 recommended_by:
   name:
   url:
