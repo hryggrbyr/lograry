@@ -16,7 +16,13 @@ const components = {
 
 const { items } = Astro.props;
 const shelves = [...new Set(items.map(x => x.data.shelf))];
-
+// Sort by sort_title alphabetically (A-Z)
+// We use localeCompare to handle numbers and special characters correctly
+const sortedItems = [...items].sort((a, b) => {
+  const titleA = a.data.sort_title || a.data.title || "";
+  const titleB = b.data.sort_title || b.data.title || "";
+  return titleA.localeCompare(titleB, undefined, { sensitivity: 'base' });
+});
 ---
 
 <section class="media-container flow">
@@ -29,7 +35,7 @@ const shelves = [...new Set(items.map(x => x.data.shelf))];
   </div>
 
   <div class="card-grid">
-    {items.map(item => {
+    {sortedItems.map(item => {
       // Determine the type from YAML, fallback to 'book'
       const itemType = item.data.type || 'book';
       const Card = components[itemType as keyof typeof components] || BookCard;
