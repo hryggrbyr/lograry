@@ -34,20 +34,20 @@ const sortedItems = [...items].sort((a, b) => {
     <button class="filter-btn" data-filter="wishlist">Wishlist</button>
   </div>
 
-  <div class="card-grid">
-    {sortedItems.map(item => {
+  <div class="media-list flow" data-active-filter="all">
+    {sortedItems.map((item, index) => {
       // Determine the type from YAML, fallback to 'book'
       const itemType = item.data.type || 'book';
       const Card = components[itemType as keyof typeof components] || BookCard;
       return (
-        <Card item={item} />
+        <Card item={item} num={index} />
       );
     })}
   </>
 </section>
 <script lang="ts">
   const buttons = document.querySelectorAll(".filter-btn");
-  const cards = document.querySelectorAll(".card");
+  const list = document.querySelector("[data-active-filter]");
 
   buttons.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -58,21 +58,7 @@ const sortedItems = [...items].sort((a, b) => {
       btn.classList.add("active");
 
       // Filter cards
-      cards.forEach((card) => {
-        if (filter === "all") {
-          card.style.display = "block";
-        } else if (filter === "wishlist") {
-          // Only show if it has the 'wishlist' class we added in the map
-          card.style.display = card.classList.contains("wishlist")
-            ? "block"
-            : "none";
-        } else {
-          // Match the shelf class
-          card.style.display = card.classList.contains(filter)
-            ? "block"
-            : "none";
-        }
-      });
+      list.dataset.activeFilter = filter;
     });
   });
 </script>

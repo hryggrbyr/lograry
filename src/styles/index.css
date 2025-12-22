@@ -1,0 +1,212 @@
+@import "reset.css";
+:root {
+  /* Colors */
+  --color-bg: hsl(40, 30%, 95%);
+  --color-paper: hsl(40, 40%, 98%);
+  --color-text: hsl(0, 0%, 10%);
+  --color-text-muted: hsl(0, 0%, 40%);
+  --color-text-light: hsl(0, 0%, 50%);
+  --color-handwriting: hsl(220, 80%, 50%);
+  --color-accent: hsl(220, 80%, 50%);
+  --color-border: hsl(30, 20%, 80%);
+  --color-line: hsl(220, 30%, 85%);
+  --color-margin-line: hsl(0, 80%, 60%);
+  --color-shadow: hsl(0, 0%, 0%, 0.1);
+  --color-rating: hsl(45, 100%, 50%);
+
+  /* Typography */
+  --font-typewriter: "SUSE Mono", "Courier New", monospace;
+  --font-handwritten: "Comico", cursive; /* Replace with your chosen font */
+
+  /* Layout */
+  --lh: 1.66;
+  font-family: var(--font-typewriter);
+  line-height: var(--lh);
+  font-weight: 300;
+  font-size: 150%;
+
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  background: linear-gradient(
+        90deg,
+        var(--color-margin-line) 0,
+        var(--color-margin-line) 1px,
+        transparent 1px
+      )
+      2rem 0,
+    repeating-linear-gradient(
+      transparent,
+      transparent calc(var(--lh) * 1rem - 1px),
+      var(--color-line) calc(var(--lh) * 1rem - 1px),
+      var(--color-line) calc(var(--lh) * 1rem)
+    );
+  background-attachment: local;
+}
+
+* {
+  /*outline: 1px dashed rgba(255, 0, 0, 0.3);*/
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-size: 1rem;
+}
+
+em {
+  font-style: normal;
+  display: inline-block;
+  padding: 0.2em 0.6em;
+  border: 2px solid var(--accent-color, #ff00ff);
+
+  /* Each corner has two values (horizontal/vertical) to create "wobble" */
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+
+  /* Slight tilt for that human touch */
+  transform: rotate(-1deg);
+
+  /* Variable thickness effect */
+  border-width: 2px 3px 2px 4px;
+}
+
+.wrapper {
+  max-width: 1280px;
+  margin-inline: auto;
+}
+
+.gutters {
+  padding-inline: clamp(1rem, 5vw, 5rem);
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-gap, 2lh);
+}
+
+.flow > :is(h1, h2, h3, h4, h5, h6) + * {
+  --flow-gap: 1lh;
+}
+
+.text-handwriting {
+  font-family: var(--font-handwritten);
+  color: var(--color-handwriting);
+}
+
+.text-highlighter {
+  background: linear-gradient(
+      104deg,
+      rgba(255, 255, 0, 0) 0.9%,
+      rgba(255, 255, 0, 0.7) 2.4%,
+      rgba(255, 255, 0, 0.5) 5.8%,
+      rgba(255, 255, 0, 0.1) 93%,
+      rgba(255, 255, 0, 0.7) 96%,
+      rgba(255, 255, 0, 0) 98%
+    ),
+    linear-gradient(
+      183deg,
+      rgba(255, 255, 0, 0) 0%,
+      rgba(255, 255, 0, 0.3) 7.9%,
+      rgba(255, 255, 0, 0) 15%
+    );
+
+  /* This creates the rough "marker" ends */
+  padding: 0.1em 0.4em;
+  margin: 0 -0.4em;
+  border-radius: 0.8em 0.3em;
+
+  /* Essential for multi-line wrapping */
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+[data-active-filter="read"] .card:not(.read),
+[data-active-filter="reading"] .card:not(.reading),
+[data-active-filter="to-read"] .card:not(.to-read),
+[data-active-filter="abandoned"] .card:not(.abandoned),
+[data-active-filter="wishlist"] .card:not(.wishlist) {
+  display: none;
+}
+
+.card {
+  content-visibility: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2ch;
+  align-items: start;
+  background-color: var(--color-paper);
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+  padding: 1lh;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.card-image,
+.card-meta {
+  flex: 1 1 min-content; /* Grow, Shrink, Basis (stacking point) */
+}
+
+.card-content {
+  flex: 3 1 300px; /* Takes up 3x more space than sidebars */
+}
+
+.card-image {
+  position: relative;
+}
+
+.card-image img {
+  width: 100%;
+  max-height: 7lh;
+  object-fit: contain;
+  display: block;
+  position: relative;
+  transform: rotate(var(--rotation, -2deg));
+}
+
+.card-content h3 {
+  text-transform: uppercase;
+}
+.card-content h3::before,
+.card-content h3::after {
+  content: "**";
+  display: inline-block;
+  margin-inline: 1ch;
+}
+
+.card-history {
+  list-style-type: none;
+  padding: 0;
+}
+
+.card-history li {
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+}
+
+.card-history li:not(:last-child) {
+  opacity: 0.7;
+}
+
+.card-meta {
+  margin-block-start: -1lh;
+}
+
+.card-meta > p {
+  display: inline-block;
+}
+
+.card-shelf {
+  transform: rotate(-3deg);
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1ch;
+}
+
+.filter-btn {
+  font-size: 0.75rem;
+  padding: 0.5lh 2ch;
+  text-transform: uppercase;
+}

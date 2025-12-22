@@ -3,21 +3,36 @@ interface Props {
   item: any[];
 }
 const { item } = Astro.props;
+import { formatDate, formatPublishedDate, getAuthorOffset } from '@lib/utils.ts'; // Assuming @lib points to src/
+const author = item.data.author || "Unknown";
+const offset = getAuthorOffset(author[0]);
 
 ---
 
 <article class:list={[
         "card",
-       "flow",
+       "text-center",
         item.data.shelf,
         { "wishlist": item.data.shelf === 'to-read' && !item.data.owned,
           "owned": item.data.owned }
       ]}>
-  <h3 style="font-size: 2em;" set:html={item.data.title} />
-  {item.data.author && <p class="author">{item.data.author.join(', ')}</p>}
-
-  <p><small
-    >Status: {item.data.shelf} | Owned: {item.data.owned ? '✅' :
-    '❌'}</small
-  ></p>
+        <picture class="card-image">
+          <img style={`--rotation: ${offset}deg;`} loading="lazy" src={item.data.coverUrl} alt="" role="presentation">
+        </picture>
+        <div class="card-content flow">
+          <h3 class="typewriter-title" set:html={item.data.title} />
+          {item.data.author && <p class="author">{item.data.author.join(', ')}</p>}
+          <div class="content-footer">
+          {(item.data.published && item.data.publisher) && <p>(<strong>{formatPublishedDate(item.data.published)}</strong> {item.data.publisher})</p>}
+          {item.data.isbn && <p>ISBN: <strong>{item.data.isbn}</strong></p>}
+          {item.data.tags && <p>Tagged: {item.data.tags.join(', ')}</p>}
+          </div>
+        </div>
+        <div class="card-meta">
+          <p class="card-shelf text-handwriting">{item.data.shelf}</p>
+          {item.data.owned && <p class="text-handwriting text-highlighter">Owned</p>}
+          <ul class="card-history">
+            <li>{formatDate(item.data.end_date)} {item.data.rating && "★".repeat(item.data.rating) + "☆".repeat(5 - item.data.rating)}</li>
+          </ul>
+        </div>
 </article>
