@@ -157,6 +157,7 @@ em {
 
 .card-image img {
   width: 100%;
+  min-width: 150px;
   max-height: 7lh;
   object-fit: contain;
   display: block;
@@ -166,12 +167,6 @@ em {
 
 .card-content h3 {
   text-transform: uppercase;
-}
-.card-content h3::before,
-.card-content h3::after {
-  content: "**";
-  display: inline-block;
-  margin-inline: 1ch;
 }
 
 .card-history {
