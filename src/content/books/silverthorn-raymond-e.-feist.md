@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Silverthorn
 subtitle: The Riftwar Saga 2
 author:
@@ -35,4 +35,3 @@ _The Riftwar Saga 2_
 | Started |  |
 | Finished | 2021-02-28T00:00:00.000+00:00 |
 | Rating | /5 |
-

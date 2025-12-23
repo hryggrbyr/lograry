@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Tainted Cup
-subtitle: " "
+subtitle: null
 author:
   - Robert Jackson Bennett
 publisher:

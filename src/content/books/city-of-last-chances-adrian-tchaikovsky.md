@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: City of Last Chances
-subtitle: " "
+subtitle: null
 author:
   - Adrian Tchaikovsky
 publisher:

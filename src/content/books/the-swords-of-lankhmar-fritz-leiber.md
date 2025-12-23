@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Swords of Lankhmar
-subtitle: " "
+subtitle: null
 author:
   - Fritz Leiber
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Sour Candy
-subtitle: " "
+subtitle: null
 author:
   - Kealan Patrick Burke
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

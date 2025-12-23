@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Wool
-subtitle: " "
+subtitle: null
 author:
   - Hugh Howey
 publisher:

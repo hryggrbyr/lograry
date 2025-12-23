@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Perfect Victim
-subtitle: " "
+subtitle: null
 author:
   - Carla Norton
 publisher:

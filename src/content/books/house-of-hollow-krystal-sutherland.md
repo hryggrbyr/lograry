@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: House of Hollow
-subtitle: " "
+subtitle: null
 author:
   - Krystal Sutherland
 publisher:

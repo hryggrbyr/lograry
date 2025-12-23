@@ -4,7 +4,7 @@ tags:
   - americana
   - bleak
 title: The Heart is Deceitful Above All Things
-subtitle: " "
+subtitle: null
 author:
   - JT LeRoy
 publisher:

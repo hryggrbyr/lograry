@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Shades of Grey
-subtitle: " "
+subtitle: null
 author:
   - Jasper Fforde
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

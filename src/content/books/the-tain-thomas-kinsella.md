@@ -3,7 +3,7 @@ tags:
   - mythology
   - folklore
 title: The Táin
-subtitle: " "
+subtitle: null
 author:
   - Thomas Kinsella
 publisher:

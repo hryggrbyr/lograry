@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Elven Fury
-subtitle: " "
+subtitle: null
 author:
   - Lindsay Buroker
 publisher:

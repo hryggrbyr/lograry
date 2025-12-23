@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: A Sea of Unspoken Things
-subtitle: " "
+subtitle: null
 author:
   - Adrienne Young
 publisher:

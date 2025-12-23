@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Man From Beijing
 subtitle: ""
 author:

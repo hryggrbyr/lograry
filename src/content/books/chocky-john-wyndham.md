@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Chocky
-subtitle: " "
+subtitle: null
 author:
   - John Wyndham
 publisher:

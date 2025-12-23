@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: "Abarat: Absolute Midnight"
-subtitle: " "
+subtitle: null
 author:
   - Clive Barker
 publisher:

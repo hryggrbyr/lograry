@@ -4,7 +4,7 @@ tags:
   - publishing
   - crime
 title: Yellowface
-subtitle: " "
+subtitle: null
 author:
   - R. F. Kuang
 publisher: Harper Collins

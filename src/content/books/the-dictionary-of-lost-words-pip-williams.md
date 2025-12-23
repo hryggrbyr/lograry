@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Dictionary of Lost Words
-subtitle: " "
+subtitle: null
 author:
   - Pip Williams
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

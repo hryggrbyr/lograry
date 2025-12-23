@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Mitgift
-subtitle: " "
+subtitle: null
 author:
   - Henning Ahrens
 publisher:

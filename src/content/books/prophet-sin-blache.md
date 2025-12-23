@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Prophet
-subtitle: " "
+subtitle: null
 author:
   - Sin Blaché
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started | 2024-04-17T00:00:00.000+01:00 |
 | Finished | 2024-05-22T00:00:00.000+01:00 |
 | Rating | 5/5 |
-

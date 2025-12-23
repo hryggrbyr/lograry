@@ -4,7 +4,7 @@ tags:
   - relationships
   - software
 title: Tomorrow and Tomorrow and Tomorrow
-subtitle: " "
+subtitle: null
 author:
   - Gabrielle Zevin
 publisher:

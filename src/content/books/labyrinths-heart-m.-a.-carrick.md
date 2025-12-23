@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Labyrinth's Heart
-subtitle: " "
+subtitle: null
 author:
   - M. A. Carrick
 publisher:

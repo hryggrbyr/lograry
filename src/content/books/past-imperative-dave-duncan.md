@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Past Imperative
-subtitle: " "
+subtitle: null
 author:
   - Dave Duncan
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Jimmy the kid
-subtitle: " "
+subtitle: null
 author:
   - Donald E. Westlake
 publisher:

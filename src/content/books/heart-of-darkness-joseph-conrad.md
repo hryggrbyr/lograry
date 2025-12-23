@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Heart of Darkness
-subtitle: " "
+subtitle: null
 author:
   - Joseph Conrad
 publisher:

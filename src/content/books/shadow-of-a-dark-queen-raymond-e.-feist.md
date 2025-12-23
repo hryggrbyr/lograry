@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Shadow of a Dark Queen
 subtitle: Serpentwar Saga
 author:
@@ -35,4 +35,3 @@ _Serpentwar Saga_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

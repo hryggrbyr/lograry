@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Scrum
-subtitle: " "
+subtitle: null
 author:
   - Chris Sims
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished | 2015-11-02T00:00:00.000+00:00 |
 | Rating | 4/5 |
-

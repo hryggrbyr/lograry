@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Sixth column
-subtitle: " "
+subtitle: null
 author:
   - Robert A. Heinlein
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

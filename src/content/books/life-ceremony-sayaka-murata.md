@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Life Ceremony
-subtitle: " "
+subtitle: null
 author:
   - Sayaka Murata
 publisher:

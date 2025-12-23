@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Gideon the Ninth
-subtitle: " "
+subtitle: null
 author:
   - Tamsyn Muir
 publisher:

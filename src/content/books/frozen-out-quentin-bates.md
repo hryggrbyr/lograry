@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Frozen Out
-subtitle: " "
+subtitle: null
 author:
   - Quentin Bates
 publisher:

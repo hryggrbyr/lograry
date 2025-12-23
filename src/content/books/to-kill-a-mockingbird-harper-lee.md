@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: To Kill a Mockingbird
-subtitle: " "
+subtitle: null
 author:
   - Harper Lee
 publisher:

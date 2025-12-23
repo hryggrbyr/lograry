@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: An Abundance of Katherines
-subtitle: " "
+subtitle: null
 author:
   - John Green
 publisher:

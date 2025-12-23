@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Knife of Never Letting Go
-subtitle: " "
+subtitle: null
 author:
   - Patrick Ness
 publisher:

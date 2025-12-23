@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Boneless Mercies
-subtitle: " "
+subtitle: null
 author:
   - April Genevieve Tucholke
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

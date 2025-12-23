@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Strong Female Character
-subtitle: " "
+subtitle: null
 author:
   - Fern Brady
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

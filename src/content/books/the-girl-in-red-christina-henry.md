@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Girl in Red
-subtitle: " "
+subtitle: null
 author:
   - Christina Henry
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

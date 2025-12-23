@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: EC4 - Plains Of Passage
 subtitle: Earth's Children 1
 author:

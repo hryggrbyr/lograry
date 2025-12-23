@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Jurassic Park
-subtitle: " "
+subtitle: null
 author:
   - Michael Crichton
 publisher:

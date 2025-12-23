@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Stark
-subtitle: " "
+subtitle: null
 author:
   - Ben Elton
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished | 1990-08-02T00:00:00.000+01:00 |
 | Rating | /5 |
-

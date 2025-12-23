@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: How Infrastructure Works
-subtitle: " "
+subtitle: null
 author:
   - Deb Chachra
 publisher:

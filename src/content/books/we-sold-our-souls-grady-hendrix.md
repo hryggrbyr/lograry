@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: We Sold Our Souls
-subtitle: " "
+subtitle: null
 author:
   - Grady Hendrix
 publisher:

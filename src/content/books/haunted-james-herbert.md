@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Haunted
-subtitle: " "
+subtitle: null
 author:
   - James Herbert
 publisher:

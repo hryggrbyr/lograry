@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Harrow the Ninth
-subtitle: " "
+subtitle: null
 author:
   - Tamsyn Muir
 publisher:

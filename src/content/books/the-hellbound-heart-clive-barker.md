@@ -4,7 +4,7 @@ tags:
   - horror
   - ParallelWorlds
 title: The Hellbound Heart
-subtitle: " "
+subtitle: null
 author:
   - Clive Barker
 publisher:

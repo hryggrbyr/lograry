@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Realm Breaker
 subtitle: Realm Breaker 1
 author:
@@ -35,4 +35,3 @@ _Realm Breaker 1_
 | Started | 2022-01-20T00:00:00.000+00:00 |
 | Finished | 2022-02-27T00:00:00.000+00:00 |
 | Rating | 4/5 |
-

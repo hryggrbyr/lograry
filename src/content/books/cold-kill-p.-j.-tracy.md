@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Cold kill
-subtitle: " "
+subtitle: null
 author:
   - P. J. Tracy
 publisher:

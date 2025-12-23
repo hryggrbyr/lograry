@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Killer Book of Cold Cases
-subtitle: " "
+subtitle: null
 author:
   - Tom Philbin
 publisher:

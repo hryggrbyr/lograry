@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Sleepyhead
 subtitle: A Tom Thorne Novel
 author:
@@ -35,4 +35,3 @@ _A Tom Thorne Novel_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

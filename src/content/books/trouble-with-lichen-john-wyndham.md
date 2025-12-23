@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Trouble with lichen
-subtitle: " "
+subtitle: null
 author:
   - John Wyndham
 publisher:

@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Silver on the Tree
 subtitle: The Dark is Rising Sequence 5
 author:
@@ -35,4 +35,3 @@ _The Dark is Rising Sequence 5_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

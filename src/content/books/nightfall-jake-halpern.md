@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Nightfall
-subtitle: " "
+subtitle: null
 author:
   - Jake Halpern
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Fear and Loathing in Las Vegas
-subtitle: " "
+subtitle: null
 author:
   - Hunter S. Thompson
 publisher:

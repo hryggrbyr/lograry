@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Stig of the Dump
-subtitle: " "
+subtitle: null
 author:
   - Clive King
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished | 1987-08-27T00:00:00.000+01:00 |
 | Rating | /5 |
-

@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Garden of Magic
 subtitle: ""
 author:
@@ -35,4 +35,3 @@ __
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

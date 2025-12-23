@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Don't Panic
-subtitle: " "
+subtitle: null
 author:
   - Neil Gaiman
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Unraveled
-subtitle: " "
+subtitle: null
 author:
   - Lindsay Buroker
 publisher:

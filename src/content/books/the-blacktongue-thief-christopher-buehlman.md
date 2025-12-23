@@ -16,7 +16,7 @@ shelf: to-read
 owned: false
 start_date:
 end_date:
-rating: 0
+rating:
 recommended_by:
   name: Justin
   url: https://www.justinthestacks.com/book-review-the-blackfire-blade/

@@ -4,7 +4,7 @@ tags:
   - horror
   - SerialKiller
 title: American Psycho
-subtitle: " "
+subtitle: null
 author:
   - Bret Easton Ellis
 publisher:

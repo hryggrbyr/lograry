@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Rot and Ruin
-subtitle: " "
+subtitle: null
 author:
   - Jonathan Maberry
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

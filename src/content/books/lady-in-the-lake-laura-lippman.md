@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Lady in the Lake
-subtitle: " "
+subtitle: null
 author:
   - Laura Lippman
 publisher:

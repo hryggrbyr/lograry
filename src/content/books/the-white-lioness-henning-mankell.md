@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The White Lioness
 subtitle: ""
 author:

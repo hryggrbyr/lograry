@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: "&ldquo;Wake Up&hellip;&rdquo;"
-subtitle: " "
+subtitle: null
 author:
   - Kip Manley
 publisher:

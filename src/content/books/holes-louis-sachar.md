@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Holes
-subtitle: " "
+subtitle: null
 author:
   - Louis Sachar
 publisher:

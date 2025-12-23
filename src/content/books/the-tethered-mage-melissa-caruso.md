@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Tethered Mage
-subtitle: " "
+subtitle: null
 author:
   - Melissa Caruso
 publisher:

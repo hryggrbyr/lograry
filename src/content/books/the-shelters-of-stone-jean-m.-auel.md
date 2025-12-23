@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: THE SHELTERS OF STONE
 subtitle: Earth's Children 1
 author:
@@ -35,4 +35,3 @@ _Earth's Children 1_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

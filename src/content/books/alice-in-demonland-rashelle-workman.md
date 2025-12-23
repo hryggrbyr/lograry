@@ -4,7 +4,7 @@ tags:
   - UrbanFantasy
   - demons
 title: Alice in DemonLand
-subtitle: " "
+subtitle: null
 author:
   - RaShelle Workman
 publisher:

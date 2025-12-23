@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Hundred Thousand Kingdoms
-subtitle: " "
+subtitle: null
 author:
   - N. K. Jemisin
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Rise and Fall of a Dragon King
-subtitle: " "
+subtitle: null
 author:
   - Lynn Abbey
 publisher:

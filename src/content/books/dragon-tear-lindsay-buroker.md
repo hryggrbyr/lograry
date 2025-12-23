@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Dragon Tear
-subtitle: " "
+subtitle: null
 author:
   - Lindsay Buroker
 publisher:

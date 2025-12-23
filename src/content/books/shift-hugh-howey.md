@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Shift
-subtitle: " "
+subtitle: null
 author:
   - Hugh Howey
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

@@ -2,7 +2,7 @@
 tags:
   - nonfiction
 title: A Short History of Nearly Everything
-subtitle: " "
+subtitle: null
 author:
   - Bill Bryson
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Arctic chill
-subtitle: " "
+subtitle: null
 author:
   - Arnaldur Indriðason
 publisher:

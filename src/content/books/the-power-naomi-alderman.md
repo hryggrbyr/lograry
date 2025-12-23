@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Power
-subtitle: " "
+subtitle: null
 author:
   - Naomi Alderman
 publisher:

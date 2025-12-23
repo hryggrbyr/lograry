@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Shifter
-subtitle: " "
+subtitle: null
 author:
   - Janice Hardy
 publisher:

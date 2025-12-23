@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Rumple Buttercup
-subtitle: " "
+subtitle: null
 author:
   - Matthew Gray Gubler
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished | 2022-08-02T00:00:00.000+01:00 |
 | Rating | /5 |
-

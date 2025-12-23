@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Demigod Files
 subtitle: A Percy Jackson and the Olympians Guide
 author:
@@ -35,4 +35,3 @@ _A Percy Jackson and the Olympians Guide_
 | Started |  |
 | Finished |  |
 | Rating | 2/5 |
-

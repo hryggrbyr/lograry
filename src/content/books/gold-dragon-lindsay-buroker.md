@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Gold Dragon
-subtitle: " "
+subtitle: null
 author:
   - Lindsay Buroker
 publisher:

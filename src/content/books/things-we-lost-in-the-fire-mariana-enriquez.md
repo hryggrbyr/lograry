@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Things We Lost in the Fire
-subtitle: " "
+subtitle: null
 author:
   - Mariana Enriquez
 publisher:

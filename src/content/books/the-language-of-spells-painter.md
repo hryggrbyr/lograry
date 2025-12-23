@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Language of Spells
 subtitle: ""
 author:

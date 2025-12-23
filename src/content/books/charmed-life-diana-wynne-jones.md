@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Charmed Life
-subtitle: " "
+subtitle: null
 author:
   - Diana Wynne Jones
 publisher:

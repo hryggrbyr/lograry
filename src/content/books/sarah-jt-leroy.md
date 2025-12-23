@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Sarah
-subtitle: " "
+subtitle: null
 author:
   - JT LeRoy
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished | 2016-01-30T00:00:00.000+00:00 |
 | Rating | /5 |
-

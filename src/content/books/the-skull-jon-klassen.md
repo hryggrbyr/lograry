@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Skull
-subtitle: " "
+subtitle: null
 author:
   - Jon Klassen
 publisher:

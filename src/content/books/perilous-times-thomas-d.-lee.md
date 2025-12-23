@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Perilous Times
-subtitle: " "
+subtitle: null
 author:
   - Thomas D. Lee
 publisher:

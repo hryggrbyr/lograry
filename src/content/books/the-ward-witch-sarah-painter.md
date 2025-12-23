@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Ward Witch
-subtitle: " "
+subtitle: null
 author:
   - Sarah Painter
 publisher:

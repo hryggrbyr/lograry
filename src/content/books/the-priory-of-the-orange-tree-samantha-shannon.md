@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Priory of the Orange Tree
-subtitle: " "
+subtitle: null
 author:
   - Samantha Shannon
 publisher:

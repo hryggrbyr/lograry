@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Her Majesty's Royal Coven
-subtitle: " "
+subtitle: null
 author:
   - Juno Dawson
 publisher:

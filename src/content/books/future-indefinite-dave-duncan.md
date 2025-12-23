@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Future Indefinite
-subtitle: " "
+subtitle: null
 author:
   - Dave Duncan
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: "The Last Party: Britpop"
-subtitle: " "
+subtitle: null
 author:
   - John Harris
 publisher:

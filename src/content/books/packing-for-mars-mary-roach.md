@@ -4,7 +4,7 @@ tags:
   - space
   - science
 title: Packing for Mars
-subtitle: " "
+subtitle: null
 author:
   - Mary Roach
 publisher:

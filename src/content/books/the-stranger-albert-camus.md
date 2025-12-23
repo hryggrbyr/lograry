@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Stranger
-subtitle: " "
+subtitle: null
 author:
   - Albert Camus
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Tea with the Black Dragon
-subtitle: " "
+subtitle: null
 author:
   - R. A. MacAvoy
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

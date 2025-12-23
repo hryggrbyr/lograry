@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: "Shield-Maiden: Under The Howling Moon"
 subtitle: The Road to Valhalla Book 1
 author:
@@ -35,4 +35,3 @@ _The Road to Valhalla Book 1_
 | Started | 2023-08-17T00:00:00.000+01:00 |
 | Finished | 2023-09-04T00:00:00.000+01:00 |
 | Rating | 3/5 |
-

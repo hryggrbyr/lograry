@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Spear
-subtitle: " "
+subtitle: null
 author:
   - James Herbert
 publisher:

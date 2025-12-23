@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Withered Hill
-subtitle: " "
+subtitle: null
 author:
   - David Barnett
 publisher:

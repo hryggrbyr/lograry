@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Revolution
-subtitle: " "
+subtitle: null
 author:
   - Ron Paul
 publisher:

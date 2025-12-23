@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Ones Who Walk Away from Omelas
-subtitle: " "
+subtitle: null
 author:
   - Ursula K. Le Guin
 publisher:

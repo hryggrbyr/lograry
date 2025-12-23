@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Creed
-subtitle: " "
+subtitle: null
 author:
   - James Herbert
 publisher:

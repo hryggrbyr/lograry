@@ -5,7 +5,7 @@ tags:
   - YoungAdult
   - romance
 title: A Promise of Fire
-subtitle: " "
+subtitle: null
 author:
   - Amanda Bouchet
 publisher:

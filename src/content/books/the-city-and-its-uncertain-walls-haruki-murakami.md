@@ -8,7 +8,7 @@ tags:
   - library
   - japan
 title: The City and Its Uncertain Walls
-subtitle: " "
+subtitle: null
 author:
   - Haruki Murakami
 publisher:
@@ -42,4 +42,3 @@ _ _
 | Started | 2025-02-13T00:00:00.000+00:00 |
 | Finished | 2025-03-11T00:00:00.000+00:00 |
 | Rating | 3/5 |
-

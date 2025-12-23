@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Keeper of Lost Causes [aka Mercy]
 subtitle: Department Q 1
 author:

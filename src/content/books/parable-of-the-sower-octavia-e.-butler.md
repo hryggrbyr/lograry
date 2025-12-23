@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Parable of the Sower
-subtitle: " "
+subtitle: null
 author:
   - Octavia E. Butler
 publisher:

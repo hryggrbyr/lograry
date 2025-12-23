@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Kalyna the Soothsayer
-subtitle: " "
+subtitle: null
 author:
   - Elijah Kinch Spector
 publisher:

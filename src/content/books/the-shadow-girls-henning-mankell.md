@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Shadow Girls
 subtitle: ""
 author:

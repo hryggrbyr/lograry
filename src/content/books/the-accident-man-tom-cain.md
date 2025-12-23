@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Accident Man
-subtitle: " "
+subtitle: null
 author:
   - Tom Cain
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

@@ -5,7 +5,7 @@ tags:
   - postapocalyptic
   - england
 title: A Flight of Thieves
-subtitle: " "
+subtitle: null
 author:
   - David Bridger
 publisher:

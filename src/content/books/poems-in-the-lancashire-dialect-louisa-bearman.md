@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Poems in the Lancashire Dialect
-subtitle: " "
+subtitle: null
 author:
   - Louisa Bearman
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

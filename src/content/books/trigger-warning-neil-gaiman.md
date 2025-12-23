@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Trigger Warning
-subtitle: " "
+subtitle: null
 author:
   - Neil Gaiman
 publisher:

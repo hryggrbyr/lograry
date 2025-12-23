@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Mammoth Hunters
 subtitle: Earth's Children 3
 author:

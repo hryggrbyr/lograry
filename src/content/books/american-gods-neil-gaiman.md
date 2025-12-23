@@ -5,7 +5,7 @@ tags:
   - Religon
   - americana
 title: American Gods
-subtitle: " "
+subtitle: null
 author:
   - Neil Gaiman
 publisher:

@@ -5,7 +5,7 @@ tags:
   - america
   - SerialKiller
 title: Dexter in the Dark
-subtitle: " "
+subtitle: null
 author:
   - Jeff Lindsay
 publisher:

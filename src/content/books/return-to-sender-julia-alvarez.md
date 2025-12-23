@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Return to Sender
-subtitle: " "
+subtitle: null
 author:
   - Julia Alvarez
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

@@ -4,7 +4,7 @@ tags:
   - comedy
   - romance
 title: The Princess Bride
-subtitle: " "
+subtitle: null
 author:
   - William Goldman
 publisher:

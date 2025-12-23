@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Lost Boy
-subtitle: " "
+subtitle: null
 author:
   - Christina Henry
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Featherhood
-subtitle: " "
+subtitle: null
 author:
   - Charlie Gilmour
 publisher:

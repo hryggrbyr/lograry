@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Jennifer Government
-subtitle: " "
+subtitle: null
 author:
   - Max Barry
 publisher:

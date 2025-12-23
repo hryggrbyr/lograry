@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The End of Mr. Y
-subtitle: " "
+subtitle: null
 author:
   - Scarlett Thomas
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

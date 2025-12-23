@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Queen of the High Fields
-subtitle: " "
+subtitle: null
 author:
   - Rhiannon A. Grist
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

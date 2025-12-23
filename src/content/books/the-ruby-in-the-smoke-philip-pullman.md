@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Ruby in the Smoke
 subtitle: Sally Lockhart Trilogy
 author:

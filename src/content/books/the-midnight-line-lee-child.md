@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Midnight Line
-subtitle: " "
+subtitle: null
 author:
   - Lee Child
 publisher:

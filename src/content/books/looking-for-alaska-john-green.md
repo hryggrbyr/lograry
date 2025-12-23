@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Looking for Alaska
-subtitle: " "
+subtitle: null
 author:
   - John Green
 publisher:

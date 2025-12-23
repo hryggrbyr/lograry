@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Green Millennium
-subtitle: " "
+subtitle: null
 author:
   - Fritz Leiber
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

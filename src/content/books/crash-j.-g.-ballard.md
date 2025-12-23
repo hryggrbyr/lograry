@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Crash
-subtitle: " "
+subtitle: null
 author:
   - J. G. Ballard
 publisher:

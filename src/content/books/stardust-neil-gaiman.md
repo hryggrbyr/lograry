@@ -9,7 +9,7 @@ tags:
   - adventure
   - steampunk
 title: Stardust
-subtitle: " "
+subtitle: null
 author:
   - Neil Gaiman
 publisher:
@@ -43,4 +43,3 @@ _ _
 | Started |  |
 | Finished | 2011-03-02T00:00:00.000+00:00 |
 | Rating | 3/5 |
-

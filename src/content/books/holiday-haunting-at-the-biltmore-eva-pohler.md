@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Holiday Haunting at the Biltmore
-subtitle: " "
+subtitle: null
 author:
   - Eva Pohler
 publisher:

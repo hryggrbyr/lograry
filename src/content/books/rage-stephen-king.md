@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Rage
 subtitle: ""
 author:
@@ -35,4 +35,3 @@ __
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

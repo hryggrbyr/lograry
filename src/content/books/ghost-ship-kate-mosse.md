@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Ghost Ship
-subtitle: " "
+subtitle: null
 author:
   - Kate Mosse
 publisher:

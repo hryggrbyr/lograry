@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Pretend We're Dead
-subtitle: " "
+subtitle: null
 author:
   - Tanya Pearson
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

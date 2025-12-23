@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Princess of Burundi
-subtitle: " "
+subtitle: null
 author:
   - Kjell Eriksson
 publisher:

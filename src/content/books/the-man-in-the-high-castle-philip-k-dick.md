@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Man in the High Castle
-subtitle: " "
+subtitle: null
 author:
   - Philip K Dick
 publisher:

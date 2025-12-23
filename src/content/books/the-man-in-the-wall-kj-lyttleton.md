@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Man In The Wall
-subtitle: " "
+subtitle: null
 author:
   - KJ Lyttleton
 publisher:

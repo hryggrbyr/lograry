@@ -3,7 +3,7 @@ tags:
   - sci-fi
   - cyberpunk
 title: Johnny Mnemonic
-subtitle: " "
+subtitle: null
 author:
   - William Gibson
 publisher:

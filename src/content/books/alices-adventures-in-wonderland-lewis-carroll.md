@@ -4,7 +4,7 @@ tags:
   - JuvenileFiction
   - classic
 title: Alice's Adventures in Wonderland
-subtitle: " "
+subtitle: null
 author:
   - Lewis Carroll
 publisher:

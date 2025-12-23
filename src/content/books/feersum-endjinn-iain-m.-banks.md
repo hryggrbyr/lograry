@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Feersum Endjinn
-subtitle: " "
+subtitle: null
 author:
   - Iain M. Banks
 publisher:

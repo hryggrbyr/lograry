@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Runaway Jury
-subtitle: " "
+subtitle: null
 author:
   - John Grisham
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Red Dwarf Omnibus
-subtitle: " "
+subtitle: null
 author:
   - Grant Naylor
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished | 1992-08-17T00:00:00.000+01:00 |
 | Rating | /5 |
-

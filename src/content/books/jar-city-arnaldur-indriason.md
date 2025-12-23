@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Jar city
-subtitle: " "
+subtitle: null
 author:
   - Arnaldur Indriðason
 publisher:

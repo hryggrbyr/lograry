@@ -3,7 +3,7 @@ tags:
   - horror
   - supernatural
 title: The Fog
-subtitle: " "
+subtitle: null
 author:
   - James Herbert
 publisher:
@@ -37,4 +37,3 @@ _ _
 | Started |  |
 | Finished | 1990-11-21T00:00:00.000+00:00 |
 | Rating | 4/5 |
-

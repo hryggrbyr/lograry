@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Jonathan Strange & Mr Norrell
-subtitle: " "
+subtitle: null
 author:
   - Susanna Clarke
 publisher:

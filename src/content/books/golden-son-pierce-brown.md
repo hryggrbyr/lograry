@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Golden son
-subtitle: " "
+subtitle: null
 author:
   - Pierce Brown
 publisher:

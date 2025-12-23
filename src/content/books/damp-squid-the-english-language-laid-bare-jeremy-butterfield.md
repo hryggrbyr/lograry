@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: "Damp Squid: The English Language Laid Bare"
-subtitle: " "
+subtitle: null
 author:
   - Jeremy Butterfield
 publisher:

@@ -3,7 +3,7 @@ tags:
   - sci-fi
   - dystopia
 title: The Minority Report
-subtitle: " "
+subtitle: null
 author:
   - Philip K Dick
 publisher:

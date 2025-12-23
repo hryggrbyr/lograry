@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Green Man's Heir
-subtitle: " "
+subtitle: null
 author:
   - Juliet E. McKenna
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started | 2023-12-19T00:00:00.000+00:00 |
 | Finished | 2023-12-31T00:00:00.000+00:00 |
 | Rating | 5/5 |
-

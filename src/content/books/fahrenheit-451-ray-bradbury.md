@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Fahrenheit 451
-subtitle: " "
+subtitle: null
 author:
   - Ray Bradbury
 publisher:

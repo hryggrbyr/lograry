@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Under the Bridge
-subtitle: " "
+subtitle: null
 author:
   - Rebecca Godfrey
 publisher:

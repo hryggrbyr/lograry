@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Green Man's Foe
-subtitle: " "
+subtitle: null
 author:
   - Juliet E. McKenna
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started | 2024-01-01T00:00:00.000+00:00 |
 | Finished | 2024-01-21T00:00:00.000+00:00 |
 | Rating | 4/5 |
-

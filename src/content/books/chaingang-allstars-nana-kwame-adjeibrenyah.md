@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Chain-Gang All-Stars
-subtitle: " "
+subtitle: null
 author:
   - Nana Kwame Adjei-Brenyah
 publisher:

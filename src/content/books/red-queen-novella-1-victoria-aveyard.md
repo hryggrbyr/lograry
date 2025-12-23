@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: "Red Queen Novella #1"
 subtitle: Red Queen 0.1
 author:
@@ -36,4 +36,3 @@ _Red Queen 0.1_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Queens Of Osiris
-subtitle: " "
+subtitle: null
 author:
   - Phillip Tomasso
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started | 2024-07-02T00:00:00.000+01:00 |
 | Finished | 2024-07-16T00:00:00.000+01:00 |
 | Rating | 3/5 |
-

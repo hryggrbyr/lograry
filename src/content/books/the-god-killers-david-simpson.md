@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The God Killers
-subtitle: " "
+subtitle: null
 author:
   - David Simpson
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

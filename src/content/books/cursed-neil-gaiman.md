@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Cursed
-subtitle: " "
+subtitle: null
 author:
   - Neil Gaiman
 publisher:

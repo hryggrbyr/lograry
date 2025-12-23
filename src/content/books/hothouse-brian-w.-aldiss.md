@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Hothouse
-subtitle: " "
+subtitle: null
 author:
   - Brian W. Aldiss
 publisher:

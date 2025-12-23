@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Liar's Knot
-subtitle: " "
+subtitle: null
 author:
   - M. A. Carrick
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Personal Darkness
-subtitle: " "
+subtitle: null
 author:
   - Tanith Lee
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Anvil of Stars
-subtitle: " "
+subtitle: null
 author:
   - Greg Bear
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Roadside Picnic
-subtitle: " "
+subtitle: null
 author:
   - Boris Strugatsky
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

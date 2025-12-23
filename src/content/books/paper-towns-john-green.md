@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Paper Towns
-subtitle: " "
+subtitle: null
 author:
   - John Green
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Lancashire folk tales
-subtitle: " "
+subtitle: null
 author:
   - Jennie Bailey
 publisher:

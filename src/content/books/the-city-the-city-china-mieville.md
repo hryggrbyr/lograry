@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The City & The City
-subtitle: " "
+subtitle: null
 author:
   - China Mieville
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

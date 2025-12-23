@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Riding rockets
-subtitle: " "
+subtitle: null
 author:
   - R. Mike Mullane
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

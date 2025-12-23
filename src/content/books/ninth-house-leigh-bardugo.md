@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Ninth House
-subtitle: " "
+subtitle: null
 author:
   - Leigh Bardugo
 publisher:

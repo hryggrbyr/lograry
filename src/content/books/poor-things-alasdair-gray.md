@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Poor Things
-subtitle: " "
+subtitle: null
 author:
   - Alasdair Gray
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

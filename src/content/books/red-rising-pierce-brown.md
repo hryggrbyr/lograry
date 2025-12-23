@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Red Rising
-subtitle: " "
+subtitle: null
 author:
   - Pierce Brown
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

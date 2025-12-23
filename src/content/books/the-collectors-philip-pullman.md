@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Collectors
 subtitle: His Dark Materials 0.6
 author:
@@ -35,4 +35,3 @@ _His Dark Materials 0.6_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

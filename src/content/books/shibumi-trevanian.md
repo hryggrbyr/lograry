@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Shibumi
-subtitle: " "
+subtitle: null
 author:
   - Trevanian
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

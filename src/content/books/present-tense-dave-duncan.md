@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Present Tense
-subtitle: " "
+subtitle: null
 author:
   - Dave Duncan
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

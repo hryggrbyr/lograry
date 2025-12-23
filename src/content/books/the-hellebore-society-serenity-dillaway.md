@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Hellebore Society
-subtitle: " "
+subtitle: null
 author:
   - Serenity Dillaway
 publisher:

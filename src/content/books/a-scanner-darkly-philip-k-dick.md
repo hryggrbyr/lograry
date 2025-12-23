@@ -2,7 +2,7 @@
 tags:
   - cyberpunk
 title: A Scanner Darkly
-subtitle: " "
+subtitle: null
 author:
   - Philip K Dick
 publisher:

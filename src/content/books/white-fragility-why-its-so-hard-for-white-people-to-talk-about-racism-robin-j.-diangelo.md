@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: "White Fragility: Why It's so Hard for White People to Talk About Racism"
-subtitle: " "
+subtitle: null
 author:
   - Robin J. DiAngelo
 publisher:

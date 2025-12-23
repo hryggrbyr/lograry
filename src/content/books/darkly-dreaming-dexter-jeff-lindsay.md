@@ -5,7 +5,7 @@ tags:
   - america
   - SerialKiller
 title: Darkly Dreaming Dexter
-subtitle: " "
+subtitle: null
 author:
   - Jeff Lindsay
 publisher:

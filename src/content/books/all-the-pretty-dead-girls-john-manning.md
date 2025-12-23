@@ -3,7 +3,7 @@ tags:
   - horror
   - demons
 title: All The Pretty Dead Girls
-subtitle: " "
+subtitle: null
 author:
   - John Manning
 publisher:

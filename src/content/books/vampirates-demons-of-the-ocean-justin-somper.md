@@ -3,7 +3,7 @@ tags:
   - fantasy
   - vampires
 title: "Vampirates: Demons of the Ocean"
-subtitle: " "
+subtitle: null
 author:
   - Justin Somper
 publisher:

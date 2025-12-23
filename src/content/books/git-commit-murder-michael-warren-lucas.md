@@ -3,7 +3,7 @@ tags:
   - thriller
   - code
 title: $ git commit murder
-subtitle: " "
+subtitle: null
 author:
   - Michael Warren Lucas
 publisher:

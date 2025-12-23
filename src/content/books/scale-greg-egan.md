@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Scale
-subtitle: " "
+subtitle: null
 author:
   - Greg Egan
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

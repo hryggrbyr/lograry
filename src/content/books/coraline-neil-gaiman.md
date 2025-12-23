@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Coraline
-subtitle: " "
+subtitle: null
 author:
   - Neil Gaiman
 publisher:

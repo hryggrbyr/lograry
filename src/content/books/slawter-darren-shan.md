@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Slawter
-subtitle: " "
+subtitle: null
 author:
   - Darren Shan
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

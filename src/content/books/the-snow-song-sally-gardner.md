@@ -6,7 +6,7 @@ tags:
   - charming
   - gentle
 title: The Snow Song
-subtitle: " "
+subtitle: null
 author:
   - Sally Gardner
 publisher:

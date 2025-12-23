@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Seven Deaths of Evelyn Hardcastle
-subtitle: " "
+subtitle: null
 author:
   - Stuart Turton
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Robot Visions
-subtitle: " "
+subtitle: null
 author:
   - Isaac Asimov
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

@@ -5,7 +5,7 @@ tags:
   - america
   - HistoricalFantasy
 title: Abraham Lincoln, Vampire Hunter
-subtitle: " "
+subtitle: null
 author:
   - Seth Grahame-Smith
 publisher:

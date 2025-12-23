@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Marco Effect
 subtitle: ""
 author:

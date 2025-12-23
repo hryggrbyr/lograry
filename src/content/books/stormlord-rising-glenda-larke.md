@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Stormlord Rising
 subtitle: Stormlord 2
 author:
@@ -36,4 +36,3 @@ _Stormlord 2_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

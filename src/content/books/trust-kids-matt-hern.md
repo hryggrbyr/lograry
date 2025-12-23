@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Trust Kids!
-subtitle: " "
+subtitle: null
 author:
   - Matt Hern
 publisher:

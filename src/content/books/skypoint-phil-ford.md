@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Skypoint
-subtitle: " "
+subtitle: null
 author:
   - Phil Ford
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

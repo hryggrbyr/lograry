@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Duty Bound
-subtitle: " "
+subtitle: null
 author:
   - Lindsay Buroker
 publisher:

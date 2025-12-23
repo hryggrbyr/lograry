@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Was
-subtitle: " "
+subtitle: null
 author:
   - Geoff Ryman
 publisher:

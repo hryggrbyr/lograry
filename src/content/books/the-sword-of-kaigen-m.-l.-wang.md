@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Sword of Kaigen
-subtitle: " "
+subtitle: null
 author:
   - M. L. Wang
 publisher:

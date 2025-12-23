@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Wizard's Rise
-subtitle: " "
+subtitle: null
 author:
   - Phillip Tomasso
 publisher:

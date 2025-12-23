@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Warrior Mage
-subtitle: " "
+subtitle: null
 author:
   - Lindsay Buroker
 publisher:

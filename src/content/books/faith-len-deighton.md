@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Faith
-subtitle: " "
+subtitle: null
 author:
   - Len Deighton
 publisher:

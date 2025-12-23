@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Blood Ties
-subtitle: " "
+subtitle: null
 author:
   - Lindsay Buroker
 publisher:

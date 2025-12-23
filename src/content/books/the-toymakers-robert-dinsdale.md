@@ -9,7 +9,7 @@ tags:
   - family
   - relationships
 title: The Toymakers
-subtitle: " "
+subtitle: null
 author:
   - Robert Dinsdale
 publisher: Del Rey

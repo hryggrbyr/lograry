@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Ballad of Songbirds and Snakes
-subtitle: " "
+subtitle: null
 author:
   - Suzanne Collins
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

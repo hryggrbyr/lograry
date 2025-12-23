@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: In the Woods
-subtitle: " "
+subtitle: null
 author:
   - Tana French
 publisher:

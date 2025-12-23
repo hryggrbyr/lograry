@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Girl with the Dragon Tattoo
 subtitle: Millennium 1
 author:
@@ -35,4 +35,3 @@ _Millennium 1_
 | Started |  |
 | Finished | 2011-01-10T00:00:00.000+00:00 |
 | Rating | 4/5 |
-

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Fate Breaker
-subtitle: " "
+subtitle: null
 author:
   - Victoria Aveyard
 publisher:

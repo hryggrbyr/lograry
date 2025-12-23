@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Babel
-subtitle: " "
+subtitle: null
 author:
   - R. F. Kuang
 publisher:

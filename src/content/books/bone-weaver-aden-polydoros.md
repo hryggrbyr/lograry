@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Bone Weaver
-subtitle: " "
+subtitle: null
 author:
   - Aden Polydoros
 publisher:

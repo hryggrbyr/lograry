@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Undead Mr. Tenpenny
-subtitle: " "
+subtitle: null
 author:
   - Tammie Painter
 publisher:

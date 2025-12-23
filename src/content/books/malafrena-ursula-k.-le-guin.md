@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Malafrena
-subtitle: " "
+subtitle: null
 author:
   - Ursula K. Le Guin
 publisher:

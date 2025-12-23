@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Wake
-subtitle: " "
+subtitle: null
 author:
   - Elizabeth Knox
 publisher:

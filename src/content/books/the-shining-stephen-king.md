@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Shining
-subtitle: " "
+subtitle: null
 author:
   - Stephen King
 publisher:

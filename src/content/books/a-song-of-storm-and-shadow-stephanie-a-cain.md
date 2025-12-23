@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: A Song of Storm and Shadow
-subtitle: " "
+subtitle: null
 author:
   - Stephanie A Cain
 publisher:

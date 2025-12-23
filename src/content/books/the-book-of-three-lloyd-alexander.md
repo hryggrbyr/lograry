@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Book of Three
-subtitle: " "
+subtitle: null
 author:
   - Lloyd Alexander
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

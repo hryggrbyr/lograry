@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The River
-subtitle: " "
+subtitle: null
 author:
   - Gary Paulsen
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Bored Gay Werewolf
-subtitle: " "
+subtitle: null
 author:
   - Tony Santorella
 publisher:

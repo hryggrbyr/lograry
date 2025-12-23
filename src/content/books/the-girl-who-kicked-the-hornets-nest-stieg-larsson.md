@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Girl Who Kicked the Hornet's Nest
 subtitle: Millennium 3
 author:
@@ -35,4 +35,3 @@ _Millennium 3_
 | Started |  |
 | Finished | 2011-01-30T00:00:00.000+00:00 |
 | Rating | 4/5 |
-

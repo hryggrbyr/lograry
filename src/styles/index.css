@@ -7,7 +7,7 @@
   --color-text-muted: hsl(0, 0%, 40%);
   --color-text-light: hsl(0, 0%, 50%);
   --color-handwriting: hsl(220, 80%, 50%);
-  --color-accent: hsl(220, 80%, 50%);
+  --color-accent: #d63939;
   --color-border: hsl(30, 20%, 80%);
   --color-line: hsl(220, 30%, 85%);
   --color-margin-line: hsl(0, 80%, 60%);
@@ -48,6 +48,10 @@ body {
 
 * {
   /*outline: 1px dashed rgba(255, 0, 0, 0.3);*/
+}
+
+a {
+  color: var(--color-accent);
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -175,7 +179,15 @@ h2 {
 }
 
 .card-content h3 {
+  display: inline-block;
   text-transform: uppercase;
+}
+
+.card-content .subtitle {
+  font-weight: 100;
+  opacity: 0.6;
+  margin-block-start: 0;
+  display: inline;
 }
 
 .card-history {
@@ -194,6 +206,11 @@ h2 {
 
 .card-meta > p {
   display: inline-block;
+}
+
+.card-meta > a {
+  display: block;
+  margin-block-start: 2rlh;
 }
 
 .card-shelf {

@@ -4,7 +4,7 @@ tags:
   - horror
   - magic
 title: The Book of Night
-subtitle: " "
+subtitle: null
 author:
   - Holly Black
 publisher:

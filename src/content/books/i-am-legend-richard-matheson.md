@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: I Am Legend
-subtitle: " "
+subtitle: null
 author:
   - Richard Matheson
 publisher:

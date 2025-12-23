@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: My soul to take
-subtitle: " "
+subtitle: null
 author:
   - Yrsa Sigurðardóttir
 publisher:

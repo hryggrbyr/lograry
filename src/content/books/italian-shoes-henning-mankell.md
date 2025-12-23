@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Italian Shoes
 subtitle: ""
 author:

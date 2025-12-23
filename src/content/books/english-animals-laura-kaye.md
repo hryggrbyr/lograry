@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: English Animals
-subtitle: " "
+subtitle: null
 author:
   - Laura Kaye
 publisher:

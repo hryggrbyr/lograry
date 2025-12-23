@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Revelations
-subtitle: " "
+subtitle: null
 author:
   - Lindsay Buroker
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started | 2024-11-15T00:00:00.000+00:00 |
 | Finished | 2024-11-21T00:00:00.000+00:00 |
 | Rating | 3/5 |
-

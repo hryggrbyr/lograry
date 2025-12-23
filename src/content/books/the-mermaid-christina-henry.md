@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Mermaid
-subtitle: " "
+subtitle: null
 author:
   - Christina Henry
 publisher:

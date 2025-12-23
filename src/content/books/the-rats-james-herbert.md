@@ -2,7 +2,7 @@
 tags:
   - horror
 title: The Rats
-subtitle: " "
+subtitle: null
 author:
   - James Herbert
 publisher:

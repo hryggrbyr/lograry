@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Lost in the Moment and Found
-subtitle: " "
+subtitle: null
 author:
   - Seanan McGuire
 publisher:

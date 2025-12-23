@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Girl Who Played with Fire
 subtitle: Millennium 2
 author:
@@ -35,4 +35,3 @@ _Millennium 2_
 | Started |  |
 | Finished | 2011-01-20T00:00:00.000+00:00 |
 | Rating | 4/5 |
-

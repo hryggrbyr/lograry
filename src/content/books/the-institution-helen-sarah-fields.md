@@ -4,7 +4,7 @@ tags:
   - crime
   - prison
 title: The Institution
-subtitle: " "
+subtitle: null
 author:
   - Helen Sarah Fields
 publisher:

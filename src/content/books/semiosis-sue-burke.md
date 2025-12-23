@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Semiosis
 subtitle: Semiosis Duology
 author:
@@ -35,4 +35,3 @@ _Semiosis Duology_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Assassin's Promise
-subtitle: " "
+subtitle: null
 author:
   - Phillip Tomasso
 publisher:

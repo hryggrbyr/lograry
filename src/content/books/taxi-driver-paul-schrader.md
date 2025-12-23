@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Taxi Driver
-subtitle: " "
+subtitle: null
 author:
   - Paul Schrader
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

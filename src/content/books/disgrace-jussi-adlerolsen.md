@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Disgrace
 subtitle: Department Q
 author:

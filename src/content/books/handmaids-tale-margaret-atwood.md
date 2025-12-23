@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Handmaid's Tale
-subtitle: " "
+subtitle: null
 author:
   - Margaret Atwood
 publisher:

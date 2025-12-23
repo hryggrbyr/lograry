@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Broken Throne
 subtitle: Red Queen 0
 author:

@@ -3,7 +3,7 @@ tags:
   - fantasy
   - ParallelWorlds
 title: Through the Looking-Glass
-subtitle: " "
+subtitle: null
 author:
   - Lewis Carroll
 publisher:

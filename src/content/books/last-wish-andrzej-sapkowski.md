@@ -4,7 +4,7 @@ tags:
   - magic
   - wizards
 title: Last Wish
-subtitle: " "
+subtitle: null
 author:
   - Andrzej Sapkowski
 publisher:

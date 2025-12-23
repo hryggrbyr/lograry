@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Violent Ward
 subtitle: ""
 author:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Algebraist
-subtitle: " "
+subtitle: null
 author:
   - Iain M. Banks
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: In the Reign of Good Queen Dick
-subtitle: " "
+subtitle: null
 author:
   - Kip Manley
 publisher:

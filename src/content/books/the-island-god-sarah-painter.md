@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Island God
 subtitle: ""
 author:

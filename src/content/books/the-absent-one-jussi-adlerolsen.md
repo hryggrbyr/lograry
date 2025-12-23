@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Absent One
 subtitle: Department Q
 author:
@@ -35,4 +35,3 @@ _Department Q_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

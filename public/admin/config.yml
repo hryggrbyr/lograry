@@ -1,0 +1,67 @@
+# 1. Backend: Tell Sveltia where to push commits
+backend:
+  name: github
+  repo: hryggrbyr/lograry # Important: Update this!
+  branch: main
+
+# 2. Media: Tell Sveltia where to save cover images
+# public/images/covers will show up as /images/covers in your Astro code
+media_folder: "public/images/covers"
+public_folder: "/images/covers"
+
+# 3. Content: Map your data fields
+collections:
+  - name: "books"
+    label: "Library"
+    folder: "src/content/books"
+    extension: "md" # or "mdx"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Subtitle", name: "subtitle", widget: "string", required: false }
+
+      - label: "Authors"
+        name: "author"
+        widget: "list"
+        field: { label: "Author Name", name: "name", widget: "string" }
+
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        field: { label: "Tag", name: "tag", widget: "string" }
+
+      - label: "Shelf"
+        name: "shelf"
+        widget: "select"
+        options: ["to-read", "reading", "read", "abandoned"]
+
+      - { label: "Owned?", name: "owned", widget: "boolean", default: false }
+
+      # Date handling: using YYYY-MM-DD for your smartDate compatibility
+      - { label: "Start Date", name: "start_date", widget: "datetime", format: "YYYY-MM-DD", time_format: false, required: false }
+      - { label: "End Date", name: "end_date", widget: "datetime", format: "YYYY-MM-DD", time_format: false, required: false }
+      - { label: "Published Date", name: "published", widget: "datetime", format: "YYYY-MM-DD", time_format: false, required: false }
+      - { label: "Created", name: "created", widget: "datetime", format: "YYYY-MM-DD", time_format: false, required: false }
+
+      - { label: "Rating", name: "rating", widget: "number", value_type: "int", min: 0, max: 5, required: false }
+      - { label: "Publisher", name: "publisher", widget: "string", required: false }
+      - { label: "Page Count", name: "page_count", widget: "number", value_type: "int", required: false }
+      - { label: "ISBN", name: "isbn", widget: "string", required: false }
+      - { label: "Cover URL", name: "coverUrl", widget: "string", required: false }
+
+      # Nested Object: Recommended By
+      - label: "Recommended By"
+        name: "recommended_by"
+        widget: "object"
+        required: false
+        fields:
+          - { label: "Name", name: "name", widget: "string", required: false }
+          - { label: "URL", name: "url", widget: "string", required: false }
+
+      - { label: "Review URL", name: "reviewUrl", widget: "string", required: false }
+      - { label: "Bookshop URL", name: "bookshopUrl", widget: "string", required: false }
+
+      # The Markdown body
+      - { label: "Notes/Review Body", name: "body", widget: "markdown" }

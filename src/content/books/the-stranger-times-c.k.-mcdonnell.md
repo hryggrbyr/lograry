@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Stranger Times
-subtitle: " "
+subtitle: null
 author:
   - C.K. McDonnell
 publisher:

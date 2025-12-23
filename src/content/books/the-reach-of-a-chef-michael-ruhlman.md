@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The reach of a chef
-subtitle: " "
+subtitle: null
 author:
   - Michael Ruhlman
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Galilee
-subtitle: " "
+subtitle: null
 author:
   - Clive Barker
 publisher:

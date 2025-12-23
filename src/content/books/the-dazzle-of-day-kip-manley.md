@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Dazzle of Day
-subtitle: " "
+subtitle: null
 author:
   - Kip Manley
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

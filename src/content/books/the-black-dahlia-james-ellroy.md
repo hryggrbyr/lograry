@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: The Black Dahlia
 subtitle: LA Quartet 1
 author:
@@ -36,4 +36,3 @@ _LA Quartet 1_
 | Started |  |
 | Finished | 2002-08-02T00:00:00.000+01:00 |
 | Rating | /5 |
-

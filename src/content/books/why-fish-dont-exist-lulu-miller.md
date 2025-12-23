@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Why Fish Don't Exist
-subtitle: " "
+subtitle: null
 author:
   - Lulu Miller
 publisher:

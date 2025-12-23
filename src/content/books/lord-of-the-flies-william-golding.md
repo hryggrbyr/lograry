@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Lord of the Flies
-subtitle: " "
+subtitle: null
 author:
   - William Golding
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: House of Many Ways
-subtitle: " "
+subtitle: null
 author:
   - Diana Wynne Jones
 publisher:

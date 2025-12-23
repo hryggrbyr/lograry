@@ -3,7 +3,7 @@ tags:
   - fantasy
   - dystopia
 title: Ombria in Shadow
-subtitle: " "
+subtitle: null
 author:
   - Patricia A. McKillip
 publisher:

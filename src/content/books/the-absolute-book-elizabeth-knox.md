@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Absolute Book
-subtitle: " "
+subtitle: null
 author:
   - Elizabeth Knox
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started | 2023-04-23T00:00:00.000+01:00 |
 | Finished | 2023-07-23T00:00:00.000+01:00 |
 | Rating | 3/5 |
-

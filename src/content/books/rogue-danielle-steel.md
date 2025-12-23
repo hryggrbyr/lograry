@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Rogue
-subtitle: " "
+subtitle: null
 author:
   - Danielle Steel
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

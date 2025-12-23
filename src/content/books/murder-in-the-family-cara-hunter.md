@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Murder in the Family
-subtitle: " "
+subtitle: null
 author:
   - Cara Hunter
 publisher:

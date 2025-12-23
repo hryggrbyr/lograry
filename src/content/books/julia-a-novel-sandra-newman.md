@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: "Julia: A Novel"
-subtitle: " "
+subtitle: null
 author:
   - Sandra Newman
 publisher:

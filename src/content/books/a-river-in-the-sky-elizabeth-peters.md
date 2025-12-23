@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: A River in the Sky
-subtitle: " "
+subtitle: null
 author:
   - Elizabeth Peters
 publisher:

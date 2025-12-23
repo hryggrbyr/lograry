@@ -4,7 +4,7 @@ tags:
   - fantasy
   - demons
 title: Village Library Demon Hunting Society
-subtitle: " "
+subtitle: null
 author:
   - C. M. Waggoner
 publisher:

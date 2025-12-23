@@ -3,7 +3,7 @@ tags:
   - supernatural
   - ghosts
 title: I Want to Go Home but I'm Already There
-subtitle: " "
+subtitle: null
 author:
   - Róisín Lanigan
 publisher:

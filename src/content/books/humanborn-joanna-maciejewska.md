@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Humanborn
-subtitle: " "
+subtitle: null
 author:
   - Joanna Maciejewska
 publisher:

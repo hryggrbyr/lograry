@@ -3,7 +3,7 @@ tags:
   - satire
   - thriller
 title: Snuff
-subtitle: " "
+subtitle: null
 author:
   - Chuck Palahniuk
 publisher: Doubleday

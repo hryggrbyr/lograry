@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Manhunt
-subtitle: " "
+subtitle: null
 author:
   - Gretchen Felker-Martin
 publisher:

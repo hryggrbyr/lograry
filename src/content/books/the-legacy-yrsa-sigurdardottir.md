@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The legacy
-subtitle: " "
+subtitle: null
 author:
   - Yrsa Sigurðardóttir
 publisher:

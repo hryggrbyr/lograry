@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Invisible Life of Addie LaRue
-subtitle: " "
+subtitle: null
 author:
   - V. E. Schwab
 publisher:

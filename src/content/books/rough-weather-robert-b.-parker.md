@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Rough weather
-subtitle: " "
+subtitle: null
 author:
   - Robert B. Parker
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

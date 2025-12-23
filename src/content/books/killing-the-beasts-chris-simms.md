@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Killing the Beasts
-subtitle: " "
+subtitle: null
 author:
   - Chris Simms
 publisher:

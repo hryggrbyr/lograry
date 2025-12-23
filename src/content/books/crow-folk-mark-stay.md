@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Crow Folk
-subtitle: " "
+subtitle: null
 author:
   - Mark Stay
 publisher:

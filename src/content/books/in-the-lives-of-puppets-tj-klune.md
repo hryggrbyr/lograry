@@ -2,7 +2,7 @@
 tags:
   - lgbt
 title: In the Lives of Puppets
-subtitle: " "
+subtitle: null
 author:
   - TJ Klune
 publisher:

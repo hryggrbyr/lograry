@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Mountain in the Sea
-subtitle: " "
+subtitle: null
 author:
   - Ray Nayler
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Dust
-subtitle: " "
+subtitle: null
 author:
   - Hugh Howey
 publisher:

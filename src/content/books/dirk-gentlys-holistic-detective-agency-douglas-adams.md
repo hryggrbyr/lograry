@@ -3,7 +3,7 @@ tags:
   - sci-fi
   - comedy
 title: Dirk Gently's Holistic Detective Agency
-subtitle: " "
+subtitle: null
 author:
   - Douglas Adams
 publisher:

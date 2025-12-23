@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Company
-subtitle: " "
+subtitle: null
 author:
   - Shannon Sanders
 publisher:

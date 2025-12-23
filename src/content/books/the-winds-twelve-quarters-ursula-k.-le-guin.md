@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Wind's Twelve Quarters
-subtitle: " "
+subtitle: null
 author:
   - Ursula K. Le Guin
 publisher:

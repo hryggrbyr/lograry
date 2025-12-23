@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: If Cats Disappeared from the World
-subtitle: " "
+subtitle: null
 author:
   - Genki Kawamura
 publisher:

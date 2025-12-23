@@ -8,7 +8,7 @@ tags:
   - HistoricalFantasy
   - england
 title: The Silence Factory
-subtitle: " "
+subtitle: null
 author:
   - Bridget Collins
 publisher:

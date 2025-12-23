@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Groosham Grange
-subtitle: " "
+subtitle: null
 author:
   - Anthony Horowitz
 publisher:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Child of Earth and Sky
-subtitle: " "
+subtitle: null
 author:
   - Menna Van Praag
 publisher:

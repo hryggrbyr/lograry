@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Mind's Eye
 subtitle: 
 author:

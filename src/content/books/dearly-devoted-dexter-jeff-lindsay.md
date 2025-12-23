@@ -5,7 +5,7 @@ tags:
   - america
   - SerialKiller
 title: Dearly Devoted Dexter
-subtitle: " "
+subtitle: null
 author:
   - Jeff Lindsay
 publisher:

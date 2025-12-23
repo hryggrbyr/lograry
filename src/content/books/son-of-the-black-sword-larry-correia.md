@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: Son of the Black Sword
 subtitle: Saga of the Forgotten Warrior
 author:
@@ -35,4 +35,3 @@ _Saga of the Forgotten Warrior_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

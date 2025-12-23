@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: BUTTER
-subtitle: " "
+subtitle: null
 author:
   - Asako Yuzuki
 publisher:

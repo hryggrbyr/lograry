@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Mask of Mirrors
-subtitle: " "
+subtitle: null
 author:
   - M. A. Carrick
 publisher:

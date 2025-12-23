@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: I Did It for You
-subtitle: " "
+subtitle: null
 author:
   - Amy Engel
 publisher:

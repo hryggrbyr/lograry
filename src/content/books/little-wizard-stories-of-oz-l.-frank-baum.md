@@ -3,7 +3,7 @@ tags:
   - fantasy
   - ParallelWorlds
 title: Little Wizard stories of Oz
-subtitle: " "
+subtitle: null
 author:
   - L. Frank Baum
 publisher:

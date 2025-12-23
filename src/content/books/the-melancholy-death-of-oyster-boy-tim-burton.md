@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Melancholy Death of Oyster Boy
-subtitle: " "
+subtitle: null
 author:
   - Tim Burton
 publisher:

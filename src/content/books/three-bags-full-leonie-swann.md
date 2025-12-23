@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Three Bags Full
-subtitle: " "
+subtitle: null
 author:
   - Leonie Swann
 publisher:

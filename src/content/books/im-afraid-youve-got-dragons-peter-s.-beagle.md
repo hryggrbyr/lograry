@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: I'm Afraid You've Got Dragons
-subtitle: " "
+subtitle: null
 author:
   - Peter S. Beagle
 publisher:

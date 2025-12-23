@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Convenience Store Woman
-subtitle: " "
+subtitle: null
 author:
   - Sayaka Murata
   - Ginny Tapley Takemori

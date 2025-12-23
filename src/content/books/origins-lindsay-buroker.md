@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Origins
-subtitle: " "
+subtitle: null
 author:
   - Lindsay Buroker
 publisher:

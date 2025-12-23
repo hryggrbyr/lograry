@@ -4,7 +4,7 @@ tags:
   - BlackComedy
   - DarkHumour
 title: Choke
-subtitle: " "
+subtitle: null
 author:
   - Chuck Palahniuk
 publisher: Doubleday

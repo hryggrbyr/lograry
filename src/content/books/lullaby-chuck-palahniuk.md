@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Lullaby
-subtitle: " "
+subtitle: null
 author:
   - Chuck Palahniuk
 publisher:

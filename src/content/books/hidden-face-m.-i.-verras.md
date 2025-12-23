@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Hidden Face
-subtitle: " "
+subtitle: null
 author:
   - M. I. Verras
 publisher:

@@ -3,7 +3,7 @@ tags:
   - sci-fi
   - horror
 title: Ascension
-subtitle: " "
+subtitle: null
 author:
   - Nicholas Binge
 publisher:

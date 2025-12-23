@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Rotten
-subtitle: " "
+subtitle: null
 author:
   - John Lydon
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished | 2003-08-02T00:00:00.000+01:00 |
 | Rating | /5 |
-

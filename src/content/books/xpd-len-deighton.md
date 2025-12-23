@@ -1,5 +1,5 @@
 ---
-tags: []
+tags:
 title: XPD
 subtitle: ""
 author:

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: About a Boy
-subtitle: " "
+subtitle: null
 author:
   - Nick Hornby
 publisher:

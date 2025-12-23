@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: "Suck less : where there's a Willam"
-subtitle: " "
+subtitle: null
 author:
   - Willam Belli
 publisher:
@@ -35,4 +35,3 @@ _ _
 | Started |  |
 | Finished | 2016-08-17T00:00:00.000+01:00 |
 | Rating | /5 |
-

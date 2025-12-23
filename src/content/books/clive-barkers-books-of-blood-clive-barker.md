@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Clive Barker's books of blood
-subtitle: " "
+subtitle: null
 author:
   - Clive Barker
 publisher:

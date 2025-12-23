@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The River Kings' Road
-subtitle: " "
+subtitle: null
 author:
   - Liane Merciel
 publisher:

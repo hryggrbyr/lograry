@@ -4,7 +4,7 @@ tags:
   - sci-fi
   - crime
 title: Bound in Blood
-subtitle: " "
+subtitle: null
 author:
   - Tarah Benner
 publisher:

@@ -3,7 +3,7 @@ tags:
   - horror
   - classic
 title: Picture of Dorian Gray
-subtitle: " "
+subtitle: null
 author:
   - Oscar Wilde
 publisher:
@@ -37,4 +37,3 @@ _ _
 | Started |  |
 | Finished | 1994-09-01T00:00:00.000+01:00 |
 | Rating | 3/5 |
-

@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Fascination
-subtitle: " "
+subtitle: null
 author:
   - Stephenie Meyer
 publisher:

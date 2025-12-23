@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: The Roanoke girls
-subtitle: " "
+subtitle: null
 author:
   - Amy Engel
 publisher:

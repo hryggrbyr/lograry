@@ -2,7 +2,7 @@
 tags:
   - sci-fi
 title: Last Gasp
-subtitle: " "
+subtitle: null
 author:
   - T. Hoyle
 publisher:

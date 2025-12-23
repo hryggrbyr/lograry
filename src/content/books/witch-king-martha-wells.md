@@ -1,7 +1,7 @@
 ---
-tags: []
+tags:
 title: Witch King
-subtitle: " "
+subtitle: null
 author:
   - Martha Wells
 publisher:
