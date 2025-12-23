@@ -1,5 +1,9 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
+import node from '@astrojs/node'; // or vercel/netlify adapter
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  output: 'server', // or 'hybrid'
+  adapter: node({
+    mode: 'standalone',
+  }),
+});
