@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Rage
 subtitle: ""
 author:

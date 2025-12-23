@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Congo
 subtitle: null
 author:

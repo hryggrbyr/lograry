@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Return of the Dancing Master
 subtitle: ""
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Babel
 subtitle: null
 author:

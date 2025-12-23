@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: City of Last Chances
 subtitle: null
 author:

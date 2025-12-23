@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Perfect Victim
 subtitle: null
 author:

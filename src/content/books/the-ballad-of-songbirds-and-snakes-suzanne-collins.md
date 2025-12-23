@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Ballad of Songbirds and Snakes
 subtitle: null
 author:

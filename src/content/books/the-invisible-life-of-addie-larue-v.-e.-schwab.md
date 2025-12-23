@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Invisible Life of Addie LaRue
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Lancashire folk tales
 subtitle: null
 author:

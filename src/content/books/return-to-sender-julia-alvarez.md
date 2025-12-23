@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Return to Sender
 subtitle: null
 author:

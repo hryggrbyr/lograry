@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Accident Man
 subtitle: null
 author:

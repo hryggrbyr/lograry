@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: I Am Legend
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Sleepyhead
 subtitle: A Tom Thorne Novel
 author:

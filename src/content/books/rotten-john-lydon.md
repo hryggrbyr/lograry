@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Rotten
 subtitle: null
 author:

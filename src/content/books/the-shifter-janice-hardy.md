@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Shifter
 subtitle: null
 author:

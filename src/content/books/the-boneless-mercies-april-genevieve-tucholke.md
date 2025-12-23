@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Boneless Mercies
 subtitle: null
 author:

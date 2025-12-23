@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Skull
 subtitle: null
 author:

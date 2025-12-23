@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Riding rockets
 subtitle: null
 author:

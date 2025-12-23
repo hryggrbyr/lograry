@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Child of Earth and Sky
 subtitle: null
 author:

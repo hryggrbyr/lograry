@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Convenience Store Woman
 subtitle: null
 author:

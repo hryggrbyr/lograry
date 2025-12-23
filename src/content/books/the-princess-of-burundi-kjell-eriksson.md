@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Princess of Burundi
 subtitle: null
 author:

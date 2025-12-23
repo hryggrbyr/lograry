@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Mask of Mirrors
 subtitle: null
 author:

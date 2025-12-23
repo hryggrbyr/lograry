@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Dragon Tear
 subtitle: null
 author:

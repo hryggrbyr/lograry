@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Jurassic Park
 subtitle: null
 author:

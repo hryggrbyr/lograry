@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Shibumi
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Yesterday's Spy
 subtitle: ""
 author:

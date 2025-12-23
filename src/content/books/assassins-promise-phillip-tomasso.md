@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Assassin's Promise
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Alice
 subtitle: The Chronicles of Alice 1
 author:

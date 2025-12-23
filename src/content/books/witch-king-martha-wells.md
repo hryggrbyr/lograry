@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Witch King
 subtitle: null
 author:

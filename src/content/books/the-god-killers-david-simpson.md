@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The God Killers
 subtitle: null
 author:

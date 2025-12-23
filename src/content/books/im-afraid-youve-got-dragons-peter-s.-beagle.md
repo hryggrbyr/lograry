@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: I'm Afraid You've Got Dragons
 subtitle: null
 author:

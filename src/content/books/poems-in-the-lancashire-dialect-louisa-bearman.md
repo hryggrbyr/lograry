@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Poems in the Lancashire Dialect
 subtitle: null
 author:

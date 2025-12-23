@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: House of Many Ways
 subtitle: null
 author:

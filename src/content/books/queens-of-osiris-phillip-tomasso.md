@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Queens Of Osiris
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Future Indefinite
 subtitle: null
 author:

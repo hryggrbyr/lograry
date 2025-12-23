@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Looking for Alaska
 subtitle: null
 author:

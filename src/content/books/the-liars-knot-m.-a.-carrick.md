@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Liar's Knot
 subtitle: null
 author:

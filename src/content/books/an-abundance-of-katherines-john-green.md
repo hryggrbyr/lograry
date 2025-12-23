@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: An Abundance of Katherines
 subtitle: null
 author:

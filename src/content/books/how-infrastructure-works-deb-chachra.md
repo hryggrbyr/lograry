@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: How Infrastructure Works
 subtitle: null
 author:

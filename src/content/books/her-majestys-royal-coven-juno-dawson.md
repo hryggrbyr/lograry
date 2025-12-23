@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Her Majesty's Royal Coven
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Roadside Picnic
 subtitle: null
 author:

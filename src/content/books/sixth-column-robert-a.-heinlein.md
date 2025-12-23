@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Sixth column
 subtitle: null
 author:

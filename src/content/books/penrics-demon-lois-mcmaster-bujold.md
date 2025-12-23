@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Penric's Demon
 subtitle: ""
 author:

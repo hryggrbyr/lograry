@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Runaway Jury
 subtitle: null
 author:

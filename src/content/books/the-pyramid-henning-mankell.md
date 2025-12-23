@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Pyramid
 subtitle: ""
 author:

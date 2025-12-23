@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: We Sold Our Souls
 subtitle: null
 author:

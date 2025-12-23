@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Daniel
 subtitle: ""
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Green Man's Heir
 subtitle: null
 author:

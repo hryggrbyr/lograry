@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Faith
 subtitle: null
 author:

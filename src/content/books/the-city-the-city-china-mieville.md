@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The City & The City
 subtitle: null
 author:

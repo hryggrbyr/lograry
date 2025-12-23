@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Clive Barker's books of blood
 subtitle: null
 author:

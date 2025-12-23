@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Stranger
 subtitle: null
 author:

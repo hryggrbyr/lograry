@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Sam and the Sea Witch
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The reach of a chef
 subtitle: null
 author:

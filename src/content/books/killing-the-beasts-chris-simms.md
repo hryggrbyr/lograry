@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Killing the Beasts
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Revelations
 subtitle: null
 author:

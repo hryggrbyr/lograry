@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Blood Ties
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Shining
 subtitle: null
 author:

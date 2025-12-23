@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Queen of the High Fields
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The River
 subtitle: null
 author:

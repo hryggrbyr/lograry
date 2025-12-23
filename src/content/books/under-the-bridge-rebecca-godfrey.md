@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Under the Bridge
 subtitle: null
 author:

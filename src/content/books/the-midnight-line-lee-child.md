@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Midnight Line
 subtitle: null
 author:

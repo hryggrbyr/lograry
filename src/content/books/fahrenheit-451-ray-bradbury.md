@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Fahrenheit 451
 subtitle: null
 author:

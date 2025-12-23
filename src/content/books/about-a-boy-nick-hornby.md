@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: About a Boy
 subtitle: null
 author:

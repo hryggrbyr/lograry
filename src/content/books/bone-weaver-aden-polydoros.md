@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Bone Weaver
 subtitle: null
 author:

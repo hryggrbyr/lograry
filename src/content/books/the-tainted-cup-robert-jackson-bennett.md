@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Tainted Cup
 subtitle: null
 author:

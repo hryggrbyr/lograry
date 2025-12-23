@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Don't Panic
 subtitle: null
 author:

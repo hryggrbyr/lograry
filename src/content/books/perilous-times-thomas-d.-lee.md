@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Perilous Times
 subtitle: null
 author:

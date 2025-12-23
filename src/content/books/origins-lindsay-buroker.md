@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Origins
 subtitle: null
 author:

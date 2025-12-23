@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Treacherous Paradise
 subtitle: ""
 author:

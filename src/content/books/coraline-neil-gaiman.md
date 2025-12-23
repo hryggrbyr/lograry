@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Coraline
 subtitle: null
 author:

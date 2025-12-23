@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Arctic chill
 subtitle: null
 author:

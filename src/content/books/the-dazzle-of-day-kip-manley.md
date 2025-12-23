@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Dazzle of Day
 subtitle: null
 author:

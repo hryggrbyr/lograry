@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Tea with the Black Dragon
 subtitle: null
 author:

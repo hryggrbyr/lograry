@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Labyrinth's Heart
 subtitle: null
 author:

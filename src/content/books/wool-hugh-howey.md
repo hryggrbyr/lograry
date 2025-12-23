@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Wool
 subtitle: null
 author:

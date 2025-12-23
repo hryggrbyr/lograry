@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Earthlings
 subtitle: ""
 author:

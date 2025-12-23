@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Green Millennium
 subtitle: null
 author:

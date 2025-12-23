@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Red Rising
 subtitle: null
 author:

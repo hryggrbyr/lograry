@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Killer Book of Cold Cases
 subtitle: null
 author:

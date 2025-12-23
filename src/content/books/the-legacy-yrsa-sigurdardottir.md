@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The legacy
 subtitle: null
 author:

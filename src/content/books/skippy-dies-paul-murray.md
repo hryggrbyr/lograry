@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Skippy Dies
 subtitle: null
 author:

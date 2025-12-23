@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Heart of Darkness
 subtitle: null
 author:

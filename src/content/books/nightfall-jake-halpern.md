@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Nightfall
 subtitle: null
 author:

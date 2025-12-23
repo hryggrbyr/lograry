@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Rogue
 subtitle: null
 author:

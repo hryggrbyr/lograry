@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Man in the High Castle
 subtitle: null
 author:

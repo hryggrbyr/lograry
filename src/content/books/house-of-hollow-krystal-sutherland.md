@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: House of Hollow
 subtitle: null
 author:

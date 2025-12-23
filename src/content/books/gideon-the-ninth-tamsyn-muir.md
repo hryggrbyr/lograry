@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Gideon the Ninth
 subtitle: null
 author:

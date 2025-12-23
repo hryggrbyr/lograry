@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Handmaid's Tale
 subtitle: null
 author:

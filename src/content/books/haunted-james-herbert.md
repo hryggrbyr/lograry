@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Haunted
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Realm Breaker
 subtitle: Realm Breaker 1
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Undead Mr. Tenpenny
 subtitle: null
 author:

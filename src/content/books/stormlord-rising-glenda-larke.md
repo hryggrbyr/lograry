@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Stormlord Rising
 subtitle: Stormlord 2
 author:

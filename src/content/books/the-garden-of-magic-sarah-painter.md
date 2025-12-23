@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Garden of Magic
 subtitle: ""
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Sarah
 subtitle: null
 author:

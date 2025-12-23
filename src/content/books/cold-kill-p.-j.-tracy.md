@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Cold kill
 subtitle: null
 author:

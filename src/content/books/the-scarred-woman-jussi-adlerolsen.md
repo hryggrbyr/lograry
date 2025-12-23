@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Scarred Woman
 subtitle: ""
 author:

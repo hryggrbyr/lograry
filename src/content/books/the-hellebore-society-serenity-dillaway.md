@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Hellebore Society
 subtitle: null
 author:

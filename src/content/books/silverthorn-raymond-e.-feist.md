@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Silverthorn
 subtitle: The Riftwar Saga 2
 author:

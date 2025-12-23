@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Power
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Girl Who Played with Fire
 subtitle: Millennium 2
 author:

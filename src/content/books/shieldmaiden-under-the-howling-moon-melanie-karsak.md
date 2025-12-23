@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: "Shield-Maiden: Under The Howling Moon"
 subtitle: The Road to Valhalla Book 1
 author:

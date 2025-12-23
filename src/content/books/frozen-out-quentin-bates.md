@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Frozen Out
 subtitle: null
 author:

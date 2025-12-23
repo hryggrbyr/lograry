@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Shadow of a Dark Queen
 subtitle: Serpentwar Saga
 author:

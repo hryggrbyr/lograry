@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Priory of the Orange Tree
 subtitle: null
 author:

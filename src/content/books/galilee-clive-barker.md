@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Galilee
 subtitle: null
 author:

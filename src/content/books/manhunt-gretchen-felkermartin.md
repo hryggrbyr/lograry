@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Manhunt
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Trouble with lichen
 subtitle: null
 author:

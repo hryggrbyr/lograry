@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Kalyna the Soothsayer
 subtitle: null
 author:

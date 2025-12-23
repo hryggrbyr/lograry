@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Rise and Fall of a Dragon King
 subtitle: null
 author:

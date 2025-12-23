@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Darkness
 subtitle: null
 author:

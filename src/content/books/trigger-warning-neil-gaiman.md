@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Trigger Warning
 subtitle: null
 author:

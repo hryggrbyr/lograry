@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Golden son
 subtitle: null
 author:

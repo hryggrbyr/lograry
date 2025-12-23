@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Swords of Lankhmar
 subtitle: null
 author:

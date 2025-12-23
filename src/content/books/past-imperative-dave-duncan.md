@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Past Imperative
 subtitle: null
 author:

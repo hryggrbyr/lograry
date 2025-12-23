@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: A River in the Sky
 subtitle: null
 author:

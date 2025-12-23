@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Scrum
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Dictionary of Lost Words
 subtitle: null
 author:

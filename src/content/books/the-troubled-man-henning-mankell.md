@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Troubled Man
 subtitle: ""
 author:

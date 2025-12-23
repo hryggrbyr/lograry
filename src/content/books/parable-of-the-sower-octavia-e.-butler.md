@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Parable of the Sower
 subtitle: null
 author:

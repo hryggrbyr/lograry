@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Shades of Grey
 subtitle: null
 author:

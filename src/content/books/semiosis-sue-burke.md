@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Semiosis
 subtitle: Semiosis Duology
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Three Bags Full
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Sword of Kaigen
 subtitle: null
 author:

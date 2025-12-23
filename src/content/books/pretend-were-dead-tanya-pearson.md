@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Pretend We're Dead
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Was
 subtitle: null
 author:

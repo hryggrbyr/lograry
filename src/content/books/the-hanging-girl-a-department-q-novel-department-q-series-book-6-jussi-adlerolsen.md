@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Hanging Girl
 subtitle: Department Q 6
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Ward Witch
 subtitle: null
 author:

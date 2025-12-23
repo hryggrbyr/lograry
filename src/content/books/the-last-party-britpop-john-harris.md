@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: "The Last Party: Britpop"
 subtitle: null
 author:

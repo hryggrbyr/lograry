@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Pride and Prejudice
 subtitle: null
 author:

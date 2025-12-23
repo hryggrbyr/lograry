@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Seven Deaths of Evelyn Hardcastle
 subtitle: null
 author:

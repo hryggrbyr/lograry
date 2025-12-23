@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Charmed Life
 subtitle: null
 author:

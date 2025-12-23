@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Days of Magic
 subtitle: The Book of Hours 2
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Mermaid
 subtitle: null
 author:

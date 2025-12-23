@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Fascination
 subtitle: null
 author:

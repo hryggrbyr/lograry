@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Murder in the Family
 subtitle: null
 author:

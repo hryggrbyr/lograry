@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Lord of the Flies
 subtitle: null
 author:

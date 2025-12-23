@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Groosham Grange
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Hidden Face
 subtitle: null
 author:

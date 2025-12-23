@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Hundred Thousand Kingdoms
 subtitle: null
 author:

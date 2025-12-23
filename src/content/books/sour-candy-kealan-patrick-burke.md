@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Sour Candy
 subtitle: null
 author:

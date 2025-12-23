@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Anvil of Stars
 subtitle: null
 author:

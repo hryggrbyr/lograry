@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Skypoint
 subtitle: null
 author:

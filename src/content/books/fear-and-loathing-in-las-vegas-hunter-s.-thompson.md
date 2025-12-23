@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Fear and Loathing in Las Vegas
 subtitle: null
 author:

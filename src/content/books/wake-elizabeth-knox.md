@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Wake
 subtitle: null
 author:

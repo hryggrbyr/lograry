@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Harrow the Ninth
 subtitle: null
 author:

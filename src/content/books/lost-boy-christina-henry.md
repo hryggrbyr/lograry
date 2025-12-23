@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Lost Boy
 subtitle: null
 author:

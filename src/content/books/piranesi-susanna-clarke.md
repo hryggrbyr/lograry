@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Piranesi
 subtitle: ""
 author:

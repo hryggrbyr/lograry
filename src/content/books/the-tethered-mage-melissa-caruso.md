@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Tethered Mage
 subtitle: null
 author:

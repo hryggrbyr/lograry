@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Things We Lost in the Fire
 subtitle: null
 author:

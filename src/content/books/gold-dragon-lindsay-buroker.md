@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Gold Dragon
 subtitle: null
 author:

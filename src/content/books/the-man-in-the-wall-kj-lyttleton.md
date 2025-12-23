@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Man In The Wall
 subtitle: null
 author:

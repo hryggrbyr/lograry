@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Man Who Smiled
 subtitle: Kurt Wallander 4
 author:

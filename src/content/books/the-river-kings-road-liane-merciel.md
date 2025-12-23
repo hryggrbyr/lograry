@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The River Kings' Road
 subtitle: null
 author:

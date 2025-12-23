@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Robot Visions
 subtitle: null
 author:

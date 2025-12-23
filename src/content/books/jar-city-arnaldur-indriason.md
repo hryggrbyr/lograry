@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Jar city
 subtitle: null
 author:

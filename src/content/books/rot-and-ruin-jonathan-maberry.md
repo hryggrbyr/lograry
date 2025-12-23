@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Rot and Ruin
 subtitle: null
 author:

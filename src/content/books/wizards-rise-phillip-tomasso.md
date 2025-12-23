@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Wizard's Rise
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: "&ldquo;Wake Up&hellip;&rdquo;"
 subtitle: null
 author:

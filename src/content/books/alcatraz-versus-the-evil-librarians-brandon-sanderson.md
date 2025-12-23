@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Alcatraz Versus the Evil Librarians
 subtitle: Alcatraz 1
 author:

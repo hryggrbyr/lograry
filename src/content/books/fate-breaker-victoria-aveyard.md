@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Fate Breaker
 subtitle: null
 author:

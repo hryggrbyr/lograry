@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: "Julia: A Novel"
 subtitle: null
 author:

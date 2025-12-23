@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Trust Kids!
 subtitle: null
 author:

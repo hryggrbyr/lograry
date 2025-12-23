@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Girl Who Kicked the Hornet's Nest
 subtitle: Millennium 3
 author:

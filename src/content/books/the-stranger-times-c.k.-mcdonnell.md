@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Stranger Times
 subtitle: null
 author:

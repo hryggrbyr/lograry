@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: "Abarat: Absolute Midnight"
 subtitle: null
 author:

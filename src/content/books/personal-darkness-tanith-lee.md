@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Personal Darkness
 subtitle: null
 author:

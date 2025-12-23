@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: To Kill a Mockingbird
 subtitle: null
 author:

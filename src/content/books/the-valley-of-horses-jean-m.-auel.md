@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Valley of Horses
 subtitle: Earth's Children 2
 author:

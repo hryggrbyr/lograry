@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Strong Female Character
 subtitle: null
 author:

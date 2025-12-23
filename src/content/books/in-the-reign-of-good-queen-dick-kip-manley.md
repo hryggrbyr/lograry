@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: In the Reign of Good Queen Dick
 subtitle: null
 author:

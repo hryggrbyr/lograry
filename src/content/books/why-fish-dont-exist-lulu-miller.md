@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Why Fish Don't Exist
 subtitle: null
 author:

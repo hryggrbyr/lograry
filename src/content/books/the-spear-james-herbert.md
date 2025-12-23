@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Spear
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Stark
 subtitle: null
 author:

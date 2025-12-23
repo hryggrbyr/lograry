@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Absent One
 subtitle: Department Q
 author:

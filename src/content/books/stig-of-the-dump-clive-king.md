@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Stig of the Dump
 subtitle: null
 author:

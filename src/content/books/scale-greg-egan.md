@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Scale
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Lady in the Lake
 subtitle: null
 author:

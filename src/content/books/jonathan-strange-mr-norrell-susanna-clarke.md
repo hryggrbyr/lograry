@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Jonathan Strange & Mr Norrell
 subtitle: null
 author:

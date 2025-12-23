@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Wind's Twelve Quarters
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Wizard's War
 subtitle: null
 author:

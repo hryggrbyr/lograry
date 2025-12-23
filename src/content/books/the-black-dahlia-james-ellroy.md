@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Black Dahlia
 subtitle: LA Quartet 1
 author:

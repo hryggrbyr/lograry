@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: A Song of Storm and Shadow
 subtitle: null
 author:

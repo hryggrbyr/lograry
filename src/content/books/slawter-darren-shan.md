@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Slawter
 subtitle: null
 author:

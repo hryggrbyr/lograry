@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Holiday Haunting at the Biltmore
 subtitle: null
 author:

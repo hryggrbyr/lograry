@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Ninth House
 subtitle: null
 author:

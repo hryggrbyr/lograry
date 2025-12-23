@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Absolute Book
 subtitle: null
 author:

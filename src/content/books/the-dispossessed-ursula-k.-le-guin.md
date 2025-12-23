@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Dispossessed
 subtitle: ""
 author:

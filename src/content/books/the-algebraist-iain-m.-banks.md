@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Algebraist
 subtitle: null
 author:

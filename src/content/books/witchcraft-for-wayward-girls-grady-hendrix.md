@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Witchcraft for Wayward Girls
 subtitle: ""
 author:

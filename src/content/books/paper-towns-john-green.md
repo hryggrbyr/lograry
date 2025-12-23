@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Paper Towns
 subtitle: null
 author:

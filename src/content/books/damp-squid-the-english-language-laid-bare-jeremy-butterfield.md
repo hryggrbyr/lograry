@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: "Damp Squid: The English Language Laid Bare"
 subtitle: null
 author:

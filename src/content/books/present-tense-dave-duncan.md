@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Present Tense
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Ghost Ship
 subtitle: null
 author:

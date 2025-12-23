@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Elven Fury
 subtitle: null
 author:

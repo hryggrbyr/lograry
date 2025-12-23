@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Eye of Truth
 subtitle: Agents of the Crown
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Warrior Mage
 subtitle: null
 author:

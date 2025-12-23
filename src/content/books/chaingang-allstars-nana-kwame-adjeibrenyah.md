@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Chain-Gang All-Stars
 subtitle: null
 author:

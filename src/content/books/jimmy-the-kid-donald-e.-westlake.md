@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Jimmy the kid
 subtitle: null
 author:

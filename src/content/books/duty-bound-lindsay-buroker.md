@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Duty Bound
 subtitle: null
 author:

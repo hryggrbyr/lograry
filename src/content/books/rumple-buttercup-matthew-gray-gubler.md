@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Rumple Buttercup
 subtitle: null
 author:

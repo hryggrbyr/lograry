@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: My soul to take
 subtitle: null
 author:

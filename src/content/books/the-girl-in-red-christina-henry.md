@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Girl in Red
 subtitle: null
 author:

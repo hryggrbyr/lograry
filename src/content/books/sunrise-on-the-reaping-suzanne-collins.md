@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Sunrise on the Reaping
 subtitle: null
 author:

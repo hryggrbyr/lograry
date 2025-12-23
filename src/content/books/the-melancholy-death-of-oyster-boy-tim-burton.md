@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: The Melancholy Death of Oyster Boy
 subtitle: null
 author:

@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Séances Are for Suckers
 subtitle: null
 author:

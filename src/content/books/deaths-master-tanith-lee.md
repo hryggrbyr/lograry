@@ -1,5 +1,5 @@
 ---
-tags:
+tags: []
 title: Death's Master
 subtitle: null
 author:
