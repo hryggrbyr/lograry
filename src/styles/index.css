@@ -15,15 +15,15 @@
   --color-rating: hsl(45, 100%, 50%);
 
   /* Typography */
-  --font-typewriter: "SUSE Mono", "Courier New", monospace;
+  --font-typewriter: "Special Elite", "Courier New", monospace;
   --font-handwritten: "Comico", cursive; /* Replace with your chosen font */
 
   /* Layout */
-  --lh: 1.66;
+  --rlh: 1.5;
   font-family: var(--font-typewriter);
-  line-height: var(--lh);
+  line-height: var(--rlh);
   font-weight: 300;
-  font-size: 150%;
+  font-size: 125%;
 
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -39,9 +39,9 @@ body {
       2rem 0,
     repeating-linear-gradient(
       transparent,
-      transparent calc(var(--lh) * 1rem - 1px),
-      var(--color-line) calc(var(--lh) * 1rem - 1px),
-      var(--color-line) calc(var(--lh) * 1rem)
+      transparent calc(var(--rlh) * 1rem - 1px),
+      var(--color-line) calc(var(--rlh) * 1rem - 1px),
+      var(--color-line) calc(var(--rlh) * 1rem)
     );
   background-attachment: local;
 }
@@ -54,20 +54,29 @@ body {
   font-size: 1rem;
 }
 
-em {
-  font-style: normal;
+h1 {
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  margin-block: 2rlh;
+  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.7),
+    /* Cyan shadow (left) */ 1px 0px 0px rgba(100, 100, 100, 0.7); /* Red shadow (right) */
+}
+
+h1::before,
+h1::after {
+  content: "===";
   display: inline-block;
-  padding: 0.2em 0.6em;
-  border: 2px solid var(--accent-color, #ff00ff);
+  margin-inline: 2ch;
+}
 
-  /* Each corner has two values (horizontal/vertical) to create "wobble" */
-  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+h2 {
+  text-transform: uppercase;
+}
 
-  /* Slight tilt for that human touch */
-  transform: rotate(-1deg);
-
-  /* Variable thickness effect */
-  border-width: 2px 3px 2px 4px;
+[rel="home"] {
+  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.7),
+    1px 0px 0px rgba(100, 100, 100, 0.7);
 }
 
 .wrapper {
@@ -76,16 +85,16 @@ em {
 }
 
 .gutters {
-  padding-inline-start: clamp(3rem, 5vw, 5rem);
-  padding-inline-end: clamp(1rem, 5vw, 5rem);
+  padding-inline-start: clamp(3rlh, 5vw, 5rlh);
+  padding-inline-end: clamp(1rlh, 5vw, 5rlh);
 }
 
 .flow > * + * {
-  margin-block-start: var(--flow-gap, 2lh);
+  margin-block-start: var(--flow-gap, 2rlh);
 }
 
 .flow > :is(h1, h2, h3, h4, h5, h6) + * {
-  --flow-gap: 1lh;
+  --flow-gap: 1rlh;
 }
 
 .text-handwriting {
@@ -137,7 +146,7 @@ em {
   background-color: var(--color-paper);
   border: 1px solid var(--color-border);
   border-radius: 2px;
-  padding: 1lh;
+  padding: 2rlh;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   position: relative;
 }
@@ -158,7 +167,7 @@ em {
 .card-image img {
   width: 100%;
   min-width: 150px;
-  max-height: 7lh;
+  max-height: 7rlh;
   object-fit: contain;
   display: block;
   position: relative;
@@ -198,7 +207,37 @@ em {
 }
 
 .filter-btn {
+  --border-color: transparent;
+  appearance: none;
+  background: none;
   font-size: 0.75rem;
-  padding: 0.5lh 2ch;
+  padding: 0 1ch;
   text-transform: uppercase;
+  line-height: 1rlh;
+  border-style: solid;
+  border-color: var(--border-color, #ff00ff);
+  border-radius: 255px 15px 225px 15px / 15px 225px 15px 255px;
+  border-width: 2px 3px 2px 4px;
+}
+
+.filter-btn.active {
+  --border-color: var(--color-handwriting);
+}
+
+.page-section > header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rlh;
+  align-items: center;
+  justify-content: center;
+  padding-block: 1rlh;
+}
+
+.page-section > header > * {
+  flex-basis: fit-content;
+}
+
+.page-section > header > h2 {
+  flex-grow: 999;
 }

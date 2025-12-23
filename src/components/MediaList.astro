@@ -15,7 +15,7 @@ const components = {
 };
 
 const { items } = Astro.props;
-const shelves = [...new Set(items.map(x => x.data.shelf))];
+const shelves = [...new Set(items.map(x => x.data.shelf))].sort();
 // Sort by sort_title alphabetically (A-Z)
 // We use localeCompare to handle numbers and special characters correctly
 const sortedItems = [...items].sort((a, b) => {
