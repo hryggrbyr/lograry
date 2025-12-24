@@ -1,13 +1,13 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection } from "astro:content";
 
-const allBooks = await getCollection('books');
+const allBooks = await getCollection("books");
 const currentYear = new Date().getFullYear();
 const startYear = 1986;
 
 // 1. Filter only 'read' books and those with valid end_dates
-const readBooks = allBooks.filter(book =>
-  book.data.shelf === 'read' && book.data.end_date
+const readBooks = allBooks.filter(
+  (book) => book.data.shelf === "read" && book.data.end_date,
 );
 
 // 2. Initialize the map
@@ -17,10 +17,10 @@ for (let y = startYear; y <= currentYear; y++) {
 }
 
 // 3. Populate the map
-readBooks.forEach(book => {
+readBooks.forEach((book) => {
   const date = new Date(book.data.end_date);
   const year = date.getFullYear();
-  console.log('>>>', date)
+  console.log(">>>", date);
 
   if (yearMap.has(year)) {
     yearMap.set(year, yearMap.get(year) + 1);
@@ -37,18 +37,21 @@ const padding = 20;
 
 // 5. Generate Points (Fixing the Y-axis calculation)
 // If maxCount is 0 (no books read), we set y to the bottom of the graph.
-const points = data.map((count, i) => {
-  const x = (i / (data.length - 1)) * (width - padding * 2) + padding;
+const points = data
+  .map((count, i) => {
+    const x = (i / (data.length - 1)) * (width - padding * 2) + padding;
 
-  // Calculate Y: Invert it because SVG 0 is at the top
-  // We use (height - padding) as the baseline (bottom)
-  const usableHeight = height - padding * 2;
-  const y = maxCount > 0
-    ? (height - padding) - ((count / maxCount) * usableHeight)
-    : height - padding;
+    // Calculate Y: Invert it because SVG 0 is at the top
+    // We use (height - padding) as the baseline (bottom)
+    const usableHeight = height - padding * 2;
+    const y =
+      maxCount > 0
+        ? height - padding - (count / maxCount) * usableHeight
+        : height - padding;
 
-  return `${x},${y}`;
-}).join(' ');
+    return `${x},${y}`;
+  })
+  .join(" ");
 ---
 
 <div class="stats-container">
@@ -61,21 +64,27 @@ const points = data.map((count, i) => {
     </div>
   </div>
 
-  <svg viewBox={`0 0 ${width} ${height}`} preserveAspectRatio="none" class="graph-svg">
+  <svg
+    viewBox={`0 0 ${width} ${height}`}
+    preserveAspectRatio="none"
+    class="graph-svg"
+  >
     <defs>
       <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-        <feGaussianBlur stdDeviation="3" result="blur" />
-        <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        <feGaussianBlur stdDeviation="3" result="blur"></feGaussianBlur>
+        <feComposite in="SourceGraphic" in2="blur" operator="over"
+        ></feComposite>
       </filter>
     </defs>
 
     <line
-      x1={padding} y1={height - padding}
-      x2={width - padding} y2={height - padding}
+      x1={padding}
+      y1={height - padding}
+      x2={width - padding}
+      y2={height - padding}
       stroke="var(--accent-100)"
       stroke-width="1"
-      stroke-opacity="0.2"
-    />
+      stroke-opacity="0.2"></line>
 
     <polyline
       fill="none"
@@ -84,8 +93,7 @@ const points = data.map((count, i) => {
       stroke-linecap="round"
       stroke-linejoin="round"
       points={points}
-      filter="url(#glow)"
-    />
+      filter="url(#glow)"></polyline>
   </svg>
 </div>
 
@@ -98,10 +106,13 @@ const points = data.map((count, i) => {
   .graph-header :not(h3) {
     font-size: 0.8em;
   }
-  .divider { margin: 0 0.5rem; opacity: 0.3; }
+  .divider {
+    margin: 0 0.5rem;
+    opacity: 0.3;
+  }
   .graph-svg {
     width: 100%;
-    height: 120px; /* Force a height for visibility */
+    height: 10rlh; /* Force a height for visibility */
     overflow: visible;
   }
 </style>
