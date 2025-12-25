@@ -68,23 +68,9 @@
 
     <script is:inline>
       CMS.registerPreviewStyle("/admin/preview.css");
-
-      // Handle the GitHub authentication callback
-      if (window.location.hash.includes("token")) {
-        // This is the Sveltia/Decap CMS way of handling the redirect
-        const authCallback = (window.netlifyIdentity || {}).on || (() => {});
-        authCallback("login", { token: window.location.hash.split("=")[1] });
-      }
     </script>
 
     <script>
-      // Sveltia CMS Identity for GitHub OAuth
-      if (window.location.hostname === "localhost") {
-        const script = document.createElement("script");
-        script.src =
-          "https://identity.netlify.com/v1/netlify-identity-widget.js";
-        document.head.append(script);
-      }
       document.getElementById("search-btn").onclick = async () => {
         const query = document.getElementById("query").value;
         const status = document.getElementById("status");
