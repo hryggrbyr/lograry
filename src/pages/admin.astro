@@ -1,6 +1,7 @@
 ---
 /* src/pages/admin.astro */
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,32 +10,70 @@
     <link href="/admin/config.yml" type="text/yaml" rel="shortcut config" />
     <style>
       #quick-capture {
-        position: fixed; top: 0; left: 0; right: 0; z-index: 9999;
-        background: #1a1a1a; color: #eee; padding: 10px 20px;
-        display: flex; gap: 10px; align-items: center;
-        border-bottom: 1px solid #333; font-family: system-ui, sans-serif;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        background: #1a1a1a;
+        color: #eee;
+        padding: 10px 20px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border-bottom: 1px solid #333;
+        font-family: system-ui, sans-serif;
       }
-      input { background: #000; border: 1px solid #444; color: #fff; padding: 6px 12px; border-radius: 4px; flex-grow: 1; }
-      button { background: #3b82f6; color: white; border: none; padding: 6px 15px; border-radius: 4px; cursor: pointer; font-weight: bold; }
-      button:hover { background: #2563eb; }
-      #status { font-size: 0.8rem; min-width: 150px; }
+      input {
+        background: #000;
+        border: 1px solid #444;
+        color: #fff;
+        padding: 6px 12px;
+        border-radius: 4px;
+        flex-grow: 1;
+      }
+      button {
+        background: #3b82f6;
+        color: white;
+        border: none;
+        padding: 6px 15px;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      button:hover {
+        background: #2563eb;
+      }
+      #status {
+        font-size: 0.8rem;
+        min-width: 150px;
+      }
     </style>
   </head>
   <body>
     <div id="quick-capture">
       <span>🚀 Quick Capture:</span>
-      <input type="text" id="query" placeholder="Search Title, Author, or ISBN..." />
+      <input
+        type="text"
+        id="query"
+        placeholder="Search Title, Author, or ISBN..."
+      />
       <button id="search-btn">Search & Copy</button>
       <div id="status">Ready</div>
     </div>
 
-    <script is:inline src="https://unpkg.com/@sveltia/cms@latest/dist/sveltia-cms.js"></script>
+    <script
+      is:inline
+      src="https://unpkg.com/@sveltia/cms@latest/dist/sveltia-cms.js"></script>
+
+    <script is:inline>
+      CMS.registerPreviewStyle("/admin/preview.css");
+    </script>
 
     <script>
-
-      document.getElementById('search-btn').onclick = async () => {
-        const query = document.getElementById('query').value;
-        const status = document.getElementById('status');
+      document.getElementById("search-btn").onclick = async () => {
+        const query = document.getElementById("query").value;
+        const status = document.getElementById("status");
         if (!query) return;
 
         status.innerText = "Searching Open Library...";
@@ -57,18 +96,20 @@
               publisher: book.publisher?.[0] || "",
               page_count: book.number_of_pages_median || null,
               isbn: book.isbn?.[0] || "",
-              coverUrl: book.cover_i ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg` : "",
-              shelf: "to-read" // Default for new captures
+              coverUrl: book.cover_i
+                ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`
+                : "",
+              shelf: "to-read", // Default for new captures
             };
 
             // Format as YAML-ready string
             const yamlString = Object.entries(capture)
               .map(([key, val]) => `${key}: ${JSON.stringify(val)}`)
-              .join('\n');
+              .join("\n");
 
             await navigator.clipboard.writeText(yamlString);
             status.innerText = "✓ Found & Copied YAML!";
-            document.getElementById('query').value = ""; // Clear input
+            document.getElementById("query").value = ""; // Clear input
           } else {
             status.innerText = "❌ No results found.";
           }

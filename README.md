@@ -1,43 +1,97 @@
-# Astro Starter Kit: Minimal
+# Lograry
 
-```sh
-npm create astro@latest -- --template minimal
+Lograry is a personal book logging application built with [Astro](https://astro.build/). It allows you to track the books you're reading, have read, want to read, or have abandoned.
+
+## Features
+
+-   **Track Reading Status:** Keep a record of your books, organized by shelves: "to-read", "reading", "read", and "abandoned".
+-   **Reading Statistics:** Visualize your reading habits with a yearly graph.
+-   **Detailed Book Information:** Each book entry can store information such as title, author, cover image, rating, and more.
+-   **Content-Driven:** Book data is managed through simple Markdown files, making it easy to add and edit your library.
+
+## Project Structure
+
 ```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
 /
 ├── public/
+│   └── admin/
+│       └── config.yml
 ├── src/
+│   ├── components/
+│   │   ├── BookCard.astro
+│   │   └── ...
+│   ├── content/
+│   │   ├── books/
+│   │   │   ├── a-game-of-thrones.md
+│   │   │   └── ...
+│   │   └── config.ts
+│   ├── layouts/
 │   └── pages/
-│       └── index.astro
-└── package.json
+└── astro.config.mjs
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+-   `src/content/books/`: Contains the Markdown files for each book in your library.
+-   `src/content/config.ts`: Defines the schema for the book collection.
+-   `src/pages/`: Contains the pages for the website, including the main dashboard.
+-   `src/components/`: Contains reusable Astro components, like the `BookCard`.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## Getting Started
 
-Any static assets, like images, can be placed in the `public/` directory.
+Follow these instructions to get a local copy of the project up and running.
 
-## 🧞 Commands
+### Prerequisites
 
-All commands are run from the root of the project, from a terminal:
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+### Installation
 
-## 👀 Want to learn more?
+1.  Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/lograry.git
+    ```
+2.  Navigate to the project directory:
+    ```bash
+    cd lograry
+    ```
+3.  Install the dependencies:
+    ```bash
+    npm install
+    ```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### Running the Development Server
+
+To start the development server, run the following command:
+
+```bash
+npm run dev
+```
+
+This will start the server on `http://localhost:4321`.
+
+## Content Management
+
+Books are managed as Markdown files in the `src/content/books/` directory. Each file represents a single book and contains a frontmatter section with the book's data.
+
+### Example Book Entry
+
+Here is an example of the frontmatter for a book entry:
+
+```yaml
+---
+title: "A Game of Thrones"
+subtitle: "A Song of Ice and Fire 1"
+author:
+  - "George R. R. Martin"
+tags:
+  - "fantasy"
+  - "dragons"
+shelf: "read"
+owned: true
+start_date: "2008-02-02"
+end_date: "2008-02-02"
+rating: 4
+coverUrl: "https://covers.openlibrary.org/b/olid/OL7830295M-M.jpg"
+---
+```
+
+The body of the Markdown file can be used for notes or a summary of the book.

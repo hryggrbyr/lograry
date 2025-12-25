@@ -1,9 +1,7 @@
-import { defineConfig } from 'astro/config';
-import node from '@astrojs/node'; // or vercel/netlify adapter
+import { defineConfig } from "astro/config";
+import netlify from "@astrojs/netlify";
 
 export default defineConfig({
-  output: 'server', // or 'hybrid'
-  adapter: node({
-    mode: 'standalone',
-  }),
+  output: "server", // or 'hybrid'
+  adapter: netlify(),
 });
