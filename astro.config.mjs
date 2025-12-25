@@ -5,6 +5,6 @@ export default defineConfig({
   output: "server", // or 'hybrid'
   adapter: netlify(),
   build: {
-    assets: "dist", // This tells Astro where to put the bundled assets
+    assets: "public", // This tells Astro where to put the bundled assets
   },
 });
