@@ -1,5 +1,21 @@
-<!DOCTYPE html><html lang="en" data-astro-cid-2zp6q64z> <head><meta charset="utf-8"><title>Lograry Admin | Quick Capture</title><link href="/admin/config.yml" type="text/yaml" rel="shortcut config"><style>#quick-capture[data-astro-cid-2zp6q64z]{position:fixed;top:0;left:0;right:0;z-index:9999;background:#1a1a1a;color:#eee;padding:10px 20px;display:flex;gap:10px;align-items:center;border-bottom:1px solid #333;font-family:system-ui,sans-serif}input[data-astro-cid-2zp6q64z]{background:#000;border:1px solid #444;color:#fff;padding:6px 12px;border-radius:4px;flex-grow:1}button[data-astro-cid-2zp6q64z]{background:#3b82f6;color:#fff;border:none;padding:6px 15px;border-radius:4px;cursor:pointer;font-weight:700}button[data-astro-cid-2zp6q64z]:hover{background:#2563eb}#status[data-astro-cid-2zp6q64z]{font-size:.8rem;min-width:150px}
+<!DOCTYPE html><html lang="en" data-astro-cid-2zp6q64z> <head><meta charset="utf-8"><title>Lograry Admin | Quick Capture</title><link rel="manifest" href="/lograry/manifest.json"><link href="/admin/config.yml" type="text/yaml" rel="shortcut config"><style>#quick-capture[data-astro-cid-2zp6q64z]{position:fixed;top:0;left:0;right:0;z-index:9999;background:#1a1a1a;color:#eee;padding:10px 20px;display:flex;gap:10px;align-items:center;border-bottom:1px solid #333;font-family:system-ui,sans-serif}input[data-astro-cid-2zp6q64z]{background:#000;border:1px solid #444;color:#fff;padding:6px 12px;border-radius:4px;flex-grow:1}button[data-astro-cid-2zp6q64z]{background:#3b82f6;color:#fff;border:none;padding:6px 15px;border-radius:4px;cursor:pointer;font-weight:700}button[data-astro-cid-2zp6q64z]:hover{background:#2563eb}#status[data-astro-cid-2zp6q64z]{font-size:.8rem;min-width:150px}
 </style></head> <body data-astro-cid-2zp6q64z> <div id="quick-capture" data-astro-cid-2zp6q64z> <span data-astro-cid-2zp6q64z>🚀 Quick Capture:</span> <input type="text" id="query" placeholder="Search Title, Author, or ISBN..." data-astro-cid-2zp6q64z> <button id="search-btn" data-astro-cid-2zp6q64z>Search & Copy</button> <div id="status" data-astro-cid-2zp6q64z>Ready</div> </div> <script src="https://unpkg.com/@sveltia/cms@latest/dist/sveltia-cms.js"></script> <script>
       CMS.registerPreviewStyle("/admin/preview.css");
+    </script> <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("/lograry/sw.js").then(
+            (registration) => {
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope,
+              );
+            },
+            (err) => {
+              console.log("ServiceWorker registration failed: ", err);
+            },
+          );
+        });
+      }
     </script> <script type="module">document.getElementById("search-btn").onclick=async()=>{const o=document.getElementById("query").value,t=document.getElementById("status");if(o){t.innerText="Searching Open Library...";try{const n=`https://openlibrary.org/search.json?q=${encodeURIComponent(o)}&limit=1`,r=await(await fetch(n)).json();if(r.docs&&r.docs.length>0){const e=r.docs[0],s={title:e.title,subtitle:e.subtitle||"",author:e.author_name||[],published:e.first_publish_year?.toString()||"",publisher:e.publisher?.[0]||"",page_count:e.number_of_pages_median||null,isbn:e.isbn?.[0]||"",coverUrl:e.cover_i?`https://covers.openlibrary.org/b/id/${e.cover_i}-L.jpg`:"",shelf:"to-read"},i=Object.entries(s).map(([c,a])=>`${c}: ${JSON.stringify(a)}`).join(`
 `);await navigator.clipboard.writeText(i),t.innerText="✓ Found & Copied YAML!",document.getElementById("query").value=""}else t.innerText="❌ No results found."}catch(n){console.error(n),t.innerText="⚠️ Fetch Error."}}};</script> </body> </html>
