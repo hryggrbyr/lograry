@@ -133,16 +133,16 @@ a:not([class]) {
 
 /* Make it clear that interactive elements are interactive */
 :where(
-    a[href],
-    area,
-    button,
-    input,
-    label[for],
-    select,
-    summary,
-    textarea,
-    [tabindex]:not([tabindex*="-"])
-  ) {
+  a[href],
+  area,
+  button,
+  input,
+  label[for],
+  select,
+  summary,
+  textarea,
+  [tabindex]:not([tabindex*="-"])
+) {
   cursor: pointer;
   touch-action: manipulation;
 }
@@ -169,12 +169,12 @@ a:not([class]) {
 
 /* Make sure users can't select button text */
 :where(
-    button,
-    button[type],
-    input[type="button"],
-    input[type="submit"],
-    input[type="reset"]
-  ),
+  button,
+  button[type],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"]
+),
 :where(input[type="file"])::-webkit-file-upload-button,
 :where(input[type="file"])::file-selector-button {
   -webkit-tap-highlight-color: transparent;
@@ -185,12 +185,12 @@ a:not([class]) {
 
 /* Disabled cursor for disabled buttons */
 :where(
-    button,
-    button[type],
-    input[type="button"],
-    input[type="submit"],
-    input[type="reset"]
-  )[disabled] {
+  button,
+  button[type],
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"]
+)[disabled] {
   cursor: not-allowed;
 }
 @import "reset.css";
@@ -225,7 +225,8 @@ a:not([class]) {
 }
 
 body {
-  background: linear-gradient(
+  background:
+    linear-gradient(
         90deg,
         var(--color-margin-line) 0,
         var(--color-margin-line) 1px,
@@ -258,7 +259,8 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   margin-block: 2rlh;
-  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.7),
+  text-shadow:
+    -1px 0px 0px rgba(0, 0, 0, 0.7),
     /* Cyan shadow (left) */ 1px 0px 0px rgba(100, 100, 100, 0.7); /* Red shadow (right) */
 }
 
@@ -274,7 +276,8 @@ h2 {
 }
 
 [rel="home"] {
-  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.7),
+  text-shadow:
+    -1px 0px 0px rgba(0, 0, 0, 0.7),
     1px 0px 0px rgba(100, 100, 100, 0.7);
 }
 
@@ -299,10 +302,12 @@ h2 {
 .text-handwriting {
   font-family: var(--font-handwritten);
   color: var(--color-handwriting);
+  transform: rotate(-1deg);
 }
 
 .text-highlighter {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       104deg,
       rgba(255, 255, 0, 0) 0.9%,
       rgba(255, 255, 0, 0.7) 2.4%,
@@ -346,7 +351,9 @@ h2 {
   border: 1px solid var(--color-border);
   border-radius: 2px;
   padding: 2rlh;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   position: relative;
 }
 

@@ -1,64 +1,181 @@
 ---
-import BookCard from './BookCard.astro';
-import MovieCard from './MovieCard.astro';
-import SeriesCard from './SeriesCard.astro';
+import BookCard from "./BookCard.astro";
+import MovieCard from "./MovieCard.astro";
+import SeriesCard from "./SeriesCard.astro";
 
 interface Props {
   items: any[];
 }
 
-// Map your YAML 'type' strings to the actual Astro Components
+const { items } = Astro.props;
+
+// --- Data Preparation for Filters ---
+const allShelves = [
+  ...new Set(items.map((item) => item.data.shelf).filter(Boolean)),
+].sort();
+const allTags = [
+  ...new Set(items.flatMap((item) => item.data.tags).filter(Boolean)),
+].sort();
+const allOwnership = [
+  ...new Set(items.map((item) => (item.data.owned ? "Owned" : "Not Owned"))),
+];
+
+// --- Component Mapping ---
 const components = {
   book: BookCard,
   movie: MovieCard,
   series: SeriesCard,
 };
 
-const { items } = Astro.props;
-const shelves = [...new Set(items.map(x => x.data.shelf))].sort();
-// Sort by sort_title alphabetically (A-Z)
-// We use localeCompare to handle numbers and special characters correctly
+// --- Initial Sort (can be kept or handled client-side) ---
 const sortedItems = [...items].sort((a, b) => {
   const titleA = a.data.sort_title || a.data.title || "";
   const titleB = b.data.sort_title || b.data.title || "";
-  return titleA.localeCompare(titleB, undefined, { sensitivity: 'base' });
+  return titleA.localeCompare(titleB, undefined, { sensitivity: "base" });
 });
 ---
 
 <section class="media-container flow">
   <div class="filter-controls">
-    <button class="filter-btn active" data-filter="all">All</button>
-    {shelves.map(shelf => (
-    <button class="filter-btn" data-filter={shelf}>{shelf}</button>
-    ))}
-    <button class="filter-btn" data-filter="wishlist">Wishlist</button>
+    <!-- Sorting Controls -->
+    <select id="sort-by" class="filter-btn">
+      <option value="sort_title-asc">Title (A-Z)</option>
+      <option value="sort_title-desc">Title (Z-A)</option>
+      <option value="author-asc">Author (A-Z)</option>
+      <option value="author-desc">Author (Z-A)</option>
+      <option value="end_date-desc">Date Read (Newest)</option>
+      <option value="end_date-asc">Date Read (Oldest)</option>
+    </select>
+
+    <!-- Filtering Controls -->
+    {
+      allShelves.length > 1 && (
+        <select id="filter-shelf" class="filter-btn">
+          <option value="all">All Shelves</option>
+          {allShelves.map((shelf) => (
+            <option value={shelf}>{shelf}</option>
+          ))}
+        </select>
+      )
+    }
+
+    {
+      allTags.length > 1 && (
+        <select id="filter-genre" class="filter-btn">
+          <option value="all">All Genres</option>
+          {allTags.map((tag) => (
+            <option value={tag}>{tag}</option>
+          ))}
+        </select>
+      )
+    }
+
+    {
+      allOwnership.length > 1 && (
+        <select id="filter-owned" class="filter-btn">
+          <option value="all">All Ownership</option>
+          <option value="true">Owned</option>
+          <option value="false">Not Owned</option>
+        </select>
+      )
+    }
   </div>
 
-  <div class="media-list flow" data-active-filter="all">
-    {sortedItems.map((item, index) => {
-      // Determine the type from YAML, fallback to 'book'
-      const itemType = item.data.type || 'book';
-      const Card = components[itemType as keyof typeof components] || BookCard;
-      return (
-        <Card item={item} num={index} />
-      );
-    })}
-  </>
+  <div class="media-list flow">
+    {
+      sortedItems.map((item, index) => {
+        const itemType = item.data.type || "book";
+        const Card =
+          components[itemType as keyof typeof components] || BookCard;
+        const cardProps = {
+          item: item,
+          num: index,
+          // Add data attributes for client-side JS
+          "data-sort_title": item.data.sort_title || item.data.title,
+          "data-author": item.data.author ? item.data.author.join(", ") : "",
+          "data-end_date": item.data.end_date || "",
+          "data-shelf": item.data.shelf,
+          "data-owned": item.data.owned,
+          "data-tags": item.data.tags ? item.data.tags.join(",") : "",
+        };
+        return <Card {...cardProps} />;
+      })
+    }
+  </div>
 </section>
-<script lang="ts">
-  const buttons = document.querySelectorAll(".filter-btn");
-  const list = document.querySelector("[data-active-filter]");
 
-  buttons.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const filter = btn.getAttribute("data-filter");
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const sortBy = document.getElementById("sort-by") as HTMLSelectElement;
+    const filterShelf = document.getElementById(
+      "filter-shelf",
+    ) as HTMLSelectElement;
+    const filterGenre = document.getElementById(
+      "filter-genre",
+    ) as HTMLSelectElement;
+    const filterOwned = document.getElementById(
+      "filter-owned",
+    ) as HTMLSelectElement;
+    const mediaList = document.querySelector(".media-list") as HTMLElement;
+    const mediaItems = Array.from(
+      mediaList.querySelectorAll(".card"),
+    ) as HTMLElement[];
 
-      // Update button UI
-      buttons.forEach((b) => b.classList.remove("active"));
-      btn.classList.add("active");
+    function applyFiltersAndSort() {
+      // --- Filtering ---
+      const shelf = filterShelf ? filterShelf.value : "all";
+      const genre = filterGenre ? filterGenre.value : "all";
+      const owned = filterOwned ? filterOwned.value : "all";
 
-      // Filter cards
-      list.dataset.activeFilter = filter;
-    });
+      mediaItems.forEach((item) => {
+        const itemShelf = item.dataset.shelf || "";
+        const itemTags = (item.dataset.tags || "").split(",");
+        const itemOwned = String(item.dataset.owned === "true");
+
+        const shelfMatch = shelf === "all" || itemShelf === shelf;
+        const genreMatch = genre === "all" || itemTags.includes(genre);
+        const ownedMatch = owned === "all" || itemOwned === owned;
+
+        if (shelfMatch && genreMatch && ownedMatch) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      // --- Sorting ---
+      const [sortKey, sortDir] = sortBy.value.split("-");
+
+      const sortedItems = mediaItems.sort((a, b) => {
+        const aVal = a.dataset[sortKey] || "";
+        const bVal = b.dataset[sortKey] || "";
+
+        if (sortKey === "end_date") {
+          // Handle empty dates by pushing them to the bottom
+          if (!aVal) return 1;
+          if (!bVal) return -1;
+          return sortDir === "asc"
+            ? new Date(aVal).getTime() - new Date(bVal).getTime()
+            : new Date(bVal).getTime() - new Date(aVal).getTime();
+        }
+
+        const comparison = aVal.localeCompare(bVal, undefined, {
+          sensitivity: "base",
+        });
+        return sortDir === "asc" ? comparison : -comparison;
+      });
+
+      // Re-append sorted items to the list
+      sortedItems.forEach((item) => mediaList.appendChild(item));
+    }
+
+    // --- Event Listeners ---
+    sortBy?.addEventListener("change", applyFiltersAndSort);
+    filterShelf?.addEventListener("change", applyFiltersAndSort);
+    filterGenre?.addEventListener("change", applyFiltersAndSort);
+    filterOwned?.addEventListener("change", applyFiltersAndSort);
+
+    // Initial application
+    applyFiltersAndSort();
   });
 </script>

@@ -234,7 +234,8 @@ h2 {
 }
 
 .filter-btn {
-  --border-color: transparent;
+  /*--border-color: transparent;*/
+  --border-color: var(--color-text-light);
   appearance: none;
   background: none;
   font-size: 0.75rem;
@@ -248,7 +249,6 @@ h2 {
 }
 
 .filter-btn.active {
-  --border-color: var(--color-handwriting);
 }
 
 .page-section > header {

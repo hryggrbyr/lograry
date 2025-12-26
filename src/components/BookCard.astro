@@ -1,42 +1,87 @@
 ---
 interface Props {
-  item: any[];
+  item: any;
+  [key: string]: any; // Allow any other props
 }
-const { item } = Astro.props;
-import { formatDate, formatPublishedDate, getAuthorOffset } from '@lib/utils.ts'; // Assuming @lib points to src/
+const { item, ...rest } = Astro.props;
+import {
+  formatDate,
+  formatPublishedDate,
+  getAuthorOffset,
+} from "@lib/utils.ts";
 const author = item.data.author || "Unknown";
 const offset = getAuthorOffset(author[0]);
-
 ---
 
-<article class:list={[
-        "card",
-       "text-center",
-        item.data.shelf,
-        { "wishlist": item.data.shelf === 'to-read' && !item.data.owned,
-          "owned": item.data.owned }
-      ]}>
-        <picture class="card-image">
-          <img style={`--rotation: ${offset}deg;`} loading="lazy" src={item.data.coverUrl} alt="" role="presentation">
-        </picture>
-        <div class="card-content flow">
-          <h3 class="typewriter-title" set:html={item.data.title} />
-          {item.data.subtitle && <p class="subtitle">({item.data.subtitle})</p>}
-          {item.data.author && <p class="author">{item.data.author.join(', ')}</p>}
-          <div class="content-footer">
-          {(item.data.published && item.data.publisher) && <p>(<strong>{formatPublishedDate(item.data.published)}</strong> {item.data.publisher})</p>}
-          {item.data.isbn && <p>ISBN: <strong>{item.data.isbn}</strong></p>}
-          {item.data.tags && item.data.tags.length && <p>Tagged: {item.data.tags.join(', ')}</p>}
-          </div>
-        </div>
-        <div class="card-meta">
-          <p class="card-shelf text-handwriting">{item.data.shelf}</p>
-          {item.data.owned && <p class="text-handwriting text-highlighter">Owned</p>}
-          {item.data.shelf === 'read' &&
-          <ul class="card-history">
-            <li>{formatDate(item.data.end_date)} {item.data.rating && "★".repeat(item.data.rating) + "☆".repeat(5 - item.data.rating)}</li>
-          </ul>
-          }
-          <!-- <a href="/">Read more</a> -->
-        </div>
+<article
+  {...rest}
+  class:list={[
+    "card",
+    "text-center",
+    item.data.shelf,
+    {
+      wishlist: item.data.shelf === "to-read" && !item.data.owned,
+      owned: item.data.owned,
+    },
+  ]}
+>
+  <picture class="card-image">
+    <img
+      style={`--rotation: ${offset}deg;`}
+      loading="lazy"
+      src={item.data.coverUrl}
+      alt=""
+      role="presentation"
+    />
+  </picture>
+  <div class="card-content flow">
+    <h3 class="typewriter-title" set:html={item.data.title} />
+    {item.data.subtitle && <p class="subtitle">({item.data.subtitle})</p>}
+    {item.data.author && <p class="author">{item.data.author.join(", ")}</p>}
+    <div class="content-footer">
+      {
+        item.data.published && item.data.publisher && (
+          <p>
+            (<strong>{formatPublishedDate(item.data.published)}</strong>{" "}
+            {item.data.publisher})
+          </p>
+        )
+      }
+      {
+        item.data.isbn && (
+          <p>
+            ISBN: <strong>{item.data.isbn}</strong>
+          </p>
+        )
+      }
+      {
+        item.data.tags && item.data.tags.length && (
+          <p>Tagged: {item.data.tags.join(", ")}</p>
+        )
+      }
+      {
+        item.data.recommended_by && item.data.recommended_by.name && (
+          <p class="text-handwriting">
+            Recommended by {item.data.recommended_by.name}
+          </p>
+        )
+      }
+    </div>
+  </div>
+  <div class="card-meta">
+    <p class="card-shelf text-handwriting">{item.data.shelf}</p>
+    {item.data.owned && <p class="text-handwriting text-highlighter">Owned</p>}
+    {
+      item.data.shelf === "read" && (
+        <ul class="card-history">
+          <li>
+            {formatDate(item.data.end_date)}{" "}
+            {item.data.rating &&
+              "★".repeat(item.data.rating) + "☆".repeat(5 - item.data.rating)}
+          </li>
+        </ul>
+      )
+    }
+    <!-- <a href="/">Read more</a> -->
+  </div>
 </article>
