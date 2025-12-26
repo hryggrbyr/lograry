@@ -113,6 +113,7 @@ collections:
         name: "recommended_by"
         widget: "object"
         required: false
+        collapsed: false
         fields:
           - { label: "Name", name: "name", widget: "string", required: false }
           - { label: "URL", name: "url", widget: "string", required: false }
