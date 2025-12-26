@@ -19,8 +19,8 @@ page_count: null
 isbn: ''
 coverUrl: https://covers.openlibrary.org/b/olid/OL27930457M-M.jpg
 recommended_by:
-  name: null
-  url: null
+  name: Tonio
+  url: ''
 reviewUrl: ''
 bookshopUrl: ''
 description: ''
