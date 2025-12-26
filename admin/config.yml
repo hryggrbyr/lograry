@@ -17,7 +17,7 @@ collections:
     extension: "md" # or "mdx"
     format: "frontmatter"
     create: true
-    slug: "{{slug}}"
+    slug: "{{slug}}-{{author.0}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -30,12 +30,13 @@ collections:
       - label: "Authors"
         name: "author"
         widget: "list"
-        field: { label: "Author Name", name: "name", widget: "string" }
 
       - label: "Tags"
         name: "tags"
-        widget: "list"
-        field: { label: "Tag", name: "tag", widget: "string" }
+        widget: "select"
+        multiple: true
+        create: true
+        options: { url: "/lograry/admin/tags.json" }
 
       - label: "Shelf"
         name: "shelf"
@@ -114,6 +115,7 @@ collections:
         widget: "object"
         required: false
         collapsed: false
+        default: { "name": "", "url": "" }
         fields:
           - { label: "Name", name: "name", widget: "string", required: false }
           - { label: "URL", name: "url", widget: "string", required: false }
@@ -132,4 +134,9 @@ collections:
         }
 
       # The Markdown body
-      - { label: "Notes/Review Body", name: "body", widget: "markdown" }
+      - {
+          label: "Notes/Review Body",
+          name: "body",
+          widget: "markdown",
+          required: false,
+        }
