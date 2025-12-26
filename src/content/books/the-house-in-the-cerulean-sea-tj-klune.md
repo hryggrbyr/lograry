@@ -5,14 +5,14 @@ author:
   - TJ Klune
 tags:
   - UrbanFantasy
-  - LGBT
-  - Romance
+  - lgbt
+  - romance
 shelf: read
 owned: true
-start_date: 2024-08-23T00:00:00.000Z
-end_date: 2024-09-20T00:00:00.000Z
-published: 2020-03-16T18:30:00.000Z
-created: 2024-09-21T00:00:00.000Z
+start_date: 2024-08-23
+end_date: 2024-09-20
+published: 2020-03-16T19:30:00+01:00
+created: 2024-09-21
 rating: 5
 publisher: Tom Doherty Associates
 page_count: null
