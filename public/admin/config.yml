@@ -3,8 +3,6 @@ backend:
   name: github
   repo: hryggrbyr/lograry # Important: Update this!
   branch: main
-  base_url: https://lograry.netlify.app
-  auth_endpoint: /api/auth/
 
 # 2. Media: Tell Sveltia where to save cover images
 # public/images/covers will show up as /images/covers in your Astro code

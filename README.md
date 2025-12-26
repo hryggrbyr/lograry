@@ -68,9 +68,38 @@ npm run dev
 
 This will start the server on `http://localhost:4321`.
 
+## Deployment
+
+This project is configured to be deployed as a static site on GitHub Pages. A GitHub Actions workflow is included to automate the build and deployment process.
+
+### GitHub Pages Configuration
+
+1.  **Push to `main`:** After cloning the repository and pushing it to your own GitHub account, the included GitHub Actions workflow (`.github/workflows/deploy.yml`) will automatically run. It will build the site and push the static files to a branch named `gh-pages`.
+2.  **Set the Branch:** In your repository's settings on GitHub, navigate to the **Pages** section.
+3.  **Source:** Under "Build and deployment," set the source to **Deploy from a branch**.
+4.  **Branch:** Select `gh-pages` as the branch and `/ (root)` as the folder. Save the changes.
+
+Your site will be deployed to `https://<your-username>.github.io/<your-repo-name>/`.
+
 ## Content Management
 
-Books are managed as Markdown files in the `src/content/books/` directory. Each file represents a single book and contains a frontmatter section with the book's data.
+Books are managed using a git-based CMS, accessible from the `/admin` path of your live site.
+
+### Logging into the CMS
+
+Authentication for the CMS is handled by a **GitHub Personal Access Token (PAT)**.
+
+1.  **Generate a PAT:**
+    *   Go to your GitHub **Developer settings** > **Personal access tokens** > **Tokens (classic)**.
+    *   Click **Generate new token (classic)**.
+    *   Give it a descriptive name (e.g., `lograry-cms`).
+    *   Set an expiration date.
+    *   Under **Select scopes**, check the entire **`repo`** scope.
+    *   Click **Generate token** and copy the token.
+
+2.  **Log In:**
+    *   Navigate to your live site's admin page (e.g., `https://<your-username>.github.io/lograry/admin/`).
+    *   You will be prompted to log in with GitHub. Instead of a password, paste the Personal Access Token you just created.
 
 ### Example Book Entry
 
