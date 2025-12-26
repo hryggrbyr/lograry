@@ -4,8 +4,8 @@ tags:
   - Scandinoir
   - Iceland
   - Police
-  - Drugsmuggling
-  - Lgbt
+  - DrugSmuggling
+  - LGBT
 title: Trap
 subtitle: The Reykjavik Noir 02
 author:

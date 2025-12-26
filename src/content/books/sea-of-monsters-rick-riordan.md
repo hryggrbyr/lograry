@@ -1,6 +1,6 @@
 ---
 tags:
-  - Youngadult
+  - YoungAdult
 title: Sea of Monsters
 subtitle: ''
 author:
@@ -36,4 +36,3 @@ __
 | Started |  |
 | Finished | 2011-02-02T00:00:00.000+00:00 |
 | Rating | /5 |
-

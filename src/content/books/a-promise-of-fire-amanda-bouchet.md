@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - Romantasy
-  - Youngadult
+  - YoungAdult
   - Romance
 title: A Promise of Fire
 subtitle: ~

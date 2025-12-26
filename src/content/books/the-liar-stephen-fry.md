@@ -1,9 +1,9 @@
 ---
 tags:
   - Comedy
-  - Comingofage
-  - Britishliterature
-  - Lgbt
+  - ComingOfAge
+  - BritishLiterature
+  - LGBT
 title: The Liar
 subtitle: ''
 author:

@@ -3,7 +3,7 @@ tags:
   - Mystery
   - Ireland
   - Childhood
-  - Comingofage
+  - ComingOfAge
   - Thriller
 title: Kala
 subtitle: A Novel

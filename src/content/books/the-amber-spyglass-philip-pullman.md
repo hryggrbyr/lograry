@@ -1,8 +1,8 @@
 ---
 tags:
   - Fantasy
-  - Parallelworlds
-  - Religon
+  - ParallelWorlds
+  - Religion
 title: The Amber Spyglass
 subtitle: His Dark Materials 3
 author:
@@ -34,8 +34,7 @@ _His Dark Materials 3_
 
 | Shelf | read |
 | --- | --- |
-| Genre | fantasy,ParallelWorlds,Religon |
+| Genre | fantasy,ParallelWorlds,Religion |
 | Started |  |
 | Finished | 2015-01-22T00:00:00.000+00:00 |
 | Rating | /5 |
-

@@ -2,7 +2,7 @@
 tags:
   - Thriller
   - Horror
-  - Serialkiller
+  - SerialKiller
 title: American Psycho
 subtitle: ~
 author:

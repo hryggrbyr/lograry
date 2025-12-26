@@ -1,7 +1,7 @@
 ---
 tags:
   - Thriller
-  - Historicalfiction
+  - HistoricalFiction
   - Espionage
 title: Spy Sinker
 subtitle: Bernard Samson 6
@@ -38,4 +38,3 @@ _Bernard Samson 6_
 | Started |  |
 | Finished | 1992-08-01T00:00:00.000+01:00 |
 | Rating | 3/5 |
-

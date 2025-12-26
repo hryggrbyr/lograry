@@ -4,7 +4,7 @@ tags:
   - JuvenileFiction
   - Magic
   - Wizards
-  - Parallelworlds
+  - ParallelWorlds
 title: Howl’s Moving Castle
 subtitle: ''
 author:

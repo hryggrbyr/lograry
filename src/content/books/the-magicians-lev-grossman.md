@@ -4,10 +4,10 @@ tags:
   - UrbanFantasy
   - Magic
   - Wizards
-  - Magicalschool
-  - Parallelworlds
+  - MagicalSchool
+  - ParallelWorlds
   - Horror
-  - Darkfantasy
+  - DarkFantasy
 title: The Magicians
 subtitle: Magician 1
 author:

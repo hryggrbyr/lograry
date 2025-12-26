@@ -1,7 +1,7 @@
 ---
 tags:
   - Comedy
-  - Opinioncolumn
+  - OpinionColumn
   - Nonfiction
 title: The World According to Clarkson
 subtitle: The World According to Clarkson Volume 1

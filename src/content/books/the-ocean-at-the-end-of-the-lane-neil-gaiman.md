@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - UrbanFantasy
-  - Modernfairytale
+  - ModernFairytale
 title: The Ocean at the End of the Lane
 subtitle: Illustrated Edition
 author:

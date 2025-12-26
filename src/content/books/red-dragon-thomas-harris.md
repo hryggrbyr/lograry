@@ -2,7 +2,7 @@
 tags:
   - Police
   - Crime
-  - Serialkiller
+  - SerialKiller
   - Psychology
   - America
   - Adventure

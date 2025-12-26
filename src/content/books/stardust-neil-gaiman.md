@@ -1,7 +1,7 @@
 ---
 tags:
   - Fantasy
-  - Modernfairytale
+  - ModernFairytale
   - Pirates
   - Witches
   - Magic

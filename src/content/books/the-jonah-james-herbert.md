@@ -2,7 +2,7 @@
 tags:
   - Horror
   - Supernatural
-  - Drugsmuggling
+  - DrugSmuggling
 title: The Jonah
 subtitle: ''
 author:

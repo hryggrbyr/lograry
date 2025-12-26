@@ -1,6 +1,6 @@
 ---
 tags:
-  - Youngadult
+  - YoungAdult
 title: Geektastic
 subtitle: ''
 author:

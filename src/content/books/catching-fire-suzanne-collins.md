@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - Dystopia
-  - Youngadult
+  - YoungAdult
   - Romance
 title: Catching Fire
 subtitle: The Hunger Games 2

@@ -1,7 +1,7 @@
 ---
 tags:
   - UrbanFantasy
-  - Lgbt
+  - LGBT
   - Romance
 title: The House in the Cerulean Sea
 subtitle: The Cerulean Chronicles 1

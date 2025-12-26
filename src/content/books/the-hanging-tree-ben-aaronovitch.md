@@ -3,7 +3,7 @@ tags:
   - UrbanFantasy
   - Crime
   - Police
-  - Religon
+  - Religion
 title: The Hanging Tree
 subtitle: Rivers of London 6
 author:
@@ -35,7 +35,7 @@ _Rivers of London 6_
 
 | Shelf | read |
 | --- | --- |
-| Genre | UrbanFantasy,crime,police,Religon |
+| Genre | UrbanFantasy,crime,police,Religion |
 | Started | 2021-04-22T00:00:00.000+01:00 |
 | Finished | 2021-05-07T00:00:00.000+01:00 |
 | Rating | /5 |

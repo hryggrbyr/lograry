@@ -1,6 +1,6 @@
 ---
 tags:
-  - Youngadult
+  - YoungAdult
   - Fantasy
   - UrbanFantasy
   - Mythology

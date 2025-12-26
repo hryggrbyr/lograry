@@ -1,6 +1,6 @@
 ---
 tags:
-  - Historicalfiction
+  - HistoricalFiction
   - Espionage
   - Thriller
 title: SS-GB
@@ -38,4 +38,3 @@ _Nazi-occupied Britain 1941_
 | Started |  |
 | Finished | 2004-07-12T00:00:00.000+01:00 |
 | Rating | 3/5 |
-

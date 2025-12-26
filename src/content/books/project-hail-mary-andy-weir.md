@@ -1,6 +1,6 @@
 ---
 tags:
-  - ScienceFiction
+  - Sci-fi
 title: Project Hail Mary
 subtitle: ''
 author:
@@ -36,4 +36,3 @@ __
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

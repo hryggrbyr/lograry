@@ -1,7 +1,7 @@
 ---
 tags:
   - UrbanFantasy
-  - Lgbt
+  - LGBT
 title: Somewhere Beyond the Sea
 subtitle: The Cerulean Chronicles 2
 author:

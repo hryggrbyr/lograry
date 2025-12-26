@@ -1,7 +1,7 @@
 ---
 tags:
   - Fantasy
-  - Youngadult
+  - YoungAdult
 title: Blade Breaker
 subtitle: Realm Breaker 2
 author:

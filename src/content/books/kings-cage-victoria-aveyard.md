@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - Dystopia
-  - Youngadult
+  - YoungAdult
 title: King's Cage
 subtitle: Red Queen 3
 author:

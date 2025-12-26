@@ -1,6 +1,6 @@
 ---
 tags:
-  - Comingofage
+  - ComingOfAge
   - Thriller
   - Darkhumour
 title: The Wasp Factory

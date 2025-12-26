@@ -2,7 +2,7 @@
 tags:
   - Mythology
   - UrbanFantasy
-  - Youngadult
+  - YoungAdult
 title: The Heroes of Olympus
 subtitle: The Heroes of Olympus 1
 author:

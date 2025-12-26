@@ -1,8 +1,8 @@
 ---
 tags:
   - Fantasy
-  - Youngadult
-  - Parallelworlds
+  - YoungAdult
+  - ParallelWorlds
 title: 'Abarat: The First Book of Hours'
 subtitle: Abarat Book 1
 author:

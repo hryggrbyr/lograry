@@ -1,6 +1,7 @@
 ---
 tags:
-  - Sci-fiShort
+  - Sci-fi
+  - ShortStories
 title: Changing Planes
 subtitle: ''
 author:

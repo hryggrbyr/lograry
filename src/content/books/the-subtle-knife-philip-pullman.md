@@ -1,8 +1,8 @@
 ---
 tags:
   - Fantasy
-  - Religon
-  - Parallelworlds
+  - Religion
+  - ParallelWorlds
 title: The Subtle Knife
 subtitle: His Dark Materials 2
 author:
@@ -34,7 +34,7 @@ _His Dark Materials 2_
 
 | Shelf | read |
 | --- | --- |
-| Genre | fantasy,Religon,ParallelWorlds |
+| Genre | fantasy,Religion,ParallelWorlds |
 | Started |  |
 | Finished | 2015-01-10T00:00:00.000+00:00 |
 | Rating | 4/5 |

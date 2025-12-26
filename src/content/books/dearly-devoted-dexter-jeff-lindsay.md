@@ -3,7 +3,7 @@ tags:
   - Crime
   - Police
   - America
-  - Serialkiller
+  - SerialKiller
 title: Dearly Devoted Dexter
 subtitle: ~
 author:

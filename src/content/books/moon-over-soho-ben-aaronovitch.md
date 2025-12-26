@@ -3,7 +3,7 @@ tags:
   - UrbanFantasy
   - Crime
   - Police
-  - Religon
+  - Religion
 title: Moon Over Soho
 subtitle: Rivers of London 2
 author:
@@ -35,7 +35,7 @@ _Rivers of London 2_
 
 | Shelf | read |
 | --- | --- |
-| Genre | UrbanFantasy,crime,police,Religon |
+| Genre | UrbanFantasy,crime,police,Religion |
 | Started | 2021-03-17T00:00:00.000+00:00 |
 | Finished | 2021-04-22T00:00:00.000+01:00 |
 | Rating | 4/5 |

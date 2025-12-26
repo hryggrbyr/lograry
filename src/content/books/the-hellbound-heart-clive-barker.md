@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - Horror
-  - Parallelworlds
+  - ParallelWorlds
 title: The Hellbound Heart
 subtitle: ~
 author:

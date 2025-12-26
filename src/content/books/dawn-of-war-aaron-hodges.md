@@ -1,7 +1,7 @@
 ---
 tags:
   - Fantasy
-  - Swordandsorcery
+  - SwordAndSorcery
   - Magic
   - Wizards
   - Dragons

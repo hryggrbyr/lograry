@@ -3,9 +3,9 @@ tags:
   - Thriller
   - Horror
   - Supernatural
-  - Historicalfiction
+  - HistoricalFiction
   - Fantasy
-  - Historicalfantasy
+  - HistoricalFantasy
   - England
 title: The Silence Factory
 subtitle: ~

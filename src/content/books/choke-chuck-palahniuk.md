@@ -1,7 +1,7 @@
 ---
 tags:
   - Satire
-  - Blackcomedy
+  - BlackComedy
   - Darkhumour
 title: Choke
 subtitle: ~

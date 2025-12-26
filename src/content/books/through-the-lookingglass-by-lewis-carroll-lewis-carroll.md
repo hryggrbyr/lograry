@@ -1,7 +1,7 @@
 ---
 tags:
   - Fantasy
-  - Parallelworlds
+  - ParallelWorlds
 title: Through the Looking-Glass
 subtitle: ~
 author:

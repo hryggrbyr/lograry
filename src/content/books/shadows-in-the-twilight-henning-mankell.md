@@ -2,7 +2,7 @@
 tags:
   - Crime
   - Scandinoir
-  - Youngadult
+  - YoungAdult
 title: Shadows in the Twilight
 subtitle: Joel Gustafsson 2
 author:
@@ -38,4 +38,3 @@ _Joel Gustafsson 2_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

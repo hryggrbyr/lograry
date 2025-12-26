@@ -3,7 +3,7 @@ tags:
   - Crime
   - Police
   - America
-  - Serialkiller
+  - SerialKiller
 title: Dexter in the Dark
 subtitle: ~
 author:

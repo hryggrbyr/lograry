@@ -3,7 +3,7 @@ tags:
   - Fantasy
   - Epic
   - UrbanFantasy
-  - Historicalfantasy
+  - HistoricalFantasy
   - Magic
   - War
   - Family

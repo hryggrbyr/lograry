@@ -3,7 +3,7 @@ tags:
   - UrbanFantasy
   - Crime
   - Police
-  - Religon
+  - Religion
 title: Rivers of London
 subtitle: Rivers of London 1
 author:
@@ -35,7 +35,7 @@ _Rivers of London 1_
 
 | Shelf | read |
 | --- | --- |
-| Genre | UrbanFantasy,crime,police,Religon |
+| Genre | UrbanFantasy,crime,police,Religion |
 | Started |  |
 | Finished | 2021-03-13T00:00:00.000+00:00 |
 | Rating | 4/5 |

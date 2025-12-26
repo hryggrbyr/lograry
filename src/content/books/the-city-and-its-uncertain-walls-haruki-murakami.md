@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - UrbanFantasy
-  - Parallelworlds
+  - ParallelWorlds
   - Gentle
   - Charming
   - Library

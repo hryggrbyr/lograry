@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - Dystopia
-  - Youngadult
+  - YoungAdult
   - Romance
 title: The Hunger Games
 subtitle: The Hunger Games 1

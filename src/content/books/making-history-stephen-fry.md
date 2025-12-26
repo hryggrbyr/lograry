@@ -1,11 +1,11 @@
 ---
 tags:
-  - Alternatehistory
+  - AlternateHistory
   - Sci-fi
-  - Britishliterature
-  - Lgbt
+  - BritishLiterature
+  - LGBT
   - War
-  - Timetravel
+  - TimeTravel
 title: Making History
 subtitle: ''
 author:

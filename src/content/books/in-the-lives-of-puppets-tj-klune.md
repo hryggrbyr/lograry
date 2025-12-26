@@ -1,6 +1,6 @@
 ---
 tags:
-  - Lgbt
+  - LGBT
 title: In the Lives of Puppets
 subtitle: ~
 author:

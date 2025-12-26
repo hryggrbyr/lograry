@@ -1,6 +1,6 @@
 ---
 tags:
-  - Youngadult
+  - YoungAdult
 title: 'The Poison Eaters: And Other Stories'
 subtitle: ''
 author:

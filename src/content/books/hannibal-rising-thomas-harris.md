@@ -1,9 +1,9 @@
 ---
 tags:
   - Crime
-  - Serialkiller
+  - SerialKiller
   - Psychology
-  - Historicalfiction
+  - HistoricalFiction
   - Adventure
 title: Hannibal Rising
 subtitle: ''

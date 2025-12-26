@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - Dystopia
-  - Youngadult
+  - YoungAdult
   - Romance
 title: Mockingjay
 subtitle: The Hunger Games 3

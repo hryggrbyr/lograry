@@ -4,8 +4,8 @@ tags:
   - Magic
   - Religion
   - Horror
-  - Parallelworlds
-  - Darkfantasy
+  - ParallelWorlds
+  - DarkFantasy
 title: Imajica
 subtitle: ''
 author:

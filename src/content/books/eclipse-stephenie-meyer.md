@@ -3,7 +3,7 @@ tags:
   - UrbanFantasy
   - Fantasy
   - Vampires
-  - Werewolf
+  - Werewolves
   - Romance
 title: Eclipse
 subtitle: The Twilight Saga 3

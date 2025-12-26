@@ -1,9 +1,9 @@
 ---
 tags:
-  - Youngadult
+  - YoungAdult
   - Suicide
   - Darkhumour
-  - Comingofage
+  - ComingOfAge
 title: The Virgin Suicides
 subtitle: A Novel (Twenty-Fifth Anniversary Edition)
 author:

@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - Dystopia
-  - Youngadult
+  - YoungAdult
 title: War Storm
 subtitle: Red Queen 4
 author:

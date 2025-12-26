@@ -1,6 +1,6 @@
 ---
 tags:
-  - ScienceFiction
+  - Sci-fi
 title: The eternal moment
 subtitle: ''
 author:

@@ -3,7 +3,7 @@ tags:
   - Fantasy
   - Magic
   - Politics
-  - Religon
+  - Religion
   - Gentle
 title: The Garden of Delights
 subtitle: ''
@@ -54,7 +54,7 @@ __
 
 | Shelf | read |
 | --- | --- |
-| Genre | fantasy,magic,politics,Religon,gentle |
+| Genre | fantasy,magic,politics,Religion,gentle |
 | Started | 2025-07-27T00:00:00.000+01:00 |
 | Finished | 2025-08-20T00:00:00.000+01:00 |
 | Rating | 5/5 |

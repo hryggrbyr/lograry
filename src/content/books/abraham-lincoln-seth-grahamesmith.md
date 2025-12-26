@@ -3,7 +3,7 @@ tags:
   - Horror
   - Vampires
   - America
-  - Historicalfantasy
+  - HistoricalFantasy
 title: 'Abraham Lincoln, Vampire Hunter'
 subtitle: ~
 author:

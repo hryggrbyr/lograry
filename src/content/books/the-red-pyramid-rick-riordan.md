@@ -1,6 +1,6 @@
 ---
 tags:
-  - Youngadult
+  - YoungAdult
 title: The Red Pyramid
 subtitle: The Kane Chronicles 1
 author:

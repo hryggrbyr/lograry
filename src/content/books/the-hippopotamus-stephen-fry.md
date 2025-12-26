@@ -2,8 +2,8 @@
 tags:
   - Satire
   - Mystery
-  - Britishliterature
-  - Lgbt
+  - BritishLiterature
+  - LGBT
   - Supernatural
 title: The Hippopotamus
 subtitle: ''

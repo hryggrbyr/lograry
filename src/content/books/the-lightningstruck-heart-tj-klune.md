@@ -1,7 +1,7 @@
 ---
 tags:
   - Romance
-  - Lgbt
+  - LGBT
 title: The Lightning-Struck Heart
 subtitle: Tales From Verania 1
 author:

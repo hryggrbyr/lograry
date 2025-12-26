@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - Dragons
-  - Youngadult
+  - YoungAdult
 title: The Last Dragonslayer
 subtitle: ''
 author:

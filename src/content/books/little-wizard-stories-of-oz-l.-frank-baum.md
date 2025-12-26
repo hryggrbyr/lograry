@@ -1,7 +1,7 @@
 ---
 tags:
   - Fantasy
-  - Parallelworlds
+  - ParallelWorlds
 title: Little Wizard stories of Oz
 subtitle: ~
 author:

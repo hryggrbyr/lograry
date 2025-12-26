@@ -2,7 +2,7 @@
 tags:
   - Fantasy
   - Dystopia
-  - Youngadult
+  - YoungAdult
 title: Glass Sword
 subtitle: Red Queen 2
 author:

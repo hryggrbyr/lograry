@@ -3,7 +3,7 @@ tags:
   - UrbanFantasy
   - Fantasy
   - Vampires
-  - Werewolf
+  - Werewolves
   - Romance
 title: New Moon
 subtitle: The Twilight Saga 2

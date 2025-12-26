@@ -1,6 +1,6 @@
 ---
 tags:
-  - Religon
+  - Religion
 title: A Grief Observed
 subtitle: ''
 author:
@@ -32,7 +32,7 @@ __
 
 | Shelf | to-read |
 | --- | --- |
-| Genre | Religon |
+| Genre | Religion |
 | Started |  |
 | Finished |  |
 | Rating | /5 |

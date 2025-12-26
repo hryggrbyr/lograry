@@ -1,6 +1,6 @@
 ---
 tags:
-  - Historicalfiction
+  - HistoricalFiction
   - Thriller
   - Crime
   - Dystopia
