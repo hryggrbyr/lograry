@@ -7,7 +7,7 @@ backend:
 # 2. Media: Tell Sveltia where to save cover images
 # public/images/covers will show up as /images/covers in your Astro code
 media_folder: "public/images/covers"
-public_folder: "/images/covers"
+public_folder: "/lograry/images/covers"
 
 # 3. Content: Map your data fields
 collections:

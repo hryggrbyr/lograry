@@ -61,7 +61,7 @@ const { title = "Lograry" } = Astro.props;
   <body class="detail-page">
     <header style="margin-block-end: 2lh; padding-block: 1lh">
       <div class="wrapper gutters">
-        <a rel="home" href="/">lograry</a>
+        <a rel="home" href={import.meta.env.BASE_URL}>lograry</a>
       </div>
     </header>
     <main class="wrapper gutters flow">
