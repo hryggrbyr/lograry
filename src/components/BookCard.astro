@@ -60,9 +60,19 @@ const offset = getAuthorOffset(author[0]);
         )
       }
       {
+        item.data.body && (
+          <p>
+            Body: <strong>{item.data.body}</strong>
+          </p>
+        )
+      }
+      {
         item.data.recommended_by && item.data.recommended_by.name && (
           <p class="text-handwriting">
-            Recommended by {item.data.recommended_by.name}
+            Recommended by{" "}
+            <span class="text-highlighter">
+              {item.data.recommended_by.name}
+            </span>
           </p>
         )
       }
