@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Clive Barker's books of blood
-subtitle: null
+subtitle: ~
 author:
   - Clive Barker
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL7863947M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL7863947M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 1993-09-12
-rating:
+start_date: ~
+end_date: 1993-09-12T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-09-13
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-09-13T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Clive Barker's books of blood by Clive Barker

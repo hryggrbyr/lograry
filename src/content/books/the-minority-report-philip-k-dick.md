@@ -1,28 +1,28 @@
 ---
 tags:
-  - sci-fi
-  - dystopia
+  - Sci-fi
+  - Dystopia
 title: The Minority Report
-subtitle: null
+subtitle: ~
 author:
   - Philip K Dick
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL3569779M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL3569779M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 2018-05-02
+start_date: ~
+end_date: 2018-05-02T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Minority Report by Philip K Dick

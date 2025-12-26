@@ -1,26 +1,26 @@
 ---
 tags: []
-title: "Julia: A Novel"
-subtitle: null
+title: 'Julia: A Novel'
+subtitle: ~
 author:
   - Sandra Newman
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL49509559M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL49509559M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-01-25
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-01-25T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Julia: A Novel by Sandra Newman

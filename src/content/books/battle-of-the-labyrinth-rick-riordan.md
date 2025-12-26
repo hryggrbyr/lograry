@@ -1,31 +1,31 @@
 ---
 tags:
-  - YoungAdult
-  - fantasy
+  - Youngadult
+  - Fantasy
   - UrbanFantasy
-  - mythology
-  - magic
+  - Mythology
+  - Magic
 title: Battle of the Labyrinth
 subtitle: Percy Jackson and the Olympians 4
 author:
   - Rick Riordan
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL38804098M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL38804098M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 2011-10-06
+start_date: ~
+end_date: 2011-10-06T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Battle of the Labyrinth by Rick Riordan

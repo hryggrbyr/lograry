@@ -1,26 +1,26 @@
 ---
 tags: []
 title: An Abundance of Katherines
-subtitle: null
+subtitle: ~
 author:
   - John Green
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL24735474M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL24735474M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 2016-05-03
+start_date: ~
+end_date: 2016-05-03T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2016-05-05
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2016-05-05T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # An Abundance of Katherines by John Green

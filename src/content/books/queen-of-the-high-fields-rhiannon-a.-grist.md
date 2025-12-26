@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Queen of the High Fields
-subtitle: null
+subtitle: ~
 author:
   - Rhiannon A. Grist
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL38091629M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL38091629M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-03-19
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-03-19T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Queen of the High Fields by Rhiannon A. Grist

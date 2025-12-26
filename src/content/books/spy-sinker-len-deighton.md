@@ -1,29 +1,29 @@
 ---
 tags:
-  - thriller
-  - HistoricalFiction
-  - espionage
+  - Thriller
+  - Historicalfiction
+  - Espionage
 title: Spy Sinker
 subtitle: Bernard Samson 6
 author:
   - Len Deighton
 publisher: Chivers Audio Books
-published: 2010-01-15T00:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2010-01-14T23:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 1992-08-01
+start_date: ~
+end_date: 1992-08-01T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Spy Sinker by Len Deighton

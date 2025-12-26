@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Invisible Life of Addie LaRue
-subtitle: null
+subtitle: ~
 author:
   - V. E. Schwab
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-12-21
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-12-21T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Invisible Life of Addie LaRue by V. E. Schwab

@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The City & The City
-subtitle: null
+subtitle: ~
 author:
   - China Mieville
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL24279214M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL24279214M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-12-26
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-12-26T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The City & The City by China Mieville

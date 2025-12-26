@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The White Lioness
-subtitle: ""
+subtitle: ''
 author:
   - Henning Mankell
 publisher: New Press
-published: 2011-08-23T00:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2011-08-22T23:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The White Lioness by Henning Mankell

@@ -1,26 +1,27 @@
 ---
 tags: []
 title: Earthlings
-subtitle: ""
+subtitle: ''
 author:
   - Sayaka Murata
-publisher:
+publisher: ~
 published: 2021-07
 page_count: 256
-isbn: "9781783785698"
-description: ""
-coverUrl: http://books.google.com/books/content?id=6Fs2zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+isbn: '9781783785698'
+description: ''
+coverUrl: >-
+  http://books.google.com/books/content?id=6Fs2zgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: to-read
 owned: false
-start_date:
-end_date:
+start_date: ~
+end_date: ~
 rating: 0
 recommended_by:
   name: Alice at Wallflower Digest
-  url:
-created: 2025-08-15 20:50:24
-reviewUrl:
-bookshopUrl:
+  url: ~
+created: 2025-08-15T20:50:24.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Earthlings by Sayaka Murata

@@ -1,27 +1,27 @@
 ---
 tags:
-  - YoungAdult
-title: "The Poison Eaters: And Other Stories"
-subtitle: ""
+  - Youngadult
+title: 'The Poison Eaters: And Other Stories'
+subtitle: ''
 author:
   - Holly Black
 publisher: Small Beer Press
-published: 2010-02-01T12:03:57+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL24033592M-M.jpg
+published: 2010-02-01T11:03:57.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL24033592M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Poison Eaters: And Other Stories by Holly Black

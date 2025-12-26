@@ -1,30 +1,30 @@
 ---
 tags:
-  - fantasy
-  - magic
-  - wizards
-  - dragons
+  - Fantasy
+  - Magic
+  - Wizards
+  - Dragons
 title: Tehanu
 subtitle: Earthsea 4
 author:
   - Ursula K. Le Guin
 publisher: Atheneum
-published: 1990-04-15T00:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL8456760M-M.jpg
+published: 1990-04-14T23:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL8456760M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2020-02-27
-rating:
+start_date: ~
+end_date: 2020-02-27T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2020-04-22
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-04-22T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Tehanu by Ursula K. Le Guin

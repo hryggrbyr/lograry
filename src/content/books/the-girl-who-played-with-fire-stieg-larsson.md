@@ -5,22 +5,22 @@ subtitle: Millennium 2
 author:
   - Stieg Larsson
 publisher: Knopf
-published: 2009-07-27T23:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL23198056M-M.jpg
+published: 2009-07-27T22:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL23198056M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2011-01-20
+start_date: ~
+end_date: 2011-01-20T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Girl Who Played with Fire by Stieg Larsson

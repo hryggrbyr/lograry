@@ -1,29 +1,29 @@
 ---
 tags:
-  - drama
-  - relationships
-  - software
+  - Drama
+  - Relationships
+  - Software
 title: Tomorrow and Tomorrow and Tomorrow
-subtitle: null
+subtitle: ~
 author:
   - Gabrielle Zevin
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL47709411M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL47709411M-M.jpg'
 shelf: read
 owned: true
-start_date: 2024-08-05
-end_date: 2024-08-22
-rating:
+start_date: 2024-08-05T00:00:00.000Z
+end_date: 2024-08-22T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-08-23
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-23T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Tomorrow and tomorrow and tomorrow by Gabrielle Zevin

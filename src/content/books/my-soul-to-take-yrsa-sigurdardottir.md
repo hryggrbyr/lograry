@@ -1,26 +1,26 @@
 ---
 tags: []
 title: My soul to take
-subtitle: null
+subtitle: ~
 author:
   - Yrsa Sigurðardóttir
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL22691613M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL22691613M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 2017-06-16
+start_date: ~
+end_date: 2017-06-16T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2022-08-07
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-08-07T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # My soul to take by Yrsa Sigurðardóttir

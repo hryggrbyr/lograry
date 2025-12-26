@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Mind's Eye
-subtitle: 
+subtitle: ~
 author:
   - Nesser Hakan
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28171514M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28171514M-M.jpg'
 shelf: read
 owned: false
-start_date: 2020-12-17
-end_date: 2021-01-15
+start_date: 2020-12-17T00:00:00.000Z
+end_date: 2021-01-15T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2020-12-17
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-12-17T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Mind's Eye [MINDS EYE] by Nesser Hakan

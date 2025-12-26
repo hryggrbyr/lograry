@@ -1,31 +1,35 @@
 ---
 tags:
-  - Scottish Literature
-  - Transgressive Fiction
-  - Dark Comedy
-  - Novella Collection
+  - ScottishLiterature
+  - TransgressiveFiction
+  - DarkComedy
+  - NovellaCollection
   - Crime
-title: "Ecstasy: Three Tales of Chemical Romance"
-subtitle: ""
+title: 'Ecstasy: Three Tales of Chemical Romance'
+subtitle: ''
 author:
   - Irvine Welsh
 publisher: Jonathan Cape
-published: 1996-01-01T00:00:00+00:00
+published: 1996-01-01T00:00:00.000Z
 page_count: 280
-isbn: "9780224044059"
-description: A collection of three dark novellas exploring obsession, revenge, and desire. Includes "Lorraine Goes to Livingston," "Fortune's Always Hiding," and "The Undefeated"—each blending Welsh's trademark transgressive style with examinations of love, violence, and contemporary Scotland.
-coverUrl: https://covers.openlibrary.org/b/isbn/9780224044059-M.jpg
+isbn: '9780224044059'
+description: >-
+  A collection of three dark novellas exploring obsession, revenge, and desire.
+  Includes "Lorraine Goes to Livingston," "Fortune's Always Hiding," and "The
+  Undefeated"—each blending Welsh's trademark transgressive style with
+  examinations of love, violence, and contemporary Scotland.
+coverUrl: 'https://covers.openlibrary.org/b/isbn/9780224044059-M.jpg'
 shelf: read
 owned: false
-start_date: ""
-end_date: 1997-10-12
-rating: 
+start_date: ''
+end_date: 1997-10-12T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-12-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-12-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Ecstasy: Three Tales of Chemical Romance by Irvine Welsh

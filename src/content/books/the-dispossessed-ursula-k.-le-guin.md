@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Dispossessed
-subtitle: ""
+subtitle: ''
 author:
   - Ursula K. Le Guin
 publisher: HarperCollins
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Dispossessed by Ursula K. Le Guin

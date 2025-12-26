@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Melancholy Death of Oyster Boy
-subtitle: null
+subtitle: ~
 author:
   - Tim Burton
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL7857213M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL7857213M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 1999-08-17
-rating:
+start_date: ~
+end_date: 1999-08-17T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-08-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Melancholy Death of Oyster Boy by Tim Burton

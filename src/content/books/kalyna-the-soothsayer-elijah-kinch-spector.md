@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Kalyna the Soothsayer
-subtitle: null
+subtitle: ~
 author:
   - Elijah Kinch Spector
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL34180174M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL34180174M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-10-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-10-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Kalyna the Soothsayer by Elijah Kinch Spector

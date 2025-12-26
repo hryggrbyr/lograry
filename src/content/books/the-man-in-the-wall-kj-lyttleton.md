@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Man In The Wall
-subtitle: null
+subtitle: ~
 author:
   - KJ Lyttleton
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL58098547M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL58098547M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-04-26
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-04-26T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Man In The Wall by KJ Lyttleton

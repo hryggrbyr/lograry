@@ -1,28 +1,28 @@
 ---
 tags:
-  - sci-fi
-  - comedy
+  - Sci-fi
+  - Comedy
 title: Dirk Gently's Holistic Detective Agency
-subtitle: null
+subtitle: ~
 author:
   - Douglas Adams
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26339588M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26339588M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 1998-01-02
+start_date: ~
+end_date: 1998-01-02T00:00:00.000Z
 rating: 2
 recommended_by:
-  name:
-  url:
-created: 2015-11-02
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-11-02T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Dirk Gently's Holistic Detective Agency by Douglas Adams

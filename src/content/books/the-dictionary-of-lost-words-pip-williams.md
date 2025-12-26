@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Dictionary of Lost Words
-subtitle: null
+subtitle: ~
 author:
   - Pip Williams
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28050281M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28050281M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-10-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-10-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Dictionary of Lost Words by Pip Williams

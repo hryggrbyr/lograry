@@ -1,27 +1,27 @@
 ---
 tags:
-  - sci-fi
+  - Sci-fi
 title: Last Gasp
-subtitle: null
+subtitle: ~
 author:
   - T. Hoyle
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28270367M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28270367M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
   name: John Rigby
-  url:
-created: 2022-08-07
-reviewUrl:
-bookshopUrl:
+  url: ~
+created: 2022-08-07T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Last Gasp by T. Hoyle

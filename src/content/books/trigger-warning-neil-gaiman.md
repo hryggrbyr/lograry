@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Trigger Warning
-subtitle: null
+subtitle: ~
 author:
   - Neil Gaiman
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26778007M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26778007M-M.jpg'
 shelf: read
 owned: true
-start_date: 2015-12-18
-end_date: 2016-01-09
+start_date: 2015-12-18T00:00:00.000Z
+end_date: 2016-01-09T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-12-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-12-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Trigger Warning by Neil Gaiman

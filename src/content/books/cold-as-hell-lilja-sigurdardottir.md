@@ -4,23 +4,23 @@ title: Cold As Hell
 subtitle: An Áróra Investigation 01
 author:
   - Lilja Sigurðardóttir
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL38949997M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL38949997M-M.jpg'
 shelf: read
 owned: true
-start_date: 2022-09-04
-end_date: 2022-09-10
-rating:
+start_date: 2022-09-04T00:00:00.000Z
+end_date: 2022-09-10T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-09-04
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-09-04T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Cold As Hell by Lilja Sigurðardóttir

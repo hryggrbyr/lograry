@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Stark
-subtitle: null
+subtitle: ~
 author:
   - Ben Elton
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL7960923M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL7960923M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 1990-08-02
-rating:
+start_date: ~
+end_date: 1990-08-02T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-08-03
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-03T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Stark by Ben Elton

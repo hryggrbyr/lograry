@@ -1,29 +1,29 @@
 ---
 tags:
   - UrbanFantasy
-  - lgbt
-  - romance
+  - Lgbt
+  - Romance
 title: The House in the Cerulean Sea
 subtitle: The Cerulean Chronicles 1
 author:
   - TJ Klune
 publisher: Tom Doherty Associates
-published: 2020-03-16T19:30:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL27930457M-M.jpg
+published: 2020-03-16T18:30:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL27930457M-M.jpg'
 shelf: read
 owned: true
-start_date: 2024-08-23
-end_date: 2024-09-20
+start_date: 2024-08-23T00:00:00.000Z
+end_date: 2024-09-20T00:00:00.000Z
 rating: 5
 recommended_by:
-  name:
-  url:
-created: 2024-09-21
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-09-21T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The House in the Cerulean Sea by TJ Klune

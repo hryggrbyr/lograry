@@ -1,26 +1,26 @@
 ---
 tags: []
 title: XPD
-subtitle: ""
+subtitle: ''
 author:
   - Len Deighton
 publisher: Harper
-published: 1981-03-09T01:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 1981-03-09T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 1992-09-12
+start_date: ~
+end_date: 1992-09-12T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2024-09-13
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-09-13T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # XPD by Len Deighton

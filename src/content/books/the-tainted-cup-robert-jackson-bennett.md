@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Tainted Cup
-subtitle: null
+subtitle: ~
 author:
   - Robert Jackson Bennett
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-06-16
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-06-16T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Tainted Cup by Robert Jackson Bennett

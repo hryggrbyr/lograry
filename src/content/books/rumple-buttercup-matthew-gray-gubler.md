@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Rumple Buttercup
-subtitle: null
+subtitle: ~
 author:
   - Matthew Gray Gubler
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL34366096M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL34366096M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2022-08-02
-rating:
+start_date: ~
+end_date: 2022-08-02T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-08-03
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-03T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Rumple Buttercup by Matthew Gray Gubler

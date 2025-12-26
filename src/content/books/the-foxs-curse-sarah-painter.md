@@ -1,32 +1,32 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - UrbanFantasy
-  - magic
-  - england
-  - supernatural
-  - folklore
+  - Magic
+  - England
+  - Supernatural
+  - Folklore
 title: The Fox's Curse
 subtitle: Crow Investigations 3
 author:
   - Sarah Painter
 publisher: Siskin Press
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28375942M-M.jpg
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28375942M-M.jpg'
 shelf: read
 owned: true
-start_date: 2022-12-09
-end_date: 2023-01-07
+start_date: 2022-12-09T00:00:00.000Z
+end_date: 2023-01-07T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2023-01-07
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-01-07T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Fox's Curse by Sarah Painter
@@ -41,4 +41,3 @@ _Crow Investigations 3_
 | Started | 2022-12-09T00:00:00.000+00:00 |
 | Finished | 2023-01-07T00:00:00.000+00:00 |
 | Rating | 4/5 |
-

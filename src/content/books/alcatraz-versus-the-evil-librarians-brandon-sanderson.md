@@ -5,22 +5,22 @@ subtitle: Alcatraz 1
 author:
   - Brandon Sanderson
 publisher: Scholastic Paperbacks
-published: 2008-11-01T08:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2008-11-01T07:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Alcatraz Versus the Evil Librarians by Brandon Sanderson

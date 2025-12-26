@@ -1,26 +1,26 @@
 ---
 tags: []
-title: "Mr. Penumbra's 24-Hour Bookstore: A Novel"
-subtitle: null
+title: 'Mr. Penumbra''s 24-Hour Bookstore: A Novel'
+subtitle: ~
 author:
   - Robin Sloan
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26835606M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26835606M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2020-07-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-07-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Mr. Penumbra's 24-Hour Bookstore: A Novel by Robin Sloan

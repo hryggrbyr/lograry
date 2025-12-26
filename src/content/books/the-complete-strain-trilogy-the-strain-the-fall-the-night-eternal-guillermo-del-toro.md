@@ -1,29 +1,32 @@
 ---
 tags:
-  - horror
-  - thriller
-  - supernatural
-title: "The Complete Strain Trilogy: The Strain, The Fall, The Night Eternal"
-subtitle: ""
+  - Horror
+  - Thriller
+  - Supernatural
+title: 'The Complete Strain Trilogy: The Strain, The Fall, The Night Eternal'
+subtitle: ''
 author:
   - Guillermo del Toro
 publisher: HarperCollins UK
-published: 2013-10-24
+published: 2013-10-24T00:00:00.000Z
 page_count: 856
-isbn: "9780007535149"
-description: The high-concept thriller with a supernatural edge from the world-famous director, whose films include Pan’s Labyrinth and Hellboy.
-coverUrl: http://books.google.com/books/content?id=7W9dAAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+isbn: '9780007535149'
+description: >-
+  The high-concept thriller with a supernatural edge from the world-famous
+  director, whose films include Pan’s Labyrinth and Hellboy.
+coverUrl: >-
+  http://books.google.com/books/content?id=7W9dAAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: read
 owned: false
-start_date:
-end_date: 2013-11-14
+start_date: ~
+end_date: 2013-11-14T00:00:00.000Z
 rating: 0
 recommended_by:
-  name:
-  url:
-created: 2025-10-15 06:04:39
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-10-15T06:04:39.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Complete Strain Trilogy: The Strain, The Fall, The Night Eternal by Guillermo del Toro

@@ -1,30 +1,30 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - TalkingAnimals
-  - drama
+  - Drama
   - JuvenileFiction
 title: Outcast of Redwall
 subtitle: Redwall 8
 author:
   - Brian Jacques
 publisher: Random House
-published: 1995-12-31
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 1995-12-31T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 1995-12-31
-rating:
+start_date: ~
+end_date: 1995-12-31T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Outcast of Redwall by Brian Jacques

@@ -1,28 +1,28 @@
 ---
 tags:
-  - fantasy
-  - dystopia
+  - Fantasy
+  - Dystopia
 title: Ombria in Shadow
-subtitle: null
+subtitle: ~
 author:
   - Patricia A. McKillip
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL27078561M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL27078561M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 2022-10-22
+start_date: ~
+end_date: 2022-10-22T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2022-12-22
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-12-22T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Ombria in Shadow by Patricia A. McKillip

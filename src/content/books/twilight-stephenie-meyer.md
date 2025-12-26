@@ -1,31 +1,31 @@
 ---
 tags:
   - UrbanFantasy
-  - fantasy
-  - vampires
-  - werewolf
-  - romance
+  - Fantasy
+  - Vampires
+  - Werewolf
+  - Romance
 title: Twilight
 subtitle: The Twilight Saga 1
 author:
   - Stephenie Meyer
 publisher: Thorndike Press
-published: 2009-03-15T08:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2009-03-15T07:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date: 2009-12-01
-end_date: 2025-09-08
+start_date: 2009-12-01T00:00:00.000Z
+end_date: 2025-09-08T00:00:00.000Z
 rating: 5
 recommended_by:
-  name:
-  url:
-created: 2009-12-01
+  name: ~
+  url: ~
+created: 2009-12-01T00:00:00.000Z
 reviewUrl: /posts/book-review-twilight-stephenie-meyer
-bookshopUrl:
+bookshopUrl: ~
 ---
 
 # Twilight by Stephenie Meyer

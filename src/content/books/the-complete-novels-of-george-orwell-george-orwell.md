@@ -1,27 +1,27 @@
 ---
 tags:
-  - dystopia
+  - Dystopia
 title: The Complete Novels Of George Orwell
-subtitle: ""
+subtitle: ''
 author:
   - George Orwell
 publisher: Penguin Group
-published: 2009-06-03T15:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2009-06-03T14:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Complete Novels Of George Orwell by George Orwell

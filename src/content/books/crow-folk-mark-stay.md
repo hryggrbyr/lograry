@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Crow Folk
-subtitle: null
+subtitle: ~
 author:
   - Mark Stay
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL29520358M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL29520358M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-10-21
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-10-21T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Crow Folk by Mark Stay

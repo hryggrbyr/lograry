@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Familiar
-subtitle: null
+subtitle: ~
 author:
   - Mark Z. Danielewski
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2015-11-02
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-11-02T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Familiar by Mark Z. Danielewski

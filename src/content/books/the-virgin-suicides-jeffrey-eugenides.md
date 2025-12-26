@@ -1,30 +1,45 @@
 ---
 tags:
-  - YoungAdult
-  - suicide
-  - DarkHumour
-  - ComingOfAge
+  - Youngadult
+  - Suicide
+  - Darkhumour
+  - Comingofage
 title: The Virgin Suicides
 subtitle: A Novel (Twenty-Fifth Anniversary Edition)
 author:
   - Jeffrey Eugenides
-publisher: Farrar, Straus and Giroux
-published: 1993-04-01
+publisher: 'Farrar, Straus and Giroux'
+published: 1993-04-01T00:00:00.000Z
 page_count: 260
-isbn: "9781429960441"
-description: The national bestseller from Jeffrey Eugenides, the Pulitzer Prize–Winning Author of Middlesex and The Marriage Plot With a New Introduction by Emma Cline Adapted into a critically acclaimed film by Sofia Coppola, The Virgin Suicides is a modern classic, a lyrical and timeless tale of sex and suicide that transforms and mythologizes suburban middle-American life. First published in 1993, The Virgin Suicides announced the arrival of a major new American novelist. In a quiet suburb of Detroit, the five Lisbon sisters—beautiful, eccentric, and obsessively watched by the neighborhood boys—commit suicide one by one over the course of a single year. As the boys observe them from afar, transfixed, they piece together the mystery of the family's fatal melancholy, in this hypnotic and unforgettable novel of adolescent love, disquiet, and death. Jeffrey Eugenides evokes the emotions of youth with haunting sensitivity and dark humor and creates a coming-of-age story unlike any of our time.
-coverUrl: http://books.google.com/books/content?id=Pf1xhp6u-w0C&printsec=frontcover&img=1&zoom=1&source=gbs_api
+isbn: '9781429960441'
+description: >-
+  The national bestseller from Jeffrey Eugenides, the Pulitzer Prize–Winning
+  Author of Middlesex and The Marriage Plot With a New Introduction by Emma
+  Cline Adapted into a critically acclaimed film by Sofia Coppola, The Virgin
+  Suicides is a modern classic, a lyrical and timeless tale of sex and suicide
+  that transforms and mythologizes suburban middle-American life. First
+  published in 1993, The Virgin Suicides announced the arrival of a major new
+  American novelist. In a quiet suburb of Detroit, the five Lisbon
+  sisters—beautiful, eccentric, and obsessively watched by the neighborhood
+  boys—commit suicide one by one over the course of a single year. As the boys
+  observe them from afar, transfixed, they piece together the mystery of the
+  family's fatal melancholy, in this hypnotic and unforgettable novel of
+  adolescent love, disquiet, and death. Jeffrey Eugenides evokes the emotions of
+  youth with haunting sensitivity and dark humor and creates a coming-of-age
+  story unlike any of our time.
+coverUrl: >-
+  http://books.google.com/books/content?id=Pf1xhp6u-w0C&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: to-read
 owned: false
-start_date:
-end_date:
+start_date: ~
+end_date: ~
 rating: 0
 recommended_by:
-  name:
-  url:
-created: 2025-08-17 06:42:41
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-08-17T06:42:41.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Virgin Suicides by Jeffrey Eugenides

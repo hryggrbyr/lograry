@@ -1,29 +1,29 @@
 ---
 tags:
-  - thriller
-  - sci-fi
-  - crime
+  - Thriller
+  - Sci-fi
+  - Crime
 title: Bound in Blood
-subtitle: null
+subtitle: ~
 author:
   - Tarah Benner
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL54744566M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL54744566M-M.jpg'
 shelf: read
 owned: false
-start_date: 2024-12-17
-end_date: 2024-12-22
+start_date: 2024-12-17T00:00:00.000Z
+end_date: 2024-12-22T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2024-12-22
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-12-22T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Bound in Blood by Tarah Benner

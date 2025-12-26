@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Taxi Driver
-subtitle: null
+subtitle: ~
 author:
   - Paul Schrader
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL30548264M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL30548264M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-06-21
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-06-21T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Taxi Driver by Paul Schrader

@@ -1,26 +1,26 @@
 ---
 tags: []
 title: How Infrastructure Works
-subtitle: null
+subtitle: ~
 author:
   - Deb Chachra
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL48258858M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL48258858M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-12-07
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-12-07T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # How Infrastructure Works by Deb Chachra

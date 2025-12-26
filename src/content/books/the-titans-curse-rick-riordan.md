@@ -1,31 +1,31 @@
 ---
 tags:
-  - YoungAdult
-  - fantasy
+  - Youngadult
+  - Fantasy
   - UrbanFantasy
-  - mythology
-  - magic
+  - Mythology
+  - Magic
 title: The Titan's Curse
 subtitle: Percy Jackson and the Olympians 3
 author:
   - Rick Riordan
 publisher: Disney Publishing Worldwide
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL31516750M-M.jpg
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL31516750M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 2011-09-12
+start_date: ~
+end_date: 2011-09-12T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Titan's Curse by Rick Riordan

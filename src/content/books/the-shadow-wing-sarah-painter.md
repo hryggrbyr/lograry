@@ -1,32 +1,32 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - UrbanFantasy
-  - magic
-  - england
-  - supernatural
-  - folklore
+  - Magic
+  - England
+  - Supernatural
+  - Folklore
 title: The Shadow Wing
 subtitle: Crow Investigations 6
 author:
   - Sarah Painter
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL32833768M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL32833768M-M.jpg'
 shelf: read
 owned: true
-start_date: 2023-02-23
-end_date: 2023-03-12
-rating:
+start_date: 2023-02-23T00:00:00.000Z
+end_date: 2023-03-12T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-03-12
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-03-12T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Shadow Wing by Sarah Painter

@@ -1,30 +1,30 @@
 ---
 tags:
-  - fantasy
-  - dystopia
-  - YoungAdult
-  - romance
+  - Fantasy
+  - Dystopia
+  - Youngadult
+  - Romance
 title: Catching Fire
 subtitle: The Hunger Games 2
 author:
   - Suzanne Collins
 publisher: Scholastic Press
-published: 2009-01-01T07:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL22842132M-M.jpg
+published: 2009-01-01T06:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL22842132M-M.jpg'
 shelf: read
 owned: true
-start_date: 2011-09-27
-end_date: 2011-10-19
+start_date: 2011-09-27T00:00:00.000Z
+end_date: 2011-10-19T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Catching Fire by Suzanne Collins

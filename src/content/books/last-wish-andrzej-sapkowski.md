@@ -1,29 +1,29 @@
 ---
 tags:
-  - fantasy
-  - magic
-  - wizards
+  - Fantasy
+  - Magic
+  - Wizards
 title: Last Wish
-subtitle: null
+subtitle: ~
 author:
   - Andrzej Sapkowski
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL10426195M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL10426195M-M.jpg'
 shelf: read
 owned: false
-start_date: 2019-12-20
-end_date: 2020-01-01
+start_date: 2019-12-20T00:00:00.000Z
+end_date: 2020-01-01T00:00:00.000Z
 rating: 4
 recommended_by:
   name: Netflix
-  url:
-created: 2020-04-22
-reviewUrl:
-bookshopUrl:
+  url: ~
+created: 2020-04-22T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Last Wish by Andrzej Sapkowski

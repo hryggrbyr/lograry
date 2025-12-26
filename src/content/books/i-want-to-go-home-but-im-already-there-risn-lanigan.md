@@ -1,28 +1,29 @@
 ---
 tags:
-  - supernatural
-  - ghosts
+  - Supernatural
+  - Ghosts
 title: I Want to Go Home but I'm Already There
-subtitle: null
+subtitle: ~
 author:
   - Róisín Lanigan
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://m.media-amazon.com/images/I/71aDqGUdHKL._SL1500_.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://m.media-amazon.com/images/I/71aDqGUdHKL._SL1500_.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-03-19
-reviewUrl:
-bookshopUrl: https://www.ebooks.com/en-gb/book/211390646/i-want-to-go-home-but-i-m-already-there/r-is-n-lanigan/
+  name: ~
+  url: ~
+created: 2025-03-19T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: >-
+  https://www.ebooks.com/en-gb/book/211390646/i-want-to-go-home-but-i-m-already-there/r-is-n-lanigan/
 ---
 
 # I Want to Go Home but I'm Already There by Róisín Lanigan

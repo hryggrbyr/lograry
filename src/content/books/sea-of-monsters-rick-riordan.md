@@ -1,27 +1,27 @@
 ---
 tags:
-  - YoungAdult
+  - Youngadult
 title: Sea of Monsters
-subtitle: ""
+subtitle: ''
 author:
   - Rick Riordan
 publisher: Disney Book Group
-published: 2009-05-01T22:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2009-05-01T21:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2011-02-02
-rating:
+start_date: ~
+end_date: 2011-02-02T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Sea of Monsters by Rick Riordan

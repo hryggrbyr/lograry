@@ -1,28 +1,28 @@
 ---
 tags:
-  - sci-fi
-  - horror
+  - Sci-fi
+  - Horror
 title: Ascension
-subtitle: null
+subtitle: ~
 author:
   - Nicholas Binge
-publisher:
-published: 2023-12-31
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL39408956M-M.jpg
+publisher: ~
+published: 2023-12-31T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL39408956M-M.jpg'
 shelf: read
 owned: true
-start_date: 2025-01-27
-end_date: 2025-02-04
+start_date: 2025-01-27T00:00:00.000Z
+end_date: 2025-02-04T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2025-02-04
+  name: ~
+  url: ~
+created: 2025-02-04T00:00:00.000Z
 reviewUrl: /posts/book-review-ascension-nicholas-binge
-bookshopUrl:
+bookshopUrl: ~
 ---
 
 # Ascension by Nicholas Binge

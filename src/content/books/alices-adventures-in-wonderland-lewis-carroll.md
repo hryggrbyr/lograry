@@ -1,29 +1,29 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - JuvenileFiction
-  - classic
+  - Classic
 title: Alice's Adventures in Wonderland
-subtitle: null
+subtitle: ~
 author:
   - Lewis Carroll
-publisher:
-published: 1865-11-02
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL24281074M-M.jpg
+publisher: ~
+published: 1865-11-02T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL24281074M-M.jpg'
 shelf: read
 owned: true
-start_date: 1989-02-02
-end_date: 1989-02-02
+start_date: 1989-02-02T00:00:00.000Z
+end_date: 1989-02-02T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2015-11-02
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-11-02T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Alice's Adventures in Wonderland by Lewis Carroll

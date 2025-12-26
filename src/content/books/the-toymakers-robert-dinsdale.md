@@ -1,34 +1,34 @@
 ---
 tags:
-  - fantasy
-  - epic
+  - Fantasy
+  - Epic
   - UrbanFantasy
-  - HistoricalFantasy
-  - magic
-  - war
-  - family
-  - relationships
+  - Historicalfantasy
+  - Magic
+  - War
+  - Family
+  - Relationships
 title: The Toymakers
-subtitle: null
+subtitle: ~
 author:
   - Robert Dinsdale
 publisher: Del Rey
-published: 2018-09-20
+published: 2018-09-20T00:00:00.000Z
 page_count: 480
-isbn: "9781785036354"
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL30547213M-M.jpg
+isbn: '9781785036354'
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL30547213M-M.jpg'
 shelf: read
 owned: true
-start_date: 2025-01-01
-end_date: 2025-01-09
+start_date: 2025-01-01T00:00:00.000Z
+end_date: 2025-01-09T00:00:00.000Z
 rating: 5
 recommended_by:
-  name:
-  url:
-created: 2025-01-09
+  name: ~
+  url: ~
+created: 2025-01-09T00:00:00.000Z
 reviewUrl: /posts/book-review-the-toymakers-robert-dinsdale
-bookshopUrl:
+bookshopUrl: ~
 ---
 
 # The Toymakers by Robert Dinsdale

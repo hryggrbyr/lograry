@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Bored Gay Werewolf
-subtitle: null
+subtitle: ~
 author:
   - Tony Santorella
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL48185400M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL48185400M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-06-04
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-06-04T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Bored Gay Werewolf by Tony Santorella

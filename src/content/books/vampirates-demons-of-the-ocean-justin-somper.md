@@ -1,28 +1,28 @@
 ---
 tags:
-  - fantasy
-  - vampires
-title: "Vampirates: Demons of the Ocean"
-subtitle: null
+  - Fantasy
+  - Vampires
+title: 'Vampirates: Demons of the Ocean'
+subtitle: ~
 author:
   - Justin Somper
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-04-28
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-04-28T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Vampirates: Demons of the Ocean by Justin Somper

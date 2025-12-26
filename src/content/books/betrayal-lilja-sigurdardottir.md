@@ -1,30 +1,30 @@
 ---
 tags:
-  - crime
-  - scandinoir
-  - iceland
-  - police
+  - Crime
+  - Scandinoir
+  - Iceland
+  - Police
 title: Betrayal
-subtitle: ""
+subtitle: ''
 author:
   - Lilja Sigurðardóttir
 publisher: Orenda Books
-published: 2020-04-15T00:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL34401770M-M.jpg
+published: 2020-04-14T23:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL34401770M-M.jpg'
 shelf: read
 owned: true
-start_date: 2022-01-05
-end_date: 2022-08-07
+start_date: 2022-01-05T00:00:00.000Z
+end_date: 2022-08-07T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2022-01-05
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-01-05T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Betrayal by Lilja Sigurðardóttir

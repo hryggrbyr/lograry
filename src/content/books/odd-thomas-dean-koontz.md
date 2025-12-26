@@ -1,30 +1,34 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - UrbanFantasy
-  - supernatural
-  - demons
+  - Supernatural
+  - Demons
 title: Odd Thomas
-subtitle: ""
+subtitle: ''
 author:
   - Dean Koontz
 publisher: HarperCollins UK
-published: 2009-02-13
+published: 2009-02-13T00:00:00.000Z
 page_count: 16
-isbn: "9780007318209"
-description: The 400 million copy worldwide bestseller Dean Koontz is at his very best in this critically-acclaimed page-turner – soon to be a major motion picture. Find out why Odd Thomas is the master storyteller’s most-loved creation.
-coverUrl: http://books.google.com/books/content?id=mKmsN2BfsBMC&printsec=frontcover&img=1&zoom=1&source=gbs_api
+isbn: '9780007318209'
+description: >-
+  The 400 million copy worldwide bestseller Dean Koontz is at his very best in
+  this critically-acclaimed page-turner – soon to be a major motion picture.
+  Find out why Odd Thomas is the master storyteller’s most-loved creation.
+coverUrl: >-
+  http://books.google.com/books/content?id=mKmsN2BfsBMC&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: read
 owned: false
-start_date: 2016-05-06
-end_date: 2017-04-15
+start_date: 2016-05-06T00:00:00.000Z
+end_date: 2017-04-15T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2016-05-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2016-05-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Odd Thomas by Dean Koontz

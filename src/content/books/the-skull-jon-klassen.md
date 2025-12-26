@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Skull
-subtitle: null
+subtitle: ~
 author:
   - Jon Klassen
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL47422671M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL47422671M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-12-20
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-12-20T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Skull by Jon Klassen

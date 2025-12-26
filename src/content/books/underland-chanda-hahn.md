@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Underland
-subtitle: null
+subtitle: ~
 author:
   - Chanda Hahn
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: false
-start_date: 2022-09-29
-end_date: 2022-10-10
-rating:
+start_date: 2022-09-29T00:00:00.000Z
+end_date: 2022-10-10T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-12-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-12-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Underland by Chanda Hahn

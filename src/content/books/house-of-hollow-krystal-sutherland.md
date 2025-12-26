@@ -1,26 +1,26 @@
 ---
 tags: []
 title: House of Hollow
-subtitle: null
+subtitle: ~
 author:
   - Krystal Sutherland
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL32128247M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL32128247M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-10-21
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-10-21T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # House of Hollow by Krystal Sutherland

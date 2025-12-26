@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Congo
-subtitle: null
+subtitle: ~
 author:
   - Michael Crichton
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL22016128M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL22016128M-M.jpg'
 shelf: read
 owned: false
-start_date: 1995-01-01
-end_date: 1995-01-01
-rating:
+start_date: 1995-01-01T00:00:00.000Z
+end_date: 1995-01-01T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-04-25
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-04-25T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Congo by Michael Crichton

@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Handmaid's Tale
-subtitle: null
+subtitle: ~
 author:
   - Margaret Atwood
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL31854516M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL31854516M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 1996-09-04
+start_date: ~
+end_date: 1996-09-04T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Handmaid's Tale by Margaret Atwood

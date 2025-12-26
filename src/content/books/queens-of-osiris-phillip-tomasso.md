@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Queens Of Osiris
-subtitle: null
+subtitle: ~
 author:
   - Phillip Tomasso
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL37777063M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL37777063M-M.jpg'
 shelf: read
 owned: true
-start_date: 2024-07-02
-end_date: 2024-07-16
+start_date: 2024-07-02T00:00:00.000Z
+end_date: 2024-07-16T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2024-07-17
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-07-17T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Queens Of Osiris by Phillip Tomasso

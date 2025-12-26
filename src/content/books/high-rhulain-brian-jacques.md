@@ -1,30 +1,30 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - TalkingAnimals
-  - drama
+  - Drama
   - JuvenileFiction
 title: High Rhulain
 subtitle: Redwall 18
 author:
   - Brian Jacques
 publisher: Penguin
-published: 2005-12-31
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2005-12-31T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2005-12-31
-rating:
+start_date: ~
+end_date: 2005-12-31T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # High Rhulain by Brian Jacques

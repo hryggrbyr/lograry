@@ -1,28 +1,28 @@
 ---
 tags:
-  - romance
-  - lgbt
+  - Romance
+  - Lgbt
 title: The Lightning-Struck Heart
 subtitle: Tales From Verania 1
 author:
   - TJ Klune
 publisher: Tj Klune
-published: 2019-02-15T01:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2019-02-15T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Lightning-Struck Heart by TJ Klune

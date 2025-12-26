@@ -1,28 +1,28 @@
 ---
 tags:
-  - horror
-  - supernatural
+  - Horror
+  - Supernatural
 title: The Fog
-subtitle: null
+subtitle: ~
 author:
   - James Herbert
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL9346701M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL9346701M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 1990-11-21
+start_date: ~
+end_date: 1990-11-21T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Fog by James Herbert

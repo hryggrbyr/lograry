@@ -1,30 +1,30 @@
 ---
 tags:
-  - crime
-  - police
-  - america
-  - SerialKiller
+  - Crime
+  - Police
+  - America
+  - Serialkiller
 title: Dexter in the Dark
-subtitle: null
+subtitle: ~
 author:
   - Jeff Lindsay
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL35458674M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL35458674M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 2007-05-01
-rating:
+start_date: ~
+end_date: 2007-05-01T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-12-22
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-12-22T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Dexter in the Dark by Jeff Lindsay

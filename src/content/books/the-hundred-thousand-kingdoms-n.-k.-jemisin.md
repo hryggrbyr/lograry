@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Hundred Thousand Kingdoms
-subtitle: null
+subtitle: ~
 author:
   - N. K. Jemisin
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26095742M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26095742M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2020-05-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-05-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Hundred Thousand Kingdoms by N. K. Jemisin

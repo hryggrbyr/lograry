@@ -1,28 +1,29 @@
 ---
 tags:
-  - sci-fi
-  - horror
+  - Sci-fi
+  - Horror
 title: Prophecy
-subtitle: ""
+subtitle: ''
 author:
   - David Seltzer
 publisher: Ballantine Books
-published: 1979-06-12
+published: 1979-06-12T00:00:00.000Z
 page_count: 260
-isbn: "9780345286420"
-description: ""
-coverUrl: http://books.google.com/books/content?id=kX_2HDi9wB4C&printsec=frontcover&img=1&zoom=1&source=gbs_api
+isbn: '9780345286420'
+description: ''
+coverUrl: >-
+  http://books.google.com/books/content?id=kX_2HDi9wB4C&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: read
 owned: false
-start_date:
-end_date: 1989-11-20
+start_date: ~
+end_date: 1989-11-20T00:00:00.000Z
 rating: 0
 recommended_by:
-  name:
-  url:
-created: 2025-10-24 11:19:17
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-10-24T11:19:17.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Prophecy by David Seltzer

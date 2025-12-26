@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Sour Candy
-subtitle: null
+subtitle: ~
 author:
   - Kealan Patrick Burke
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28415600M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28415600M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-10-21
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-10-21T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Sour Candy by Kealan Patrick Burke

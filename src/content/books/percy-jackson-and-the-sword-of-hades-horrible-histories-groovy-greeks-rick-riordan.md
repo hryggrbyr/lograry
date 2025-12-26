@@ -1,30 +1,30 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - UrbanFantasy
-  - mythology
-  - magic
+  - Mythology
+  - Magic
 title: Percy Jackson and the Sword of Hades
 subtitle: Percy Jackson and The Olympians
 author:
   - Rick Riordan
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26811424M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26811424M-M.jpg'
 shelf: read
 owned: false
-start_date: 2011-02-02
-end_date: 2011-02-02
+start_date: 2011-02-02T00:00:00.000Z
+end_date: 2011-02-02T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Percy Jackson and the Sword of Hades by Rick Riordan

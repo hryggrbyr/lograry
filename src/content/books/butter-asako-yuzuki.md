@@ -1,26 +1,26 @@
 ---
 tags: []
 title: BUTTER
-subtitle: null
+subtitle: ~
 author:
   - Asako Yuzuki
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26931565M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26931565M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-12-14
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-12-14T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # BUTTER by Asako Yuzuki

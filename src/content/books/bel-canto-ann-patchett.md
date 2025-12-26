@@ -2,26 +2,30 @@
 tags:
   - Fiction
 title: Bel Canto
-subtitle: ""
+subtitle: ''
 author:
   - Ann Patchett
 publisher: HarperCollins UK
-published: 2020-02-27
+published: 2020-02-27T00:00:00.000Z
 page_count: 350
-isbn: "9780007381791"
-description: Winner of The Women’s Prize for Fiction and the PEN/Faulkner Award for Fiction. The poignant – and at times very funny – novel from the author of The Dutch House and Commonwealth.
-coverUrl: http://books.google.com/books/content?id=NOPODwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+isbn: '9780007381791'
+description: >-
+  Winner of The Women’s Prize for Fiction and the PEN/Faulkner Award for
+  Fiction. The poignant – and at times very funny – novel from the author of The
+  Dutch House and Commonwealth.
+coverUrl: >-
+  http://books.google.com/books/content?id=NOPODwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: to-read
 owned: false
-start_date:
-end_date:
+start_date: ~
+end_date: ~
 rating: 0
 recommended_by:
   name: Annie Mueller
-  url: https://anniemueller.com/posts/reading-notes-august-september
-created: 2025-10-10 07:04:41
-reviewUrl:
-bookshopUrl:
+  url: 'https://anniemueller.com/posts/reading-notes-august-september'
+created: 2025-10-10T07:04:41.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Bel Canto by Ann Patchett

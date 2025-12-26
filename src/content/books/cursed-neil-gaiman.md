@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Cursed
-subtitle: null
+subtitle: ~
 author:
   - Neil Gaiman
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28262206M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28262206M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-11-28
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-11-28T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Cursed by Neil Gaiman

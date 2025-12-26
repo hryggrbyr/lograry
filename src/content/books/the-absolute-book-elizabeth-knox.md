@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Absolute Book
-subtitle: null
+subtitle: ~
 author:
   - Elizabeth Knox
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL31865415M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL31865415M-M.jpg'
 shelf: read
 owned: true
-start_date: 2023-04-23
-end_date: 2023-07-23
+start_date: 2023-04-23T00:00:00.000Z
+end_date: 2023-07-23T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2023-07-24
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-07-24T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Absolute Book by Elizabeth Knox

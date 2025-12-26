@@ -1,31 +1,31 @@
 ---
 tags:
-  - scandinoir
-  - crime
-  - police
-  - thriller
-  - sweden
+  - Scandinoir
+  - Crime
+  - Police
+  - Thriller
+  - Sweden
 title: Firewall
 subtitle: Kurt Wallander 8
 author:
   - Henning Mankell
 publisher: Vintage
-published: 2008-10-09T08:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2008-10-09T07:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2020-12-17
+start_date: ~
+end_date: 2020-12-17T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Firewall by Henning Mankell

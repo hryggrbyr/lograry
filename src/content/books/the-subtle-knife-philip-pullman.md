@@ -1,29 +1,29 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - Religon
-  - ParallelWorlds
+  - Parallelworlds
 title: The Subtle Knife
 subtitle: His Dark Materials 2
 author:
   - Philip Pullman
 publisher: Scholastic
-published: 1985-01-02T07:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL655633M-M.jpg
+published: 1985-01-02T06:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL655633M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2015-01-10
+start_date: ~
+end_date: 2015-01-10T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2020-04-22
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-04-22T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Subtle Knife by Philip Pullman

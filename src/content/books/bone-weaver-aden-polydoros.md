@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Bone Weaver
-subtitle: null
+subtitle: ~
 author:
   - Aden Polydoros
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL35999773M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL35999773M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-09-04
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-09-04T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Bone Weaver by Aden Polydoros

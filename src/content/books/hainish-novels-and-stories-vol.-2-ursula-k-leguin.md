@@ -1,29 +1,31 @@
 ---
 tags:
-  - fantasy
-  - anthropology
-  - ShortStories
+  - Fantasy
+  - Anthropology
+  - Shortstories
 title: Hainish Novels and Stories Vol. 2
-subtitle: The Word for World Is Forest | Five Ways to Forgiveness | The Telling | Stories
+subtitle: >-
+  The Word for World Is Forest | Five Ways to Forgiveness | The Telling |
+  Stories
 author:
   - Ursula K. Le Guin
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26818559M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26818559M-M.jpg'
 shelf: read
 owned: true
-start_date: 2020-04-22
-end_date: 2020-04-30
+start_date: 2020-04-22T00:00:00.000Z
+end_date: 2020-04-30T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2020-04-22
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-04-22T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Hainish Novels and Stories Vol. 2 by Ursula K. Le Guin

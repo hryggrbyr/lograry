@@ -1,29 +1,29 @@
 ---
 tags:
-  - nonfiction
-  - space
-  - science
+  - Nonfiction
+  - Space
+  - Science
 title: Packing for Mars
-subtitle: null
+subtitle: ~
 author:
   - Mary Roach
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date: 2023-10-08
-end_date: 2023-11-22
+start_date: 2023-10-08T00:00:00.000Z
+end_date: 2023-11-22T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2023-11-24
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-11-24T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Packing for Mars by Mary Roach

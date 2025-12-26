@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Looking for Alaska
-subtitle: null
+subtitle: ~
 author:
   - John Green
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL39482441M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL39482441M-M.jpg'
 shelf: read
 owned: false
-start_date: 2016-05-06
-end_date: 2016-05-21
-rating:
+start_date: 2016-05-06T00:00:00.000Z
+end_date: 2016-05-21T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2016-05-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2016-05-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Looking for Alaska by John Green

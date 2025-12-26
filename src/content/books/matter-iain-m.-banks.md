@@ -1,27 +1,27 @@
 ---
 tags:
-  - sci-fi
+  - Sci-fi
 title: Matter
 subtitle: The Culture 8
 author:
   - Iain M. Banks
 publisher: Culture
-published: 2008-02-25T09:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2008-02-25T08:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Matter by Iain M. Banks

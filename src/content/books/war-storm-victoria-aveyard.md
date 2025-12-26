@@ -1,29 +1,29 @@
 ---
 tags:
-  - fantasy
-  - dystopia
-  - YoungAdult
+  - Fantasy
+  - Dystopia
+  - Youngadult
 title: War Storm
 subtitle: Red Queen 4
 author:
   - Victoria Aveyard
 publisher: HarperCollins
-published: 2018-03-30T01:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2018-03-30T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2018-04-11
+start_date: ~
+end_date: 2018-04-11T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # War Storm by Victoria Aveyard

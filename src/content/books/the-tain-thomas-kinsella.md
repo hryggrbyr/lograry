@@ -1,28 +1,28 @@
 ---
 tags:
-  - mythology
-  - folklore
+  - Mythology
+  - Folklore
 title: The Táin
-subtitle: null
+subtitle: ~
 author:
   - Thomas Kinsella
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL33988699M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL33988699M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-11-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-11-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Táin by Thomas Kinsella

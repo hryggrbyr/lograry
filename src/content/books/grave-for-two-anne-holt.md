@@ -1,30 +1,30 @@
 ---
 tags:
-  - thriller
-  - scandinoir
-  - norway
-  - crime
+  - Thriller
+  - Scandinoir
+  - Norway
+  - Crime
 title: A Grave for Two
 subtitle: The Selma Falck Series 1
 author:
   - Anne Holt
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL29438703M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL29438703M-M.jpg'
 shelf: read
 owned: true
-start_date: 2020-01-01
-end_date: 2020-01-20
+start_date: 2020-01-01T00:00:00.000Z
+end_date: 2020-01-20T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2021-12-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2021-12-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Grave for Two by Anne Holt

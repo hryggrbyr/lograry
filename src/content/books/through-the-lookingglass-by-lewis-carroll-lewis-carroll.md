@@ -1,28 +1,28 @@
 ---
 tags:
-  - fantasy
-  - ParallelWorlds
+  - Fantasy
+  - Parallelworlds
 title: Through the Looking-Glass
-subtitle: null
+subtitle: ~
 author:
   - Lewis Carroll
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL36957418M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL36957418M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 1987-02-02
+start_date: ~
+end_date: 1987-02-02T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2015-11-02
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-11-02T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Through the Looking-Glass by Lewis Carroll by Lewis Carroll

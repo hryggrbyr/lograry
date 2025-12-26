@@ -1,32 +1,32 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - UrbanFantasy
-  - magic
-  - england
-  - supernatural
-  - folklore
+  - Magic
+  - England
+  - Supernatural
+  - Folklore
 title: The Broken Cage
 subtitle: Crow Investigations 7
 author:
   - Sarah Painter
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL46445833M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL46445833M-M.jpg'
 shelf: read
 owned: true
-start_date: 2023-03-13
-end_date: 2023-04-02
-rating:
+start_date: 2023-03-13T00:00:00.000Z
+end_date: 2023-04-02T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-04-03
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-04-03T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Broken Cage by Sarah Painter

@@ -1,30 +1,35 @@
 ---
 tags:
-  - crime
-  - police
-  - scandinoir
-  - norway
+  - Crime
+  - Police
+  - Scandinoir
+  - Norway
 title: Dregs
-subtitle: ""
+subtitle: ''
 author:
   - Jørn Lier Horst
-publisher:
-published: 2014-01-12
+publisher: ~
+published: 2014-01-12T00:00:00.000Z
 page_count: 406
-isbn: "9781471276408"
-description: In Stavern around midsummer a severed left foot in a training shoe is washed up on the shore. Then another, and yet another. Altogether four left feet in the course of one week. Police Inspector William Wisting has many years of murder experience behind him, but he has never examined evidence like this.
-coverUrl: http://books.google.com/books/content?id=_gYVogEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+isbn: '9781471276408'
+description: >-
+  In Stavern around midsummer a severed left foot in a training shoe is washed
+  up on the shore. Then another, and yet another. Altogether four left feet in
+  the course of one week. Police Inspector William Wisting has many years of
+  murder experience behind him, but he has never examined evidence like this.
+coverUrl: >-
+  http://books.google.com/books/content?id=_gYVogEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: read
 owned: false
-start_date: 2021-01-15
-end_date: 2021-01-21
+start_date: 2021-01-15T00:00:00.000Z
+end_date: 2021-01-21T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-reviewUrl: ""
-bookshopUrl: https://www.ebooks.com/en-gb/searchapp/searchresults.net?term=9781471276408
-created: 2021-01-15
+  name: ~
+  url: ~
+reviewUrl: ''
+bookshopUrl: 'https://www.ebooks.com/en-gb/searchapp/searchresults.net?term=9781471276408'
+created: 2021-01-15T00:00:00.000Z
 ---
 
 # Dregs by Jørn Lier Horst

@@ -1,28 +1,28 @@
 ---
 tags:
-  - horror
-  - demons
+  - Horror
+  - Demons
 title: All The Pretty Dead Girls
-subtitle: null
+subtitle: ~
 author:
   - John Manning
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL24321404M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL24321404M-M.jpg'
 shelf: read
 owned: true
-start_date: 2023-09-28
-end_date: 2023-10-07
-rating:
+start_date: 2023-09-28T00:00:00.000Z
+end_date: 2023-10-07T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-10-09
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-10-09T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # All The Pretty Dead Girls by John Manning

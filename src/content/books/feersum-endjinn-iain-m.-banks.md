@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Feersum Endjinn
-subtitle: null
+subtitle: ~
 author:
   - Iain M. Banks
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28736702M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28736702M-M.jpg'
 shelf: read
 owned: false
-start_date: 1997-06-15
-end_date: 1997-06-15
-rating:
+start_date: 1997-06-15T00:00:00.000Z
+end_date: 1997-06-15T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-06-16
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-06-16T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Feersum Endjinn by Iain M. Banks

@@ -1,31 +1,31 @@
 ---
 tags:
-  - YoungAdult
-  - fantasy
+  - Youngadult
+  - Fantasy
   - UrbanFantasy
-  - mythology
-  - magic
+  - Mythology
+  - Magic
 title: The Chalice of the Gods
 subtitle: Percy Jackson and the Olympians 6
 author:
   - Rick Riordan
 publisher: Disney Hyperion
-published: 2023-09-15T06:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2023-09-15T05:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Percy Jackson and the Olympians: The Chalice of the Gods by Rick Riordan
@@ -40,4 +40,3 @@ _Percy Jackson and the Olympians 6_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

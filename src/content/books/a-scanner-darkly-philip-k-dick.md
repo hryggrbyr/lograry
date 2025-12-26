@@ -1,27 +1,27 @@
 ---
 tags:
-  - cyberpunk
+  - Cyberpunk
 title: A Scanner Darkly
-subtitle: null
+subtitle: ~
 author:
   - Philip K Dick
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL8132395M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL8132395M-M.jpg'
 shelf: abandoned
 owned: true
-start_date: 2023-11-22
-end_date:
-rating:
+start_date: 2023-11-22T00:00:00.000Z
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-12-20
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-12-20T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # A Scanner Darkly by Philip K Dick

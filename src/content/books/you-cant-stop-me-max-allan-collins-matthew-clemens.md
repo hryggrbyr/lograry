@@ -1,27 +1,27 @@
 ---
 tags:
-  - Fiction:Thriller
+  - Thriller
 title: You Can't Stop Me
-subtitle: ""
+subtitle: ''
 author:
   - Max Allan Collins & Matthew Clemens
 publisher: PINNACLE BOOKS
-published: 2010-09-15T12:11:34+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2010-09-15T11:11:34.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # You Can't Stop Me by Max Allan Collins & Matthew Clemens

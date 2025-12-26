@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Charmed Life
-subtitle: null
+subtitle: ~
 author:
   - Diana Wynne Jones
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL27051252M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL27051252M-M.jpg'
 shelf: read
 owned: true
-start_date: 2022-09-04
-end_date: 2022-09-28
-rating:
+start_date: 2022-09-04T00:00:00.000Z
+end_date: 2022-09-28T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-12-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-12-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Charmed Life (Essential Modern Classics) by Diana Wynne Jones

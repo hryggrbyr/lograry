@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Heart of Darkness
-subtitle: null
+subtitle: ~
 author:
   - Joseph Conrad
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL8902418M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL8902418M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 2006-08-20
-rating:
+start_date: ~
+end_date: 2006-08-20T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-08-21
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-21T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Heart of Darkness by Joseph Conrad

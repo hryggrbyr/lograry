@@ -1,30 +1,30 @@
 ---
 tags:
-  - fantasy
-  - magic
-  - wizards
-  - dragons
+  - Fantasy
+  - Magic
+  - Wizards
+  - Dragons
 title: The Farthest Shore
 subtitle: Earthsea 3
 author:
   - Ursula K. Le Guin
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL8456761M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL8456761M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2020-02-24
-rating:
+start_date: ~
+end_date: 2020-02-24T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2020-04-22
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-04-22T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Farthest Shore by Ursula K. Le Guin

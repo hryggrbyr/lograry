@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Scarred Woman
-subtitle: ""
+subtitle: ''
 author:
   - Jussi Adler-Olsen
 publisher: Penguin Publishing Group
-published: 2017-09-19T01:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26925983M-M.jpg
+published: 2017-09-19T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26925983M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-07-12
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-07-12T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Scarred Woman by Jussi Adler-Olsen

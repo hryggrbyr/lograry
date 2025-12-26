@@ -1,29 +1,29 @@
 ---
 tags:
-  - fantasy
-  - dystopia
-  - YoungAdult
+  - Fantasy
+  - Dystopia
+  - Youngadult
 title: Glass Sword
 subtitle: Red Queen 2
 author:
   - Victoria Aveyard
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL25934733M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL25934733M-M.jpg'
 shelf: read
 owned: true
-start_date: 2015-04-16
-end_date: 2016-05-06
-rating:
+start_date: 2015-04-16T00:00:00.000Z
+end_date: 2016-05-06T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2016-05-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2016-05-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Glass Sword (Red Queen #2) by Victoria Aveyard

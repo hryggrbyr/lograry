@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Midnight Line
-subtitle: null
+subtitle: ~
 author:
   - Lee Child
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26815685M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26815685M-M.jpg'
 shelf: read
 owned: true
-start_date: 2017-07-16
-end_date: 2017-08-02
+start_date: 2017-07-16T00:00:00.000Z
+end_date: 2017-08-02T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2024-08-03
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-03T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Midnight Line by Lee Child

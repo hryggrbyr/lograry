@@ -1,28 +1,28 @@
 ---
 tags:
-  - thriller
-  - crime
+  - Thriller
+  - Crime
 title: Never Go Back
 subtitle: A Jack Reacher Novel
 author:
   - Lee Child
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26841788M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26841788M-M.jpg'
 shelf: read
 owned: true
-start_date: 2016-08-01
-end_date: 2016-08-20
+start_date: 2016-08-01T00:00:00.000Z
+end_date: 2016-08-20T00:00:00.000Z
 rating: 3
 recommended_by:
   name: Tom Cruise
-  url:
-created: 2024-08-21
-reviewUrl:
-bookshopUrl:
+  url: ~
+created: 2024-08-21T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Never Go Back (A Jack Reacher Novel) by Lee Child

@@ -1,30 +1,30 @@
 ---
 tags:
-  - fantasy
-  - romantasy
-  - YoungAdult
-  - romance
+  - Fantasy
+  - Romantasy
+  - Youngadult
+  - Romance
 title: A Promise of Fire
-subtitle: null
+subtitle: ~
 author:
   - Amanda Bouchet
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL27213327M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL27213327M-M.jpg'
 shelf: read
 owned: true
-start_date: 2022-05-13
-end_date: 2022-05-23
+start_date: 2022-05-13T00:00:00.000Z
+end_date: 2022-05-23T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2022-05-13
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-05-13T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # A Promise of Fire by Amanda Bouchet

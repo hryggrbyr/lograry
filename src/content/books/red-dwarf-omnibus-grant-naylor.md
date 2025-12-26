@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Red Dwarf Omnibus
-subtitle: null
+subtitle: ~
 author:
   - Grant Naylor
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL7349365M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL7349365M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 1992-08-17
-rating:
+start_date: ~
+end_date: 1992-08-17T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-08-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Red Dwarf Omnibus by Grant Naylor

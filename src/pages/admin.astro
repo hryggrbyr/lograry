@@ -12,7 +12,7 @@
     <style>
       #quick-capture {
         position: fixed;
-        top: 0;
+        bottom: 0;
         left: 0;
         right: 0;
         z-index: 9999;
@@ -53,14 +53,16 @@
   </head>
   <body>
     <div id="quick-capture">
-      <span>🚀 Quick Capture:</span>
-      <input
-        type="text"
-        id="query"
-        placeholder="Search Title, Author, or ISBN..."
-      />
+      <span>🚀</span>
+      <span>
+        <input
+          type="text"
+          id="query"
+          placeholder="Search Title, Author, or ISBN..."
+        />
+        <div id="status">Ready</div>
+      </span>
       <button id="search-btn">Search & Copy</button>
-      <div id="status">Ready</div>
     </div>
 
     <script

@@ -1,28 +1,29 @@
 ---
 tags:
-  - horror
-  - zombies
+  - Horror
+  - Zombies
 title: All Dead Men
-subtitle: ""
+subtitle: ''
 author:
   - Tom Watts
 publisher: Independently published
-published: 2025-03-06
+published: 2025-03-06T00:00:00.000Z
 page_count: 125
-isbn: "9798312816433"
-description: "{{description}}"
-coverUrl: https://m.media-amazon.com/images/I/91Hskss7XLL._UF894,1000_QL80_.jpg
+isbn: '9798312816433'
+description: '{{description}}'
+coverUrl: 'https://m.media-amazon.com/images/I/91Hskss7XLL._UF894,1000_QL80_.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
+start_date: ~
+end_date: ~
 rating: 0
 recommended_by:
-  name: Mary Ormerod, North West Bylines
-  url: https://northwestbylines.co.uk/lifestyle/books/horror-story-novel-set-in-the-lake-district-inspired-by-the-authors-childhood/?utm_source=rss&utm_medium=rss&utm_campaign=horror-story-novel-set-in-the-lake-district-inspired-by-the-authors-childhood
-created: 2025-10-11 19:00:47
-reviewUrl:
-bookshopUrl:
+  name: 'Mary Ormerod, North West Bylines'
+  url: >-
+    https://northwestbylines.co.uk/lifestyle/books/horror-story-novel-set-in-the-lake-district-inspired-by-the-authors-childhood/?utm_source=rss&utm_medium=rss&utm_campaign=horror-story-novel-set-in-the-lake-district-inspired-by-the-authors-childhood
+created: 2025-10-11T19:00:47.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # All Dead Men by Tom Watts

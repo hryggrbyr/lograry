@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Runaway Jury
-subtitle: null
+subtitle: ~
 author:
   - John Grisham
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL7439484M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL7439484M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2003-12-31
+start_date: ~
+end_date: 2003-12-31T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Runaway Jury by John Grisham

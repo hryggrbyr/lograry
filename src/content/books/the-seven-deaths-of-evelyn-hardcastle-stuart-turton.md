@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Seven Deaths of Evelyn Hardcastle
-subtitle: null
+subtitle: ~
 author:
   - Stuart Turton
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL27343892M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL27343892M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Seven Deaths of Evelyn Hardcastle by Stuart Turton

@@ -1,27 +1,27 @@
 ---
 tags:
-  - horror
+  - Horror
 title: The Rats
-subtitle: null
+subtitle: ~
 author:
   - James Herbert
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL9417322M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL9417322M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 1990-11-13
+start_date: ~
+end_date: 1990-11-13T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Rats by James Herbert

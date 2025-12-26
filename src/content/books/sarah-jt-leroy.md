@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Sarah
-subtitle: null
+subtitle: ~
 author:
   - JT LeRoy
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL22761043M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL22761043M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 2016-01-30
-rating:
+start_date: ~
+end_date: 2016-01-30T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2020-04-22
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-04-22T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Sarah by JT LeRoy

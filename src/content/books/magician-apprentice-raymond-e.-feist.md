@@ -1,26 +1,26 @@
 ---
 tags: []
-title: "Magician: Apprentice"
+title: 'Magician: Apprentice'
 subtitle: The Riftwar Saga 1
 author:
   - Raymond E. Feist
 publisher: HarperCollins Publishers
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL7829271M-M.jpg
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL7829271M-M.jpg'
 shelf: read
 owned: true
-start_date: 2021-01-16
-end_date: 2021-02-19
+start_date: 2021-01-16T00:00:00.000Z
+end_date: 2021-02-19T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2021-01-15
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2021-01-15T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Magician: Apprentice by Raymond E. Feist

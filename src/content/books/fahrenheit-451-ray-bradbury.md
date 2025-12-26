@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Fahrenheit 451
-subtitle: null
+subtitle: ~
 author:
   - Ray Bradbury
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26437046M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26437046M-M.jpg'
 shelf: read
 owned: false
-start_date: 2016-05-06
-end_date: 2020-04-22
-rating:
+start_date: 2016-05-06T00:00:00.000Z
+end_date: 2020-04-22T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2016-05-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2016-05-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Fahrenheit 451 by Ray Bradbury

@@ -1,29 +1,29 @@
 ---
 tags:
-  - fantasy
-  - comedy
-  - romance
+  - Fantasy
+  - Comedy
+  - Romance
 title: The Princess Bride
-subtitle: null
+subtitle: ~
 author:
   - William Goldman
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 1990-07-10
+start_date: ~
+end_date: 1990-07-10T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Princess Bride by William Goldman

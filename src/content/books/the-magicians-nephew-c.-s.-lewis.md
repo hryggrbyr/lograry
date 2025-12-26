@@ -1,28 +1,28 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - JuvenileFiction
 title: The Magician's Nephew
-subtitle: "Chronicles of Narnia: Chronological order 1"
+subtitle: 'Chronicles of Narnia: Chronological order 1'
 author:
   - C. S. Lewis
 publisher: HarperCollins
-published: 1994-07-01T08:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 1994-07-01T07:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date: 1994-07-01
-end_date: 1994-07-01
+start_date: 1994-07-01T00:00:00.000Z
+end_date: 1994-07-01T00:00:00.000Z
 rating: 2
 recommended_by:
-  name:
-  url:
-created: 1994-07-01
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 1994-07-01T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Magician's Nephew by C. S. Lewis

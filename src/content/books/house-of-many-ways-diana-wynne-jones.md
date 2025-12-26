@@ -1,26 +1,26 @@
 ---
 tags: []
 title: House of Many Ways
-subtitle: null
+subtitle: ~
 author:
   - Diana Wynne Jones
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL9952956M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL9952956M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2020-12-31
-rating:
+start_date: ~
+end_date: 2020-12-31T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2020-04-22
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-04-22T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # House of Many Ways by Diana Wynne Jones

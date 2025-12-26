@@ -1,30 +1,30 @@
 ---
 tags:
-  - fantasy
-  - wizards
-  - magic
-  - war
+  - Fantasy
+  - Wizards
+  - Magic
+  - War
 title: The Lord of the Rings
 subtitle: The Fellowship of the Ring | The Two Towers | The Return of the King
 author:
   - JRR Tolkien
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL7591516M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL7591516M-M.jpg'
 shelf: read
 owned: true
-start_date: 1990-09-03
-end_date: 1990-12-24
+start_date: 1990-09-03T00:00:00.000Z
+end_date: 1990-12-24T00:00:00.000Z
 rating: 4
 recommended_by:
   name: Mr Preston
-  url:
-created: 2023-09-29
-reviewUrl:
-bookshopUrl:
+  url: ~
+created: 2023-09-29T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Lord of the Rings by J. R. R. Tolkien

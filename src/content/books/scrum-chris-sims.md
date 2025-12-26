@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Scrum
-subtitle: null
+subtitle: ~
 author:
   - Chris Sims
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28254123M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28254123M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 2015-11-02
+start_date: ~
+end_date: 2015-11-02T00:00:00.000Z
 rating: 4
 recommended_by:
   name: my wife
-  url:
-created: 2015-11-02
-reviewUrl:
-bookshopUrl:
+  url: ~
+created: 2015-11-02T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Scrum by Chris Sims

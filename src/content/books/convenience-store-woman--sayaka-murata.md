@@ -1,27 +1,27 @@
 ---
 tags: []
 title: Convenience Store Woman
-subtitle: null
+subtitle: ~
 author:
   - Sayaka Murata
   - Ginny Tapley Takemori
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28719876M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28719876M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
   name: Alice at Wallflower Digest
-  url:
-created: 2024-08-27
-reviewUrl:
-bookshopUrl:
+  url: ~
+created: 2024-08-27T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Convenience Store Woman by Sayaka Murata

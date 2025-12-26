@@ -1,34 +1,34 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - UrbanFantasy
-  - magic
-  - wizards
-  - MagicalSchool
-  - ParallelWorlds
-  - horror
-  - DarkFantasy
+  - Magic
+  - Wizards
+  - Magicalschool
+  - Parallelworlds
+  - Horror
+  - Darkfantasy
 title: The Magician King
 subtitle: Magician 2
 author:
   - Lev Grossman
 publisher: Penguin Group
-published: 2011-06-23T00:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL27444584M-M.jpg
+published: 2011-06-22T23:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL27444584M-M.jpg'
 shelf: read
 owned: true
-start_date: 2025-04-30
-end_date: 2025-05-10
+start_date: 2025-04-30T00:00:00.000Z
+end_date: 2025-05-10T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2025-05-11
+  name: ~
+  url: ~
+created: 2025-05-11T00:00:00.000Z
 reviewUrl: /posts/book-review-the-magician-king-lev-grossman
-bookshopUrl:
+bookshopUrl: ~
 ---
 
 # The Magician King by Lev Grossman

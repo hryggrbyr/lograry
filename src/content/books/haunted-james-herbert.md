@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Haunted
-subtitle: null
+subtitle: ~
 author:
   - James Herbert
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL23133833M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL23133833M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 1992-08-20
-rating:
+start_date: ~
+end_date: 1992-08-20T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-08-21
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-21T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Haunted by James Herbert

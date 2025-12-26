@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Strong Female Character
-subtitle: null
+subtitle: ~
 author:
   - Fern Brady
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL46787999M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL46787999M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-06-10
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-06-10T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Strong Female Character by Fern Brady

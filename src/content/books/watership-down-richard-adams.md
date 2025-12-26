@@ -1,30 +1,32 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - TalkingAnimals
   - Religon
-  - drama
+  - Drama
 title: Watership Down
-subtitle: ""
+subtitle: ''
 author:
   - Richard Adams
 publisher: Penguin UK
 published: 1973
 page_count: 582
-isbn: "9780140306019"
-description: Heroic rabbits trek from their poisoned warren to a new home. Long, complex and totally absorbing.
-coverUrl: http://books.google.com/books/content?id=X_OSuwsF4_UC&printsec=frontcover&img=1&zoom=1&source=gbs_api
+isbn: '9780140306019'
+description: >-
+  Heroic rabbits trek from their poisoned warren to a new home. Long, complex and totally absorbing.
+coverUrl: >-
+  http://books.google.com/books/content?id=X_OSuwsF4_UC&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: read
 owned: true
-start_date: 1990-10-31
-end_date: 1990-11-30
+start_date: 1990-10-31T00:00:00.000Z
+end_date: 1990-11-30T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2023-10-31
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-10-31T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Watership Down by Richard Adams

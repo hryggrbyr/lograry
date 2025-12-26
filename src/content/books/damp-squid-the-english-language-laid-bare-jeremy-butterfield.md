@@ -1,26 +1,26 @@
 ---
 tags: []
-title: "Damp Squid: The English Language Laid Bare"
-subtitle: null
+title: 'Damp Squid: The English Language Laid Bare'
+subtitle: ~
 author:
   - Jeremy Butterfield
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2012-08-01
-rating:
+start_date: ~
+end_date: 2012-08-01T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-08-02
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-02T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Damp Squid: The English Language Laid Bare by Jeremy Butterfield

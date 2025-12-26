@@ -6,22 +6,25 @@ subtitle: The Complete Edition
 author:
   - Richard Bach
 publisher: Simon and Schuster
-published: 2014-10-21
+published: 2014-10-21T00:00:00.000Z
 page_count: 144
-isbn: "147679331X 9781476793313"
-description: More concerned with the dynamics of his flight than with gathering food, Jonathan is scorned by the other seagulls.
-coverUrl: http://books.google.com/books/content?id=0lHRBAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+isbn: 147679331X 9781476793313
+description: >-
+  More concerned with the dynamics of his flight than with gathering food,
+  Jonathan is scorned by the other seagulls.
+coverUrl: >-
+  http://books.google.com/books/content?id=0lHRBAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: read
 owned: false
-start_date: 1989-02-02
-end_date: 1989-02-02
+start_date: 1989-02-02T00:00:00.000Z
+end_date: 1989-02-02T00:00:00.000Z
 rating: 2
 recommended_by:
   name: My mum
-  url:
-created: 2025-08-17 06:37:45
-reviewUrl:
-bookshopUrl:
+  url: ~
+created: 2025-08-17T06:37:45.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Jonathan Livingston Seagull by Richard Bach

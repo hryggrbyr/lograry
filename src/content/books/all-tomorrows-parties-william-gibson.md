@@ -4,23 +4,23 @@ title: All Tomorrow's Parties
 subtitle: Bridge
 author:
   - William Gibson
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-06-11
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-06-11T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # All Tomorrow's Parties by William Gibson

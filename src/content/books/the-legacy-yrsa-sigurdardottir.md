@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The legacy
-subtitle: null
+subtitle: ~
 author:
   - Yrsa Sigurðardóttir
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26945134M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26945134M-M.jpg'
 shelf: read
 owned: false
-start_date: 2021-09-24
-end_date: 2021-12-18
-rating:
+start_date: 2021-09-24T00:00:00.000Z
+end_date: 2021-12-18T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2021-09-24
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2021-09-24T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The legacy by Yrsa Sigurðardóttir

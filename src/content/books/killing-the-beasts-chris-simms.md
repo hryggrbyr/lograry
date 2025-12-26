@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Killing the Beasts
-subtitle: null
+subtitle: ~
 author:
   - Chris Simms
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL9476229M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL9476229M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2015-11-02
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-11-02T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Killing the Beasts by Chris Simms

@@ -1,29 +1,29 @@
 ---
 tags:
-  - fantasy
-  - dystopia
-  - YoungAdult
+  - Fantasy
+  - Dystopia
+  - Youngadult
 title: Red Queen
 subtitle: Red Queen 1
 author:
   - Victoria Aveyard
 publisher: HarperCollins
-published: 2014-12-09T01:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL33473600M-M.jpg
+published: 2014-12-09T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL33473600M-M.jpg'
 shelf: read
 owned: true
-start_date: 2015-11-16
-end_date: 2016-04-15
+start_date: 2015-11-16T00:00:00.000Z
+end_date: 2016-04-15T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-11-16
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-11-16T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Red Queen by Victoria Aveyard

@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Tethered Mage
-subtitle: null
+subtitle: ~
 author:
   - Melissa Caruso
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26935099M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26935099M-M.jpg'
 shelf: read
 owned: true
-start_date: 2022-10-18
-end_date: 2022-11-06
+start_date: 2022-10-18T00:00:00.000Z
+end_date: 2022-11-06T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2022-10-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-10-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Tethered Mage by Melissa Caruso

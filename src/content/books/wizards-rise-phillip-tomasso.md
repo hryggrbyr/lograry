@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Wizard's Rise
-subtitle: null
+subtitle: ~
 author:
   - Phillip Tomasso
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL44326870M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL44326870M-M.jpg'
 shelf: read
 owned: true
-start_date: 2024-05-23
-end_date: 2024-06-12
+start_date: 2024-05-23T00:00:00.000Z
+end_date: 2024-06-12T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2024-06-13
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-06-13T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Wizard's Rise by Phillip Tomasso

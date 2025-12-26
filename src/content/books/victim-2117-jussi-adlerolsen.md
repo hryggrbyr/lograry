@@ -6,22 +6,22 @@ subtitle: Department Q 8
 author:
   - Jussi Adler-Olsen
 publisher: Dutton
-published: 2020-03-03T07:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2020-03-03T06:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
+start_date: ~
+end_date: ~
 rating: 4
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Victim 2117 by Jussi Adler-Olsen

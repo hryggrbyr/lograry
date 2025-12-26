@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Green Millennium
-subtitle: null
+subtitle: ~
 author:
   - Fritz Leiber
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL32244714M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL32244714M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-12-26
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-12-26T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Green Millennium by Fritz Leiber

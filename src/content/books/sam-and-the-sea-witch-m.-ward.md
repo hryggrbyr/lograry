@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Sam and the Sea Witch
-subtitle: null
+subtitle: ~
 author:
   - M. WARD
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL41524973M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL41524973M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-10-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-10-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Sam and the Sea Witch by M. WARD

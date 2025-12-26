@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Personal Darkness
-subtitle: null
+subtitle: ~
 author:
   - Tanith Lee
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL27363319M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL27363319M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2022-12-26
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2022-12-26T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Personal Darkness by Tanith Lee

@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Malafrena
-subtitle: null
+subtitle: ~
 author:
   - Ursula K. Le Guin
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL15012614M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL15012614M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2020-05-15
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-05-15T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Malafrena by Ursula K. Le Guin

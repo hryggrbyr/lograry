@@ -1,32 +1,32 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - UrbanFantasy
-  - magic
-  - england
-  - supernatural
-  - folklore
+  - Magic
+  - England
+  - Supernatural
+  - Folklore
 title: The Magpie Key
 subtitle: Crow Investigations 8
 author:
   - Sarah Painter
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL46469298M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL46469298M-M.jpg'
 shelf: read
 owned: true
-start_date: 2023-04-02
-end_date: 2023-04-23
-rating:
+start_date: 2023-04-02T00:00:00.000Z
+end_date: 2023-04-23T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-04-24
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-04-24T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Magpie Key by Sarah Painter

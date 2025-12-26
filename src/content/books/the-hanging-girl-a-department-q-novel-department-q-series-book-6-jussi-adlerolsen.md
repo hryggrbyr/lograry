@@ -5,22 +5,22 @@ subtitle: Department Q 6
 author:
   - Jussi Adler-Olsen
 publisher: Penguin Publishing Group
-published: 2015-09-08T00:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL27185890M-M.jpg
+published: 2015-09-07T23:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL27185890M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-07-12
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-07-12T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Hanging Girl by Jussi Adler-Olsen

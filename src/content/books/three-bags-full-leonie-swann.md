@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Three Bags Full
-subtitle: null
+subtitle: ~
 author:
   - Leonie Swann
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL9637309M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL9637309M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-06-11
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-06-11T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Three Bags Full by Leonie Swann

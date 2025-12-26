@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Sword of Kaigen
-subtitle: null
+subtitle: ~
 author:
   - M. L. Wang
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL30154743M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL30154743M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2021-06-07
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2021-06-07T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Sword of Kaigen by M. L. Wang

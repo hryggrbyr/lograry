@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Pretend We're Dead
-subtitle: null
+subtitle: ~
 author:
   - Tanya Pearson
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL57604875M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL57604875M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-03-05
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-03-05T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Pretend We're Dead by Tanya Pearson

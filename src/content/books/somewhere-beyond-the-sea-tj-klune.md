@@ -1,28 +1,28 @@
 ---
 tags:
   - UrbanFantasy
-  - lgbt
+  - Lgbt
 title: Somewhere Beyond the Sea
 subtitle: The Cerulean Chronicles 2
 author:
   - TJ Klune
 publisher: Tor Publishing Group
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Somewhere Beyond the Sea by TJ Klune
@@ -37,4 +37,3 @@ _The Cerulean Chronicles 2_
 | Started |  |
 | Finished |  |
 | Rating | /5 |
-

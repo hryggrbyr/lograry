@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Jonathan Strange & Mr Norrell
-subtitle: null
+subtitle: ~
 author:
   - Susanna Clarke
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL18395675M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL18395675M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-10-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-10-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Jonathan Strange & Mr Norrell by Susanna Clarke

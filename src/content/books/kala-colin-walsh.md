@@ -1,31 +1,31 @@
 ---
 tags:
-  - mystery
-  - ireland
-  - childhood
-  - ComingOfAge
-  - thriller
+  - Mystery
+  - Ireland
+  - Childhood
+  - Comingofage
+  - Thriller
 title: Kala
 subtitle: A Novel
 author:
   - Colin Walsh
-publisher:
-published: 2024-07-04
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL42707362M-M.jpg
+publisher: ~
+published: 2024-07-04T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL42707362M-M.jpg'
 shelf: read
 owned: true
-start_date: 2025-06-28
-end_date: 2025-07-04
+start_date: 2025-06-28T00:00:00.000Z
+end_date: 2025-07-04T00:00:00.000Z
 rating: 5
 recommended_by:
-  name:
-  url:
-created: 2025-07-05
+  name: ~
+  url: ~
+created: 2025-07-05T00:00:00.000Z
 reviewUrl: /posts/book-review-kala-colin-walsh
-bookshopUrl:
+bookshopUrl: ~
 ---
 
 # Kala by Colin Walsh

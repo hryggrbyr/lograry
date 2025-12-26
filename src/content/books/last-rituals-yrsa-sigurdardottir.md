@@ -1,29 +1,30 @@
 ---
 tags:
-  - scandinoir
-  - crime
-  - iceland
+  - Scandinoir
+  - Crime
+  - Iceland
 title: Last Rituals
-subtitle: ""
+subtitle: ''
 author:
   - Yrsa Sigurðardóttir
 publisher: William Morrow
-published: 2007-10-02
+published: 2007-10-02T00:00:00.000Z
 page_count: 328
-isbn: STANFORD:36105124054359
-description: An Icelandic novel of secret symbols, medieval witchcraft, and modern murder.
-coverUrl: http://books.google.com/books/content?id=gU0iAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+isbn: 'STANFORD:36105124054359'
+description: 'An Icelandic novel of secret symbols, medieval witchcraft, and modern murder.'
+coverUrl: >-
+  http://books.google.com/books/content?id=gU0iAQAAIAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: read
 owned: false
-start_date:
-end_date: 2017-06-04
+start_date: ~
+end_date: 2017-06-04T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2025-10-15 15:03:42
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-10-15T15:03:42.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Last Rituals by Yrsa Sigurdardottir

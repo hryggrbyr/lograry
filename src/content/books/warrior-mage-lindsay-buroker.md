@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Warrior Mage
-subtitle: null
+subtitle: ~
 author:
   - Lindsay Buroker
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28307231M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28307231M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-03-03
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-03-03T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Warrior Mage by Lindsay Buroker

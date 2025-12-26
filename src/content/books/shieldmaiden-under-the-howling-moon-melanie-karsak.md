@@ -1,26 +1,26 @@
 ---
 tags: []
-title: "Shield-Maiden: Under The Howling Moon"
+title: 'Shield-Maiden: Under The Howling Moon'
 subtitle: The Road to Valhalla Book 1
 author:
   - Melanie Karsak
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL35689255M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL35689255M-M.jpg'
 shelf: read
 owned: true
-start_date: 2023-08-17
-end_date: 2023-09-04
+start_date: 2023-08-17T00:00:00.000Z
+end_date: 2023-09-04T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2023-09-05
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-09-05T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Shield-Maiden: Under The Howling Moon (The Road to Valhalla Book 1) by Melanie Karsak

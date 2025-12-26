@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Red Rising
-subtitle: null
+subtitle: ~
 author:
   - Pierce Brown
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL26758016M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL26758016M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-08-28
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-28T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Red Rising by Pierce Brown

@@ -1,29 +1,29 @@
 ---
 tags:
   - UrbanFantasy
-  - horror
-  - magic
+  - Horror
+  - Magic
 title: The Book of Night
-subtitle: null
+subtitle: ~
 author:
   - Holly Black
-publisher:
-published: 2022-05-31
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL32644633M-M.jpg
+publisher: ~
+published: 2022-05-31T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL32644633M-M.jpg'
 shelf: read
 owned: true
-start_date: 2025-02-04
-end_date: 2025-02-13
+start_date: 2025-02-04T00:00:00.000Z
+end_date: 2025-02-13T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2025-02-13
+  name: ~
+  url: ~
+created: 2025-02-13T00:00:00.000Z
 reviewUrl: /posts/book-review-the-book-of-night-holly-black
-bookshopUrl:
+bookshopUrl: ~
 ---
 
 # Book of Night by Holly Black

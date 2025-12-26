@@ -1,30 +1,30 @@
 ---
 tags:
-  - horror
-  - vampires
-  - america
-  - HistoricalFantasy
-title: Abraham Lincoln, Vampire Hunter
-subtitle: null
+  - Horror
+  - Vampires
+  - America
+  - Historicalfantasy
+title: 'Abraham Lincoln, Vampire Hunter'
+subtitle: ~
 author:
   - Seth Grahame-Smith
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL24194711M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL24194711M-M.jpg'
 shelf: read
 owned: false
-start_date: 2010-03-02
-end_date: 2010-03-02
+start_date: 2010-03-02T00:00:00.000Z
+end_date: 2010-03-02T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Abraham Lincoln, Vampire Hunter by Seth Grahame-Smith

@@ -1,28 +1,28 @@
 ---
 tags:
-  - thriller
-  - espionage
-title: Twinkle, Twinkle, Little Spy
-subtitle: ""
+  - Thriller
+  - Espionage
+title: 'Twinkle, Twinkle, Little Spy'
+subtitle: ''
 author:
   - Len Deighton
 publisher: London Arrow
-published: 1992-08-26T23:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL17340484M-M.jpg
+published: 1992-08-26T22:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL17340484M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 1992-09-12
-rating:
+start_date: ~
+end_date: 1992-09-12T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-09-13
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-09-13T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Twinkle, Twinkle, Little Spy by Len Deighton

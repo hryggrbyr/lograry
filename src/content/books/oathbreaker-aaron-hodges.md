@@ -1,32 +1,32 @@
 ---
 tags:
-  - fantasy
-  - SwordAndSorcery
-  - magic
-  - wizards
-  - dragons
-  - war
+  - Fantasy
+  - Swordandsorcery
+  - Magic
+  - Wizards
+  - Dragons
+  - War
 title: Oathbreaker
 subtitle: Legend of the Gods 1
 author:
   - Aaron Hodges
-publisher:
-published: 2018-03-18
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28527603M-M.jpg
+publisher: ~
+published: 2018-03-18T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28527603M-M.jpg'
 shelf: read
 owned: true
-start_date: 2025-03-18
-end_date: 2025-03-31
+start_date: 2025-03-18T00:00:00.000Z
+end_date: 2025-03-31T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2025-04-19
+  name: ~
+  url: ~
+created: 2025-04-19T00:00:00.000Z
 reviewUrl: /posts/book-review-oathbreaker-aaron-hodges
-bookshopUrl:
+bookshopUrl: ~
 ---
 
 # Oathbreaker by Aaron Hodges

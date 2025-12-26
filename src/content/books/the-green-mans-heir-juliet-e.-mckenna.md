@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Green Man's Heir
-subtitle: null
+subtitle: ~
 author:
   - Juliet E. McKenna
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL28274497M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL28274497M-M.jpg'
 shelf: read
 owned: true
-start_date: 2023-12-19
-end_date: 2023-12-31
+start_date: 2023-12-19T00:00:00.000Z
+end_date: 2023-12-31T00:00:00.000Z
 rating: 5
 recommended_by:
-  name:
-  url:
-created: 2023-12-31
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-12-31T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Green Man's Heir by Juliet E. McKenna

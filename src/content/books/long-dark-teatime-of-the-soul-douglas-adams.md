@@ -1,28 +1,29 @@
 ---
 tags:
-  - sci-fi
-  - comedy
+  - Sci-fi
+  - Comedy
 title: Long Dark Tea-Time of the Soul
-subtitle: ""
+subtitle: ''
 author:
   - Douglas Adams
 publisher: Simon and Schuster
 published: 1990
 page_count: 326
-isbn: "9780671742515"
+isbn: '9780671742515'
 description: Science-fiction roman.
-coverUrl: http://books.google.com/books/content?id=h7pjdEPBeGUC&printsec=frontcover&img=1&zoom=1&source=gbs_api
+coverUrl: >-
+  http://books.google.com/books/content?id=h7pjdEPBeGUC&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: to-read
 owned: false
-start_date:
-end_date: 1990-12-25
+start_date: ~
+end_date: 1990-12-25T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2015-11-02
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-11-02T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Long Dark Tea-Time of the Soul by Douglas Adams

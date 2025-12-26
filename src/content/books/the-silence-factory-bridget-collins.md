@@ -1,33 +1,33 @@
 ---
 tags:
-  - thriller
-  - horror
-  - supernatural
-  - HistoricalFiction
-  - fantasy
-  - HistoricalFantasy
-  - england
+  - Thriller
+  - Horror
+  - Supernatural
+  - Historicalfiction
+  - Fantasy
+  - Historicalfantasy
+  - England
 title: The Silence Factory
-subtitle: null
+subtitle: ~
 author:
   - Bridget Collins
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL57765904M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL57765904M-M.jpg'
 shelf: read
 owned: true
-start_date: 2025-06-19
-end_date: 2025-06-28
+start_date: 2025-06-19T00:00:00.000Z
+end_date: 2025-06-28T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2025-06-29
+  name: ~
+  url: ~
+created: 2025-06-29T00:00:00.000Z
 reviewUrl: /posts/book-review-the-silence-factory-bridget-collins
-bookshopUrl:
+bookshopUrl: ~
 ---
 
 # The Silence Factory by Bridget Collins

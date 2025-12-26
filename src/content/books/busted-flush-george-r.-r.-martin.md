@@ -1,27 +1,27 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
 title: Busted Flush
 subtitle: Wild Cards 19
 author:
   - George R. R. Martin
 publisher: Macmillan
-published: 2009-12-01T11:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 2009-12-01T10:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Busted Flush by George R. R. Martin

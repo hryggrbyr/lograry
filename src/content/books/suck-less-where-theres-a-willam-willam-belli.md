@@ -1,26 +1,26 @@
 ---
 tags: []
-title: "Suck less : where there's a Willam"
-subtitle: null
+title: 'Suck less : where there''s a Willam'
+subtitle: ~
 author:
   - Willam Belli
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2016-08-17
-rating:
+start_date: ~
+end_date: 2016-08-17T00:00:00.000Z
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-08-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Suck less : where there's a Willam by Willam Belli

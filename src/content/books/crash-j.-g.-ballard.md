@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Crash
-subtitle: null
+subtitle: ~
 author:
   - J. G. Ballard
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL22034089M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL22034089M-M.jpg'
 shelf: read
 owned: false
-start_date: 2001-05-12
-end_date: 2001-05-18
+start_date: 2001-05-12T00:00:00.000Z
+end_date: 2001-05-18T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Crash by J. G. Ballard

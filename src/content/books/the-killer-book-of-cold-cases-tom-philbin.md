@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Killer Book of Cold Cases
-subtitle: null
+subtitle: ~
 author:
   - Tom Philbin
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2015-10-20
+start_date: ~
+end_date: 2015-10-20T00:00:00.000Z
 rating: 2
 recommended_by:
-  name:
-  url:
-created: 2015-11-02
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-11-02T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Killer Book of Cold Cases by Tom Philbin

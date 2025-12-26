@@ -1,28 +1,28 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - JuvenileFiction
 title: Prince Caspian
-subtitle: "Chronicles of Narnia: Chronological order 4"
+subtitle: 'Chronicles of Narnia: Chronological order 4'
 author:
   - C. S. Lewis
 publisher: Collins
-published: 1988-08-15T08:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+published: 1988-08-15T07:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: read
 owned: true
-start_date: 1994-07-01
-end_date: 1994-07-01
+start_date: 1994-07-01T00:00:00.000Z
+end_date: 1994-07-01T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created:
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: ~
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Prince Caspian by C. S. Lewis
@@ -37,4 +37,3 @@ _Chronicles of Narnia: Chronological order 4_
 | Started | 1994-07-01T00:00:00.000+01:00 |
 | Finished | 1994-07-01T00:00:00.000+01:00 |
 | Rating | 4/5 |
-

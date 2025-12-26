@@ -1,32 +1,32 @@
 ---
 tags:
-  - crime
-  - scandinoir
-  - iceland
-  - police
-  - DrugSmuggling
-  - lgbt
+  - Crime
+  - Scandinoir
+  - Iceland
+  - Police
+  - Drugsmuggling
+  - Lgbt
 title: Snare
 subtitle: The Reykjavik Noir 01
 author:
   - Lilja Sigurðardóttir
-publisher:
-published: 2015-12-31
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL39610101M-M.jpg
+publisher: ~
+published: 2015-12-31T00:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL39610101M-M.jpg'
 shelf: read
 owned: true
-start_date: 2025-07-04
-end_date: 2025-07-14
+start_date: 2025-07-04T00:00:00.000Z
+end_date: 2025-07-14T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2025-07-05
+  name: ~
+  url: ~
+created: 2025-07-05T00:00:00.000Z
 reviewUrl: /posts/book-review-snare-lilja-sigurdardottir
-bookshopUrl:
+bookshopUrl: ~
 ---
 
 # Snare by Lilja Sigurðardóttir

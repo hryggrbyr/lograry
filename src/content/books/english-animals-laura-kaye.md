@@ -1,26 +1,26 @@
 ---
 tags: []
 title: English Animals
-subtitle: null
+subtitle: ~
 author:
   - Laura Kaye
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL32321702M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL32321702M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2021-09-11
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2021-09-11T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # English Animals by Laura Kaye

@@ -1,29 +1,29 @@
 ---
 tags:
-  - fantasy
-  - dragons
-  - magic
+  - Fantasy
+  - Dragons
+  - Magic
 title: A Feast for Crows
 subtitle: A Song of Ice and Fire 4
 author:
   - George R. R. Martin
 publisher: Bantam Books
-published: 2009-05-19T08:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL7830146M-M.jpg
+published: 2009-05-19T07:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL7830146M-M.jpg'
 shelf: read
 owned: true
-start_date: 2008-02-02
-end_date: 2008-02-02
+start_date: 2008-02-02T00:00:00.000Z
+end_date: 2008-02-02T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # A Feast for Crows by George R. R. Martin

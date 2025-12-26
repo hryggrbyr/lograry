@@ -6,22 +6,23 @@ subtitle: The DI James Walker Series 1
 author:
   - Alex Pine
 publisher: HarperCollins UK
-published: 2020-10-29
+published: 2020-10-29T00:00:00.000Z
 page_count: 367
-isbn: "9780008402655"
+isbn: '9780008402655'
 description: The most chilling read of the Christmas season.
-coverUrl: http://books.google.com/books/content?id=UgHdDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
+coverUrl: >-
+  http://books.google.com/books/content?id=UgHdDwAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api
 shelf: to-read
 owned: true
-start_date:
-end_date:
+start_date: ~
+end_date: ~
 rating: 0
 recommended_by:
   name: my mum
-  url:
-reviewUrl: ""
-bookshopUrl: https://www.ebooks.com/en-gb/searchapp/searchresults.net?term=9780008402655
-created: 2025-12-05 20:28:58
+  url: ~
+reviewUrl: ''
+bookshopUrl: 'https://www.ebooks.com/en-gb/searchapp/searchresults.net?term=9780008402655'
+created: 2025-12-05T20:28:58.000Z
 ---
 
 # The Christmas Killer (DI James Walker series, Book 1) by Alex Pine

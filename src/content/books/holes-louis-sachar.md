@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Holes
-subtitle: null
+subtitle: ~
 author:
   - Louis Sachar
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL25677206M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL25677206M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2025-01-08
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2025-01-08T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Holes by Louis Sachar

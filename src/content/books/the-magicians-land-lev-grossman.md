@@ -1,34 +1,34 @@
 ---
 tags:
-  - fantasy
+  - Fantasy
   - UrbanFantasy
-  - magic
-  - wizards
-  - MagicalSchool
-  - ParallelWorlds
-  - horror
-  - DarkFantasy
+  - Magic
+  - Wizards
+  - Magicalschool
+  - Parallelworlds
+  - Horror
+  - Darkfantasy
 title: The Magician's Land
 subtitle: Magician 3
 author:
   - Lev Grossman
 publisher: Penguin Group US
-published: 2014-07-21T00:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL29708536M-M.jpg
+published: 2014-07-20T23:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL29708536M-M.jpg'
 shelf: read
 owned: true
-start_date: 2025-05-10
-end_date: 2025-05-22
+start_date: 2025-05-10T00:00:00.000Z
+end_date: 2025-05-22T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2025-05-23
+  name: ~
+  url: ~
+created: 2025-05-23T00:00:00.000Z
 reviewUrl: /posts/book-review-the-magicians-land-lev-grossman
-bookshopUrl:
+bookshopUrl: ~
 ---
 
 # The Magician's Land by Lev Grossman

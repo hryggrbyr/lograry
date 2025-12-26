@@ -1,29 +1,29 @@
 ---
 tags:
-  - fantasy
-  - quest
-  - classic
+  - Fantasy
+  - Quest
+  - Classic
 title: The Hobbit
 subtitle: or There and Back Again
 author:
   - JRR Tolkien
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL31900303M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL31900303M-M.jpg'
 shelf: read
 owned: true
-start_date: 1988-09-04
-end_date: 1990-06-10
+start_date: 1988-09-04T00:00:00.000Z
+end_date: 1990-06-10T00:00:00.000Z
 rating: 3
 recommended_by:
   name: Mr Preston
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Hobbit by J. R. R. Tolkien

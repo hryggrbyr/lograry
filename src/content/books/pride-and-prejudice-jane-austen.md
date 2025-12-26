@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Pride and Prejudice
-subtitle: null
+subtitle: ~
 author:
   - Jane Austen
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL48117216M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL48117216M-M.jpg'
 shelf: read
 owned: false
-start_date:
-end_date: 1990-08-17
+start_date: ~
+end_date: 1990-08-17T00:00:00.000Z
 rating: 3
 recommended_by:
-  name:
-  url:
-created: 2024-08-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-08-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Pride and Prejudice by Jane Austen

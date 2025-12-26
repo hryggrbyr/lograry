@@ -1,26 +1,26 @@
 ---
 tags: []
 title: The Power
-subtitle: null
+subtitle: ~
 author:
   - Naomi Alderman
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2020-08-05
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2020-08-05T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Power by Naomi Alderman

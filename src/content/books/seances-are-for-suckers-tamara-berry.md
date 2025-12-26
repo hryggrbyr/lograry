@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Séances Are for Suckers
-subtitle: null
+subtitle: ~
 author:
   - Tamara Berry
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL34006395M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL34006395M-M.jpg'
 shelf: to-read
 owned: true
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2023-10-18
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2023-10-18T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Séances Are for Suckers by Tamara Berry

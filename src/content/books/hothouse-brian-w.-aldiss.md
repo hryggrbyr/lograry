@@ -1,26 +1,26 @@
 ---
 tags: []
 title: Hothouse
-subtitle: null
+subtitle: ~
 author:
   - Brian W. Aldiss
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL7992313M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL7992313M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
-rating:
+start_date: ~
+end_date: ~
+rating: ~
 recommended_by:
-  name:
-  url:
-created: 2024-09-26
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2024-09-26T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # Hothouse by Brian W. Aldiss

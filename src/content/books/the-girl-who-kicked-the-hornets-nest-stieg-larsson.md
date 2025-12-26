@@ -5,22 +5,22 @@ subtitle: Millennium 3
 author:
   - Stieg Larsson
 publisher: Quercus
-published: 2009-09-30T13:00:00+01:00
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL24080825M-M.jpg
+published: 2009-09-30T12:00:00.000Z
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL24080825M-M.jpg'
 shelf: read
 owned: true
-start_date:
-end_date: 2011-01-30
+start_date: ~
+end_date: 2011-01-30T00:00:00.000Z
 rating: 4
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Girl Who Kicked the Hornet's Nest by Stieg Larsson

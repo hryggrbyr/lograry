@@ -4,23 +4,23 @@ title: The Demigod Files
 subtitle: A Percy Jackson and the Olympians Guide
 author:
   - Rick Riordan
-publisher:
-published:
-page_count:
-isbn:
-description: ""
-coverUrl: https://covers.openlibrary.org/b/olid/OL24083821M-M.jpg
+publisher: ~
+published: ~
+page_count: ~
+isbn: ~
+description: ''
+coverUrl: 'https://covers.openlibrary.org/b/olid/OL24083821M-M.jpg'
 shelf: to-read
 owned: false
-start_date:
-end_date:
+start_date: ~
+end_date: ~
 rating: 2
 recommended_by:
-  name:
-  url:
-created: 2015-10-06
-reviewUrl:
-bookshopUrl:
+  name: ~
+  url: ~
+created: 2015-10-06T00:00:00.000Z
+reviewUrl: ~
+bookshopUrl: ~
 ---
 
 # The Demigod Files (A Percy Jackson and the Olympians Guide) by Rick Riordan
