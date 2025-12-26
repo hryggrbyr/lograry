@@ -1,6 +1,6 @@
 
     const CACHE_NAME = 'lograry-admin-cache-v1';
-    const urlsToCache = ["/admin/","/admin/config.yml","/admin/preview.css","https://unpkg.com/@sveltia/cms@latest/dist/sveltia-cms.js"];
+    const urlsToCache = ["/lograry/admin/","/lograry/admin/config.yml","/lograry/admin/preview.css","https://unpkg.com/@sveltia/cms@latest/dist/sveltia-cms.js"];
 
     self.addEventListener('install', event => {
       event.waitUntil(
