@@ -1,9 +1,10 @@
 ---
-import BaseLayout from '@layouts/base.astro';
-import YearlyGraph from '@components/YearlyGraph.astro';
-import MediaList from '@components/MediaList.astro';
-import { getCollection } from 'astro:content';
-const allBooks = await getCollection('books');
+import BaseLayout from "@layouts/base.astro";
+import YearlyGraph from "@components/YearlyGraph.astro";
+import TopGenres from "@components/TopGenres.astro";
+import MediaList from "@components/MediaList.astro";
+import { getCollection } from "astro:content";
+const allBooks = await getCollection("books");
 const stats = { total: allBooks.length };
 ---
 
@@ -17,16 +18,24 @@ const stats = { total: allBooks.length };
       <h2>Books</h2>
       <a href="/all-books">View all books ({stats.total})</a>
     </header>
-    <YearlyGraph data={allBooks.filter(b => b.data.shelf === 'read')} />
-    <h3>Read this year</h3>
-    <MediaList items={allBooks.filter(b => {
-      const dateStr = b.data.history?.end_date || b.data.end_date;
-      if (!dateStr || b.data.shelf !== 'read') return false;
-      return new Date(dateStr).getFullYear() === 2025;
-    }).sort((a, b) => {
-      const dateA = new Date(a.data.history?.end_date || a.data.end_date).getTime();
-      const dateB = new Date(b.data.history?.end_date || b.data.end_date).getTime();
-      return dateB - dateA;
-    })} />
+
+    <YearlyGraph data={allBooks.filter((b) => b.data.shelf === "read")} />
+
+    <TopGenres />
+
+    <h3>Currently Reading</h3>
+    <MediaList
+      items={allBooks
+        .filter((b) => b.data.shelf === "reading")
+        .sort((a, b) => {
+          const dateA = new Date(
+            a.data.history?.end_date || a.data.end_date,
+          ).getTime();
+          const dateB = new Date(
+            b.data.history?.end_date || b.data.end_date,
+          ).getTime();
+          return dateB - dateA;
+        })}
+    />
   </section>
 </BaseLayout>

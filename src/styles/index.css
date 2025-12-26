@@ -60,13 +60,13 @@ a {
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
+  text-transform: uppercase;
   font-size: 1rem;
+  font-weight: bold;
 }
 
 h1 {
-  font-weight: 900;
   text-align: center;
-  text-transform: uppercase;
   margin-block: 2rlh;
   text-shadow:
     -1px 0px 0px rgb(from currentColor r g b/0.7),
@@ -80,7 +80,7 @@ h1::after {
   margin-inline: 2ch;
 }
 
-h2 {
+h3 {
   text-transform: uppercase;
 }
 

@@ -1,0 +1,110 @@
+---
+import { getCollection } from "astro:content";
+
+interface Props {
+  year?: number;
+}
+
+const { year } = Astro.props;
+
+// 1. Fetch all book entries
+const allBooks = await getCollection("books");
+
+// 2. Filter books by year if the prop is provided
+const filteredBooks = year
+  ? allBooks.filter((book) => {
+      if (!book.data.end_date) return false;
+      const endDate = new Date(book.data.end_date);
+      return endDate.getFullYear() === year;
+    })
+  : allBooks;
+
+// 3. Count tag occurrences
+const tagCounts = new Map<string, number>();
+filteredBooks.forEach((book) => {
+  if (book.data.tags) {
+    book.data.tags.forEach((tag) => {
+      tagCounts.set(tag, (tagCounts.get(tag) || 0) + 1);
+    });
+  }
+});
+
+// 4. Sort by count and take the top 10
+const sortedTags = Array.from(tagCounts.entries())
+  .sort((a, b) => b[1] - a[1])
+  .slice(0, 10);
+
+const maxCount = sortedTags.length > 0 ? sortedTags[0][1] : 0;
+---
+
+<div class="genre-chart-container flow">
+  <h3>Top 10 Genres {year && `(${year})`}</h3>
+  <ul class="genre-list flow">
+    {
+      sortedTags.map(([tag, count]) => (
+        <li class="genre-item">
+          <span class="genre-name">{tag}</span>
+          <div class="bar-container">
+            <svg width="100%" height="10">
+              <defs>
+                <filter id="sketchy-bar">
+                  <feTurbulence
+                    type="fractalNoise"
+                    baseFrequency="0.05 0.01"
+                    numOctaves="1"
+                    result="turbulence"
+                  />
+                  <feDisplacementMap
+                    in="SourceGraphic"
+                    in2="turbulence"
+                    scale="1.5"
+                  />
+                </filter>
+              </defs>
+              <line
+                x1="0"
+                y1="5"
+                x2={`${(count / maxCount) * 100}%`}
+                y2="5"
+                stroke="var(--color-handwriting)"
+                stroke-width="3"
+                filter="url(#sketchy-bar)"
+              />
+            </svg>
+          </div>
+          <span class="genre-count">{count}</span>
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  .genre-list {
+    --flow-gap: 0rlh;
+    list-style: none;
+  }
+
+  .genre-item {
+    display: grid;
+    grid-template-columns: 150px 1fr 40px;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .genre-name {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .bar-container {
+    width: 100%;
+  }
+
+  .genre-count {
+    text-align: right;
+    font-weight: bold;
+  }
+</style>
