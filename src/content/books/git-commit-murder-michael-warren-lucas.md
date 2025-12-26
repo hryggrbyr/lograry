@@ -1,30 +1,29 @@
 ---
+title: $ git commit murder
+subtitle: ''
+author:
+  - Michael Warren Lucas
 tags:
   - Thriller
   - Code
-title: $ git commit murder
-subtitle: ~
-author:
-  - Michael Warren Lucas
-publisher: ~
-published: ~
-page_count: ~
-isbn: ~
-description: ''
-coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
 shelf: to-read
 owned: false
-start_date: ~
-end_date: ~
-rating: ~
-recommended_by:
-  name: ~
-  url: ~
+start_date: ''
+end_date: ''
+published: ''
 created: 2024-10-19T00:00:00.000Z
-reviewUrl: ~
-bookshopUrl: ~
+rating: null
+publisher: ''
+page_count: null
+isbn: ''
+coverUrl: https://covers.openlibrary.org/b/olid/-M.jpg
+recommended_by:
+  name: Terence Eden
+  url: ''
+reviewUrl: ''
+bookshopUrl: ''
+description: ''
 ---
-
 # $ git commit murder by Michael Warren Lucas
 
 ![Book Cover Art](https://covers.openlibrary.org/b/olid/-M.jpg)
