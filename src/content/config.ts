@@ -1,12 +1,15 @@
 import { defineCollection, z } from "astro:content";
 
-const smartDate = z.preprocess((val) => {
-  // If it's a number (like 1998), turn it into a string "1998"
-  if (typeof val === "number") return String(val);
-  // If it's an empty string or null, return undefined
-  if (val === "" || val === null) return undefined;
-  return val;
-}, z.union([z.date(), z.string()]).optional().nullable());
+const smartDate = z.preprocess(
+  (val) => {
+    // If it's a number (like 1998), turn it into a string "1998"
+    if (typeof val === "number") return String(val);
+    // If it's an empty string or null, return undefined
+    if (val === "" || val === null) return undefined;
+    return val;
+  },
+  z.union([z.date(), z.string()]).optional().nullable(),
+);
 
 const books = defineCollection({
   type: "content",
@@ -31,7 +34,8 @@ const books = defineCollection({
           name: z.string().optional().nullable(),
           url: z.string().optional().nullable(),
         })
-        .optional(),
+        .optional()
+        .nullable(),
       created: smartDate,
       reviewUrl: z.string().optional().nullable(),
       bookshopUrl: z.string().optional().nullable(),

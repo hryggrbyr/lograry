@@ -17,7 +17,7 @@ collections:
     extension: "md" # or "mdx"
     format: "frontmatter"
     create: true
-    slug: "{{slug}}"
+    slug: "{{slug}}-{{author.0}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -30,7 +30,6 @@ collections:
       - label: "Authors"
         name: "author"
         widget: "list"
-        field: { label: "Author Name", name: "name", widget: "string" }
 
       - label: "Tags"
         name: "tags"
