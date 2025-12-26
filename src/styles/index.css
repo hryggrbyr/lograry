@@ -30,7 +30,8 @@
 }
 
 body {
-  background: linear-gradient(
+  background:
+    linear-gradient(
         90deg,
         var(--color-margin-line) 0,
         var(--color-margin-line) 1px,
@@ -52,6 +53,10 @@ body {
 
 a {
   color: var(--color-accent);
+  text-underline-offset: 0.125em;
+  text-decoration-color: currentColor;
+  text-decoration-thickness: from-font;
+  transition: text-decoration-color ease 150ms;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -63,8 +68,9 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   margin-block: 2rlh;
-  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.7),
-    /* Cyan shadow (left) */ 1px 0px 0px rgba(100, 100, 100, 0.7); /* Red shadow (right) */
+  text-shadow:
+    -1px 0px 0px rgb(from currentColor r g b/0.7),
+    1px 0px 0px rgb(from currentColor r g b/0.5);
 }
 
 h1::before,
@@ -79,8 +85,9 @@ h2 {
 }
 
 [rel="home"] {
-  text-shadow: -1px 0px 0px rgba(0, 0, 0, 0.7),
-    1px 0px 0px rgba(100, 100, 100, 0.7);
+  text-shadow:
+    -1px 0px 0px rgb(from currentColor r g b/0.7),
+    1px 0px 0px rgb(from currentColor r g b/0.5);
 }
 
 .wrapper {
@@ -107,7 +114,8 @@ h2 {
 }
 
 .text-highlighter {
-  background: linear-gradient(
+  background:
+    linear-gradient(
       104deg,
       rgba(255, 255, 0, 0) 0.9%,
       rgba(255, 255, 0, 0.7) 2.4%,
@@ -151,7 +159,9 @@ h2 {
   border: 1px solid var(--color-border);
   border-radius: 2px;
   padding: 2rlh;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   position: relative;
 }
 
