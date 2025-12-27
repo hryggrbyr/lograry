@@ -10,7 +10,7 @@ length: 101
 shelf: watchlist
 owned: true
 rating: 
-watched: l
+watched: 
 poster: "https://m.media-amazon.com/images/M/MV5BMjIyMmY0MWYtZGRkMC00MjhhLTgwNGUtYWVjZmQ4YjhjZWRmXkEyXkFqcGc@._V1_SX300.jpg"
 ---
 
