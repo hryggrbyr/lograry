@@ -51,6 +51,11 @@ body {
   /*outline: 1px dashed rgba(255, 0, 0, 0.3);*/
 }
 
+body > header nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 a {
   color: var(--color-accent);
   text-underline-offset: 0.125em;

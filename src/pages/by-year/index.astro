@@ -25,7 +25,11 @@ const years = [
 <BaseLayout title="My Library">
   <h1>Annual Statistics</h1>
   <nav>
-    {years.map((x) => <a href={`/by-year/${x}`}>{x}</a>)}
+    {
+      years.map((x) => (
+        <a href={`${import.meta.env.BASE_URL}by-year/${x}`}>{x}</a>
+      ))
+    }
   </nav>
 </BaseLayout>
 <style>
@@ -33,6 +37,6 @@ const years = [
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 1rlh;
+    gap: 1rlh 2ch;
   }
 </style>
