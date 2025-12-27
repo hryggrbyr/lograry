@@ -5,7 +5,7 @@ title: "What We Do in the Shadows"
 year: 2019
 director: Unknown
 actors: [Kayvan Novak, Matt Berry, Natasia Demetriou, Harvey Guillén, Mark Proksch]
-genre: [Comedy, Sci-Fi & Fantasy]
+genre: [Comedy, Fantasy, Vampires]
 length: "6 seasons (61 episodes)"
 shelf: watched
 owned: false

@@ -5,7 +5,7 @@ title: "The Wild Thornberrys"
 year: 1998
 director: Unknown
 actors: [Lacey Chabert, Jodi Carlisle, Tim Curry, Flea, Danielle Harris]
-genre: [Animation, Comedy, Action & Adventure, Kids, Family]
+genre: [Animation, Comedy, Action, Adventure, Family]
 length: "5 seasons (91 episodes)"
 shelf: watched
 owned: false

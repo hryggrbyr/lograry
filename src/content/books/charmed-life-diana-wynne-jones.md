@@ -1,6 +1,6 @@
 ---
 type: book
-tags: []
+tags: [ Fantasy, JuvenileFiction, Magic, Charming, Family ]
 title: Charmed Life
 subtitle: ~
 author:

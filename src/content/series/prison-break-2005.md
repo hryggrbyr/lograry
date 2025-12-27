@@ -5,7 +5,7 @@ title: "Prison Break"
 year: 2005
 director: Unknown
 actors: [Wentworth Miller, Dominic Purcell, Sarah Wayne Callies, Paul Adelstein, Rockmond Dunbar]
-genre: [Action & Adventure, Crime, Drama]
+genre: [Action, Adventure, Crime, Drama]
 length: "5 seasons (88 episodes)"
 shelf: watched
 owned: false

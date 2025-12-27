@@ -5,7 +5,7 @@ title: "Sabrina, the Teenage Witch"
 year: 1996
 director: Unknown
 actors: [Melissa Joan Hart, Elisa Donovan, Soleil Moon Frye, Nick Bakay]
-genre: [Comedy, Family, Sci-Fi & Fantasy]
+genre: [Comedy, Family, Fantasy]
 length: "7 seasons (163 episodes)"
 shelf: watched
 owned: false

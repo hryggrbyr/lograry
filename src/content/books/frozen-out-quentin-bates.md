@@ -1,6 +1,6 @@
 ---
 type: book
-tags: []
+tags: [ Crime, Scandinoir, Iceland, Thriller ]
 title: Frozen Out
 subtitle: ~
 author:

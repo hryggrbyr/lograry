@@ -5,7 +5,7 @@ title: "The X-Files"
 year: 1993
 director: Unknown
 actors: [David Duchovny, Gillian Anderson, Mitch Pileggi, William B. Davis]
-genre: [Mystery, Sci-Fi & Fantasy, Crime]
+genre: [Mystery, Sci-Fi, Fantasy, Crime]
 length: "11 seasons (218 episodes)"
 shelf: watched
 owned: false

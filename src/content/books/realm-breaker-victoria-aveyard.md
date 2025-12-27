@@ -1,6 +1,6 @@
 ---
 type: book
-tags: []
+tags: [ Fantasy, YoungAdult ]
 title: Realm Breaker
 subtitle: Realm Breaker 1
 author:

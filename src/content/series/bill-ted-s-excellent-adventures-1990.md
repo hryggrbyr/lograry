@@ -5,7 +5,7 @@ title: "Bill & Ted's Excellent Adventures"
 year: 1990
 director: Unknown
 actors: [Evan Richards, Christopher Kennedy, Tara Strong, Rick Overton]
-genre: [Animation, Comedy, Family, Kids, Action & Adventure]
+genre: [Animation, Comedy, Family, Action, Adventure]
 length: "2 seasons (21 episodes)"
 shelf: watched
 owned: false

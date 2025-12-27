@@ -5,7 +5,7 @@ title: "The Transformers"
 year: 1984
 director: Unknown
 actors: [Peter Cullen, Frank Welker, Richard Gautier, Jack Angel, Susan Blu]
-genre: [Animation, Kids, Action & Adventure, Sci-Fi & Fantasy]
+genre: [Animation, Family, Action, Adventure, Sci-Fi]
 length: "4 seasons (95 episodes)"
 shelf: watched
 owned: false

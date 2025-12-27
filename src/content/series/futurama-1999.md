@@ -5,7 +5,7 @@ title: "Futurama"
 year: 1999
 director: Unknown
 actors: [Billy West, Katey Sagal, John DiMaggio, Tress MacNeille, Maurice LaMarche]
-genre: [Animation, Comedy, Sci-Fi & Fantasy]
+genre: [Animation, Comedy, Sci-Fi]
 length: "10 seasons (154 episodes)"
 shelf: watched
 owned: false

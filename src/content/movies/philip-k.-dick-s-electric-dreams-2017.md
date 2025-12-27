@@ -5,7 +5,7 @@ title: "Philip K. Dick's Electric Dreams"
 year: 2017
 director: Unknown
 actors: [Unknown]
-genre: [Sci-Fi & Fantasy, Drama]
+genre: [Sci-Fi, Drama]
 length: "1 season (10 episodes)"
 shelf: watchlist
 owned: false

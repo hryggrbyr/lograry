@@ -5,7 +5,7 @@ title: "Our Flag Means Death"
 year: 2022
 director: Unknown
 actors: [Rhys Darby, Taika Waititi, Ewen Bremner, Joel Fry, Samson Kayo]
-genre: [Comedy, Action & Adventure, Drama]
+genre: [Comedy, Action, Adventure, Drama]
 length: "2 seasons (18 episodes)"
 shelf: watched
 owned: false

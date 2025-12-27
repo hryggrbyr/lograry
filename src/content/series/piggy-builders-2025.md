@@ -5,7 +5,7 @@ title: "Piggy Builders"
 year: 2025
 director: Romain Villemaine
 actors: [Sami Amber, Alfie Manders, Astrid Palfreeman, Rob Rackstraw, Penelope Rawlins]
-genre: [Animation, Kids]
+genre: [Animation, Comedy, TalkingAnimals]
 length: "1 season (26 episodes)"
 shelf: watched
 owned: false

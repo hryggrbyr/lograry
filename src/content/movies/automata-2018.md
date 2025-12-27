@@ -5,7 +5,7 @@ title: "Automata"
 year: 2018
 director: Unknown
 actors: [Basil Harris, Doug Jones, Jen Taylor, Brandon Marino, Ted Rooney]
-genre: [Crime, Sci-Fi & Fantasy]
+genre: [Crime, Sci-Fi]
 length: "1 season (6 episodes)"
 shelf: watchlist
 owned: false

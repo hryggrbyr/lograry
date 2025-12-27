@@ -5,7 +5,7 @@ title: "The Mysterious Cities of Gold"
 year: 1982
 director: Unknown
 actors: [Rei Sakuma, Masako Nozawa, Isao Sasaki, Junko Hori]
-genre: [Kids, Animation, Action & Adventure, Sci-Fi & Fantasy]
+genre: [Family, Animation, Action, Adventure, Fantasy, Mystery]
 length: "4 seasons (117 episodes)"
 shelf: watched
 owned: false

@@ -5,7 +5,7 @@ title: "Death Note"
 year: 2006
 director: Unknown
 actors: [Mamoru Miyano, Shido Nakamura, Aya Hirano, Kappei Yamaguchi, Kimiko Saito]
-genre: [Animation, Mystery, Sci-Fi & Fantasy]
+genre: [Animation, Mystery, Supernatural, Fantasy, Crime, Detective]
 length: "1 season (37 episodes)"
 shelf: watched
 owned: false

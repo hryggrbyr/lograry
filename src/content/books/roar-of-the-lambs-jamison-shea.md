@@ -1,7 +1,7 @@
 ---
 type: book
 tags:
-  - YoungAdultFiction
+  - YoungAdult
 title: Roar of the Lambs
 subtitle: ''
 author:

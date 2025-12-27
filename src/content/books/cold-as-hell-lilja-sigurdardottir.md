@@ -1,6 +1,6 @@
 ---
 type: book
-tags: []
+tags: [ Crime, Scandinoir, Iceland, Thriller ]
 title: Cold As Hell
 subtitle: An Áróra Investigation 01
 author:

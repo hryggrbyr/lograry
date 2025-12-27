@@ -5,7 +5,7 @@ title: "Game of Thrones"
 year: 2011
 director: Unknown
 actors: [Peter Dinklage, Kit Harington, Nikolaj Coster-Waldau, Lena Headey, Emilia Clarke]
-genre: [Sci-Fi & Fantasy, Drama, Action & Adventure]
+genre: [Fantasy, HistoricalFantasy, Drama, Action, Adventure, War, Magic, Dragons]
 length: "8 seasons (73 episodes)"
 shelf: watched
 owned: false

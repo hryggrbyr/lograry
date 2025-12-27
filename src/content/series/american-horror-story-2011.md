@@ -5,7 +5,7 @@ title: "American Horror Story"
 year: 2011
 director: Unknown
 actors: [Emma Roberts, Matt Czuchry, Kim Kardashian, Annabelle Dexter-Jones, Michaela Jaé Rodriguez]
-genre: [Drama, Mystery, Sci-Fi & Fantasy]
+genre: [Drama, Mystery, Horror, Supernatural, Fantasy]
 length: "12 seasons (132 episodes)"
 shelf: watched
 owned: false

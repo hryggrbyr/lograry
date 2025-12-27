@@ -5,7 +5,7 @@ title: "Stranger Things"
 year: 2016
 director: Unknown
 actors: [Millie Bobby Brown, Finn Wolfhard, Gaten Matarazzo, Caleb McLaughlin, Sadie Sink]
-genre: [Drama, Sci-Fi & Fantasy, Mystery]
+genre: [Drama, Sci-Fi, Horror, Supernatural, Fantasy, Mystery, ComingOfAge, Friendship]
 length: "5 seasons (42 episodes)"
 shelf: watched
 owned: false

@@ -5,7 +5,7 @@ title: "Over the Garden Wall"
 year: 2014
 director: Unknown
 actors: [Elijah Wood, Collin Dean, Melanie Lynskey]
-genre: [Mystery, Sci-Fi & Fantasy, Animation, Family, Comedy]
+genre: [Mystery, Fantasy, Animation, Family, Comedy]
 length: "1 season (10 episodes)"
 shelf: watchlist
 owned: false

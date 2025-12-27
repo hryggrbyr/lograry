@@ -5,7 +5,7 @@ title: "Avatar: The Last Airbender"
 year: 2024
 director: Unknown
 actors: [Gordon Cormier, Kiawentiio, Ian Ousley, Dallas Liu, Ken Leung]
-genre: [Action & Adventure, Comedy, Drama, Family, Sci-Fi & Fantasy]
+genre: [Action, Adventure, Comedy, Drama, Family, Fantasy, Mythology, War, Magic, ComingOfAge, Friendship]
 length: "3 seasons (8 episodes)"
 shelf: watchlist
 owned: false

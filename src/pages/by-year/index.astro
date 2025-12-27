@@ -1,0 +1,38 @@
+---
+import BaseLayout from "@layouts/base.astro";
+import { getCollection } from "astro:content";
+const [books, movies, series] = await Promise.all([
+  getCollection("books"),
+  getCollection("movies"),
+  getCollection("series"),
+]);
+
+const allMedia = [...books, ...movies, ...series];
+const years = [
+  ...new Set(
+    allMedia
+      .map((item) => {
+        const date = item.data.end_date || item.data.watched;
+        return date ? new Date(date).getFullYear().toString() : null;
+      })
+      .filter(Boolean)
+      .sort()
+      .reverse(),
+  ),
+];
+---
+
+<BaseLayout title="My Library">
+  <h1>Annual Statistics</h1>
+  <nav>
+    {years.map((x) => <a href={`/by-year/${x}`}>{x}</a>)}
+  </nav>
+</BaseLayout>
+<style>
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rlh;
+  }
+</style>

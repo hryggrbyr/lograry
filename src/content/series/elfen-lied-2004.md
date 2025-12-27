@@ -5,7 +5,7 @@ title: "Elfen Lied"
 year: 2004
 director: Unknown
 actors: [Chihiro Suzuki, Sanae Kobayashi, Emiko Hagiwara, Hiroaki Hirata, Hitomi Nabatame]
-genre: [Action & Adventure, Animation, Drama, Mystery, Sci-Fi & Fantasy]
+genre: [Action, Adventure, Animation, Drama, Mystery, Sci-Fi, ComingOfAge, Friendship]
 length: "1 season (13 episodes)"
 shelf: watched
 owned: true

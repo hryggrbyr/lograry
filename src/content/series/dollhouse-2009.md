@@ -5,7 +5,7 @@ title: "Dollhouse"
 year: 2009
 director: Unknown
 actors: [Eliza Dushku, Fran Kranz, Olivia Williams, Dichen Lachman, Enver Gjokaj]
-genre: [Sci-Fi & Fantasy, Action & Adventure, Drama]
+genre: [Sci-Fi, Action, Adventure, Drama]
 length: "2 seasons (25 episodes)"
 shelf: watched
 owned: false

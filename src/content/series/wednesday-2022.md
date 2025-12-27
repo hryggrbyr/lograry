@@ -5,7 +5,7 @@ title: "Wednesday"
 year: 2022
 director: Unknown
 actors: [Jenna Ortega, Steve Buscemi, Hunter Doohan, Emma Myers, Joy Sunday]
-genre: [Sci-Fi & Fantasy, Mystery, Comedy]
+genre: [Fantasy, Supernatural, Mystery, Comedy, Horror]
 length: "2 seasons (16 episodes)"
 shelf: watched
 owned: false

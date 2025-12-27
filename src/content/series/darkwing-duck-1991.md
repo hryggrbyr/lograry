@@ -5,7 +5,7 @@ title: "Darkwing Duck"
 year: 1991
 director: Unknown
 actors: [Jim Cummings, Christine Cavanaugh, Terence McGovern]
-genre: [Action & Adventure, Animation, Comedy, Family, Kids]
+genre: [Action, Adventure, Animation, Comedy, Family, TalkingAnimals]
 length: "3 seasons (91 episodes)"
 shelf: watched
 owned: false

@@ -4,7 +4,7 @@ country: Canada
 title: "Christmas Under the Northern Lights"
 year: 2024
 director: Ernie Barbarash
-actors: [Lauren Holly, Jill Wagner, Jesse Hutch, Bruce Boxleitner]
+actors: [Lauren Holly, Jesse Hutch, Bruce Boxleitner, Jill Wagner]
 genre: [ Drama, Romance, Christmas ]
 length: N/A
 shelf: watched

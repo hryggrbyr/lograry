@@ -5,7 +5,7 @@ title: "The Witcher"
 year: 2019
 director: Unknown
 actors: [Henry Cavill, Anya Chalotra, Freya Allan, Joey Batey, MyAnna Buring]
-genre: [Sci-Fi & Fantasy, Drama, Action & Adventure]
+genre: [Fantasy, Drama, Action, Adventure, Monsters, Horror, Magic]
 length: "4 seasons (24 episodes)"
 shelf: watched
 owned: false

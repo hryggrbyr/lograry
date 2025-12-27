@@ -5,7 +5,7 @@ title: "Naruto Shippūden"
 year: 2007
 director: Unknown
 actors: [Junko Takeuchi, Noriaki Sugiyama, Chie Nakamura, Kazuhiko Inoue, Showtaro Morikubo]
-genre: [Animation, Action & Adventure, Sci-Fi & Fantasy]
+genre: [Animation, Action, Adventure, Magic, Fantasy]
 length: "20 seasons (500 episodes)"
 shelf: watched
 owned: false

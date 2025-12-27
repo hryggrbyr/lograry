@@ -5,7 +5,7 @@ title: "Defenders of the Earth"
 year: 1986
 director: Unknown
 actors: [Lou Richards, Peter Mark Richman, Peter Renaday, Buster Jones, Ron Feinberg]
-genre: [Animation, Action & Adventure]
+genre: [Animation, Action, Adventure]
 length: "1 season (65 episodes)"
 shelf: watched
 owned: false

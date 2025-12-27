@@ -5,7 +5,7 @@ title: "Alice"
 year: 2009
 director: Nick Willing
 actors: [Caterina Scorsone, Andrew-Lee Potts, Matt Frewer, Harry Dean Stanton, Alessandro Juliani]
-genre: [Sci-Fi & Fantasy, Comedy]
+genre: [Fantasy, Comedy]
 length: "1 season (2 episodes)"
 shelf: watchlist
 owned: true

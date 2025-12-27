@@ -5,7 +5,7 @@ title: "Reacher"
 year: 2022
 director: Unknown
 actors: [Alan Ritchson, Maria Sten, Sonya Cassidy, Johnny Berchtold, Roberto Montesinos]
-genre: [Action & Adventure, Drama, Crime]
+genre: [Action, Adventure, Drama, Crime]
 length: "3 seasons (24 episodes)"
 shelf: watched
 owned: false

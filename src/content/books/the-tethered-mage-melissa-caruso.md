@@ -1,6 +1,6 @@
 ---
 type: book
-tags: []
+tags: [ Fantasy, Dystopia, Magic ]
 title: The Tethered Mage
 subtitle: ~
 author:

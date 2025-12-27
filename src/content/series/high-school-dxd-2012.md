@@ -5,7 +5,7 @@ title: "High School D×D"
 year: 2012
 director: Unknown
 actors: [Yuki Kaji, Yoko Hikasa, Azumi Asakura, Shizuka Itoh, Ayana Taketatsu]
-genre: [Animation, Action & Adventure, Comedy, Sci-Fi & Fantasy]
+genre: [Animation, Action, Adventure, Comedy, Horror Fantasy, MagicalSchool, Demons]
 length: "4 seasons (49 episodes)"
 shelf: watched
 owned: false

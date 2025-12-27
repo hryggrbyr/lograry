@@ -5,7 +5,7 @@ title: "The Shield"
 year: 2002
 director: Unknown
 actors: [Michael Chiklis, Catherine Dent, Paula Garcés, Walton Goggins, Michael Jace]
-genre: [Crime, Drama, Action & Adventure]
+genre: [Crime, Drama, Action, Adventure]
 length: "7 seasons (88 episodes)"
 shelf: watched
 owned: false

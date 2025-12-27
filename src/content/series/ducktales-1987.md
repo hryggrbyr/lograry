@@ -5,7 +5,7 @@ title: "DuckTales"
 year: 1987
 director: Unknown
 actors: [Alan Young, Russi Taylor, Terence McGovern, Chuck McCann, Frank Welker]
-genre: [Animation, Mystery, Sci-Fi & Fantasy, Comedy, Kids]
+genre: [Animation, Mystery, Comedy, Family]
 length: "4 seasons (101 episodes)"
 shelf: watched
 owned: false

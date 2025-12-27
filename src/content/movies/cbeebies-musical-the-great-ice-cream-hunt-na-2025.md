@@ -5,7 +5,7 @@ title: "Cbeebies Musical: The Great Ice Cream Hunt"
 year: 2025
 director: Geoff Coward
 actors: [Joanna Adeyinka-Burford, Warrick Brownlow-Pike, Jennie Dale, Andy Day, Rebecca Keatley]
-genre: [Comedy, Theatre, Kids, Family, Musical]
+genre: [Comedy, Theatre, Family, Musical]
 length: 56
 shelf: watched
 owned: false

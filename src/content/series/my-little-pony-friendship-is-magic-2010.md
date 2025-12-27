@@ -5,7 +5,7 @@ title: "My Little Pony: Friendship Is Magic"
 year: 2010
 director: Unknown
 actors: [Tara Strong, Andrea Libman, Ashleigh Ball, Tabitha St. Germain, Cathy Weseluck]
-genre: [Animation, Comedy, Sci-Fi & Fantasy, Kids]
+genre: [Animation, Comedy, Fantasy, TalkingAnimals, Magic, Friendship]
 length: "9 seasons (221 episodes)"
 shelf: watched
 owned: false

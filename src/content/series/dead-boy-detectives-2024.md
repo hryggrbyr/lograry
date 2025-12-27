@@ -5,7 +5,7 @@ title: "Dead Boy Detectives"
 year: 2024
 director: Unknown
 actors: [George Rexstrew, Jayden Revri, Kassius Nelson, Yuyu Kitamura, Briana Cuoco]
-genre: [Drama, Mystery, Sci-Fi & Fantasy]
+genre: [Drama, Mystery, Supernatural, Fantasy]
 length: "1 season (8 episodes)"
 shelf: watched
 owned: false

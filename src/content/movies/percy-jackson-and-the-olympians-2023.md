@@ -5,7 +5,7 @@ title: "Percy Jackson and the Olympians"
 year: 2023
 director: Unknown
 actors: [Walker Scobell, Leah Sava Jeffries, Aryan Simhadri]
-genre: [Action & Adventure, Sci-Fi & Fantasy, Drama, Family]
+genre: [Action, Adventure, Mythology, Fantasy, Drama, Family]
 length: "2 seasons (9 episodes)"
 shelf: watchlist
 owned: false

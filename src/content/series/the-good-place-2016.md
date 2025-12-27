@@ -5,7 +5,7 @@ title: "The Good Place"
 year: 2016
 director: Unknown
 actors: [Kristen Bell, Ted Danson, William Jackson Harper, Jameela Jamil, Manny Jacinto]
-genre: [Sci-Fi & Fantasy, Comedy]
+genre: [Fantasy, Comedy, Religion]
 length: "4 seasons (50 episodes)"
 shelf: watched
 owned: false

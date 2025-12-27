@@ -5,7 +5,7 @@ title: "Pup Academy"
 year: 2019
 director: Unknown
 actors: [Christian Convery, Chance Hurstfield, Travis Turner, Dylan Schombing, Aria Birch]
-genre: [Kids, Comedy]
+genre: [TalkingAnimals, MagicalSchool, Comedy, Family, ComingOfAge]
 length: "2 seasons (19 episodes)"
 shelf: watched
 owned: false

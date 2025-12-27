@@ -5,7 +5,7 @@ title: "Humans"
 year: 2015
 director: Unknown
 actors: [Katherine Parkinson, Gemma Chan, Colin Morgan, Tom Goodman-Hill, Lucy Carless]
-genre: [Sci-Fi & Fantasy, Drama, Mystery]
+genre: [Sci-Fi, Drama, Mystery]
 length: "3 seasons (24 episodes)"
 shelf: watched
 owned: false

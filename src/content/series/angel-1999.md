@@ -5,7 +5,7 @@ title: "Angel"
 year: 1999
 director: Unknown
 actors: [David Boreanaz, Amy Acker, Alexis Denisof, J. August Richards, James Marsters]
-genre: [Sci-Fi & Fantasy, Drama]
+genre: [Horror, Fantasy, Drama, Comedy, Friendship]
 length: "5 seasons (110 episodes)"
 shelf: watched
 owned: false

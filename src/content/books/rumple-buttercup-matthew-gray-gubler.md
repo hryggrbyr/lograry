@@ -1,6 +1,6 @@
 ---
 type: book
-tags: []
+tags: [ Fantasy, UrbanFantasy, Family, ModernFairyTale, Gentle, Charming, JuvenileFiction ]
 title: Rumple Buttercup
 subtitle: ~
 author:

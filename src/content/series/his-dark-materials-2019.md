@@ -5,7 +5,7 @@ title: "His Dark Materials"
 year: 2019
 director: Unknown
 actors: [Dafne Keen, Amir Wilson, Ruth Wilson, Adewale Akinnuoye-Agbaje, Simone Kirby]
-genre: [Sci-Fi & Fantasy, Drama]
+genre: [Religion, Fantasy, Steampunk, Drama, Magic, ComingOfAge, Quest, ParallelWorlds]
 length: "3 seasons (23 episodes)"
 shelf: watched
 owned: false

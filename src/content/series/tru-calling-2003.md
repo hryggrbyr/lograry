@@ -5,7 +5,7 @@ title: "Tru Calling"
 year: 2003
 director: Unknown
 actors: [Eliza Dushku, Zach Galifianakis, Shawn Reaves, Jason Priestley]
-genre: [Sci-Fi & Fantasy, Drama, Mystery]
+genre: [Sci-Fi, Fantasy, Drama, Mystery]
 length: "2 seasons (26 episodes)"
 shelf: watched
 owned: false

@@ -5,7 +5,7 @@ title: "Squid Game"
 year: 2021
 director: Unknown
 actors: [Lee Jung-jae, Wi Ha-jun, Yim Si-wan, Jo Yu-ri, Lee Byung-hun]
-genre: [Action & Adventure, Mystery, Drama]
+genre: [Action, Adventure, Mystery, Drama]
 length: "3 seasons (22 episodes)"
 shelf: watched
 owned: false

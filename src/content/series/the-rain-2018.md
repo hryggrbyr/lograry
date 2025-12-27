@@ -5,7 +5,7 @@ title: "The Rain"
 year: 2018
 director: Unknown
 actors: [Alba August, Lucas Lynggaard Tønnesen, Mikkel Boe Følsgaard, Lukas Løkken, Sonny Lindberg]
-genre: [Sci-Fi & Fantasy, Drama]
+genre: [Sci-Fi, Drama, Horror]
 length: "3 seasons (20 episodes)"
 shelf: watched
 owned: false

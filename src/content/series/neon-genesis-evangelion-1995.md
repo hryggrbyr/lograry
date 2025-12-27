@@ -5,7 +5,7 @@ title: "Neon Genesis Evangelion"
 year: 1995
 director: Unknown
 actors: [Megumi Ogata, Kotono Mitsuishi, Megumi Hayashibara, Yuko Miyamura, Yuriko Yamaguchi]
-genre: [Sci-Fi & Fantasy, Animation, Drama]
+genre: [Sci-Fi, Animation, Drama, War]
 length: "1 season (26 episodes)"
 shelf: watched
 owned: false

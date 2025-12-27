@@ -5,7 +5,7 @@ title: "CBeebies Panto 2023 Robin Hood"
 year: 2023
 director: Geoff Coward
 actors: [Joanna Adeyinka-Burford, Warrick Brownlow-Pike, Nigel Clarke]
-genre: [Comedy, Theatre, Kids, Christmas, Family, Musical]
+genre: [Comedy, Theatre, Christmas, Family, Musical]
 length: N/A
 shelf: watched
 owned: false

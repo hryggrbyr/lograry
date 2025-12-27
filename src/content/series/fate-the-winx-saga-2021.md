@@ -5,7 +5,7 @@ title: "Fate: The Winx Saga"
 year: 2021
 director: Unknown
 actors: [Abigail Cowen, Hannah van der Westhuysen, Precious Mustapha, Eliot Salt, Elisha Applebaum]
-genre: [Sci-Fi & Fantasy, Drama]
+genre: [Fantasy, Supernatural, Drama, UrbanFantasy, Magic, Fairies]
 length: "2 seasons (13 episodes)"
 shelf: watched
 owned: false

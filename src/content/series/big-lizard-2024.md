@@ -5,7 +5,7 @@ title: "Big Lizard"
 year: 2024
 director: Unknown
 actors: [Josh Widdicombe, Mandip Gill, Lois Sefton, Dan Chambers]
-genre: [Animation, Comedy, Kids, Action & Adventure]
+genre: [Animation, Comedy, Sci-fi, Action, Adventure]
 length: "1 season (52 episodes)"
 shelf: watched
 owned: false

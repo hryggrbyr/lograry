@@ -5,7 +5,7 @@ title: "Fullmetal Alchemist"
 year: 2003
 director: Unknown
 actors: [Romi Park, Rie Kugimiya, Megumi Toyoguchi, Toru Okawa, Ryotaro Okiayu]
-genre: [Action & Adventure, Animation, Sci-Fi & Fantasy]
+genre: [Action, Adventure, Animation, Sci-Fi, Fantasy, Steampunk]
 length: "1 season (51 episodes)"
 shelf: watched
 owned: false

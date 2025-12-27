@@ -5,7 +5,7 @@ title: "Tom Clancy's Jack Ryan"
 year: 2018
 director: Unknown
 actors: [John Krasinski, Wendell Pierce, Abbie Cornish, Okieriete Onaodowan, Louis Ozawa]
-genre: [Action & Adventure, Drama]
+genre: [Action, Adventure, Drama]
 length: "4 seasons (30 episodes)"
 shelf: watched
 owned: false

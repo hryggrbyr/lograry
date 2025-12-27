@@ -5,7 +5,7 @@ title: "Garth Marenghi's Darkplace"
 year: 2004
 director: Unknown
 actors: [Matthew Holness, Matt Berry, Richard Ayoade, Alice Lowe]
-genre: [Comedy, Mystery, Action & Adventure, Sci-Fi & Fantasy]
+genre: [Comedy, Mystery, Action, Adventure, Sci-Fi, Supernatural, Horror]
 length: "1 season (6 episodes)"
 shelf: watched
 owned: false

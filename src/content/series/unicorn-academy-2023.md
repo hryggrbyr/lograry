@@ -5,7 +5,7 @@ title: "Unicorn Academy"
 year: 2023
 director: Unknown
 actors: [Unknown]
-genre: [Sci-Fi & Fantasy, Action & Adventure, Kids, Animation, Comedy, Family]
+genre: [Fantasy, Action, Adventure, Animation, Comedy, Family, MagicalSchool, Magic, UrbanFantasy]
 length: "3 seasons (20 episodes)"
 shelf: watched
 owned: false

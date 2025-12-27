@@ -5,7 +5,7 @@ title: "Teenage Mutant Ninja Turtles"
 year: 1987
 director: Unknown
 actors: [Cam Clarke, Barry Gordon, Townsend Coleman, Michael Gough, Peter Renaday]
-genre: [Action & Adventure, Animation, Comedy, Kids]
+genre: [Action, Adventure, Animation, Comedy, Fighting]
 length: "10 seasons (193 episodes)"
 shelf: watched
 owned: false

@@ -5,7 +5,7 @@ title: "Red Dwarf"
 year: 1988
 director: Unknown
 actors: [Craig Charles, Chris Barrie, Danny John-Jules, Robert Llewellyn]
-genre: [Comedy, Sci-Fi & Fantasy]
+genre: [Comedy, Sci-Fi, Friendship]
 length: "12 seasons (73 episodes)"
 shelf: watched
 owned: false

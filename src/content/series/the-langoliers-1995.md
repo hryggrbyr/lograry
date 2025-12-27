@@ -5,7 +5,7 @@ title: "The Langoliers"
 year: 1995
 director: Tom Holland
 actors: [Patricia Wettig, Dean Stockwell, Kate Maberly, David Morse, Bronson Pinchot]
-genre: [Sci-Fi & Fantasy, Mystery]
+genre: [Sci-Fi, Mystery]
 length: "1 season (2 episodes)"
 shelf: watched
 owned: false

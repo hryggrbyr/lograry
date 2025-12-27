@@ -71,7 +71,7 @@ const label = type === "book" ? "Tags" : "Genres";
                   x2={`${(count / maxCount) * 100}%`}
                   y2="10"
                   stroke="var(--color-handwriting)"
-                  stroke-width="4"
+                  stroke-width="3"
                   stroke-linecap="round"
                   filter="url(#sketchy-bar)"
                 />
@@ -106,7 +106,6 @@ const label = type === "book" ? "Tags" : "Genres";
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    font-size: 0.9rem;
     color: var(--color-text-muted);
   }
 
@@ -118,9 +117,7 @@ const label = type === "book" ? "Tags" : "Genres";
 
   .genre-count {
     text-align: right;
-    font-size: 0.9rem;
     font-weight: bold;
-    font-family: var(--font-mono, monospace);
   }
 
   h3 {
