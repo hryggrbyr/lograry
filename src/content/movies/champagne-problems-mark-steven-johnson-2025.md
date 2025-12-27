@@ -5,7 +5,7 @@ title: "Champagne Problems"
 year: 2025
 director: Mark Steven Johnson
 actors: [Minka Kelly, Tom Wozniczka, Joël Cudennec, Thierry René]
-genre: [comedy, romance, christmas]
+genre: [Comedy, Romance, Christmas]
 length: N/A
 shelf: watched
 owned: false

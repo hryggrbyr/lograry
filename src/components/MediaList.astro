@@ -16,7 +16,6 @@ const hasMovies = itemTypes.has("movie");
 const hasSeries = itemTypes.has("series");
 const hasVisualMedia = hasMovies || hasSeries;
 
-// Determine accurate labels for the current page
 let dateLabel = "Finished";
 if (hasBooks && !hasVisualMedia) dateLabel = "Read";
 if (hasVisualMedia && !hasBooks) dateLabel = "Watched";
@@ -42,7 +41,6 @@ const components = {
   series: SeriesCard,
 };
 
-// Initial Sort (A-Z)
 const sortedItems = [...items].sort((a, b) => {
   const titleA = a.data.sort_title || a.data.title || "";
   const titleB = b.data.sort_title || b.data.title || "";
@@ -52,7 +50,7 @@ const sortedItems = [...items].sort((a, b) => {
 
 <section class="media-container flow">
   <div class="filter-controls">
-    <select id="sort-by" class="filter-btn">
+    <select class="filter-btn js-sort-by">
       <option value="sort_title-asc">Title (A-Z)</option>
       <option value="sort_title-desc">Title (Z-A)</option>
 
@@ -80,7 +78,7 @@ const sortedItems = [...items].sort((a, b) => {
 
     {
       itemTypes.size > 1 && (
-        <select id="filter-type" class="filter-btn">
+        <select class="filter-btn js-filter-type">
           <option value="all">All Types</option>
           {hasBooks && <option value="book">Books</option>}
           {hasMovies && <option value="movie">Movies</option>}
@@ -91,7 +89,7 @@ const sortedItems = [...items].sort((a, b) => {
 
     {
       allShelves.length > 1 && (
-        <select id="filter-shelf" class="filter-btn">
+        <select class="filter-btn js-filter-shelf">
           <option value="all">All Shelves</option>
           {allShelves.map((shelf) => (
             <option value={shelf}>{shelf}</option>
@@ -102,7 +100,7 @@ const sortedItems = [...items].sort((a, b) => {
 
     {
       allTags.length > 1 && (
-        <select id="filter-genre" class="filter-btn">
+        <select class="filter-btn js-filter-genre">
           <option value="all">All Genres</option>
           {allTags.map((tag) => (
             <option value={tag}>{tag}</option>
@@ -113,7 +111,7 @@ const sortedItems = [...items].sort((a, b) => {
 
     {
       allOwnership.length > 1 && (
-        <select id="filter-owned" class="filter-btn">
+        <select class="filter-btn js-filter-owned">
           <option value="all">All Ownership</option>
           <option value="true">Owned</option>
           <option value="false">Not Owned</option>
@@ -122,7 +120,7 @@ const sortedItems = [...items].sort((a, b) => {
     }
   </div>
 
-  <div class="media-list flow">
+  <div class="media-list flow js-media-list">
     {
       sortedItems.map((item, index) => {
         const type = item.data.type || "book";
@@ -148,87 +146,96 @@ const sortedItems = [...items].sort((a, b) => {
 </section>
 
 <script>
-  function initMediaFilters() {
-    const sortBy = document.getElementById("sort-by") as HTMLSelectElement;
-    const filterType = document.getElementById(
-      "filter-type",
-    ) as HTMLSelectElement;
-    const filterShelf = document.getElementById(
-      "filter-shelf",
-    ) as HTMLSelectElement;
-    const filterGenre = document.getElementById(
-      "filter-genre",
-    ) as HTMLSelectElement;
-    const filterOwned = document.getElementById(
-      "filter-owned",
-    ) as HTMLSelectElement;
-    const mediaList = document.querySelector(".media-list") as HTMLElement;
+  function initAllMediaFilters() {
+    // Find all instances of media containers on the page
+    const containers = document.querySelectorAll(".media-container");
 
-    if (!mediaList) return;
-    const mediaItems = Array.from(
-      mediaList.querySelectorAll(".card"),
-    ) as HTMLElement[];
+    containers.forEach((container) => {
+      // Find controls specific to THIS container
+      const sortBy = container.querySelector(
+        ".js-sort-by",
+      ) as HTMLSelectElement;
+      const filterType = container.querySelector(
+        ".js-filter-type",
+      ) as HTMLSelectElement;
+      const filterShelf = container.querySelector(
+        ".js-filter-shelf",
+      ) as HTMLSelectElement;
+      const filterGenre = container.querySelector(
+        ".js-filter-genre",
+      ) as HTMLSelectElement;
+      const filterOwned = container.querySelector(
+        ".js-filter-owned",
+      ) as HTMLSelectElement;
+      const mediaList = container.querySelector(
+        ".js-media-list",
+      ) as HTMLElement;
 
-    function applyFiltersAndSort() {
-      const type = filterType?.value || "all";
-      const shelf = filterShelf?.value || "all";
-      const genre = filterGenre?.value || "all";
-      const owned = filterOwned?.value || "all";
+      if (!mediaList) return;
+      const mediaItems = Array.from(
+        mediaList.querySelectorAll(".card"),
+      ) as HTMLElement[];
 
-      // 1. Filtering Logic
-      mediaItems.forEach((item) => {
-        const itemType = item.dataset.type || "";
-        const itemShelf = item.dataset.shelf || "";
-        const itemTags = (item.dataset.tags || "").split(",");
-        const itemOwned = item.dataset.owned; // "true" or "false" string
+      function applyFiltersAndSort() {
+        const type = filterType?.value || "all";
+        const shelf = filterShelf?.value || "all";
+        const genre = filterGenre?.value || "all";
+        const owned = filterOwned?.value || "all";
 
-        const typeMatch = type === "all" || itemType === type;
-        const shelfMatch = shelf === "all" || itemShelf === shelf;
-        const genreMatch = genre === "all" || itemTags.includes(genre);
-        const ownedMatch = owned === "all" || itemOwned === owned;
+        // 1. Filtering Logic
+        mediaItems.forEach((item) => {
+          const itemType = item.dataset.type || "";
+          const itemShelf = item.dataset.shelf || "";
+          const itemTags = (item.dataset.tags || "").split(",");
+          const itemOwned = item.dataset.owned;
 
-        item.style.display =
-          typeMatch && shelfMatch && genreMatch && ownedMatch ? "" : "none";
-      });
+          const typeMatch = type === "all" || itemType === type;
+          const shelfMatch = shelf === "all" || itemShelf === shelf;
+          const genreMatch = genre === "all" || itemTags.includes(genre);
+          const ownedMatch = owned === "all" || itemOwned === owned;
 
-      // 2. Sorting Logic
-      const [sortKey, sortDir] = sortBy.value.split("-");
-
-      const sorted = mediaItems.sort((a, b) => {
-        const aVal = a.dataset[sortKey] || "";
-        const bVal = b.dataset[sortKey] || "";
-
-        if (sortKey === "date") {
-          if (!aVal) return 1;
-          if (!bVal) return -1;
-          const timeA = new Date(aVal).getTime();
-          const timeB = new Date(bVal).getTime();
-          return sortDir === "asc" ? timeA - timeB : timeB - timeA;
-        }
-
-        const comparison = aVal.localeCompare(bVal, undefined, {
-          sensitivity: "base",
+          item.style.display =
+            typeMatch && shelfMatch && genreMatch && ownedMatch ? "" : "none";
         });
-        return sortDir === "asc" ? comparison : -comparison;
-      });
 
-      // Re-append sorted elements to DOM
-      sorted.forEach((item) => mediaList.appendChild(item));
-    }
+        // 2. Sorting Logic
+        const [sortKey, sortDir] = sortBy.value.split("-");
 
-    // Attach Event Listeners
-    [sortBy, filterType, filterShelf, filterGenre, filterOwned].forEach(
-      (el) => {
-        el?.addEventListener("change", applyFiltersAndSort);
-      },
-    );
+        const sorted = [...mediaItems].sort((a, b) => {
+          const aVal = a.dataset[sortKey] || "";
+          const bVal = b.dataset[sortKey] || "";
 
-    // Run once on load to ensure initial state
-    applyFiltersAndSort();
+          if (sortKey === "date") {
+            if (!aVal) return 1;
+            if (!bVal) return -1;
+            const timeA = new Date(aVal).getTime();
+            const timeB = new Date(bVal).getTime();
+            return sortDir === "asc" ? timeA - timeB : timeB - timeA;
+          }
+
+          const comparison = aVal.localeCompare(bVal, undefined, {
+            sensitivity: "base",
+          });
+          return sortDir === "asc" ? comparison : -comparison;
+        });
+
+        // Re-append sorted elements specifically to THIS media list
+        sorted.forEach((item) => mediaList.appendChild(item));
+      }
+
+      // Attach Event Listeners to local controls
+      [sortBy, filterType, filterShelf, filterGenre, filterOwned].forEach(
+        (el) => {
+          el?.addEventListener("change", applyFiltersAndSort);
+        },
+      );
+
+      // Initial run for this instance
+      applyFiltersAndSort();
+    });
   }
 
-  // Runs on initial load
-  document.addEventListener("DOMContentLoaded", initMediaFilters);
-  // Optional: Runs on View Transitions navigation if you use them
-  document.addEventListener("astro:after-swap", initMediaFilters);
+  // Handle standard loads and View Transitions
+  document.addEventListener("DOMContentLoaded", initAllMediaFilters);
+  document.addEventListener("astro:after-swap", initAllMediaFilters);
 </script>

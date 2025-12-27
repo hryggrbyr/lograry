@@ -5,7 +5,7 @@ title: "My Secret Santa"
 year: 2025
 director: Mike Rohl
 actors: [ Alexandra Breckenridge, Ryan Eggold, Tia Mowry ]
-genre: [ comedy, romance, christmas ]
+genre: [ comedy, romance, Christmas ]
 length: 90
 shelf: watched
 owned: false

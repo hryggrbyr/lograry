@@ -5,7 +5,7 @@ title: "A Cinderella Christmas Ball"
 year: 2024
 director: Don McBrearty
 actors: [Danica McKellar, Oliver Rice, Hailey Summer]
-genre: [Family, christmas, Romance]
+genre: [Family, Christmas, Romance]
 length: N/A
 shelf: watchlist
 owned: false

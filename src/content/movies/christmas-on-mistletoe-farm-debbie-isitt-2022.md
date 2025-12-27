@@ -5,7 +5,7 @@ title: "Christmas on Mistletoe Farm"
 year: 2022
 director: Debbie Isitt
 actors: [Scott Garnham, Kathryn Drysdale, Scott Paige, Sydney Isitt-Ager, Ashley Jensen]
-genre: [family, comedy, christmas]
+genre: [Family, Comedy, Christmas]
 length: "1h 44m"
 shelf: watched
 owned: false

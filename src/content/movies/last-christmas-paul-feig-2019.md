@@ -5,7 +5,7 @@ title: "Last Christmas"
 year: 2019
 director: Paul Feig
 actors: [Emilia Clarke, Henry Golding, Emma Thompson, Boris Isakovic, Michelle Yeoh]
-genre: [comedy, drama, fantasy, christmas]
+genre: [Comedy, Drama, Fantasy, Christmas]
 length: 103
 shelf: watched
 owned: false

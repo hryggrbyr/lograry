@@ -5,7 +5,7 @@ title: "Christmas Inheritance"
 year: 2017
 director: Ernie Barbarash
 actors: [Eliza Taylor, Jake Lacy, Andie MacDowell]
-genre: [Comedy, Drama, Romance, christmas]
+genre: [Comedy, Drama, Romance, Christmas]
 length: 104
 shelf: watched
 owned: false
