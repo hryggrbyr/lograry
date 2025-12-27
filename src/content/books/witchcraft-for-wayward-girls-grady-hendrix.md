@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Witchcraft for Wayward Girls
 subtitle: ''

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Her Majesty's Royal Coven
 subtitle: ~

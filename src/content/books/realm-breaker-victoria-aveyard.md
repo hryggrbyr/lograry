@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Realm Breaker
 subtitle: Realm Breaker 1

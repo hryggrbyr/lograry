@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Son of the Black Sword
 subtitle: Saga of the Forgotten Warrior

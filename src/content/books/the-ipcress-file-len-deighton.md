@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Espionage
   - Thriller

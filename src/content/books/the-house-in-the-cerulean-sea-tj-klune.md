@@ -1,4 +1,5 @@
 ---
+type: book
 title: The House in the Cerulean Sea
 subtitle: The Cerulean Chronicles 1
 author:

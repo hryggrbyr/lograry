@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: I'm Afraid You've Got Dragons
 subtitle: ~

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: A Sea of Unspoken Things
 subtitle: ~

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Mountain in the Sea
 subtitle: ~

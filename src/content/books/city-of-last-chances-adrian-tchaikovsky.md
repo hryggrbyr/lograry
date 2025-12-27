@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: City of Last Chances
 subtitle: ~

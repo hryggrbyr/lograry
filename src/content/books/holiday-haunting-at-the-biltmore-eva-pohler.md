@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Holiday Haunting at the Biltmore
 subtitle: ~

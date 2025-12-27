@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: 'Abarat: Absolute Midnight'
 subtitle: ~

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Tea with the Black Dragon
 subtitle: ~

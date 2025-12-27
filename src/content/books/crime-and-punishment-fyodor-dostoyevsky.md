@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Crime
 title: Crime and Punishment

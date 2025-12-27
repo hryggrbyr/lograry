@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Fahrenheit 451
 subtitle: ~

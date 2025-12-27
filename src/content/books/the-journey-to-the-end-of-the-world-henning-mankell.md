@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Journey to the End of the World
 subtitle: Joel Gustafson Stories

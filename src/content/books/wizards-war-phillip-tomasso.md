@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Wizard's War
 subtitle: ~

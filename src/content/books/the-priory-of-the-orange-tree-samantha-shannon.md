@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Priory of the Orange Tree
 subtitle: ~

@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: No Good Deed

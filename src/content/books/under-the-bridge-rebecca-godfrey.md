@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Under the Bridge
 subtitle: ~

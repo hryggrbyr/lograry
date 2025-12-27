@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Thriller
 title: Victim 2117

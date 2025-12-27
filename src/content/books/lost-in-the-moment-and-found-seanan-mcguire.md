@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Lost in the Moment and Found
 subtitle: ~

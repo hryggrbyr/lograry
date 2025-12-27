@@ -1,0 +1,135 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/base.astro";
+import MonthlyVelocity from "@components/MonthlyVelocity.astro"; // Assuming this is your YearlyGraph
+import GenreChart from "@components/TopGenres.astro"; // Assuming this is your TopGenres
+import MediaList from "@components/MediaList.astro";
+
+export async function getStaticPaths() {
+  const [books, movies, series] = await Promise.all([
+    getCollection("books"),
+    getCollection("movies"),
+    getCollection("series"),
+  ]);
+
+  const allMedia = [...books, ...movies, ...series];
+  const years = [
+    ...new Set(
+      allMedia
+        .map((item) => {
+          const date = item.data.end_date || item.data.watched;
+          return date ? new Date(date).getFullYear().toString() : null;
+        })
+        .filter(Boolean),
+    ),
+  ];
+
+  return years.map((year) => ({
+    params: { year },
+    props: {
+      allBooks: books,
+      allMovies: movies,
+      allSeries: series,
+    },
+  }));
+}
+
+const { year } = Astro.params;
+const { allBooks, allMovies, allSeries } = Astro.props;
+
+// Filter collections for this specific year
+const yearNum = parseInt(year);
+const booksThisYear = allBooks.filter(
+  (b) => b.data.end_date && new Date(b.data.end_date).getFullYear() === yearNum,
+);
+const moviesThisYear = allMovies.filter(
+  (m) => m.data.watched && new Date(m.data.watched).getFullYear() === yearNum,
+);
+const seriesThisYear = allSeries.filter(
+  (s) => s.data.watched && new Date(s.data.watched).getFullYear() === yearNum,
+);
+
+// Helper to get latest item
+const getLatest = (items: any[], dateKey: string) => {
+  return [...items].sort((a, b) => {
+    const dateA = new Date(a.data[dateKey]).getTime();
+    const dateB = new Date(b.data[dateKey]).getTime();
+    return dateB - dateA;
+  })[0];
+};
+---
+
+<Layout title={`${year} Year in Review`}>
+  <main class="flow">
+    <header class="page-header">
+      <h1>{year} Review</h1>
+    </header>
+
+    <section class="page-section flow">
+      <header>
+        <h2>Books</h2>
+        <a href="/all-books">View all books ({allBooks.length})</a>
+      </header>
+
+      <MonthlyVelocity year={year} type="book" items={booksThisYear} />
+      <GenreChart type="book" items={booksThisYear} />
+
+      <h2>Books read in {year}</h2>
+      <MediaList items={booksThisYear} />
+    </section>
+
+    <hr class="emdash-divider" />
+
+    <section class="page-section flow">
+      <header>
+        <h2>Movies</h2>
+        <a href="/all-movies">View all movies ({allMovies.length})</a>
+      </header>
+
+      <MonthlyVelocity year={year} type="movie" items={moviesThisYear} />
+      <GenreChart type="movie" items={moviesThisYear} />
+
+      <h2>Movies watched in {year}</h2>
+      <MediaList items={moviesThisYear} />
+    </section>
+
+    <hr class="emdash-divider" />
+
+    <section class="page-section flow">
+      <header>
+        <h2>Series</h2>
+        <a href="/all-series">View all TV shows ({allSeries.length})</a>
+      </header>
+
+      <MonthlyVelocity year={year} type="series" items={seriesThisYear} />
+      <GenreChart type="series" items={seriesThisYear} />
+
+      <h2>Series watched in {year}</h2>
+      <MediaList items={seriesThisYear} />
+    </section>
+  </main>
+</Layout>
+
+<style>
+  .page-section header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .highlight-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+
+  /* Your emdash divider style from earlier */
+  .emdash-divider {
+    border: none;
+    height: 4px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='4' viewBox='0 0 20 4' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='2' y1='2' x2='18' y2='2' stroke='black' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    opacity: 0.2;
+    margin: 4rem 0;
+  }
+</style>

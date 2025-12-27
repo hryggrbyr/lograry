@@ -9,25 +9,40 @@ interface Props {
 
 const { items } = Astro.props;
 
+// --- Build-Time Data Detection ---
+const itemTypes = new Set(items.map((item) => item.data.type || "book"));
+const hasBooks = itemTypes.has("book");
+const hasMovies = itemTypes.has("movie");
+const hasSeries = itemTypes.has("series");
+const hasVisualMedia = hasMovies || hasSeries;
+
+// Determine accurate labels for the current page
+let dateLabel = "Finished";
+if (hasBooks && !hasVisualMedia) dateLabel = "Read";
+if (hasVisualMedia && !hasBooks) dateLabel = "Watched";
+
 // --- Data Preparation for Filters ---
 const allShelves = [
   ...new Set(items.map((item) => item.data.shelf).filter(Boolean)),
 ].sort();
 const allTags = [
-  ...new Set(items.flatMap((item) => item.data.tags).filter(Boolean)),
+  ...new Set(
+    items
+      .flatMap((item) => item.data.tags || item.data.genre || [])
+      .filter(Boolean),
+  ),
 ].sort();
 const allOwnership = [
   ...new Set(items.map((item) => (item.data.owned ? "Owned" : "Not Owned"))),
 ];
 
-// --- Component Mapping ---
 const components = {
   book: BookCard,
   movie: MovieCard,
   series: SeriesCard,
 };
 
-// --- Initial Sort (can be kept or handled client-side) ---
+// Initial Sort (A-Z)
 const sortedItems = [...items].sort((a, b) => {
   const titleA = a.data.sort_title || a.data.title || "";
   const titleB = b.data.sort_title || b.data.title || "";
@@ -37,17 +52,43 @@ const sortedItems = [...items].sort((a, b) => {
 
 <section class="media-container flow">
   <div class="filter-controls">
-    <!-- Sorting Controls -->
     <select id="sort-by" class="filter-btn">
       <option value="sort_title-asc">Title (A-Z)</option>
       <option value="sort_title-desc">Title (Z-A)</option>
-      <option value="author-asc">Author (A-Z)</option>
-      <option value="author-desc">Author (Z-A)</option>
-      <option value="end_date-desc">Date Read (Newest)</option>
-      <option value="end_date-asc">Date Read (Oldest)</option>
+
+      {
+        hasBooks && (
+          <>
+            <option value="author-asc">Author (A-Z)</option>
+            <option value="author-desc">Author (Z-A)</option>
+          </>
+        )
+      }
+
+      {
+        hasVisualMedia && (
+          <>
+            <option value="director-asc">Director (A-Z)</option>
+            <option value="director-desc">Director (Z-A)</option>
+          </>
+        )
+      }
+
+      <option value="date-desc">Date {dateLabel} (Newest)</option>
+      <option value="date-asc">Date {dateLabel} (Oldest)</option>
     </select>
 
-    <!-- Filtering Controls -->
+    {
+      itemTypes.size > 1 && (
+        <select id="filter-type" class="filter-btn">
+          <option value="all">All Types</option>
+          {hasBooks && <option value="book">Books</option>}
+          {hasMovies && <option value="movie">Movies</option>}
+          {hasSeries && <option value="series">TV Shows</option>}
+        </select>
+      )
+    }
+
     {
       allShelves.length > 1 && (
         <select id="filter-shelf" class="filter-btn">
@@ -84,29 +125,34 @@ const sortedItems = [...items].sort((a, b) => {
   <div class="media-list flow">
     {
       sortedItems.map((item, index) => {
-        const itemType = item.data.type || "book";
-        const Card =
-          components[itemType as keyof typeof components] || BookCard;
-        const cardProps = {
-          item: item,
-          num: index,
-          // Add data attributes for client-side JS
-          "data-sort_title": item.data.sort_title || item.data.title,
-          "data-author": item.data.author ? item.data.author.join(", ") : "",
-          "data-end_date": item.data.end_date || "",
-          "data-shelf": item.data.shelf,
-          "data-owned": item.data.owned,
-          "data-tags": item.data.tags ? item.data.tags.join(",") : "",
-        };
-        return <Card {...cardProps} />;
+        const type = item.data.type || "book";
+        const Card = components[type as keyof typeof components] || BookCard;
+
+        return (
+          <Card
+            item={item}
+            num={index}
+            data-type={type}
+            data-sort_title={item.data.sort_title || item.data.title}
+            data-author={item.data.sort_author || item.data.author?.[0] || ""}
+            data-director={item.data.sort_director || item.data.director || ""}
+            data-date={item.data.end_date || item.data.watched || ""}
+            data-shelf={item.data.shelf}
+            data-owned={String(item.data.owned)}
+            data-tags={(item.data.tags || item.data.genre || []).join(",")}
+          />
+        );
       })
     }
   </div>
 </section>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
+  function initMediaFilters() {
     const sortBy = document.getElementById("sort-by") as HTMLSelectElement;
+    const filterType = document.getElementById(
+      "filter-type",
+    ) as HTMLSelectElement;
     const filterShelf = document.getElementById(
       "filter-shelf",
     ) as HTMLSelectElement;
@@ -117,46 +163,47 @@ const sortedItems = [...items].sort((a, b) => {
       "filter-owned",
     ) as HTMLSelectElement;
     const mediaList = document.querySelector(".media-list") as HTMLElement;
+
+    if (!mediaList) return;
     const mediaItems = Array.from(
       mediaList.querySelectorAll(".card"),
     ) as HTMLElement[];
 
     function applyFiltersAndSort() {
-      // --- Filtering ---
-      const shelf = filterShelf ? filterShelf.value : "all";
-      const genre = filterGenre ? filterGenre.value : "all";
-      const owned = filterOwned ? filterOwned.value : "all";
+      const type = filterType?.value || "all";
+      const shelf = filterShelf?.value || "all";
+      const genre = filterGenre?.value || "all";
+      const owned = filterOwned?.value || "all";
 
+      // 1. Filtering Logic
       mediaItems.forEach((item) => {
+        const itemType = item.dataset.type || "";
         const itemShelf = item.dataset.shelf || "";
         const itemTags = (item.dataset.tags || "").split(",");
-        const itemOwned = String(item.dataset.owned === "true");
+        const itemOwned = item.dataset.owned; // "true" or "false" string
 
+        const typeMatch = type === "all" || itemType === type;
         const shelfMatch = shelf === "all" || itemShelf === shelf;
         const genreMatch = genre === "all" || itemTags.includes(genre);
         const ownedMatch = owned === "all" || itemOwned === owned;
 
-        if (shelfMatch && genreMatch && ownedMatch) {
-          item.style.display = "";
-        } else {
-          item.style.display = "none";
-        }
+        item.style.display =
+          typeMatch && shelfMatch && genreMatch && ownedMatch ? "" : "none";
       });
 
-      // --- Sorting ---
+      // 2. Sorting Logic
       const [sortKey, sortDir] = sortBy.value.split("-");
 
-      const sortedItems = mediaItems.sort((a, b) => {
+      const sorted = mediaItems.sort((a, b) => {
         const aVal = a.dataset[sortKey] || "";
         const bVal = b.dataset[sortKey] || "";
 
-        if (sortKey === "end_date") {
-          // Handle empty dates by pushing them to the bottom
+        if (sortKey === "date") {
           if (!aVal) return 1;
           if (!bVal) return -1;
-          return sortDir === "asc"
-            ? new Date(aVal).getTime() - new Date(bVal).getTime()
-            : new Date(bVal).getTime() - new Date(aVal).getTime();
+          const timeA = new Date(aVal).getTime();
+          const timeB = new Date(bVal).getTime();
+          return sortDir === "asc" ? timeA - timeB : timeB - timeA;
         }
 
         const comparison = aVal.localeCompare(bVal, undefined, {
@@ -165,17 +212,23 @@ const sortedItems = [...items].sort((a, b) => {
         return sortDir === "asc" ? comparison : -comparison;
       });
 
-      // Re-append sorted items to the list
-      sortedItems.forEach((item) => mediaList.appendChild(item));
+      // Re-append sorted elements to DOM
+      sorted.forEach((item) => mediaList.appendChild(item));
     }
 
-    // --- Event Listeners ---
-    sortBy?.addEventListener("change", applyFiltersAndSort);
-    filterShelf?.addEventListener("change", applyFiltersAndSort);
-    filterGenre?.addEventListener("change", applyFiltersAndSort);
-    filterOwned?.addEventListener("change", applyFiltersAndSort);
+    // Attach Event Listeners
+    [sortBy, filterType, filterShelf, filterGenre, filterOwned].forEach(
+      (el) => {
+        el?.addEventListener("change", applyFiltersAndSort);
+      },
+    );
 
-    // Initial application
+    // Run once on load to ensure initial state
     applyFiltersAndSort();
-  });
+  }
+
+  // Runs on initial load
+  document.addEventListener("DOMContentLoaded", initMediaFilters);
+  // Optional: Runs on View Transitions navigation if you use them
+  document.addEventListener("astro:after-swap", initMediaFilters);
 </script>

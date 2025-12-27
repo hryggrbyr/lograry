@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Fear and Loathing in Las Vegas
 subtitle: ~

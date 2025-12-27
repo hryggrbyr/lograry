@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: My soul to take
 subtitle: ~

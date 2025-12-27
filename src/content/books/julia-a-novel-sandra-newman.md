@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: 'Julia: A Novel'
 subtitle: ~

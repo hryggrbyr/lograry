@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Silverthorn
 subtitle: The Riftwar Saga 2

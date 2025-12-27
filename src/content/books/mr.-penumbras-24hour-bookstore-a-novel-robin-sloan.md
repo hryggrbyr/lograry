@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: 'Mr. Penumbra''s 24-Hour Bookstore: A Novel'
 subtitle: ~

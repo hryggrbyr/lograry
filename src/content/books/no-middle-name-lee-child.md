@@ -1,8 +1,9 @@
 ---
+type: book
 tags:
   - Thriller
   - Crime
-  - Shortstories
+  - ShortStories
 title: No Middle Name
 subtitle: Jack Reacher
 author:

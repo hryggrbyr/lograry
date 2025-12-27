@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: How Infrastructure Works
 subtitle: ~

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Alcatraz Versus the Evil Librarians
 subtitle: Alcatraz 1

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: I Am Legend
 subtitle: ~

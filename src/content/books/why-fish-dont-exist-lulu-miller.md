@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Why Fish Don't Exist
 subtitle: ~

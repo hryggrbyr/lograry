@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: 'Damp Squid: The English Language Laid Bare'
 subtitle: ~

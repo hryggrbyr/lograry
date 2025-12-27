@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - YoungAdult
 title: 'The Poison Eaters: And Other Stories'

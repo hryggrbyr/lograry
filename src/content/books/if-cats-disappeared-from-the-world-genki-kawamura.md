@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: If Cats Disappeared from the World
 subtitle: ~

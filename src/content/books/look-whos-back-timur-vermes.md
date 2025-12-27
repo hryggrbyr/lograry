@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: Look Who's Back

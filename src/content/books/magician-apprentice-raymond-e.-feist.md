@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: 'Magician: Apprentice'
 subtitle: The Riftwar Saga 1

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Cold As Hell
 subtitle: An Áróra Investigation 01

@@ -1,1 +1,86 @@
-movie card
+---
+interface Props {
+  item: any;
+  [key: string]: any;
+}
+
+const { item, ...rest } = Astro.props;
+
+import {
+  formatDate,
+  getAuthorOffset, // Using this for visual variety/rotation as with books
+} from "@lib/utils.ts";
+
+const director = item.data.director || "Unknown";
+// Reusing the author offset logic for the director to keep the visual "wiggle" consistent
+const offset = getAuthorOffset(director);
+---
+
+<article
+  {...rest}
+  class:list={[
+    "card",
+    "movie-card",
+    "text-center",
+    item.data.shelf,
+    {
+      wishlist: item.data.shelf === "wishlist" && !item.data.owned,
+      owned: item.data.owned,
+    },
+  ]}
+>
+  <picture class="card-image">
+    <img
+      style={`--rotation: ${offset}deg;`}
+      loading="lazy"
+      src={item.data.poster}
+      alt={`Poster for ${item.data.title}`}
+      role="presentation"
+    />
+  </picture>
+
+  <div class="card-content flow">
+    <h3 class="typewriter-title" set:html={item.data.title} />
+
+    <p class="director">Directed by {item.data.director}</p>
+
+    {
+      item.data.actors && (
+        <p class="cast">
+          <strong>Cast:</strong> {item.data.actors.slice(0, 3).join(", ")}
+        </p>
+      )
+    }
+
+    <div class="content-footer">
+      <p>
+        <strong>{item.data.year}</strong> • {item.data.length} • {
+          item.data.country
+        }
+      </p>
+
+      {
+        item.data.genre && (
+          <p class="genres">Tagged: {item.data.genre.join(", ")}</p>
+        )
+      }
+    </div>
+  </div>
+
+  <div class="card-meta">
+    <p class="card-shelf text-handwriting">{item.data.shelf}</p>
+    {item.data.owned && <p class="text-handwriting text-highlighter">Owned</p>}
+
+    {
+      item.data.shelf === "watched" && (
+        <ul class="card-history">
+          <li>
+            {formatDate(item.data.watched)}{" "}
+            {item.data.rating &&
+              "★".repeat(item.data.rating) + "☆".repeat(5 - item.data.rating)}
+          </li>
+        </ul>
+      )
+    }
+  </div>
+</article>

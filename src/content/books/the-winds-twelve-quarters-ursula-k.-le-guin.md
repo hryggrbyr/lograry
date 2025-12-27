@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Wind's Twelve Quarters
 subtitle: ~

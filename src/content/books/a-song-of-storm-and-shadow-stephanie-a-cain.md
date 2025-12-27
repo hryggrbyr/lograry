@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: A Song of Storm and Shadow
 subtitle: ~

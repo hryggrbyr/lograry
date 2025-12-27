@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Ruby in the Smoke
 subtitle: Sally Lockhart Trilogy

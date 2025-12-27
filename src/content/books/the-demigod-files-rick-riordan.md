@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Demigod Files
 subtitle: A Percy Jackson and the Olympians Guide

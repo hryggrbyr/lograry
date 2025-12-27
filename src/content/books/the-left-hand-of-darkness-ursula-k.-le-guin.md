@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: The Left Hand of Darkness

@@ -1,0 +1,12 @@
+---
+import BaseLayout from "../layouts/base.astro";
+import { getCollection } from "astro:content";
+import MediaList from "@components/MediaList.astro";
+const books = await getCollection("movies");
+---
+
+<BaseLayout title="My Library">
+  <h1>My Library</h1>
+
+  <MediaList items={books} />
+</BaseLayout>

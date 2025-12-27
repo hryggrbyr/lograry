@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Horror
 title: Let's Go Play at the Adams'

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Poems in the Lancashire Dialect
 subtitle: ~

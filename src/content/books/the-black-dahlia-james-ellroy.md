@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Black Dahlia
 subtitle: LA Quartet 1

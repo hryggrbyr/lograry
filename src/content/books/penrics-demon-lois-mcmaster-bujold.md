@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Penric's Demon
 subtitle: ''

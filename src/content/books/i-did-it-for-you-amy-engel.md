@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: I Did It for You
 subtitle: ~

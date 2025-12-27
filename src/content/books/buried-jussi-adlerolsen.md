@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Buried
 subtitle: Department Q 5

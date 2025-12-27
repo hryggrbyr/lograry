@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Dystopia
 title: The Complete Novels Of George Orwell

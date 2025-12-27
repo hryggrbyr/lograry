@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Mystery
 title: Cold Springs

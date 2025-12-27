@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Clive Barker's books of blood
 subtitle: ~

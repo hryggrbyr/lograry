@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Stormlord Rising
 subtitle: Stormlord 2

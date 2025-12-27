@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Sci-fi
 title: The eternal moment

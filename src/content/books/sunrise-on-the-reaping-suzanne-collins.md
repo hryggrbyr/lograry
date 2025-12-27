@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Sunrise on the Reaping
 subtitle: ~

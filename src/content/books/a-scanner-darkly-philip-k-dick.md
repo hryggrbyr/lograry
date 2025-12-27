@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Cyberpunk
 title: A Scanner Darkly

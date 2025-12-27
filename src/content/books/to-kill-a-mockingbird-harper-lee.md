@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: To Kill a Mockingbird
 subtitle: ~

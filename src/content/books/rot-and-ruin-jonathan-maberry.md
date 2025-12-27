@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Rot and Ruin
 subtitle: ~

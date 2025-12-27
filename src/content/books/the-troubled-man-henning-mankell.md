@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Troubled Man
 subtitle: ''

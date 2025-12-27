@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Murder in the Family
 subtitle: ~

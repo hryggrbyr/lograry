@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Boys
 title: The Stone Book Quartet

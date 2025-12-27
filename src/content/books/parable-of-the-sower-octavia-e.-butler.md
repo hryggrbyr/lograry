@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Parable of the Sower
 subtitle: ~

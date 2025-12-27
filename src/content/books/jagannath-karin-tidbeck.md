@@ -1,6 +1,7 @@
 ---
+type: book
 tags:
-  - Shortstories
+  - ShortStories
 title: Jagannath
 subtitle: ''
 author:

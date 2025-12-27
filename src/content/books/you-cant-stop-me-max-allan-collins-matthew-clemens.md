@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Thriller
 title: You Can't Stop Me

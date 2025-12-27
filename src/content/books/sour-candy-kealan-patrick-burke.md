@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Sour Candy
 subtitle: ~

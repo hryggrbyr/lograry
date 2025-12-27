@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - JuvenileFiction
 title: Castle in the Air

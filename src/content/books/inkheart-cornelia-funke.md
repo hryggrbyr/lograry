@@ -1,4 +1,5 @@
 ---
+type: book
 title: Inkheart
 subtitle: ''
 author:

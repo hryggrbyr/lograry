@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Lady in the Lake
 subtitle: ~

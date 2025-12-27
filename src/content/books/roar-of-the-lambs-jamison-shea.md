@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - YoungAdultFiction
 title: Roar of the Lambs

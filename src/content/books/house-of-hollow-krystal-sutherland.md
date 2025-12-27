@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: House of Hollow
 subtitle: ~

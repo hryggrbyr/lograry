@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - PoliceProcedural
 title: A Conspiracy of Faith

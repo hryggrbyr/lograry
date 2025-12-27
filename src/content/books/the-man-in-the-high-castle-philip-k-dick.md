@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Man in the High Castle
 subtitle: ~

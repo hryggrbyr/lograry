@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Stig of the Dump
 subtitle: ~

@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - JuvenileFiction
 title: 'Will Grayson, Will Grayson'

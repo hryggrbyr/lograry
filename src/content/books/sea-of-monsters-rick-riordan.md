@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - YoungAdult
 title: Sea of Monsters

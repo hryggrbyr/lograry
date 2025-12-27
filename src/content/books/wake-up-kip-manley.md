@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: '&ldquo;Wake Up&hellip;&rdquo;'
 subtitle: ~

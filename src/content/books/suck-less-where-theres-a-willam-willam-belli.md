@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: 'Suck less : where there''s a Willam'
 subtitle: ~

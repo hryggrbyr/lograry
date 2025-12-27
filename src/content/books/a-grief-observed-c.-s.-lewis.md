@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Religion
 title: A Grief Observed

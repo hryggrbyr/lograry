@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Ballad of Songbirds and Snakes
 subtitle: ~

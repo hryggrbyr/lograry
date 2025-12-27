@@ -2,10 +2,17 @@
 import BaseLayout from "@layouts/base.astro";
 import YearlyGraph from "@components/YearlyGraph.astro";
 import TopGenres from "@components/TopGenres.astro";
-import MediaList from "@components/MediaList.astro";
+import BookCard from "@components/BookCard.astro";
+import MovieCard from "@components/MovieCard.astro";
 import { getCollection } from "astro:content";
 const allBooks = await getCollection("books");
-const stats = { total: allBooks.length };
+const allMovies = await getCollection("movies");
+const allSeries = await getCollection("series");
+const total = {
+  books: allBooks.length,
+  movies: allMovies.length,
+  series: allSeries.length,
+};
 ---
 
 <BaseLayout title="My Library">
@@ -16,16 +23,22 @@ const stats = { total: allBooks.length };
   <section class="page-section flow">
     <header>
       <h2>Books</h2>
-      <a href="/all-books">View all books ({stats.total})</a>
+      <a href="/all-books">View all books ({total.books})</a>
     </header>
 
-    <YearlyGraph data={allBooks.filter((b) => b.data.shelf === "read")} />
+    <YearlyGraph
+      type="book"
+      items={allBooks.filter((b) => b.data.shelf === "read")}
+    />
 
-    <TopGenres />
+    <TopGenres
+      type="book"
+      items={allBooks.filter((b) => b.data.shelf === "read")}
+    />
 
     <h3>Currently Reading</h3>
-    <MediaList
-      items={allBooks
+    <BookCard
+      item={allBooks
         .filter((b) => b.data.shelf === "reading")
         .sort((a, b) => {
           const dateA = new Date(
@@ -35,7 +48,71 @@ const stats = { total: allBooks.length };
             b.data.history?.end_date || b.data.end_date,
           ).getTime();
           return dateB - dateA;
-        })}
+        })[0]}
+    />
+  </section>
+  <hr />
+  <section class="page-section flow">
+    <header>
+      <h2>Movies</h2>
+      <a href="/all-movies">View all movies ({total.movies})</a>
+    </header>
+
+    <YearlyGraph
+      type="movie"
+      items={allMovies.filter((b) => b.data.shelf === "watched")}
+    />
+
+    <TopGenres
+      type="movie"
+      items={allMovies.filter((b) => b.data.shelf === "watched")}
+    />
+
+    <h3>Last watched movie</h3>
+    <MovieCard
+      item={allMovies
+        .filter((b) => b.data.shelf === "watched")
+        .sort((a, b) => {
+          const dateA = new Date(
+            a.data.history?.watched || a.data.watched,
+          ).getTime();
+          const dateB = new Date(
+            b.data.history?.watched || b.data.watched,
+          ).getTime();
+          return dateB - dateA;
+        })[0]}
+    />
+  </section>
+  <hr />
+  <section class="page-section flow">
+    <header>
+      <h2>Series</h2>
+      <a href="/all-series">View all TV shows ({total.series})</a>
+    </header>
+
+    <YearlyGraph
+      type="series"
+      items={allSeries.filter((b) => b.data.shelf === "watched")}
+    />
+
+    <TopGenres
+      type="series"
+      items={allSeries.filter((b) => b.data.shelf === "watched")}
+    />
+
+    <h3>Last watched movie</h3>
+    <MovieCard
+      item={allSeries
+        .filter((b) => b.data.shelf === "watched")
+        .sort((a, b) => {
+          const dateA = new Date(
+            a.data.history?.watched || a.data.watched,
+          ).getTime();
+          const dateB = new Date(
+            b.data.history?.watched || b.data.watched,
+          ).getTime();
+          return dateB - dateA;
+        })[0]}
     />
   </section>
 </BaseLayout>

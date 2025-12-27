@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: In the Woods
 subtitle: ~

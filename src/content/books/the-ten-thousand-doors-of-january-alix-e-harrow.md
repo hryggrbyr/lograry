@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: The Ten Thousand Doors of January

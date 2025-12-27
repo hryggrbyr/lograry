@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - JuvenileFiction
 title: Once Upon a Time in the North

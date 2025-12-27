@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Dictionary of Lost Words
 subtitle: ~

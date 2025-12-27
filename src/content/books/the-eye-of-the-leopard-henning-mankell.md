@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Detective
 title: The Eye of the Leopard

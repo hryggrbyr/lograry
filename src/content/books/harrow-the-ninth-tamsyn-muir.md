@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Harrow the Ninth
 subtitle: ~

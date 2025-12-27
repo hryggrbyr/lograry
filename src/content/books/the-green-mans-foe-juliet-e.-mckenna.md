@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Green Man's Foe
 subtitle: ~

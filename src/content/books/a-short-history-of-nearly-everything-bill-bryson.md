@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Nonfiction
 title: A Short History of Nearly Everything

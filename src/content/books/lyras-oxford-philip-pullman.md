@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Lyra's Oxford
 subtitle: His Dark Materials 4

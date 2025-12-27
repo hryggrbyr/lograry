@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Collectors
 subtitle: His Dark Materials 0.6

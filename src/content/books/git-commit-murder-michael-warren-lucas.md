@@ -1,4 +1,5 @@
 ---
+type: book
 title: $ git commit murder
 subtitle: ''
 author:

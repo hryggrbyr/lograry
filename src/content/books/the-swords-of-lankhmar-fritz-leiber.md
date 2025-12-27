@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Swords of Lankhmar
 subtitle: ~

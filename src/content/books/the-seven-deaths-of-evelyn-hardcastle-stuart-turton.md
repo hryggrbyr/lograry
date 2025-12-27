@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Seven Deaths of Evelyn Hardcastle
 subtitle: ~

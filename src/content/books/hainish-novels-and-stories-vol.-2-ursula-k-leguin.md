@@ -1,8 +1,9 @@
 ---
+type: book
 tags:
   - Fantasy
   - Anthropology
-  - Shortstories
+  - ShortStories
 title: Hainish Novels and Stories Vol. 2
 subtitle: >-
   The Word for World Is Forest | Five Ways to Forgiveness | The Telling |

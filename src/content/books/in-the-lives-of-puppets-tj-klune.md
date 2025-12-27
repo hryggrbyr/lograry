@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - LGBT
 title: In the Lives of Puppets

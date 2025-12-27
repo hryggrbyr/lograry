@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: About a Boy
 subtitle: ~

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: A River in the Sky
 subtitle: ~

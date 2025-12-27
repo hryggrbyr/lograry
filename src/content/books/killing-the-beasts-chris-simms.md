@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Killing the Beasts
 subtitle: ~

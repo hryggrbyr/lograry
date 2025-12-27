@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Undead Mr. Tenpenny
 subtitle: ~

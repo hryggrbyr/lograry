@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - AlternateHistory
   - Sci-fi

@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Suspense
 title: Silence of the Grave

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: THE SHELTERS OF STONE
 subtitle: Earth's Children 1

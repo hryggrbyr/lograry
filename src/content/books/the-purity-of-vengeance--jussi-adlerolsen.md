@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Purity of Vengeance
 subtitle: Department Q 4

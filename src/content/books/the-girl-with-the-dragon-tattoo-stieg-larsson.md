@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Girl with the Dragon Tattoo
 subtitle: Millennium 1

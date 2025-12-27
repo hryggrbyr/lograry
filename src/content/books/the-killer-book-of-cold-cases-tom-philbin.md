@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Killer Book of Cold Cases
 subtitle: ~

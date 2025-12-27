@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: White As Snow
 subtitle: An Áróra Investigation 03

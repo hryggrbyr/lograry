@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Broken Throne
 subtitle: Red Queen 0

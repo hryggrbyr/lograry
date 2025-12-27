@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Alice
 subtitle: The Chronicles of Alice 1

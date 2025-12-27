@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Chain-Gang All-Stars
 subtitle: ~

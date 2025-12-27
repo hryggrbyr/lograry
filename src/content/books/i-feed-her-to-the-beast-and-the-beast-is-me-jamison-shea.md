@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: I Feed Her to the Beast and the Beast Is Me

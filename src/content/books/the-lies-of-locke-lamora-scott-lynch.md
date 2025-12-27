@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fantasy
 title: The Lies of Locke Lamora

@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Pride and Prejudice
 subtitle: ~

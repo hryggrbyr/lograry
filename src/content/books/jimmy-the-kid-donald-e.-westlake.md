@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Jimmy the kid
 subtitle: ~

@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Satire
   - Thriller

@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Design
 title: Worn

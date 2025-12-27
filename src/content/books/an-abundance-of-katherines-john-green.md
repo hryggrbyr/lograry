@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: An Abundance of Katherines
 subtitle: ~

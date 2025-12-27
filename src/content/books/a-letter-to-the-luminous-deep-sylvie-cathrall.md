@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: A Letter to the Luminous Deep

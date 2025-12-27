@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Dystopia
 title: Brave New World

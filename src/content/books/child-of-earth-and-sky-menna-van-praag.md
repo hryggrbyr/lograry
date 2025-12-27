@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Child of Earth and Sky
 subtitle: ~

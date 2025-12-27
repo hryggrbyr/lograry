@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Suspense
 title: The Draining Lake

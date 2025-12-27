@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: All Tomorrow's Parties
 subtitle: Bridge

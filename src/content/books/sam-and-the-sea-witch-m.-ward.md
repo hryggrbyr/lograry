@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: Sam and the Sea Witch
 subtitle: ~

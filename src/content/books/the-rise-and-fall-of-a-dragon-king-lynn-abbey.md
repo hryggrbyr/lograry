@@ -1,4 +1,5 @@
 ---
+type: book
 tags: []
 title: The Rise and Fall of a Dragon King
 subtitle: ~

@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Horror
 title: The Damnation Game

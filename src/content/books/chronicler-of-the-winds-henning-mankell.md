@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: Chronicler of the Winds
