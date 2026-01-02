@@ -1,6 +1,13 @@
 ---
 type: book
-tags: []
+tags:
+ - juvenile fiction
+ - fantasy
+ - mythology
+ - urban fantasy
+ - folklore
+ - magic
+ - wizards
 title: Silver on the Tree
 subtitle: The Dark is Rising Sequence 5
 author:
@@ -11,9 +18,9 @@ page_count: ~
 isbn: ~
 description: ''
 coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
-shelf: to-read
+shelf: reading
 owned: true
-start_date: ~
+start_date: 2026-01-02
 end_date: ~
 rating: ~
 recommended_by:
