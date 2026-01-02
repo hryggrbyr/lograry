@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: City of Dragons (The Rain Wild Chronicles, Book 3)

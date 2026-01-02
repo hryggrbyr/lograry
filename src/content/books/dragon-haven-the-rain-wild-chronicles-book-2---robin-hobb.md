@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: Dragon Haven (The Rain Wild Chronicles, Book 2)

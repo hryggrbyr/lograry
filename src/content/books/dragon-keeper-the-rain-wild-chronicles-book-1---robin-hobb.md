@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: Dragon Keeper (The Rain Wild Chronicles, Book 1)

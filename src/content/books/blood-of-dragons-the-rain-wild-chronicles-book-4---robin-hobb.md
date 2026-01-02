@@ -1,4 +1,5 @@
 ---
+type: book
 tags:
   - Fiction
 title: Blood of Dragons (The Rain Wild Chronicles, Book 4)
