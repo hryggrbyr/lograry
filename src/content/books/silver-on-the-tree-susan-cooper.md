@@ -17,7 +17,7 @@ published: 2010-05-10T23:00:00.000Z
 page_count: ~
 isbn: ~
 description: ''
-coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
+coverUrl: 'https://pics.cdn.librarything.com/picsizes/50/76/5076660-c-h0-w540-pv25_593752325451416341674141_v5.jpg'
 shelf: reading
 owned: true
 start_date: 2026-01-02
