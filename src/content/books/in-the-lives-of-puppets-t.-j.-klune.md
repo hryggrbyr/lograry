@@ -1,4 +1,5 @@
 ---
+type: book
 title: In the Lives of Puppets
 subtitle: ''
 author:
