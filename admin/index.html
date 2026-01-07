@@ -1,23 +1,372 @@
-<!DOCTYPE html><html lang="en" data-astro-cid-2zp6q64z> <head><meta charset="utf-8"><title>Lograry Admin | Quick Capture</title><link rel="manifest" href="/lograry/manifest.json"><link href="/lograry/admin/config.yml" type="text/yaml" rel="shortcut config"><style>#quick-capture[data-astro-cid-2zp6q64z]{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1a1a1a;color:#eee;padding:10px 20px;display:flex;gap:10px;align-items:center;border-bottom:1px solid #333;font-family:system-ui,sans-serif}input[data-astro-cid-2zp6q64z]{background:#000;border:1px solid #444;color:#fff;padding:6px 12px;border-radius:4px;flex-grow:1}button[data-astro-cid-2zp6q64z]{background:#3b82f6;color:#fff;border:none;padding:6px 15px;border-radius:4px;cursor:pointer;font-weight:700}button[data-astro-cid-2zp6q64z]:hover{background:#2563eb}#status[data-astro-cid-2zp6q64z]{font-size:.8rem;min-width:150px}
-</style></head> <body data-astro-cid-2zp6q64z> <div id="quick-capture" data-astro-cid-2zp6q64z> <span data-astro-cid-2zp6q64z>🚀</span> <span data-astro-cid-2zp6q64z> <input type="text" id="query" placeholder="Search Title, Author, or ISBN..." data-astro-cid-2zp6q64z> <div id="status" data-astro-cid-2zp6q64z>Ready</div> </span> <button id="search-btn" data-astro-cid-2zp6q64z>Search & Copy</button> </div> <script src="https://unpkg.com/@sveltia/cms@latest/dist/sveltia-cms.js"></script> <script>
-      CMS.registerPreviewStyle(`${import.meta.env.BASE_URL}admin/preview.css`);
-    </script> <script>
+<!DOCTYPE html><html lang="en" data-astro-cid-2zp6q64z> <head><meta charset="utf-8"><title>Lograry Admin | Quick Capture</title><link rel="manifest" href="/lograry/manifest.json"><link href="/lograry/admin/config.yml" type="text/yaml" rel="shortcut config"><style>#quick-capture[data-astro-cid-2zp6q64z]{position:fixed;bottom:0;left:0;right:0;z-index:9999;background:#1a1a1a;color:#eee;padding:10px 20px;display:none;gap:10px;align-items:center;border-bottom:1px solid #333;font-family:system-ui,sans-serif}#quick-capture[data-astro-cid-2zp6q64z].show{display:flex}input[data-astro-cid-2zp6q64z]{background:#000;border:1px solid #444;color:#fff;padding:6px 12px;border-radius:4px;flex-grow:1}button[data-astro-cid-2zp6q64z]{background:#3b82f6;color:#fff;border:none;padding:6px 15px;border-radius:4px;cursor:pointer;font-weight:700}button[data-astro-cid-2zp6q64z]:hover{background:#2563eb}#status[data-astro-cid-2zp6q64z]{font-size:.8rem;min-width:150px}.confirmation-overlay[data-astro-cid-2zp6q64z]{border:2px solid #3a86ff;padding:1rem;background:#fff;border-radius:8px;margin:10px 0;box-shadow:0 4px 6px #0000001a;position:fixed;bottom:80px;left:20px;right:20px;max-width:400px;z-index:9998;color:#000;display:none}.confirmation-overlay[data-astro-cid-2zp6q64z].show{display:block}.preview-card[data-astro-cid-2zp6q64z]{display:flex;align-items:center;gap:10px;margin-bottom:10px}.preview-card[data-astro-cid-2zp6q64z] img[data-astro-cid-2zp6q64z]{max-width:50px;height:auto}.btn-confirm[data-astro-cid-2zp6q64z]{background:#3a86ff;color:#fff;border:none;padding:5px 10px;cursor:pointer;margin-right:10px}.btn-confirm[data-astro-cid-2zp6q64z]:hover{background:#2563eb}.btn-cancel[data-astro-cid-2zp6q64z]{background:#666;color:#fff;border:none;padding:5px 10px;cursor:pointer}.btn-cancel[data-astro-cid-2zp6q64z]:hover{background:#555}
+</style></head> <body data-astro-cid-2zp6q64z> <div id="quick-capture" data-astro-cid-2zp6q64z> <span data-astro-cid-2zp6q64z>🚀</span> <span data-astro-cid-2zp6q64z> <input type="text" id="query" placeholder="Search Title, Author, or ISBN..." data-astro-cid-2zp6q64z> <div id="status" data-astro-cid-2zp6q64z>Ready</div> </span> <button id="search-btn" data-astro-cid-2zp6q64z>Search & Copy</button> </div> <div id="book-preview-overlay" class="confirmation-overlay" data-astro-cid-2zp6q64z> <p data-astro-cid-2zp6q64z><strong data-astro-cid-2zp6q64z>Is this the book?</strong></p> <div class="preview-card" id="preview-card-content" data-astro-cid-2zp6q64z> <img id="preview-cover" src="" alt="cover" width="50" data-astro-cid-2zp6q64z> <span id="preview-title-author" data-astro-cid-2zp6q64z></span> </div> <button id="btn-confirm" class="btn-confirm" data-astro-cid-2zp6q64z>
+✅ Yes, Fill Fields
+</button> <button id="btn-cancel" class="btn-cancel" data-astro-cid-2zp6q64z> ❌ No, Clear </button> </div> <script src="https://unpkg.com/js-yaml@4.1.0/dist/js-yaml.js"></script> <script src="https://cdn.jsdelivr.net/npm/@sveltia/cms@latest/dist/sveltia-cms.js"></script> <script>(function(){const BASE_URL = "/lograry/";
+
+      // Register preview style after CMS loads
+      if (typeof CMS !== "undefined") {
+        try {
+          CMS.registerPreviewStyle(`${BASE_URL}admin/preview.css`);
+        } catch (e) {
+          console.warn("Failed to register preview style:", e);
+        }
+      }
+    })();</script> <script>(function(){const BASE_URL = "/lograry/";
+
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
-          navigator.serviceWorker
-            .register(`${import.meta.env.BASE_URL}sw.js`)
-            .then(
-              (registration) => {
-                console.log(
-                  "ServiceWorker registration successful with scope: ",
-                  registration.scope,
-                );
-              },
-              (err) => {
-                console.log("ServiceWorker registration failed: ", err);
-              },
-            );
+          navigator.serviceWorker.register(`${BASE_URL}sw.js`).then(
+            (registration) => {
+              console.log(
+                "ServiceWorker registration successful with scope: ",
+                registration.scope,
+              );
+            },
+            (err) => {
+              console.log("ServiceWorker registration failed: ", err);
+            },
+          );
         });
       }
-    </script> <script type="module">document.getElementById("search-btn").onclick=async()=>{const o=document.getElementById("query").value,t=document.getElementById("status");if(o){t.innerText="Searching Open Library...";try{const n=`https://openlibrary.org/search.json?q=${encodeURIComponent(o)}&limit=1`,r=await(await fetch(n)).json();if(r.docs&&r.docs.length>0){const e=r.docs[0],s={title:e.title,subtitle:e.subtitle||"",author:e.author_name||[],published:e.first_publish_year?.toString()||"",publisher:e.publisher?.[0]||"",page_count:e.number_of_pages_median||null,isbn:e.isbn?.[0]||"",coverUrl:e.cover_i?`https://covers.openlibrary.org/b/id/${e.cover_i}-L.jpg`:"",shelf:"to-read"},i=Object.entries(s).map(([c,a])=>`${c}: ${JSON.stringify(a)}`).join(`
-`);await navigator.clipboard.writeText(i),t.innerText="✓ Found & Copied YAML!",document.getElementById("query").value=""}else t.innerText="❌ No results found."}catch(n){console.error(n),t.innerText="⚠️ Fetch Error."}}};</script> </body> </html>
+    })();</script> <script>
+      let bookPreview = null;
+      let yamlString = "";
+
+      function showBookPreview(bookData) {
+        bookPreview = bookData;
+        const hiddenTypeInput = document.querySelector(
+          'input[type="hidden"][name="type"]',
+        );
+        const capturedType = hiddenTypeInput?.value?.trim();
+        const entries = Object.entries(bookData);
+        if (capturedType) {
+          entries.unshift(["type", capturedType]);
+        }
+        yamlString = entries
+          .map(([key, val]) => `${key}: ${JSON.stringify(val)}`)
+          .join("\n");
+
+        document.getElementById("preview-cover").src = bookData.coverUrl || "";
+        document.getElementById("preview-title-author").textContent =
+          `${bookData.title} by ${(bookData.author || []).join(", ")}`;
+        document.getElementById("book-preview-overlay").classList.add("show");
+      }
+
+      function hideBookPreview() {
+        bookPreview = null;
+        yamlString = "";
+        document
+          .getElementById("book-preview-overlay")
+          .classList.remove("show");
+      }
+
+      async function applyToFields() {
+        const logOutput = [];
+        const pushLog = (msg) => {
+          try {
+            logOutput.push(`[${new Date().toISOString()}] ${msg}`);
+          } catch (_) {
+            // ignore logging errors
+          }
+        };
+
+        try {
+          const data = jsyaml.load(yamlString);
+          pushLog("YAML Data being applied: " + JSON.stringify(data));
+          pushLog("YAML String: " + yamlString);
+
+          const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
+          const waitFor = async (selector, timeout = 7000, interval = 150) => {
+            const start = Date.now();
+            while (Date.now() - start < timeout) {
+              const el = document.querySelector(selector);
+              if (el) return el;
+              await sleep(interval);
+            }
+            return null;
+          };
+
+          const ensureFieldRendered = async (key) => {
+            let section = document.querySelector(
+              `section[data-key-path="${key}"]`,
+            );
+            if (section) {
+              pushLog(`Field "${key}" already in DOM`);
+              return section;
+            }
+
+            const container =
+              document.querySelector("#first-pane-body .content") ||
+              document.querySelector(
+                '[data-mode="edit"] #first-pane-body .content',
+              ) ||
+              document.querySelector('[data-mode="edit"]');
+
+            if (!container) {
+              pushLog("Editor container not found");
+              return null;
+            }
+
+            // Start from top
+            container.scrollTop = 0;
+            const step = Math.max(1, Math.floor(container.clientHeight * 0.5));
+            const maxSteps = 40;
+
+            // Scroll downward slowly
+            for (let i = 0; i < maxSteps; i++) {
+              section = document.querySelector(
+                `section[data-key-path="${key}"]`,
+              );
+              if (section) {
+                pushLog(
+                  `Field "${key}" found while scrolling down at step ${i}`,
+                );
+                return section;
+              }
+              container.scrollTop = Math.min(
+                container.scrollTop + step,
+                container.scrollHeight,
+              );
+              pushLog(
+                `Scroll down step ${i}, scrollTop=${container.scrollTop}, scrollHeight=${container.scrollHeight}`,
+              );
+              await sleep(250);
+            }
+
+            // Scroll back to top (in case virtualization needs a reset)
+            container.scrollTop = 0;
+            await sleep(200);
+
+            // One more slower pass
+            for (let i = 0; i < maxSteps; i++) {
+              section = document.querySelector(
+                `section[data-key-path="${key}"]`,
+              );
+              if (section) {
+                pushLog(`Field "${key}" found during second pass at step ${i}`);
+                return section;
+              }
+              container.scrollTop = Math.min(
+                container.scrollTop + Math.floor(step / 2),
+                container.scrollHeight,
+              );
+              pushLog(
+                `Second pass step ${i}, scrollTop=${container.scrollTop}`,
+              );
+              await sleep(300);
+            }
+
+            pushLog(`Field "${key}" NOT found after scrolling`);
+            return null;
+          };
+
+          const normalizeDate = (value) => {
+            if (!value) return "";
+            if (/^\d{4}$/.test(value)) return `${value}-01-01`;
+            if (/^\d{4}-\d{2}$/.test(value)) return `${value}-01`;
+            return value;
+          };
+
+          // Ensure the editor is ready
+          const editorReady = await waitFor(
+            'section[data-key-path="title"]',
+            7000,
+          );
+          if (!editorReady) {
+            pushLog("Editor fields did not mount within timeout");
+          } else {
+            pushLog("Editor ready: title field present");
+          }
+
+          // Populate sequentially so virtualization/scroll can render fields
+          for (const [key, raw] of Object.entries(data)) {
+            const value = key === "published" ? normalizeDate(raw) : raw;
+            pushLog(
+              `Processing key="${key}" with value=${JSON.stringify(value)}`,
+            );
+
+            const fieldSection = await ensureFieldRendered(key);
+            if (!fieldSection) {
+              pushLog(`Field "${key}" not present after retries; skipping`);
+              continue;
+            }
+
+            const fieldType = fieldSection.getAttribute("data-field-type");
+            pushLog(`Field "${key}" type="${fieldType}"`);
+            let input = null;
+
+            if (fieldType === "string") {
+              input = fieldSection.querySelector("input[type='text']");
+            } else if (fieldType === "number") {
+              // Try common Sveltia number patterns
+              input =
+                fieldSection.querySelector(
+                  "input[type='text'][inputmode='numeric']",
+                ) ||
+                fieldSection.querySelector("input[role='spinbutton']") ||
+                fieldSection.querySelector("input[type='number']") ||
+                fieldSection.querySelector("input[type='text']");
+            } else if (fieldType === "list") {
+              input = fieldSection.querySelector("textarea");
+            } else if (fieldType === "boolean") {
+              const switchButton = fieldSection.querySelector(
+                "button[role='switch']",
+              );
+              if (switchButton && value) {
+                switchButton.click();
+                pushLog(`Toggled boolean for "${key}"`);
+              } else {
+                pushLog(
+                  `Boolean "${key}" not toggled (value=${JSON.stringify(value)})`,
+                );
+              }
+              continue;
+            } else if (fieldType === "select") {
+              // Handle radio-group and combobox variants
+              const radioGroup = fieldSection.querySelector(
+                "[role='radiogroup']",
+              );
+              if (radioGroup && value) {
+                const btn = radioGroup.querySelector(
+                  `button[data-value="${value}"]`,
+                );
+                if (btn) {
+                  btn.click();
+                  pushLog(`Selected radiogroup option "${value}" for "${key}"`);
+                } else {
+                  pushLog(
+                    `Radiogroup option not found for "${key}" value="${value}"`,
+                  );
+                }
+              } else {
+                const combobox =
+                  fieldSection.querySelector("[role='combobox']");
+                if (combobox && value) {
+                  combobox.click();
+                  pushLog(`Opened combobox for "${key}"`);
+                  await sleep(150);
+                  const options = document.querySelectorAll("[role='option']");
+                  let selected = false;
+                  for (const option of options) {
+                    if (option.textContent.trim() === String(value)) {
+                      option.click();
+                      selected = true;
+                      pushLog(
+                        `Selected combobox option "${value}" for "${key}"`,
+                      );
+                      break;
+                    }
+                  }
+                  if (!selected) {
+                    pushLog(
+                      `Combobox option not found for "${key}" value="${value}"`,
+                    );
+                  }
+                } else {
+                  pushLog(`No combobox present for "${key}" or empty value`);
+                }
+              }
+              continue;
+            } else if (fieldType === "datetime") {
+              input = fieldSection.querySelector("input[type='date']");
+            }
+
+            if (!input) {
+              pushLog(`No input element resolved for "${key}"`);
+              continue;
+            }
+
+            if (Array.isArray(value)) {
+              input.value = value.join("\n");
+            } else if (value !== null && value !== undefined) {
+              input.value = value;
+            } else {
+              input.value = "";
+            }
+            pushLog(`Set value for "${key}" to ${JSON.stringify(input.value)}`);
+
+            input.dispatchEvent(new Event("input", { bubbles: true }));
+            input.dispatchEvent(new Event("change", { bubbles: true }));
+            input.dispatchEvent(new Event("blur", { bubbles: true }));
+            pushLog(`Dispatched input/change/blur for "${key}"`);
+          }
+
+          setTimeout(() => {
+            hideBookPreview();
+          }, 300);
+        } catch (e) {
+          pushLog("Error in applyToFields: " + e.message);
+          console.error("Failed to populate fields", e);
+          alert("Failed to populate fields: " + e.message);
+        }
+      }
+
+      document.getElementById("btn-confirm").onclick = applyToFields;
+      document.getElementById("btn-cancel").onclick = hideBookPreview;
+
+      // Show/hide quick-capture based on route
+      function updateQuickCaptureVisibility() {
+        const hash = window.location.hash;
+        const quickCapture = document.getElementById("quick-capture");
+        const bookPreviewOverlay = document.getElementById(
+          "book-preview-overlay",
+        );
+
+        // Only show on new page
+        if (hash.includes("/new")) {
+          quickCapture.classList.add("show");
+        } else {
+          quickCapture.classList.remove("show");
+          // Hide preview overlay if navigating away
+          bookPreviewOverlay.classList.remove("show");
+        }
+      }
+
+      // Check visibility on load and when hash changes
+      updateQuickCaptureVisibility();
+      window.addEventListener("hashchange", updateQuickCaptureVisibility);
+
+      document.getElementById("search-btn").onclick = async () => {
+        const query = document.getElementById("query").value;
+        const status = document.getElementById("status");
+        if (!query) return;
+
+        status.innerText = "Searching Open Library...";
+
+        try {
+          // Open Library Search API
+          const searchUrl = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=1`;
+          const response = await fetch(searchUrl);
+          const data = await response.json();
+
+          if (data.docs && data.docs.length > 0) {
+            const book = data.docs[0];
+
+            // Map the API data to YOUR specific Zod schema fields
+            const capture = {
+              title: book.title,
+              subtitle: book.subtitle || "",
+              author: book.author_name || [],
+              published: book.first_publish_year?.toString() || "",
+              publisher: book.publisher?.[0] || "",
+              page_count: book.number_of_pages_median || null,
+              isbn: book.isbn?.[0] || "",
+              coverUrl: book.cover_i
+                ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`
+                : "",
+              shelf: "to-read", // Default for new captures
+            };
+
+            // Show preview for confirmation
+            showBookPreview(capture);
+            status.innerText = "✓ Book found! Confirm above.";
+          } else {
+            status.innerText = "❌ No results found.";
+          }
+        } catch (e) {
+          console.error(e);
+          status.innerText = "⚠️ Fetch Error.";
+        }
+      };
+    </script> </body> </html>
