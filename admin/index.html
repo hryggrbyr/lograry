@@ -327,6 +327,55 @@
       updateQuickCaptureVisibility();
       window.addEventListener("hashchange", updateQuickCaptureVisibility);
 
+      // Pre-populate hidden type input from existing editor field (when editing)
+      (async () => {
+        const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+        const waitFor = async (selector, timeout = 7000, interval = 150) => {
+          const start = Date.now();
+          while (Date.now() - start < timeout) {
+            const el = document.querySelector(selector);
+            if (el) return el;
+            await sleep(interval);
+          }
+          return null;
+        };
+
+        const typeSection = await waitFor(
+          'section[data-key-path="type"]',
+          5000,
+        );
+        const hiddenTypeInput = document.querySelector(
+          'input[type="hidden"][name="type"]',
+        );
+
+        if (typeSection && hiddenTypeInput) {
+          const fieldType = typeSection.getAttribute("data-field-type");
+
+          if (fieldType === "string") {
+            const input =
+              typeSection.querySelector("input[type='text']") ||
+              typeSection.querySelector("input");
+            if (input && input.value) {
+              hiddenTypeInput.value = input.value.trim();
+            }
+          } else if (fieldType === "select") {
+            const activeRadio = typeSection.querySelector(
+              '[role="radiogroup"] button[aria-checked="true"]',
+            );
+            if (activeRadio && activeRadio.dataset.value) {
+              hiddenTypeInput.value = activeRadio.dataset.value.trim();
+            } else {
+              // Fallback to combobox label text if present
+              const comboboxLabel =
+                typeSection.querySelector('[role="combobox"]');
+              if (comboboxLabel && comboboxLabel.textContent) {
+                hiddenTypeInput.value = comboboxLabel.textContent.trim();
+              }
+            }
+          }
+        }
+      })();
+
       document.getElementById("search-btn").onclick = async () => {
         const query = document.getElementById("query").value;
         const status = document.getElementById("status");
