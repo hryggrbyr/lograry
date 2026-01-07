@@ -8,12 +8,12 @@ shelf: to-read
 owned: false
 start_date: ''
 end_date: ''
-published: 2024-01-01
+published: 2025-01-02
 created: 2026-01-07
 rating: null
-publisher: ''
+publisher: Cornerstone
 page_count: null
-isbn: ''
+isbn: '9781804942949'
 coverUrl: ''
 recommended_by:
   name: ''
