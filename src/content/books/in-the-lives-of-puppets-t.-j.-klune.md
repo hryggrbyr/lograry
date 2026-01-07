@@ -4,8 +4,9 @@ subtitle: ''
 author:
   - T. J. Klune
 tags:
-  - Fiction
   - LGBT
+  - Fantasy
+  - Sci-fi
 shelf: to-read
 owned: false
 start_date: ''
