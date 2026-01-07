@@ -3,8 +3,7 @@ title: The List of Suspicious Things
 subtitle: ''
 author:
   - Jennie Godfrey
-tags:
-  - Fiction
+tags: []
 shelf: to-read
 owned: false
 start_date: ''
