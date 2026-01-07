@@ -1,4 +1,5 @@
 ---
+type: book
 title: The List of Suspicious Things
 subtitle: ''
 author:
@@ -21,4 +22,3 @@ recommended_by:
 reviewUrl: ''
 bookshopUrl: ''
 ---
-

@@ -1,4 +1,5 @@
 ---
+type: book
 title: In the Lives of Puppets
 subtitle: ''
 author:
@@ -24,4 +25,3 @@ recommended_by:
 reviewUrl: ''
 bookshopUrl: ''
 ---
-

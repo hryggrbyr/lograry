@@ -19,7 +19,7 @@ collections:
     create: true
     slug: "{{slug}}-{{author.0}}"
     fields:
-      - { label: "type", name: "type", widget: "hidden", default: "book" }
+      - { label: "type", name: "type", widget: "string", default: "book" }
       - { label: "Title", name: "title", widget: "string" }
       - {
           label: "Subtitle",
