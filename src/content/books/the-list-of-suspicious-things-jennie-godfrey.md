@@ -1,4 +1,5 @@
 ---
+type: book
 title: The List of Suspicious Things
 subtitle: ''
 author:
