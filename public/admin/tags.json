@@ -55,6 +55,7 @@
   "MagicalSchool",
   "Medical",
   "Military",
+  "ModernFairyTale",
   "ModernFairytale",
   "Music",
   "Mystery",
@@ -107,6 +108,13 @@
   "WorkingClass",
   "YoungAdult",
   "Zombies",
+  "fantasy",
+  "folklore",
+  "juvenile fiction",
   "lgbt",
-  "romance"
+  "magic",
+  "mythology",
+  "romance",
+  "urban fantasy",
+  "wizards"
 ]
