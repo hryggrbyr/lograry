@@ -124,7 +124,7 @@ const BASE_URL = import.meta.env.BASE_URL;
     </div>
 
     <div id="book-preview-overlay" class="confirmation-overlay">
-      <p><strong>Is this the book?</strong></p>
+      <p><strong>Is this correct?</strong></p>
       <div class="preview-card" id="preview-card-content">
         <img id="preview-cover" src="" alt="cover" width="50" />
         <span id="preview-title-author"></span>
@@ -191,8 +191,20 @@ const BASE_URL = import.meta.env.BASE_URL;
           .join("\n");
 
         document.getElementById("preview-cover").src = bookData.coverUrl || "";
+        const meta =
+          bookData.type === "book"
+            ? `by ${(bookData.author || []).join(", ")}`
+            : `Directed by ${
+                (bookData.directors && bookData.directors.length
+                  ? bookData.directors
+                  : (bookData.director || "")
+                      .split(",")
+                      .map((s) => s.trim())
+                      .filter(Boolean)
+                ).join(", ") || "Unknown"
+              }`;
         document.getElementById("preview-title-author").textContent =
-          `${bookData.title} by ${(bookData.author || []).join(", ")}`;
+          `${bookData.title} — ${meta}`;
         document.getElementById("book-preview-overlay").classList.add("show");
       }
 
@@ -525,37 +537,126 @@ const BASE_URL = import.meta.env.BASE_URL;
         const status = document.getElementById("status");
         if (!query) return;
 
-        status.innerText = "Searching Open Library...";
+        const hash = window.location.hash || "";
+        const isBook = hash.includes("/books/new");
+        const isMovie = hash.includes("/movies/new");
+        const isSeries = hash.includes("/series/new");
 
         try {
-          // Open Library Search API
-          const searchUrl = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=1`;
-          const response = await fetch(searchUrl);
-          const data = await response.json();
+          if (isBook) {
+            status.innerText = "Searching Open Library...";
+            const searchUrl = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=1`;
+            const response = await fetch(searchUrl);
+            const data = await response.json();
 
-          if (data.docs && data.docs.length > 0) {
-            const book = data.docs[0];
+            if (data.docs && data.docs.length > 0) {
+              const book = data.docs[0];
+              const capture = {
+                type: "book",
+                title: book.title,
+                subtitle: book.subtitle || "",
+                author: book.author_name || [],
+                published: book.first_publish_year?.toString() || "",
+                publisher: book.publisher?.[0] || "",
+                page_count: book.number_of_pages_median || null,
+                isbn: book.isbn?.[0] || "",
+                coverUrl: book.cover_i
+                  ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`
+                  : "",
+                shelf: "to-read",
+                owned: false,
+                rating: 0,
+                body: "",
+              };
+              showBookPreview(capture);
+              status.innerText = "✓ Book found! Confirm above.";
+            } else {
+              status.innerText = "❌ No book results found.";
+            }
+          } else if (isMovie) {
+            status.innerText = "Searching IMDb (mirror)...";
+            const searchUrl = `https://imdb.iamidiotareyoutoo.com/search?q=${encodeURIComponent(query)}`;
+            const response = await fetch(searchUrl);
+            const data = await response.json();
 
-            // Map the API data to YOUR specific Zod schema fields
-            const capture = {
-              title: book.title,
-              subtitle: book.subtitle || "",
-              author: book.author_name || [],
-              published: book.first_publish_year?.toString() || "",
-              publisher: book.publisher?.[0] || "",
-              page_count: book.number_of_pages_median || null,
-              isbn: book.isbn?.[0] || "",
-              coverUrl: book.cover_i
-                ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`
-                : "",
-              shelf: "to-read", // Default for new captures
-            };
+            if (data.description && data.description.length > 0) {
+              const movie = data.description[0];
+              const actors = movie["#ACTORS"]
+                ? movie["#ACTORS"].split(", ").map((s) => s.trim())
+                : [];
+              const movieEntry = {
+                type: "movie",
+                title: movie["#TITLE"] || query,
+                country: "", // not available in this endpoint
+                year: parseInt(movie["#YEAR"]) || "",
+                director: movie["#AKA"] || "Unknown", // limited; fallback
+                actors,
+                genre: [], // limited in search endpoint
+                length: "", // unknown here
+                shelf: "watchlist",
+                owned: false,
+                rating: 0,
+                watched: "",
+                poster: movie["#IMG_POSTER"] || "",
+                body: movie["#RANK"] ? `IMDb Rank: ${movie["#RANK"]}` : "",
+              };
+              // Preview uses coverUrl; mirror the key for consistency
+              const capture = {
+                ...movieEntry,
+                coverUrl: movieEntry.poster,
+              };
+              showBookPreview(capture);
+              status.innerText = "✓ Movie found! Confirm above.";
+            } else {
+              status.innerText = "❌ No movie results found.";
+            }
+          } else if (isSeries) {
+            status.innerText = "Searching TVMaze...";
+            const searchUrl = `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(query)}`;
+            const response = await fetch(searchUrl);
+            const data = await response.json();
 
-            // Show preview for confirmation
-            showBookPreview(capture);
-            status.innerText = "✓ Book found! Confirm above.";
+            if (Array.isArray(data) && data.length > 0) {
+              const show = data[0]?.show || data[0];
+              const year =
+                show?.premiered?.slice(0, 4) || show?.ended?.slice(0, 4) || "";
+              const length =
+                typeof show?.runtime === "number" && show.runtime > 0
+                  ? `${Math.floor(show.runtime / 60)}h ${show.runtime % 60}m`
+                  : show?.runtime
+                    ? String(show.runtime)
+                    : "";
+              const seriesEntry = {
+                type: "series",
+                title: show?.name || query,
+                country:
+                  show?.network?.country?.name ||
+                  show?.network?.country?.code ||
+                  "",
+                year: year,
+                director: "Unknown",
+                actors: [], // need extra request for cast; skip for now
+                genre: Array.isArray(show?.genres) ? show.genres : [],
+                length,
+                shelf: "watchlist",
+                owned: false,
+                rating: 0,
+                watched: "",
+                poster: show?.image?.original || show?.image?.medium || "",
+                body: "",
+              };
+              const capture = {
+                ...seriesEntry,
+                coverUrl: seriesEntry.poster,
+              };
+              showBookPreview(capture);
+              status.innerText = "✓ Series found! Confirm above.";
+            } else {
+              status.innerText = "❌ No series results found.";
+            }
           } else {
-            status.innerText = "❌ No results found.";
+            status.innerText =
+              "⚠️ Unknown route. Use /books/new, /movies/new, or /series/new.";
           }
         } catch (e) {
           console.error(e);

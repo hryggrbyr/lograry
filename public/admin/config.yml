@@ -290,7 +290,7 @@ collections:
       - label: "Shelf"
         name: "shelf"
         widget: "select"
-        options: ["to-watch", "watching", "watched"]
+        options: ["watchlist", "watching", "watched"]
       - { label: "Owned?", name: "owned", widget: "boolean", default: false }
       - {
           label: "Rating",
@@ -337,9 +337,11 @@ collections:
       - label: "Director"
         name: "director"
         widget: "string"
+        required: false
       - label: "Actors"
         name: "actors"
         widget: "list"
+        required: false
       - label: "Genre"
         name: "genre"
         widget: "select"

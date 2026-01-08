@@ -29,7 +29,7 @@ const offset = getAuthorOffset(primaryDirector);
     "text-center",
     item.data.shelf,
     {
-      wishlist: item.data.shelf === "to-watch" && !item.data.owned,
+      wishlist: item.data.shelf === "watchlist" && !item.data.owned,
       owned: item.data.owned,
     },
   ]}
