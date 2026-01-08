@@ -260,3 +260,64 @@ collections:
           widget: "markdown",
           required: false,
         }
+
+  - name: "movies"
+    label: "Blockbuster"
+    folder: "src/content/movies"
+    extension: "md"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}-{{director.0}}-{{year}}"
+    fields:
+      - { label: "type", name: "type", widget: "string", default: "movie" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Country", name: "country", widget: "string", required: false }
+      - { label: "Year", name: "year", widget: "number", value_type: "int" }
+      - label: "Director"
+        name: "director"
+        widget: "list"
+        min: 1
+      - label: "Actors"
+        name: "actors"
+        widget: "list"
+      - label: "Genre"
+        name: "genre"
+        widget: "select"
+        multiple: true
+        create: true
+        required: false
+      - { label: "Length", name: "length", widget: "string", required: false }
+      - label: "Shelf"
+        name: "shelf"
+        widget: "select"
+        options: ["to-watch", "watching", "watched"]
+      - { label: "Owned?", name: "owned", widget: "boolean", default: false }
+      - {
+          label: "Rating",
+          name: "rating",
+          widget: "number",
+          value_type: "int",
+          min: 0,
+          max: 5,
+          required: false,
+        }
+      - {
+          label: "Watched Date",
+          name: "watched",
+          widget: "datetime",
+          format: "YYYY-MM-DD",
+          time_format: false,
+          required: false,
+        }
+      - {
+          label: "Poster URL",
+          name: "poster",
+          widget: "string",
+          required: false,
+        }
+      - {
+          label: "Notes/Review Body",
+          name: "body",
+          widget: "markdown",
+          required: false,
+        }

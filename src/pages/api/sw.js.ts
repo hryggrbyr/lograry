@@ -1,19 +1,19 @@
-import type { APIRoute } from 'astro';
+import type { APIRoute } from "astro";
 
 const urlsToCache = [
-  './',
-  './config.yml',
-  './preview.css',
-  'https://unpkg.com/@sveltia/cms@latest/dist/sveltia-cms.js'
+  "./",
+  "./config.yml",
+  "./preview.css",
+  "https://unpkg.com/@sveltia/cms@latest/dist/sveltia-cms.js",
 ];
 
-export const GET: APIRoute = async ({ }) => {
+export const GET: APIRoute = async ({}) => {
   const BASE_URL = import.meta.env.BASE_URL;
-  const CACHE_NAME = 'lograry-admin-cache-v1';
+  const CACHE_NAME = "lograry-admin-cache-v2";
 
   // Construct the full URLs to cache
-  const fullUrlsToCache = urlsToCache.map(url => {
-    if (url.startsWith('http')) {
+  const fullUrlsToCache = urlsToCache.map((url) => {
+    if (url.startsWith("http")) {
       return url;
     }
     // For local assets, prepend the base URL and the admin path
@@ -34,6 +34,14 @@ export const GET: APIRoute = async ({ }) => {
       );
     });
 
+    self.addEventListener('activate', event => {
+      event.waitUntil(
+        caches.keys().then(keys =>
+          Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))
+        )
+      );
+    });
+
     self.addEventListener('fetch', event => {
       event.respondWith(
         caches.match(event.request)
@@ -48,6 +56,6 @@ export const GET: APIRoute = async ({ }) => {
   `;
 
   return new Response(script, {
-    headers: { 'Content-Type': 'application/javascript' }
+    headers: { "Content-Type": "application/javascript" },
   });
 };

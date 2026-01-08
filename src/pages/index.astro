@@ -23,7 +23,9 @@ const total = {
   <section class="page-section flow">
     <header>
       <h2>Books</h2>
-      <a href="/all-books">View all books ({total.books})</a>
+      <a href={`${import.meta.env.BASE_URL}all-books/`}
+        >View all books ({total.books})</a
+      >
     </header>
 
     <YearlyGraph
@@ -55,7 +57,9 @@ const total = {
   <section class="page-section flow">
     <header>
       <h2>Movies</h2>
-      <a href="/all-movies">View all movies ({total.movies})</a>
+      <a href={`${import.meta.env.BASE_URL}all-movies/`}
+        >View all movies ({total.movies})</a
+      >
     </header>
 
     <YearlyGraph
@@ -87,7 +91,9 @@ const total = {
   <section class="page-section flow">
     <header>
       <h2>Series</h2>
-      <a href="/all-series">View all TV shows ({total.series})</a>
+      <a href={`${import.meta.env.BASE_URL}all-series/`}
+        >View all TV shows ({total.series})</a
+      >
     </header>
 
     <YearlyGraph

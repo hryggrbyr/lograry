@@ -1,7 +1,7 @@
 ---
 type: movie
-country: United States, Canada
-title: "Under the Boardwalk"
+country: "United States, Canada"
+title: "EAT CUNT Under the Boardwalk"
 year: 2023
 director: David Soren
 actors: [Keke Palmer, Michael Cera, Bobby Cannavale]
@@ -10,9 +10,9 @@ length: 83
 shelf: watched
 owned: false
 rating: 3
-watched: 2025-09-06
-poster: "https://m.media-amazon.com/images/M/MV5BZWFhOTdmMzItYjUxYy00NjkyLTllMmItNmU
-yYjcwYzVjNzU4XkEyXkFqcGc@._V1_SX300.jpg"
+watched: "2025-09-06"
+poster: |
+  https://m.media-amazon.com/images/M/MV5BZWFhOTdmMzItYjUxYy00NjkyLTllMmItNmUyYjcwYzVjNzU4XkEyXkFqcGc@._V1_SX300.jpg
 ---
 
 # Under the Boardwalk (2023)
