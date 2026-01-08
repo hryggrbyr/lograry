@@ -1,7 +1,7 @@
 ---
 type: movie
 country: "United States, Canada"
-title: "EAT CUNT Under the Boardwalk"
+title: "Under the Boardwalk"
 year: 2023
 director: David Soren
 actors: [Keke Palmer, Michael Cera, Bobby Cannavale]
