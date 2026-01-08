@@ -47,11 +47,18 @@ const movies = defineCollection({
       poster: z.string().url().optional().nullable(),
     })
     .merge(commonMeta)
-    .transform((data) => ({
-      ...data,
-      sort_title: formatSortTitle(data.title),
-      sort_director: formatSortName(data.director),
-    })),
+    .transform((data) => {
+      const directors = (data.director || "")
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean);
+      return {
+        ...data,
+        directors,
+        sort_title: formatSortTitle(data.title),
+        sort_director: formatSortName(directors[0] || data.director || ""),
+      };
+    }),
 });
 
 const series = defineCollection({
@@ -70,11 +77,18 @@ const series = defineCollection({
       poster: z.string().url().optional().nullable(),
     })
     .merge(commonMeta)
-    .transform((data) => ({
-      ...data,
-      sort_title: formatSortTitle(data.title),
-      sort_director: formatSortName(data.director),
-    })),
+    .transform((data) => {
+      const directors = (data.director || "")
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean);
+      return {
+        ...data,
+        directors,
+        sort_title: formatSortTitle(data.title),
+        sort_director: formatSortName(directors[0] || data.director || ""),
+      };
+    }),
 });
 
 export const collections = { books, movies, series };

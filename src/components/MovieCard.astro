@@ -11,9 +11,18 @@ import {
   getAuthorOffset, // Using this for visual variety/rotation as with books
 } from "@lib/utils.ts";
 
-const director = item.data.director || "Unknown";
+const directors =
+  item.data.directors && item.data.directors.length > 0
+    ? item.data.directors
+    : item.data.director
+      ? item.data.director
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean)
+      : ["Unknown"];
+const primaryDirector = directors[0] || "Unknown";
 // Reusing the author offset logic for the director to keep the visual "wiggle" consistent
-const offset = getAuthorOffset(director);
+const offset = getAuthorOffset(primaryDirector);
 ---
 
 <article
@@ -42,7 +51,7 @@ const offset = getAuthorOffset(director);
   <div class="card-content flow">
     <h3 class="typewriter-title" set:html={item.data.title} />
 
-    <p class="director">Directed by {item.data.director}</p>
+    <p class="director">Directed by {directors.join(", ")}</p>
 
     {
       item.data.actors && (

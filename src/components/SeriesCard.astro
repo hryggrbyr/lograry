@@ -8,9 +8,17 @@ const { item, ...rest } = Astro.props;
 
 import { formatDate, getAuthorOffset } from "@lib/utils.ts";
 
-// Using the first actor or 'Unknown' for the offset wiggle if a director isn't specific
-const director = item.data.director || "Unknown";
-const offset = getAuthorOffset(director);
+const directors =
+  item.data.directors && item.data.directors.length > 0
+    ? item.data.directors
+    : item.data.director
+      ? item.data.director
+          .split(",")
+          .map((s) => s.trim())
+          .filter(Boolean)
+      : ["Unknown"];
+const primaryDirector = directors[0] || "Unknown";
+const offset = getAuthorOffset(primaryDirector);
 ---
 
 <article
@@ -39,7 +47,7 @@ const offset = getAuthorOffset(director);
   <div class="card-content flow">
     <h3 class="typewriter-title" set:html={item.data.title} />
 
-    <p class="director">Directed by {item.data.director}</p>
+    <p class="director">Directed by {directors.join(", ")}</p>
 
     {
       item.data.actors && (
