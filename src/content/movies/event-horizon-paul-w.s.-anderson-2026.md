@@ -9,7 +9,7 @@ actors:
   - Sam Neill
 genre: []
 length: ''
-shelf: to-watch
+shelf: watchlist
 owned: false
 rating: 0
 watched: ''
