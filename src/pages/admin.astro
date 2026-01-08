@@ -532,6 +532,78 @@ const BASE_URL = import.meta.env.BASE_URL;
         }
       })();
 
+      // Helpers for enriched movie fetch via IMDb mirror
+      async function getFullMovieData(title) {
+        try {
+          // STEP 1: Search to get the IMDb ID
+          const searchRes = await fetch(
+            `https://imdb.iamidiotareyoutoo.com/search?q=${encodeURIComponent(title)}`,
+          );
+          const searchData = await searchRes.json();
+
+          if (!searchData.description || searchData.description.length === 0)
+            return null;
+
+          const basicInfo = searchData.description[0];
+          const imdbId = basicInfo["#IMDB_ID"];
+          if (!imdbId) return null;
+
+          // STEP 2: Fetch detailed info (Director, Runtime, Genres) via JSON-LD-like shape
+          const detailRes = await fetch(
+            `https://imdb.iamidiotareyoutoo.com/main?id=${imdbId}`,
+          );
+          const details = await detailRes.json();
+
+          // STEP 3: Map to your specific fields
+          const short = details?.short || {};
+          const actorsFromShort = Array.isArray(short.actor)
+            ? short.actor.map((a) => a?.name).filter(Boolean)
+            : [];
+          const actorsFromBasic = basicInfo["#ACTORS"]
+            ? basicInfo["#ACTORS"].split(", ").map((s) => s.trim())
+            : [];
+
+          return {
+            type: "movie",
+            title: short.name || basicInfo["#TITLE"] || title,
+            country: short?.countryOfOrigin?.[0]?.name || "",
+            year: parseInt(basicInfo["#YEAR"]) || "",
+            director:
+              Array.isArray(short?.director) && short.director.length
+                ? short.director
+                    .map((d) => d?.name)
+                    .filter(Boolean)
+                    .join(", ")
+                : "Unknown",
+            actors: actorsFromShort.length ? actorsFromShort : actorsFromBasic,
+            genre: Array.isArray(short?.genre) ? short.genre : [],
+            length: short?.duration ? formatDuration(short.duration) : "",
+            shelf: "to-watch",
+            owned: false,
+            rating: 0,
+            watched: "",
+            poster: short?.image || basicInfo["#IMG_POSTER"] || "",
+            body:
+              short?.description ||
+              (basicInfo["#RANK"] ? `IMDb Rank: ${basicInfo["#RANK"]}` : ""),
+          };
+        } catch (error) {
+          console.error("Fetch failed:", error);
+          return null;
+        }
+      }
+
+      // Helper to convert ISO 8601 duration (PT1H48M) to readable string (1h 48m)
+      function formatDuration(iso) {
+        if (!iso || typeof iso !== "string") return "";
+        return iso
+          .replace(/^PT/, "")
+          .replace(/H/, "h ")
+          .replace(/M/, "m")
+          .trim()
+          .toLowerCase();
+      }
+
       document.getElementById("search-btn").onclick = async () => {
         const query = document.getElementById("query").value;
         const status = document.getElementById("status");
@@ -581,18 +653,106 @@ const BASE_URL = import.meta.env.BASE_URL;
 
             if (data.description && data.description.length > 0) {
               const movie = data.description[0];
+
+              // Attempt to resolve an IMDb ID for a second, details fetch
+              const imdbId =
+                movie["#IMDB_ID"] ||
+                (movie["#IMDB_URL"] &&
+                  movie["#IMDB_URL"].split("/title/")[1]?.split("/")[0]) ||
+                null;
+
+              // Defaults from the search hit
               const actors = movie["#ACTORS"]
                 ? movie["#ACTORS"].split(", ").map((s) => s.trim())
                 : [];
+
+              let directorNames = [];
+              let runtimeMinutes = "";
+              let genres = [];
+
+              // Second call: fetch details to get actual director(s), runtime, and genres
+              if (imdbId) {
+                try {
+                  const detailsResp = await fetch(
+                    `https://imdb.iamidiotareyoutoo.com/title/${imdbId}`,
+                  );
+                  const details = await detailsResp.json();
+
+                  // Try several common shapes defensively
+                  const fromDirectorsArr = Array.isArray(details.directors)
+                    ? details.directors
+                        .map((d) =>
+                          typeof d === "string"
+                            ? d
+                            : d?.name || d?.creditName || "",
+                        )
+                        .filter(Boolean)
+                    : [];
+                  const fromCreditsArr = Array.isArray(details.credits)
+                    ? details.credits
+                        .filter((c) =>
+                          /director/i.test(
+                            (c?.job || c?.role || c?.category || "") as string,
+                          ),
+                        )
+                        .map((c) => c?.name || c?.creditName || "")
+                        .filter(Boolean)
+                    : [];
+                  const fromPrincipalsArr = Array.isArray(details.principals)
+                    ? details.principals
+                        .filter((p) =>
+                          /director/i.test((p?.category || "") as string),
+                        )
+                        .map((p) => p?.name || p?.creditName || "")
+                        .filter(Boolean)
+                    : [];
+
+                  directorNames = [
+                    ...new Set([
+                      ...fromDirectorsArr,
+                      ...fromCreditsArr,
+                      ...fromPrincipalsArr,
+                    ]),
+                  ];
+
+                  runtimeMinutes =
+                    typeof details.runtimeMinutes === "number"
+                      ? details.runtimeMinutes
+                      : typeof details.runtime === "number"
+                        ? details.runtime
+                        : ((details.runtimeMinutes ||
+                            details.runtime ||
+                            "") as string);
+
+                  genres = Array.isArray(details.genres)
+                    ? details.genres
+                    : Array.isArray(details.genre)
+                      ? details.genre
+                      : [];
+                } catch (_) {
+                  // Ignore details errors; we'll fall back to search hit
+                }
+              }
+
+              const length =
+                typeof runtimeMinutes === "number"
+                  ? `${Math.floor(runtimeMinutes / 60)}h ${runtimeMinutes % 60}m`
+                  : runtimeMinutes
+                    ? String(runtimeMinutes)
+                    : "";
+
               const movieEntry = {
                 type: "movie",
                 title: movie["#TITLE"] || query,
                 country: "", // not available in this endpoint
                 year: parseInt(movie["#YEAR"]) || "",
-                director: movie["#AKA"] || "Unknown", // limited; fallback
+                director:
+                  directorNames.length > 0
+                    ? directorNames.join(", ")
+                    : movie["#AKA"] || "Unknown", // fallback if details not available
                 actors,
-                genre: [], // limited in search endpoint
-                length: "", // unknown here
+                genre: genres, // enriched from details when possible
+                length, // enriched from details when possible
                 shelf: "watchlist",
                 owned: false,
                 rating: 0,
@@ -600,6 +760,7 @@ const BASE_URL = import.meta.env.BASE_URL;
                 poster: movie["#IMG_POSTER"] || "",
                 body: movie["#RANK"] ? `IMDb Rank: ${movie["#RANK"]}` : "",
               };
+
               // Preview uses coverUrl; mirror the key for consistency
               const capture = {
                 ...movieEntry,
@@ -626,6 +787,33 @@ const BASE_URL = import.meta.env.BASE_URL;
                   : show?.runtime
                     ? String(show.runtime)
                     : "";
+              // Enrich with cast and crew
+              let directorNames = [];
+              let actors = [];
+              try {
+                const detailsResp = await fetch(
+                  `https://api.tvmaze.com/shows/${show.id}?embed[]=cast&embed[]=crew`,
+                );
+                const details = await detailsResp.json();
+                const embedded = details._embedded || {};
+                const crew = Array.isArray(embedded.crew) ? embedded.crew : [];
+                const cast = Array.isArray(embedded.cast) ? embedded.cast : [];
+                // Prefer Creators; fallback to Directors
+                directorNames = crew
+                  .filter((c) => /creator/i.test(String(c.type)))
+                  .map((c) => c.person?.name)
+                  .filter(Boolean);
+                if (directorNames.length === 0) {
+                  directorNames = crew
+                    .filter((c) => /director/i.test(String(c.type)))
+                    .map((c) => c.person?.name)
+                    .filter(Boolean);
+                }
+                actors = cast.map((c) => c.person?.name).filter(Boolean);
+              } catch (_) {
+                // ignore enrichment errors
+              }
+
               const seriesEntry = {
                 type: "series",
                 title: show?.name || query,
@@ -634,8 +822,10 @@ const BASE_URL = import.meta.env.BASE_URL;
                   show?.network?.country?.code ||
                   "",
                 year: year,
-                director: "Unknown",
-                actors: [], // need extra request for cast; skip for now
+                director: directorNames.length
+                  ? directorNames.join(", ")
+                  : "Unknown",
+                actors,
                 genre: Array.isArray(show?.genres) ? show.genres : [],
                 length,
                 shelf: "watchlist",
