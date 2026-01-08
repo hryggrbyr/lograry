@@ -11,8 +11,8 @@ genre: []
 length: ''
 shelf: watchlist
 owned: false
-rating: 0
-watched: ''
+rating: 3
+watched: 2026-01-04
 poster: https://m.media-amazon.com/images/M/MV5BM2M4ZTI2MjMtYjVlNy00Y2E3LTgzM2EtNDA0NTUzZmQxZjY3XkEyXkFqcGc@._V1_.jpg
 ---
 
