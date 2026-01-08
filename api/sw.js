@@ -1,5 +1,5 @@
 
-    const CACHE_NAME = 'lograry-admin-cache-v1';
+    const CACHE_NAME = 'lograry-admin-cache-v2';
     const urlsToCache = ["/lograry/admin/","/lograry/admin/config.yml","/lograry/admin/preview.css","https://unpkg.com/@sveltia/cms@latest/dist/sveltia-cms.js"];
 
     self.addEventListener('install', event => {
@@ -9,6 +9,14 @@
             console.log('Opened cache');
             return cache.addAll(urlsToCache);
           })
+      );
+    });
+
+    self.addEventListener('activate', event => {
+      event.waitUntil(
+        caches.keys().then(keys =>
+          Promise.all(keys.filter(key => key !== CACHE_NAME).map(key => caches.delete(key)))
+        )
       );
     });
 
