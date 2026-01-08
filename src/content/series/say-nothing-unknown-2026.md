@@ -1,11 +1,11 @@
 ---
 type: series
 title: Say Nothing
-country: ''
+country: Ireland
 year: 2024
-director: Unknown
+director: Michael Lennox, Mary Nighy, Anthony Byrne, Alice Seabright
 actors:
-  - Unknown
+  - Maxine Peake, Seamus O'Hara, Lola Pettigrew
 genre: []
 length: ''
 shelf: watchlist
