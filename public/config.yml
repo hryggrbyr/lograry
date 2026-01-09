@@ -1,8 +1,11 @@
 # 1. Backend: Tell Sveltia where to push commits
+site_url: https://hryggrbyr.github.io/lograry
 backend:
   name: github
   repo: hryggrbyr/lograry # Important: Update this!
   branch: main
+  auth_type: implicit
+  use_graphql: true
 
 # 2. Media: Tell Sveltia where to save cover images
 # public/images/covers will show up as /images/covers in your Astro code
@@ -19,11 +22,6 @@ collections:
     create: true
     slug: "{{slug}}-{{author.0}}"
     fields:
-      - {
-          label: "Quick Capture",
-          name: "quick_capture",
-          widget: "quickCapture",
-        }
       - { label: "type", name: "type", widget: "string", default: "book" }
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -274,11 +272,6 @@ collections:
     create: true
     slug: "{{slug}}-{{director}}-{{year}}"
     fields:
-      - {
-          label: "Quick Capture",
-          name: "quick_capture",
-          widget: "quickCapture",
-        }
       - { label: "type", name: "type", widget: "string", default: "movie" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Country", name: "country", widget: "string", required: false }
@@ -296,6 +289,29 @@ collections:
         multiple: true
         create: true
         required: false
+        options:
+          - "Action"
+          - "Adventure"
+          - "Animation"
+          - "Comedy"
+          - "Crime"
+          - "Documentary"
+          - "Drama"
+          - "Family"
+          - "Fantasy"
+          - "Film-Noir"
+          - "History"
+          - "Horror"
+          - "Musical"
+          - "Mystery"
+          - "Romance"
+          - "Sci-Fi"
+          - "Short"
+          - "Sport"
+          - "Superhero"
+          - "Thriller"
+          - "War"
+          - "Western"
       - { label: "Length", name: "length", widget: "string", required: false }
       - label: "Shelf"
         name: "shelf"
@@ -340,11 +356,6 @@ collections:
     create: true
     slug: "{{slug}}-{{director}}-{{year}}"
     fields:
-      - {
-          label: "Quick Capture",
-          name: "quick_capture",
-          widget: "quickCapture",
-        }
       - { label: "type", name: "type", widget: "string", default: "series" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Country", name: "country", widget: "string", required: false }
@@ -363,6 +374,29 @@ collections:
         multiple: true
         create: true
         required: false
+        options:
+          - "Action"
+          - "Adventure"
+          - "Animation"
+          - "Comedy"
+          - "Crime"
+          - "Documentary"
+          - "Drama"
+          - "Family"
+          - "Fantasy"
+          - "Film-Noir"
+          - "History"
+          - "Horror"
+          - "Musical"
+          - "Mystery"
+          - "Romance"
+          - "Sci-Fi"
+          - "Short"
+          - "Sport"
+          - "Superhero"
+          - "Thriller"
+          - "War"
+          - "Western"
       - { label: "Length", name: "length", widget: "string", required: false }
       - label: "Shelf"
         name: "shelf"

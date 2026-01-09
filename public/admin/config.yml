@@ -19,11 +19,6 @@ collections:
     create: true
     slug: "{{slug}}-{{author.0}}"
     fields:
-      - {
-          label: "Quick Capture",
-          name: "quick_capture",
-          widget: "quickCapture",
-        }
       - { label: "type", name: "type", widget: "string", default: "book" }
       - { label: "Title", name: "title", widget: "string" }
       - {
@@ -274,11 +269,6 @@ collections:
     create: true
     slug: "{{slug}}-{{director}}-{{year}}"
     fields:
-      - {
-          label: "Quick Capture",
-          name: "quick_capture",
-          widget: "quickCapture",
-        }
       - { label: "type", name: "type", widget: "string", default: "movie" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Country", name: "country", widget: "string", required: false }
@@ -338,11 +328,6 @@ collections:
     create: true
     slug: "{{slug}}-{{director}}-{{year}}"
     fields:
-      - {
-          label: "Quick Capture",
-          name: "quick_capture",
-          widget: "quickCapture",
-        }
       - { label: "type", name: "type", widget: "string", default: "series" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Country", name: "country", widget: "string", required: false }

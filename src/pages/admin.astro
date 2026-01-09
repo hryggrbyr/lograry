@@ -7,7 +7,7 @@ const BASE_URL = import.meta.env.BASE_URL;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Lograry Admin | Quick Capture</title>
+    <title>Lograry Admin</title>
     <link rel="manifest" href={`${BASE_URL}manifest.json`} />
     <link
       href={`${BASE_URL}admin/config.yml`}
@@ -15,48 +15,14 @@ const BASE_URL = import.meta.env.BASE_URL;
       rel="shortcut config"
     />
     <style>
-      #quick-capture {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 9999;
-        background: #1a1a1a;
-        color: #eee;
-        padding: 10px 20px;
-        display: none;
-        gap: 10px;
-        align-items: center;
-        border-bottom: 1px solid #333;
-        font-family: system-ui, sans-serif;
+      * {
+        outline: 2px dashed blue;
       }
-      #quick-capture.show {
-        display: flex;
+      svg {
+        width: auto;
+        height: 1rlh;
       }
-      input {
-        background: #000;
-        border: 1px solid #444;
-        color: #fff;
-        padding: 6px 12px;
-        border-radius: 4px;
-        flex-grow: 1;
-      }
-      button {
-        background: #3b82f6;
-        color: white;
-        border: none;
-        padding: 6px 15px;
-        border-radius: 4px;
-        cursor: pointer;
-        font-weight: bold;
-      }
-      button:hover {
-        background: #2563eb;
-      }
-      #status {
-        font-size: 0.8rem;
-        min-width: 150px;
-      }
+
       .confirmation-overlay {
         border: 2px solid #3a86ff;
         padding: 1rem;
@@ -111,18 +77,6 @@ const BASE_URL = import.meta.env.BASE_URL;
   </head>
   <body>
     <div id="nc-root"></div>
-    <div id="quick-capture">
-      <span>🚀</span>
-      <span>
-        <input
-          type="text"
-          id="query"
-          placeholder="Search Title, Author, or ISBN..."
-        />
-        <div id="status">Ready</div>
-      </span>
-      <button id="search-btn">Search & Copy</button>
-    </div>
 
     <div id="book-preview-overlay" class="confirmation-overlay">
       <p><strong>Is this correct?</strong></p>
@@ -138,7 +92,9 @@ const BASE_URL = import.meta.env.BASE_URL;
 
     <script is:inline src="https://unpkg.com/js-yaml@4.1.0/dist/js-yaml.js"
     ></script>
-    <script type="module" src="/src/scripts/static-cms-app.ts"></script>
+    <script type="module">
+      import "https://cdn.jsdelivr.net/npm/decap-cms@^3.1.2";
+    </script>
     <script is:inline define:vars={{ BASE_URL }}>
       (function initCMS() {
         const cms = window.CMS;
@@ -153,7 +109,7 @@ const BASE_URL = import.meta.env.BASE_URL;
     </script>
 
     <script is:inline>
-      // Static CMS loaded via CDN; use global CMS object
+      // Decap CMS loaded via CDN; use global CMS object
 
       // Determine content type from URL hash
       function getContentTypeFromHash() {
@@ -327,81 +283,6 @@ const BASE_URL = import.meta.env.BASE_URL;
           return false;
         }
       }
-
-      class QuickCaptureControl {
-        constructor({ value, onChange }) {
-          this.value = value;
-          this.onChange = onChange;
-          this.root = document.createElement("div");
-          this.root.style.display = "flex";
-          this.root.style.gap = "0.5rem";
-          this.input = document.createElement("input");
-          this.input.type = "text";
-          this.input.placeholder = "Search title...";
-          this.button = document.createElement("button");
-          this.button.textContent = "Fetch & Apply";
-          this.status = document.createElement("div");
-          this.status.style.marginLeft = "0.5rem";
-
-          this.button.onclick = async () => {
-            const q = this.input.value.trim();
-            if (!q) return;
-            const type = getContentTypeFromHash();
-            this.status.textContent = "Searching...";
-            let payload = null;
-            try {
-              if (type === "book") payload = await fetchBook(q);
-              else if (type === "movie") payload = await getFullMovieData(q);
-              else if (type === "series") payload = await fetchSeries(q);
-            } catch (e) {
-              console.error(e);
-            }
-            if (payload) {
-              const ok = updateDraftFields(payload);
-              if (!ok) {
-                Object.entries(payload).forEach(([name, val]) => {
-                  const section = document.querySelector(
-                    `section[data-key-path="${name}"]`,
-                  );
-                  if (!section) return;
-                  const input = section.querySelector("input, textarea");
-                  if (!input) return;
-                  input.value = Array.isArray(val)
-                    ? val.join("\n")
-                    : (val ?? "");
-                  input.dispatchEvent(new Event("input", { bubbles: true }));
-                  input.dispatchEvent(new Event("change", { bubbles: true }));
-                });
-              }
-              this.status.textContent = "✓ Applied";
-            } else {
-              this.status.textContent = "❌ No results";
-            }
-          };
-
-          this.root.appendChild(this.input);
-          this.root.appendChild(this.button);
-          this.root.appendChild(this.status);
-        }
-        render() {
-          return this.root;
-        }
-        getValue() {
-          return this.value;
-        }
-        setValue(val) {
-          this.value = val;
-        }
-      }
-
-      (function waitForCMS() {
-        const cms = window.CMS;
-        if (cms && typeof cms.registerWidget === "function") {
-          cms.registerWidget("quickCapture", QuickCaptureControl);
-        } else {
-          setTimeout(waitForCMS, 100);
-        }
-      })();
     </script>
 
     <script is:inline define:vars={{ BASE_URL }}>
@@ -724,27 +605,15 @@ const BASE_URL = import.meta.env.BASE_URL;
       document.getElementById("btn-confirm").onclick = applyToFields;
       document.getElementById("btn-cancel").onclick = hideBookPreview;
 
-      // Show/hide quick-capture based on route
-      function updateQuickCaptureVisibility() {
-        const hash = window.location.hash;
-        const quickCapture = document.getElementById("quick-capture");
+      // Hide preview overlay when hash changes
+      window.addEventListener("hashchange", () => {
         const bookPreviewOverlay = document.getElementById(
           "book-preview-overlay",
         );
-
-        // Only show on new page
-        if (hash.includes("/new")) {
-          quickCapture.classList.add("show");
-        } else {
-          quickCapture.classList.remove("show");
-          // Hide preview overlay if navigating away
+        if (!window.location.hash.includes("/new")) {
           bookPreviewOverlay.classList.remove("show");
         }
-      }
-
-      // Check visibility on load and when hash changes
-      updateQuickCaptureVisibility();
-      window.addEventListener("hashchange", updateQuickCaptureVisibility);
+      });
 
       // Pre-populate hidden type input from existing editor field (when editing)
       (async () => {
@@ -866,256 +735,6 @@ const BASE_URL = import.meta.env.BASE_URL;
           .trim()
           .toLowerCase();
       }
-
-      document.getElementById("search-btn").onclick = async () => {
-        const query = document.getElementById("query").value;
-        const status = document.getElementById("status");
-        if (!query) return;
-
-        const hash = window.location.hash || "";
-        const isBook = hash.includes("/books/new");
-        const isMovie = hash.includes("/movies/new");
-        const isSeries = hash.includes("/series/new");
-
-        try {
-          if (isBook) {
-            status.innerText = "Searching Open Library...";
-            const searchUrl = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=1`;
-            const response = await fetch(searchUrl);
-            const data = await response.json();
-
-            if (data.docs && data.docs.length > 0) {
-              const book = data.docs[0];
-              const capture = {
-                type: "book",
-                title: book.title,
-                subtitle: book.subtitle || "",
-                author: book.author_name || [],
-                published: book.first_publish_year?.toString() || "",
-                publisher: book.publisher?.[0] || "",
-                page_count: book.number_of_pages_median || null,
-                isbn: book.isbn?.[0] || "",
-                coverUrl: book.cover_i
-                  ? `https://covers.openlibrary.org/b/id/${book.cover_i}-L.jpg`
-                  : "",
-                shelf: "to-read",
-                owned: false,
-                rating: 0,
-                body: "",
-              };
-              showBookPreview(capture);
-              status.innerText = "✓ Book found! Confirm above.";
-            } else {
-              status.innerText = "❌ No book results found.";
-            }
-          } else if (isMovie) {
-            status.innerText = "Searching IMDb (mirror)...";
-            const searchUrl = `https://imdb.iamidiotareyoutoo.com/search?q=${encodeURIComponent(query)}`;
-            const response = await fetch(searchUrl);
-            const data = await response.json();
-
-            if (data.description && data.description.length > 0) {
-              const movie = data.description[0];
-
-              // Attempt to resolve an IMDb ID for a second, details fetch
-              const imdbId =
-                movie["#IMDB_ID"] ||
-                (movie["#IMDB_URL"] &&
-                  movie["#IMDB_URL"].split("/title/")[1]?.split("/")[0]) ||
-                null;
-
-              // Defaults from the search hit
-              const actors = movie["#ACTORS"]
-                ? movie["#ACTORS"].split(", ").map((s) => s.trim())
-                : [];
-
-              let directorNames = [];
-              let runtimeMinutes = "";
-              let genres = [];
-
-              // Second call: fetch details to get actual director(s), runtime, and genres
-              if (imdbId) {
-                try {
-                  const detailsResp = await fetch(
-                    `https://imdb.iamidiotareyoutoo.com/title/${imdbId}`,
-                  );
-                  const details = await detailsResp.json();
-
-                  // Try several common shapes defensively
-                  const fromDirectorsArr = Array.isArray(details.directors)
-                    ? details.directors
-                        .map((d) =>
-                          typeof d === "string"
-                            ? d
-                            : d?.name || d?.creditName || "",
-                        )
-                        .filter(Boolean)
-                    : [];
-                  const fromCreditsArr = Array.isArray(details.credits)
-                    ? details.credits
-                        .filter((c) =>
-                          /director/i.test(
-                            String(c?.job || c?.role || c?.category || ""),
-                          ),
-                        )
-                        .map((c) => c?.name || c?.creditName || "")
-                        .filter(Boolean)
-                    : [];
-                  const fromPrincipalsArr = Array.isArray(details.principals)
-                    ? details.principals
-                        .filter((p) =>
-                          /director/i.test(String(p?.category || "")),
-                        )
-                        .map((p) => p?.name || p?.creditName || "")
-                        .filter(Boolean)
-                    : [];
-
-                  directorNames = [
-                    ...new Set([
-                      ...fromDirectorsArr,
-                      ...fromCreditsArr,
-                      ...fromPrincipalsArr,
-                    ]),
-                  ];
-
-                  runtimeMinutes =
-                    typeof details.runtimeMinutes === "number"
-                      ? details.runtimeMinutes
-                      : typeof details.runtime === "number"
-                        ? details.runtime
-                        : String(
-                            details.runtimeMinutes || details.runtime || "",
-                          );
-
-                  genres = Array.isArray(details.genres)
-                    ? details.genres
-                    : Array.isArray(details.genre)
-                      ? details.genre
-                      : [];
-                } catch (_) {
-                  // Ignore details errors; we'll fall back to search hit
-                }
-              }
-
-              const length =
-                typeof runtimeMinutes === "number"
-                  ? `${Math.floor(runtimeMinutes / 60)}h ${runtimeMinutes % 60}m`
-                  : runtimeMinutes
-                    ? String(runtimeMinutes)
-                    : "";
-
-              const movieEntry = {
-                type: "movie",
-                title: movie["#TITLE"] || query,
-                country: "", // not available in this endpoint
-                year: parseInt(movie["#YEAR"]) || "",
-                director:
-                  directorNames.length > 0
-                    ? directorNames.join(", ")
-                    : movie["#AKA"] || "Unknown", // fallback if details not available
-                actors,
-                genre: genres, // enriched from details when possible
-                length, // enriched from details when possible
-                shelf: "watchlist",
-                owned: false,
-                rating: 0,
-                watched: "",
-                poster: movie["#IMG_POSTER"] || "",
-                body: movie["#RANK"] ? `IMDb Rank: ${movie["#RANK"]}` : "",
-              };
-
-              // Preview uses coverUrl; mirror the key for consistency
-              const capture = {
-                ...movieEntry,
-                coverUrl: movieEntry.poster,
-              };
-              showBookPreview(capture);
-              status.innerText = "✓ Movie found! Confirm above.";
-            } else {
-              status.innerText = "❌ No movie results found.";
-            }
-          } else if (isSeries) {
-            status.innerText = "Searching TVMaze...";
-            const searchUrl = `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(query)}`;
-            const response = await fetch(searchUrl);
-            const data = await response.json();
-
-            if (Array.isArray(data) && data.length > 0) {
-              const show = data[0]?.show || data[0];
-              const year =
-                show?.premiered?.slice(0, 4) || show?.ended?.slice(0, 4) || "";
-              const length =
-                typeof show?.runtime === "number" && show.runtime > 0
-                  ? `${Math.floor(show.runtime / 60)}h ${show.runtime % 60}m`
-                  : show?.runtime
-                    ? String(show.runtime)
-                    : "";
-              // Enrich with cast and crew
-              let directorNames = [];
-              let actors = [];
-              try {
-                const detailsResp = await fetch(
-                  `https://api.tvmaze.com/shows/${show.id}?embed[]=cast&embed[]=crew`,
-                );
-                const details = await detailsResp.json();
-                const embedded = details._embedded || {};
-                const crew = Array.isArray(embedded.crew) ? embedded.crew : [];
-                const cast = Array.isArray(embedded.cast) ? embedded.cast : [];
-                // Prefer Creators; fallback to Directors
-                directorNames = crew
-                  .filter((c) => /creator/i.test(String(c.type)))
-                  .map((c) => c.person?.name)
-                  .filter(Boolean);
-                if (directorNames.length === 0) {
-                  directorNames = crew
-                    .filter((c) => /director/i.test(String(c.type)))
-                    .map((c) => c.person?.name)
-                    .filter(Boolean);
-                }
-                actors = cast.map((c) => c.person?.name).filter(Boolean);
-              } catch (_) {
-                // ignore enrichment errors
-              }
-
-              const seriesEntry = {
-                type: "series",
-                title: show?.name || query,
-                country:
-                  show?.network?.country?.name ||
-                  show?.network?.country?.code ||
-                  "",
-                year: year,
-                director: directorNames.length
-                  ? directorNames.join(", ")
-                  : "Unknown",
-                actors,
-                genre: Array.isArray(show?.genres) ? show.genres : [],
-                length,
-                shelf: "watchlist",
-                owned: false,
-                rating: 0,
-                watched: "",
-                poster: show?.image?.original || show?.image?.medium || "",
-                body: "",
-              };
-              const capture = {
-                ...seriesEntry,
-                coverUrl: seriesEntry.poster,
-              };
-              showBookPreview(capture);
-              status.innerText = "✓ Series found! Confirm above.";
-            } else {
-              status.innerText = "❌ No series results found.";
-            }
-          } else {
-            status.innerText =
-              "⚠️ Unknown route. Use /books/new, /movies/new, or /series/new.";
-          }
-        } catch (e) {
-          console.error(e);
-          status.innerText = "⚠️ Fetch Error.";
-        }
-      };
     </script>
   </body>
 </html>
