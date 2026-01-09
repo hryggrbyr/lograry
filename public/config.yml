@@ -292,7 +292,9 @@ collections:
         widget: "list"
       - label: "Genre"
         name: "genre"
-        widget: "list"
+        widget: "select"
+        multiple: true
+        create: true
         required: false
       - { label: "Length", name: "length", widget: "string", required: false }
       - label: "Shelf"
@@ -357,7 +359,9 @@ collections:
         required: false
       - label: "Genre"
         name: "genre"
-        widget: "list"
+        widget: "select"
+        multiple: true
+        create: true
         required: false
       - { label: "Length", name: "length", widget: "string", required: false }
       - label: "Shelf"

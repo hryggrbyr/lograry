@@ -1,0 +1,93 @@
+[vite] connecting... client:1521:9
+[vite] connected. client:1644:15
+GET
+http://localhost:4321/favicon.ico
+[HTTP/1.1 404 Not Found 4ms]
+
+[StaticCMS] Using @staticcms/app 4.3.0 @staticcms_app.js:119372:19
+Config Errors
+[
+  {
+    "instancePath": "/collections/1/fields/7",
+    "schemaPath": "#/properties/collections/items/properties/fields/items/selectCases/select/required",
+    "keyword": "required",
+    "params": {
+      "missingProperty": "options"
+    },
+    "message": "must have required property 'options'"
+  },
+  {
+    "instancePath": "/collections/1/fields/7",
+    "schemaPath": "#/properties/collections/items/properties/fields/items/select",
+    "keyword": "select",
+    "params": {
+      "failingCase": "quickCapture"
+    },
+    "message": "should match case \"quickCapture\" schema"
+  },
+  {
+    "instancePath": "/collections/2/fields/7",
+    "schemaPath": "#/properties/collections/items/properties/fields/items/selectCases/select/required",
+    "keyword": "required",
+    "params": {
+      "missingProperty": "options"
+    },
+    "message": "must have required property 'options'"
+  },
+  {
+    "instancePath": "/collections/2/fields/7",
+    "schemaPath": "#/properties/collections/items/properties/fields/items/select",
+    "keyword": "select",
+    "params": {
+      "failingCase": "quickCapture"
+    },
+    "message": "should match case \"quickCapture\" schema"
+  }
+]
+@staticcms_app.js:61270:33
+Error: '.properties.collections.items.properties.fields.items.selectCases.select.required' must have required property 'options'
+'.properties.collections.items.properties.fields.items.select' should match case "quickCapture" schema
+'.properties.collections.items.properties.fields.items.selectCases.select.required' must have required property 'options'
+'.properties.collections.items.properties.fields.items.select' should match case "quickCapture" schema
+    t10 static-cms-app.js:11
+    oD static-cms-app.js:11
+    node_modules @staticcms_app.js:61270
+    node_modules @staticcms_app.js:61272
+    node_modules @staticcms_app.js:60280
+    init static-cms-app.js:120
+    initCMS admin:11
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    <anonymous> admin:17
+    <anonymous> admin:18
+@staticcms_app.js:61309:29
+Uncaught (in promise) Error: '.properties.collections.items.properties.fields.items.selectCases.select.required' must have required property 'options'
+'.properties.collections.items.properties.fields.items.select' should match case "quickCapture" schema
+'.properties.collections.items.properties.fields.items.selectCases.select.required' must have required property 'options'
+'.properties.collections.items.properties.fields.items.select' should match case "quickCapture" schema
+    t10 static-cms-app.js:11
+    oD static-cms-app.js:11
+    node_modules @staticcms_app.js:61270
+    node_modules @staticcms_app.js:61272
+    node_modules @staticcms_app.js:60280
+    init static-cms-app.js:120
+    initCMS admin:11
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    setTimeout handler*initCMS admin:15
+    <anonymous> admin:17
+    <anonymous> admin:18
+@staticcms_app.js:61117:31

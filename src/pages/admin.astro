@@ -110,6 +110,7 @@ const BASE_URL = import.meta.env.BASE_URL;
     </style>
   </head>
   <body>
+    <div id="nc-root"></div>
     <div id="quick-capture">
       <span>🚀</span>
       <span>
@@ -137,11 +138,271 @@ const BASE_URL = import.meta.env.BASE_URL;
 
     <script is:inline src="https://unpkg.com/js-yaml@4.1.0/dist/js-yaml.js"
     ></script>
+    <script type="module" src="/src/scripts/static-cms-app.ts"></script>
+    <script is:inline define:vars={{ BASE_URL }}>
+      (function initCMS() {
+        const cms = window.CMS;
+        if (cms && typeof cms.init === "function") {
+          cms.init({
+            configPath: `${BASE_URL}admin/config.yml`,
+          });
+        } else {
+          setTimeout(initCMS, 100);
+        }
+      })();
+    </script>
 
-    <script
-      is:inline
-      src="https://cdn.jsdelivr.net/npm/@sveltia/cms@latest/dist/sveltia-cms.js"
-    ></script>
+    <script is:inline>
+      // Static CMS loaded via CDN; use global CMS object
+
+      // Determine content type from URL hash
+      function getContentTypeFromHash() {
+        const hash = window.location.hash || "";
+        if (hash.includes("/books/new")) return "book";
+        if (hash.includes("/movies/new")) return "movie";
+        if (hash.includes("/series/new")) return "series";
+        return null;
+      }
+
+      // Open Library book fetch and mapping
+      async function fetchBook(query) {
+        const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=1`;
+        const res = await fetch(url);
+        const data = await res.json();
+        if (!data.docs?.length) return null;
+        const b = data.docs[0];
+        return {
+          type: "book",
+          title: b.title || query,
+          subtitle: b.subtitle || "",
+          author: b.author_name || [],
+          published: b.first_publish_year?.toString() || "",
+          publisher: b.publisher?.[0] || "",
+          page_count: b.number_of_pages_median || null,
+          isbn: b.isbn?.[0] || "",
+          coverUrl: b.cover_i
+            ? `https://covers.openlibrary.org/b/id/${b.cover_i}-L.jpg`
+            : "",
+          shelf: "to-read",
+          owned: false,
+          rating: 0,
+          body: "",
+        };
+      }
+
+      // IMDb mirror enriched movie fetch and mapping
+      async function getFullMovieData(title) {
+        const searchRes = await fetch(
+          `https://imdb.iamidiotareyoutoo.com/search?q=${encodeURIComponent(title)}`,
+        );
+        const searchData = await searchRes.json();
+        if (!searchData.description?.length) return null;
+        const basic = searchData.description[0];
+        const imdbId = basic["#IMDB_ID"];
+        if (!imdbId) return null;
+
+        const detailRes = await fetch(
+          `https://imdb.iamidiotareyoutoo.com/main?id=${imdbId}`,
+        );
+        const details = await detailRes.json();
+        const short = details?.short || {};
+        const actorsFromShort = Array.isArray(short.actor)
+          ? short.actor.map((a) => a?.name).filter(Boolean)
+          : [];
+        const actorsFromBasic = basic["#ACTORS"]
+          ? basic["#ACTORS"].split(", ").map((s) => s.trim())
+          : [];
+
+        return {
+          type: "movie",
+          title: short.name || basic["#TITLE"] || title,
+          country: short?.countryOfOrigin?.[0]?.name || "",
+          year: parseInt(basic["#YEAR"]) || "",
+          director:
+            Array.isArray(short?.director) && short.director.length
+              ? short.director
+                  .map((d) => d?.name)
+                  .filter(Boolean)
+                  .join(", ")
+              : "Unknown",
+          actors: actorsFromShort.length ? actorsFromShort : actorsFromBasic,
+          genre: Array.isArray(short?.genre) ? short.genre : [],
+          length: short?.duration ? formatDuration(short.duration) : "",
+          shelf: "to-watch",
+          owned: false,
+          rating: 0,
+          watched: "",
+          poster: short?.image || basic["#IMG_POSTER"] || "",
+          body:
+            short?.description ||
+            (basic["#RANK"] ? `IMDb Rank: ${basic["#RANK"]}` : ""),
+        };
+      }
+
+      // TVMaze series fetch with embedded cast/crew mapping
+      async function fetchSeries(query) {
+        const url = `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(query)}`;
+        const res = await fetch(url);
+        const arr = await res.json();
+        if (!Array.isArray(arr) || !arr.length) return null;
+        const show = arr[0]?.show || arr[0];
+        const year =
+          show?.premiered?.slice(0, 4) || show?.ended?.slice(0, 4) || "";
+        const runtime = show?.runtime;
+        const length =
+          typeof runtime === "number"
+            ? `${Math.floor(runtime / 60)}h ${runtime % 60}m`
+            : runtime
+              ? String(runtime)
+              : "";
+        let directors = [];
+        let actors = [];
+        try {
+          const dres = await fetch(
+            `https://api.tvmaze.com/shows/${show.id}?embed[]=cast&embed[]=crew`,
+          );
+          const details = await dres.json();
+          const crew = Array.isArray(details._embedded?.crew)
+            ? details._embedded.crew
+            : [];
+          const cast = Array.isArray(details._embedded?.cast)
+            ? details._embedded.cast
+            : [];
+          directors = crew
+            .filter((c) => /creator/i.test(String(c.type)))
+            .map((c) => c.person?.name)
+            .filter(Boolean);
+          if (!directors.length) {
+            directors = crew
+              .filter((c) => /director/i.test(String(c.type)))
+              .map((c) => c.person?.name)
+              .filter(Boolean);
+          }
+          actors = cast.map((c) => c.person?.name).filter(Boolean);
+        } catch {}
+        return {
+          type: "series",
+          title: show?.name || query,
+          country:
+            show?.network?.country?.name || show?.network?.country?.code || "",
+          year,
+          director: directors.length ? directors.join(", ") : "Unknown",
+          actors,
+          genre: Array.isArray(show?.genres) ? show.genres : [],
+          length,
+          shelf: "watchlist",
+          owned: false,
+          rating: 0,
+          watched: "",
+          poster: show?.image?.original || show?.image?.medium || "",
+          body: "",
+        };
+      }
+
+      function formatDuration(iso) {
+        if (!iso || typeof iso !== "string") return "";
+        return iso
+          .replace(/^PT/, "")
+          .replace(/H/, "h ")
+          .replace(/M/, "m")
+          .trim()
+          .toLowerCase();
+      }
+
+      // Update entry draft via Static CMS store; fallback to native input events
+      function updateDraftFields(payload) {
+        const cms = window.CMS || CMS;
+        const store = cms?.store;
+        if (!store) return false;
+        try {
+          const state = store.getState();
+          const draftData = state?.entryDraft?.entry?.data || {};
+          const merged = { ...draftData, ...payload };
+          store.dispatch({
+            type: "ENTRY_DRAFT_UPDATE",
+            payload: { data: merged },
+          });
+          return true;
+        } catch {
+          return false;
+        }
+      }
+
+      class QuickCaptureControl {
+        constructor({ value, onChange }) {
+          this.value = value;
+          this.onChange = onChange;
+          this.root = document.createElement("div");
+          this.root.style.display = "flex";
+          this.root.style.gap = "0.5rem";
+          this.input = document.createElement("input");
+          this.input.type = "text";
+          this.input.placeholder = "Search title...";
+          this.button = document.createElement("button");
+          this.button.textContent = "Fetch & Apply";
+          this.status = document.createElement("div");
+          this.status.style.marginLeft = "0.5rem";
+
+          this.button.onclick = async () => {
+            const q = this.input.value.trim();
+            if (!q) return;
+            const type = getContentTypeFromHash();
+            this.status.textContent = "Searching...";
+            let payload = null;
+            try {
+              if (type === "book") payload = await fetchBook(q);
+              else if (type === "movie") payload = await getFullMovieData(q);
+              else if (type === "series") payload = await fetchSeries(q);
+            } catch (e) {
+              console.error(e);
+            }
+            if (payload) {
+              const ok = updateDraftFields(payload);
+              if (!ok) {
+                Object.entries(payload).forEach(([name, val]) => {
+                  const section = document.querySelector(
+                    `section[data-key-path="${name}"]`,
+                  );
+                  if (!section) return;
+                  const input = section.querySelector("input, textarea");
+                  if (!input) return;
+                  input.value = Array.isArray(val)
+                    ? val.join("\n")
+                    : (val ?? "");
+                  input.dispatchEvent(new Event("input", { bubbles: true }));
+                  input.dispatchEvent(new Event("change", { bubbles: true }));
+                });
+              }
+              this.status.textContent = "✓ Applied";
+            } else {
+              this.status.textContent = "❌ No results";
+            }
+          };
+
+          this.root.appendChild(this.input);
+          this.root.appendChild(this.button);
+          this.root.appendChild(this.status);
+        }
+        render() {
+          return this.root;
+        }
+        getValue() {
+          return this.value;
+        }
+        setValue(val) {
+          this.value = val;
+        }
+      }
+
+      (function waitForCMS() {
+        const cms = window.CMS;
+        if (cms && typeof cms.registerWidget === "function") {
+          cms.registerWidget("quickCapture", QuickCaptureControl);
+        } else {
+          setTimeout(waitForCMS, 100);
+        }
+      })();
+    </script>
 
     <script is:inline define:vars={{ BASE_URL }}>
       // Register preview style after CMS loads
@@ -155,21 +416,23 @@ const BASE_URL = import.meta.env.BASE_URL;
     </script>
 
     <script is:inline define:vars={{ BASE_URL }}>
-      if ("serviceWorker" in navigator) {
-        window.addEventListener("load", () => {
-          navigator.serviceWorker.register(`${BASE_URL}sw.js`).then(
-            (registration) => {
-              console.log(
-                "ServiceWorker registration successful with scope: ",
-                registration.scope,
-              );
-            },
-            (err) => {
-              console.log("ServiceWorker registration failed: ", err);
-            },
-          );
-        });
-      }
+      // Service worker registration disabled during development to avoid caching and 404 issues.
+      // If you want to enable it, point to the correct path (e.g., `${BASE_URL}api/sw.js`) and remove comments.
+      // if ("serviceWorker" in navigator) {
+      //   window.addEventListener("load", () => {
+      //     navigator.serviceWorker.register(`${BASE_URL}api/sw.js`).then(
+      //       (registration) => {
+      //         console.log(
+      //           "ServiceWorker registration successful with scope: ",
+      //           registration.scope,
+      //         );
+      //       },
+      //       (err) => {
+      //         console.log("ServiceWorker registration failed: ", err);
+      //       },
+      //     );
+      //   });
+      // }
     </script>
 
     <script is:inline>
@@ -692,7 +955,7 @@ const BASE_URL = import.meta.env.BASE_URL;
                     ? details.credits
                         .filter((c) =>
                           /director/i.test(
-                            (c?.job || c?.role || c?.category || "") as string,
+                            String(c?.job || c?.role || c?.category || ""),
                           ),
                         )
                         .map((c) => c?.name || c?.creditName || "")
@@ -701,7 +964,7 @@ const BASE_URL = import.meta.env.BASE_URL;
                   const fromPrincipalsArr = Array.isArray(details.principals)
                     ? details.principals
                         .filter((p) =>
-                          /director/i.test((p?.category || "") as string),
+                          /director/i.test(String(p?.category || "")),
                         )
                         .map((p) => p?.name || p?.creditName || "")
                         .filter(Boolean)
@@ -720,9 +983,9 @@ const BASE_URL = import.meta.env.BASE_URL;
                       ? details.runtimeMinutes
                       : typeof details.runtime === "number"
                         ? details.runtime
-                        : ((details.runtimeMinutes ||
-                            details.runtime ||
-                            "") as string);
+                        : String(
+                            details.runtimeMinutes || details.runtime || "",
+                          );
 
                   genres = Array.isArray(details.genres)
                     ? details.genres
