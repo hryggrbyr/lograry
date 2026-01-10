@@ -1,573 +1,218 @@
-<!DOCTYPE html><html lang="en" data-astro-cid-2zp6q64z> <head><meta charset="utf-8"><title>Lograry Admin</title><link rel="manifest" href="/lograry/manifest.json"><link href="/lograry/admin/config.yml" type="text/yaml" rel="shortcut config"><style>[data-astro-cid-2zp6q64z]{outline:2px dashed blue}svg[data-astro-cid-2zp6q64z]{width:auto;height:1rlh}.confirmation-overlay[data-astro-cid-2zp6q64z]{border:2px solid #3a86ff;padding:1rem;background:#fff;border-radius:8px;margin:10px 0;box-shadow:0 4px 6px #0000001a;position:fixed;bottom:80px;left:20px;right:20px;max-width:400px;z-index:9998;color:#000;display:none}.confirmation-overlay[data-astro-cid-2zp6q64z].show{display:block}.preview-card[data-astro-cid-2zp6q64z]{display:flex;align-items:center;gap:10px;margin-bottom:10px}.preview-card[data-astro-cid-2zp6q64z] img[data-astro-cid-2zp6q64z]{max-width:50px;height:auto}.btn-confirm[data-astro-cid-2zp6q64z]{background:#3a86ff;color:#fff;border:none;padding:5px 10px;cursor:pointer;margin-right:10px}.btn-confirm[data-astro-cid-2zp6q64z]:hover{background:#2563eb}.btn-cancel[data-astro-cid-2zp6q64z]{background:#666;color:#fff;border:none;padding:5px 10px;cursor:pointer}.btn-cancel[data-astro-cid-2zp6q64z]:hover{background:#555}
+<!DOCTYPE html><html lang="en" data-astro-cid-2zp6q64z> <head><meta charset="utf-8"><title>Lograry Admin</title><link rel="manifest" href="/lograry/manifest.json"><link href="/lograry/admin/config.yml" type="text/yaml" rel="shortcut config"><style>svg[data-astro-cid-2zp6q64z]{width:auto;height:1rlh}.confirmation-overlay[data-astro-cid-2zp6q64z]{border:2px solid #3a86ff;padding:1rem;background:#fff;border-radius:8px;margin:10px 0;box-shadow:0 4px 6px #0000001a;position:fixed;bottom:80px;left:20px;right:20px;max-width:400px;z-index:9998;color:#000;display:none}.confirmation-overlay[data-astro-cid-2zp6q64z].show{display:block}.preview-card[data-astro-cid-2zp6q64z]{display:flex;align-items:center;gap:10px;margin-bottom:10px}.preview-card[data-astro-cid-2zp6q64z] img[data-astro-cid-2zp6q64z]{max-width:50px;height:auto}.btn-confirm[data-astro-cid-2zp6q64z]{background:#3a86ff;color:#fff;border:none;padding:5px 10px;cursor:pointer;margin-right:10px}.btn-confirm[data-astro-cid-2zp6q64z]:hover{background:#2563eb}.btn-cancel[data-astro-cid-2zp6q64z]{background:#666;color:#fff;border:none;padding:5px 10px;cursor:pointer}.btn-cancel[data-astro-cid-2zp6q64z]:hover{background:#555}
 </style></head> <body data-astro-cid-2zp6q64z> <div id="nc-root" data-astro-cid-2zp6q64z></div> <div id="book-preview-overlay" class="confirmation-overlay" data-astro-cid-2zp6q64z> <p data-astro-cid-2zp6q64z><strong data-astro-cid-2zp6q64z>Is this correct?</strong></p> <div class="preview-card" id="preview-card-content" data-astro-cid-2zp6q64z> <img id="preview-cover" src="" alt="cover" width="50" data-astro-cid-2zp6q64z> <span id="preview-title-author" data-astro-cid-2zp6q64z></span> </div> <button id="btn-confirm" class="btn-confirm" data-astro-cid-2zp6q64z>
 ✅ Yes, Fill Fields
 </button> <button id="btn-cancel" class="btn-cancel" data-astro-cid-2zp6q64z> ❌ No, Clear </button> </div> <script src="https://unpkg.com/js-yaml@4.1.0/dist/js-yaml.js"></script> <script type="module">
       import "https://cdn.jsdelivr.net/npm/decap-cms@^3.1.2";
     </script> <script>(function(){const BASE_URL = "/lograry/";
 
+      // Initialize CMS and register preview styles
       (function initCMS() {
         const cms = window.CMS;
-        if (cms && typeof cms.init === "function") {
-          cms.init({
-            configPath: `${BASE_URL}admin/config.yml`,
-          });
-        } else {
-          setTimeout(initCMS, 100);
+        if (!cms) {
+          console.warn("CMS not available during init");
+          return;
+        }
+
+        try {
+          // Register preview styles - inject frontend CSS into the preview iframe
+          cms.registerPreviewStyle(`${BASE_URL}admin/preview.css`);
+          console.log("Preview styles registered");
+        } catch (e) {
+          console.warn("Failed to register preview styles:", e);
         }
       })();
+
+      // Service worker registration disabled during development to avoid caching and 404 issues.
+      // if ("serviceWorker" in navigator) {
+      //   window.addEventListener("load", () => {
+      //     navigator.serviceWorker.register(`${BASE_URL}api/sw.js`);
+      //   });
+      // }
     })();</script> <script>
-      // Decap CMS loaded via CDN; use global CMS object
+      // Preview state management
+      let bookPreview = null;
+      let yamlString = "";
 
-      // Determine content type from URL hash
-      function getContentTypeFromHash() {
-        const hash = window.location.hash || "";
-        if (hash.includes("/books/new")) return "book";
-        if (hash.includes("/movies/new")) return "movie";
-        if (hash.includes("/series/new")) return "series";
-        return null;
-      }
-
-      // Open Library book fetch and mapping
-      async function fetchBook(query) {
-        const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=1`;
-        const res = await fetch(url);
-        const data = await res.json();
-        if (!data.docs?.length) return null;
-        const b = data.docs[0];
-        return {
-          type: "book",
-          title: b.title || query,
-          subtitle: b.subtitle || "",
-          author: b.author_name || [],
-          published: b.first_publish_year?.toString() || "",
-          publisher: b.publisher?.[0] || "",
-          page_count: b.number_of_pages_median || null,
-          isbn: b.isbn?.[0] || "",
-          coverUrl: b.cover_i
-            ? `https://covers.openlibrary.org/b/id/${b.cover_i}-L.jpg`
-            : "",
-          shelf: "to-read",
-          owned: false,
-          rating: 0,
-          body: "",
-        };
-      }
-
-      // IMDb mirror enriched movie fetch and mapping
-      async function getFullMovieData(title) {
-        const searchRes = await fetch(
-          `https://imdb.iamidiotareyoutoo.com/search?q=${encodeURIComponent(title)}`,
+      function showBookPreview(coverUrl, title, author) {
+        const bookPreviewOverlay = document.getElementById(
+          "book-preview-overlay",
         );
-        const searchData = await searchRes.json();
-        if (!searchData.description?.length) return null;
-        const basic = searchData.description[0];
-        const imdbId = basic["#IMDB_ID"];
-        if (!imdbId) return null;
-
-        const detailRes = await fetch(
-          `https://imdb.iamidiotareyoutoo.com/main?id=${imdbId}`,
+        const previewCover = document.getElementById("preview-cover");
+        const previewTitleAuthor = document.getElementById(
+          "preview-title-author",
         );
-        const details = await detailRes.json();
-        const short = details?.short || {};
-        const actorsFromShort = Array.isArray(short.actor)
-          ? short.actor.map((a) => a?.name).filter(Boolean)
-          : [];
-        const actorsFromBasic = basic["#ACTORS"]
-          ? basic["#ACTORS"].split(", ").map((s) => s.trim())
-          : [];
 
-        return {
-          type: "movie",
-          title: short.name || basic["#TITLE"] || title,
-          country: short?.countryOfOrigin?.[0]?.name || "",
-          year: parseInt(basic["#YEAR"]) || "",
-          director:
-            Array.isArray(short?.director) && short.director.length
-              ? short.director
-                  .map((d) => d?.name)
-                  .filter(Boolean)
-                  .join(", ")
-              : "Unknown",
-          actors: actorsFromShort.length ? actorsFromShort : actorsFromBasic,
-          genre: Array.isArray(short?.genre) ? short.genre : [],
-          length: short?.duration ? formatDuration(short.duration) : "",
-          shelf: "to-watch",
-          owned: false,
-          rating: 0,
-          watched: "",
-          poster: short?.image || basic["#IMG_POSTER"] || "",
-          body:
-            short?.description ||
-            (basic["#RANK"] ? `IMDb Rank: ${basic["#RANK"]}` : ""),
-        };
+        if (previewCover) previewCover.src = coverUrl;
+        if (previewTitleAuthor) {
+          previewTitleAuthor.innerHTML = `<strong>${title}</strong><br />${author}`;
+        }
+
+        if (bookPreviewOverlay) {
+          bookPreviewOverlay.classList.add("show");
+        }
       }
 
-      // TVMaze series fetch with embedded cast/crew mapping
-      async function fetchSeries(query) {
-        const url = `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(query)}`;
-        const res = await fetch(url);
-        const arr = await res.json();
-        if (!Array.isArray(arr) || !arr.length) return null;
-        const show = arr[0]?.show || arr[0];
-        const year =
-          show?.premiered?.slice(0, 4) || show?.ended?.slice(0, 4) || "";
-        const runtime = show?.runtime;
-        const length =
-          typeof runtime === "number"
-            ? `${Math.floor(runtime / 60)}h ${runtime % 60}m`
-            : runtime
-              ? String(runtime)
-              : "";
-        let directors = [];
-        let actors = [];
-        try {
-          const dres = await fetch(
-            `https://api.tvmaze.com/shows/${show.id}?embed[]=cast&embed[]=crew`,
-          );
-          const details = await dres.json();
-          const crew = Array.isArray(details._embedded?.crew)
-            ? details._embedded.crew
-            : [];
-          const cast = Array.isArray(details._embedded?.cast)
-            ? details._embedded.cast
-            : [];
-          directors = crew
-            .filter((c) => /creator/i.test(String(c.type)))
-            .map((c) => c.person?.name)
-            .filter(Boolean);
-          if (!directors.length) {
-            directors = crew
-              .filter((c) => /director/i.test(String(c.type)))
-              .map((c) => c.person?.name)
-              .filter(Boolean);
-          }
-          actors = cast.map((c) => c.person?.name).filter(Boolean);
-        } catch {}
-        return {
-          type: "series",
-          title: show?.name || query,
-          country:
-            show?.network?.country?.name || show?.network?.country?.code || "",
-          year,
-          director: directors.length ? directors.join(", ") : "Unknown",
-          actors,
-          genre: Array.isArray(show?.genres) ? show.genres : [],
-          length,
-          shelf: "watchlist",
-          owned: false,
-          rating: 0,
-          watched: "",
-          poster: show?.image?.original || show?.image?.medium || "",
-          body: "",
-        };
+      function hideBookPreview() {
+        const bookPreviewOverlay = document.getElementById(
+          "book-preview-overlay",
+        );
+        if (bookPreviewOverlay) {
+          bookPreviewOverlay.classList.remove("show");
+        }
       }
 
-      function formatDuration(iso) {
-        if (!iso || typeof iso !== "string") return "";
-        return iso
-          .replace(/^PT/, "")
-          .replace(/H/, "h ")
-          .replace(/M/, "m")
-          .trim()
-          .toLowerCase();
-      }
-
-      // Update entry draft via Static CMS store; fallback to native input events
+      // Helper function to update draft fields via Decap CMS Redux store
       function updateDraftFields(payload) {
-        const cms = window.CMS || CMS;
+        const cms = window.CMS;
+        if (!cms) {
+          console.error("CMS not available");
+          return false;
+        }
+
         const store = cms?.store;
-        if (!store) return false;
+        if (!store) {
+          console.error("CMS store not available");
+          return false;
+        }
+
         try {
           const state = store.getState();
           const draftData = state?.entryDraft?.entry?.data || {};
           const merged = { ...draftData, ...payload };
+
           store.dispatch({
             type: "ENTRY_DRAFT_UPDATE",
             payload: { data: merged },
           });
+
           return true;
-        } catch {
+        } catch (error) {
+          console.error("Failed to update draft fields:", error);
           return false;
         }
       }
-    </script> <script>(function(){const BASE_URL = "/lograry/";
 
-      // Register preview style after CMS loads
-      if (typeof CMS !== "undefined") {
-        try {
-          CMS.registerPreviewStyle(`${BASE_URL}admin/preview.css`);
-        } catch (e) {
-          console.warn("Failed to register preview style:", e);
-        }
-      }
-    })();</script> <script>(function(){const BASE_URL = "/lograry/";
-
-      // Service worker registration disabled during development to avoid caching and 404 issues.
-      // If you want to enable it, point to the correct path (e.g., `${BASE_URL}api/sw.js`) and remove comments.
-      // if ("serviceWorker" in navigator) {
-      //   window.addEventListener("load", () => {
-      //     navigator.serviceWorker.register(`${BASE_URL}api/sw.js`).then(
-      //       (registration) => {
-      //         console.log(
-      //           "ServiceWorker registration successful with scope: ",
-      //           registration.scope,
-      //         );
-      //       },
-      //       (err) => {
-      //         console.log("ServiceWorker registration failed: ", err);
-      //       },
-      //     );
-      //   });
-      // }
-    })();</script> <script>
-      let bookPreview = null;
-      let yamlString = "";
-
-      function showBookPreview(bookData) {
-        bookPreview = bookData;
-        const hiddenTypeInput = document.querySelector(
-          'input[type="hidden"][name="type"]',
-        );
-        const capturedType = hiddenTypeInput?.value?.trim();
-        const entries = Object.entries(bookData);
-        if (capturedType) {
-          entries.unshift(["type", capturedType]);
-        }
-        yamlString = entries
-          .map(([key, val]) => `${key}: ${JSON.stringify(val)}`)
-          .join("\n");
-
-        document.getElementById("preview-cover").src = bookData.coverUrl || "";
-        const meta =
-          bookData.type === "book"
-            ? `by ${(bookData.author || []).join(", ")}`
-            : `Directed by ${
-                (bookData.directors && bookData.directors.length
-                  ? bookData.directors
-                  : (bookData.director || "")
-                      .split(",")
-                      .map((s) => s.trim())
-                      .filter(Boolean)
-                ).join(", ") || "Unknown"
-              }`;
-        document.getElementById("preview-title-author").textContent =
-          `${bookData.title} — ${meta}`;
-        document.getElementById("book-preview-overlay").classList.add("show");
+      // Helper to normalize date formats
+      function normalizeDate(value) {
+        if (!value) return "";
+        if (/^\d{4}$/.test(value)) return `${value}-01-01`;
+        if (/^\d{4}-\d{2}$/.test(value)) return `${value}-01`;
+        return value;
       }
 
-      function hideBookPreview() {
-        bookPreview = null;
-        yamlString = "";
-        document
-          .getElementById("book-preview-overlay")
-          .classList.remove("show");
-      }
-
+      // Main function to apply fetched data to editor fields via Redux
       async function applyToFields() {
-        const logOutput = [];
-        const pushLog = (msg) => {
-          try {
-            logOutput.push(`[${new Date().toISOString()}] ${msg}`);
-          } catch (_) {
-            // ignore logging errors
-          }
-        };
-
         try {
-          const data = jsyaml.load(yamlString);
-          pushLog("YAML Data being applied: " + JSON.stringify(data));
-          pushLog("YAML String: " + yamlString);
-
-          const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-
-          const waitFor = async (selector, timeout = 7000, interval = 150) => {
-            const start = Date.now();
-            while (Date.now() - start < timeout) {
-              const el = document.querySelector(selector);
-              if (el) return el;
-              await sleep(interval);
+          // Parse YAML and suppress warnings by catching console output
+          let data;
+          const originalWarn = console.warn;
+          console.warn = function (...args) {
+            // Suppress YAML warnings but allow other warnings through
+            if (!String(args[0]).includes("YAML")) {
+              originalWarn.apply(console, args);
             }
-            return null;
           };
+          data = jsyaml.load(yamlString);
+          console.warn = originalWarn;
+          console.log("YAML Data being applied:", data);
 
-          const ensureFieldRendered = async (key) => {
-            let section = document.querySelector(
-              `section[data-key-path="${key}"]`,
-            );
-            if (section) {
-              pushLog(`Field "${key}" already in DOM`);
-              return section;
+          // Normalize date fields and convert nested structures to plain objects
+          const processedData = {};
+          const deepCopy = (obj) => {
+            if (obj instanceof Map) {
+              return Object.fromEntries(
+                Array.from(obj.entries()).map(([k, v]) => [k, deepCopy(v)]),
+              );
             }
-
-            const container =
-              document.querySelector("#first-pane-body .content") ||
-              document.querySelector(
-                '[data-mode="edit"] #first-pane-body .content',
-              ) ||
-              document.querySelector('[data-mode="edit"]');
-
-            if (!container) {
-              pushLog("Editor container not found");
-              return null;
+            if (Array.isArray(obj)) {
+              return obj.map(deepCopy);
             }
-
-            // Start from top
-            container.scrollTop = 0;
-            const step = Math.max(1, Math.floor(container.clientHeight * 0.5));
-            const maxSteps = 40;
-
-            // Scroll downward slowly
-            for (let i = 0; i < maxSteps; i++) {
-              section = document.querySelector(
-                `section[data-key-path="${key}"]`,
-              );
-              if (section) {
-                pushLog(
-                  `Field "${key}" found while scrolling down at step ${i}`,
-                );
-                return section;
-              }
-              container.scrollTop = Math.min(
-                container.scrollTop + step,
-                container.scrollHeight,
-              );
-              pushLog(
-                `Scroll down step ${i}, scrollTop=${container.scrollTop}, scrollHeight=${container.scrollHeight}`,
-              );
-              await sleep(250);
+            if (obj !== null && typeof obj === "object") {
+              return Object.entries(obj).reduce((acc, [k, v]) => {
+                acc[k] = deepCopy(v);
+                return acc;
+              }, {});
             }
-
-            // Scroll back to top (in case virtualization needs a reset)
-            container.scrollTop = 0;
-            await sleep(200);
-
-            // One more slower pass
-            for (let i = 0; i < maxSteps; i++) {
-              section = document.querySelector(
-                `section[data-key-path="${key}"]`,
-              );
-              if (section) {
-                pushLog(`Field "${key}" found during second pass at step ${i}`);
-                return section;
-              }
-              container.scrollTop = Math.min(
-                container.scrollTop + Math.floor(step / 2),
-                container.scrollHeight,
-              );
-              pushLog(
-                `Second pass step ${i}, scrollTop=${container.scrollTop}`,
-              );
-              await sleep(300);
-            }
-
-            pushLog(`Field "${key}" NOT found after scrolling`);
-            return null;
+            return obj;
           };
-
-          const normalizeDate = (value) => {
-            if (!value) return "";
-            if (/^\d{4}$/.test(value)) return `${value}-01-01`;
-            if (/^\d{4}-\d{2}$/.test(value)) return `${value}-01`;
-            return value;
-          };
-
-          // Ensure the editor is ready
-          const editorReady = await waitFor(
-            'section[data-key-path="title"]',
-            7000,
-          );
-          if (!editorReady) {
-            pushLog("Editor fields did not mount within timeout");
-          } else {
-            pushLog("Editor ready: title field present");
-          }
-
-          // Populate sequentially so virtualization/scroll can render fields
-          for (const [key, raw] of Object.entries(data)) {
-            const value = key === "published" ? normalizeDate(raw) : raw;
-            pushLog(
-              `Processing key="${key}" with value=${JSON.stringify(value)}`,
-            );
-
-            const fieldSection = await ensureFieldRendered(key);
-            if (!fieldSection) {
-              pushLog(`Field "${key}" not present after retries; skipping`);
-              continue;
-            }
-
-            const fieldType = fieldSection.getAttribute("data-field-type");
-            pushLog(`Field "${key}" type="${fieldType}"`);
-            let input = null;
-
-            if (fieldType === "string") {
-              input = fieldSection.querySelector("input[type='text']");
-            } else if (fieldType === "number") {
-              // Try common Sveltia number patterns
-              input =
-                fieldSection.querySelector(
-                  "input[type='text'][inputmode='numeric']",
-                ) ||
-                fieldSection.querySelector("input[role='spinbutton']") ||
-                fieldSection.querySelector("input[type='number']") ||
-                fieldSection.querySelector("input[type='text']");
-            } else if (fieldType === "list") {
-              input = fieldSection.querySelector("textarea");
-            } else if (fieldType === "boolean") {
-              const switchButton = fieldSection.querySelector(
-                "button[role='switch']",
-              );
-              if (switchButton && value) {
-                switchButton.click();
-                pushLog(`Toggled boolean for "${key}"`);
-              } else {
-                pushLog(
-                  `Boolean "${key}" not toggled (value=${JSON.stringify(value)})`,
-                );
-              }
-              continue;
-            } else if (fieldType === "select") {
-              // Handle radio-group and combobox variants
-              const radioGroup = fieldSection.querySelector(
-                "[role='radiogroup']",
-              );
-              if (radioGroup && value) {
-                const btn = radioGroup.querySelector(
-                  `button[data-value="${value}"]`,
-                );
-                if (btn) {
-                  btn.click();
-                  pushLog(`Selected radiogroup option "${value}" for "${key}"`);
-                } else {
-                  pushLog(
-                    `Radiogroup option not found for "${key}" value="${value}"`,
-                  );
-                }
-              } else {
-                const combobox =
-                  fieldSection.querySelector("[role='combobox']");
-                if (combobox && value) {
-                  combobox.click();
-                  pushLog(`Opened combobox for "${key}"`);
-                  await sleep(150);
-                  const options = document.querySelectorAll("[role='option']");
-                  let selected = false;
-                  for (const option of options) {
-                    if (option.textContent.trim() === String(value)) {
-                      option.click();
-                      selected = true;
-                      pushLog(
-                        `Selected combobox option "${value}" for "${key}"`,
-                      );
-                      break;
-                    }
-                  }
-                  if (!selected) {
-                    pushLog(
-                      `Combobox option not found for "${key}" value="${value}"`,
-                    );
-                  }
-                } else {
-                  pushLog(`No combobox present for "${key}" or empty value`);
-                }
-              }
-              continue;
-            } else if (fieldType === "datetime") {
-              input = fieldSection.querySelector("input[type='date']");
-            }
-
-            if (!input) {
-              pushLog(`No input element resolved for "${key}"`);
-              continue;
-            }
-
-            if (Array.isArray(value)) {
-              input.value = value.join("\n");
-            } else if (value !== null && value !== undefined) {
-              input.value = value;
+          for (const [key, value] of Object.entries(data)) {
+            if (key === "published") {
+              processedData[key] = normalizeDate(value);
             } else {
-              input.value = "";
+              processedData[key] = deepCopy(value);
             }
-            pushLog(`Set value for "${key}" to ${JSON.stringify(input.value)}`);
-
-            input.dispatchEvent(new Event("input", { bubbles: true }));
-            input.dispatchEvent(new Event("change", { bubbles: true }));
-            input.dispatchEvent(new Event("blur", { bubbles: true }));
-            pushLog(`Dispatched input/change/blur for "${key}"`);
           }
 
-          setTimeout(() => {
-            hideBookPreview();
-          }, 300);
-        } catch (e) {
-          pushLog("Error in applyToFields: " + e.message);
-          console.error("Failed to populate fields", e);
-          alert("Failed to populate fields: " + e.message);
+          // Use Redux dispatch to update all fields at once
+          const success = updateDraftFields(processedData);
+
+          if (success) {
+            console.log("Successfully updated draft fields via Redux");
+            setTimeout(() => {
+              hideBookPreview();
+            }, 300);
+          } else {
+            throw new Error("Redux dispatch failed");
+          }
+        } catch (error) {
+          console.error("Failed to populate fields:", error);
+          alert(`Failed to populate fields: ${error.message}`);
         }
       }
 
-      document.getElementById("btn-confirm").onclick = applyToFields;
-      document.getElementById("btn-cancel").onclick = hideBookPreview;
+      // Event listeners for preview buttons
+      document
+        .getElementById("btn-confirm")
+        .addEventListener("click", applyToFields);
+      document
+        .getElementById("btn-cancel")
+        .addEventListener("click", hideBookPreview);
 
       // Hide preview overlay when hash changes
       window.addEventListener("hashchange", () => {
         const bookPreviewOverlay = document.getElementById(
           "book-preview-overlay",
         );
-        if (!window.location.hash.includes("/new")) {
+        if (bookPreviewOverlay && !window.location.hash.includes("/new")) {
           bookPreviewOverlay.classList.remove("show");
         }
       });
 
-      // Pre-populate hidden type input from existing editor field (when editing)
-      (async () => {
-        const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-        const waitFor = async (selector, timeout = 7000, interval = 150) => {
-          const start = Date.now();
-          while (Date.now() - start < timeout) {
-            const el = document.querySelector(selector);
-            if (el) return el;
-            await sleep(interval);
+      // Helper to fetch book data from Google Books API
+      async function fetchBook(isbn) {
+        try {
+          const url = `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`;
+          const res = await fetch(url);
+          const data = await res.json();
+
+          if (!data.items || data.items.length === 0) {
+            console.log("No book found for ISBN:", isbn);
+            return null;
           }
+
+          const b = data.items[0].volumeInfo;
+          return {
+            type: "book",
+            title: b.title || "",
+            subtitle: b.subtitle || "",
+            author: b.authors ? b.authors.join(", ") : "",
+            published: b.publishedDate || "",
+            publisher: b.publisher || "",
+            page_count: b.pageCount || "",
+            isbn: isbn,
+            coverUrl: b.imageLinks?.thumbnail || "",
+            shelf: "to-read",
+            owned: false,
+            rating: 0,
+            body: b.description || "",
+          };
+        } catch (error) {
+          console.error("Failed to fetch book data:", error);
           return null;
-        };
-
-        const typeSection = await waitFor(
-          'section[data-key-path="type"]',
-          5000,
-        );
-        const hiddenTypeInput = document.querySelector(
-          'input[type="hidden"][name="type"]',
-        );
-
-        if (typeSection && hiddenTypeInput) {
-          const fieldType = typeSection.getAttribute("data-field-type");
-
-          if (fieldType === "string") {
-            const input =
-              typeSection.querySelector("input[type='text']") ||
-              typeSection.querySelector("input");
-            if (input && input.value) {
-              hiddenTypeInput.value = input.value.trim();
-            }
-          } else if (fieldType === "select") {
-            const activeRadio = typeSection.querySelector(
-              '[role="radiogroup"] button[aria-checked="true"]',
-            );
-            if (activeRadio && activeRadio.dataset.value) {
-              hiddenTypeInput.value = activeRadio.dataset.value.trim();
-            } else {
-              // Fallback to combobox label text if present
-              const comboboxLabel =
-                typeSection.querySelector('[role="combobox"]');
-              if (comboboxLabel && comboboxLabel.textContent) {
-                hiddenTypeInput.value = comboboxLabel.textContent.trim();
-              }
-            }
-          }
         }
-      })();
+      }
 
-      // Helpers for enriched movie fetch via IMDb mirror
+      // Helper to fetch movie data from IMDb mirror
       async function getFullMovieData(title) {
         try {
           // STEP 1: Search to get the IMDb ID
@@ -576,14 +221,19 @@
           );
           const searchData = await searchRes.json();
 
-          if (!searchData.description || searchData.description.length === 0)
+          if (!searchData.description || searchData.description.length === 0) {
+            console.log("No movie found:", title);
             return null;
+          }
 
           const basicInfo = searchData.description[0];
           const imdbId = basicInfo["#IMDB_ID"];
-          if (!imdbId) return null;
+          if (!imdbId) {
+            console.log("No IMDb ID found");
+            return null;
+          }
 
-          // STEP 2: Fetch detailed info (Director, Runtime, Genres) via JSON-LD-like shape
+          // STEP 2: Fetch detailed info (Director, Runtime, Genres)
           const detailRes = await fetch(
             `https://imdb.iamidiotareyoutoo.com/main?id=${imdbId}`,
           );
@@ -613,7 +263,7 @@
             actors: actorsFromShort.length ? actorsFromShort : actorsFromBasic,
             genre: Array.isArray(short?.genre) ? short.genre : [],
             length: short?.duration ? formatDuration(short.duration) : "",
-            shelf: "to-watch",
+            shelf: "watchlist",
             owned: false,
             rating: 0,
             watched: "",
@@ -623,7 +273,58 @@
               (basicInfo["#RANK"] ? `IMDb Rank: ${basicInfo["#RANK"]}` : ""),
           };
         } catch (error) {
-          console.error("Fetch failed:", error);
+          console.error("Movie fetch failed:", error);
+          return null;
+        }
+      }
+
+      // Helper to fetch TV series data from IMDb mirror
+      async function fetchSeries(title) {
+        try {
+          const url = `https://imdb.iamidiotareyoutoo.com/search?q=${encodeURIComponent(title)}`;
+          const res = await fetch(url);
+          const arr = await res.json();
+
+          const show = arr.description?.[0];
+          const year = show?.["#YEAR"] ? parseInt(show["#YEAR"]) : "";
+
+          let directors = "";
+          let actors = [];
+
+          const dres = await fetch(
+            `https://imdb.iamidiotareyoutoo.com/main?id=${show?.["#IMDB_ID"]}`,
+          );
+          const details = await dres.json();
+          const crew = details?.short?.director || [];
+          const cast = details?.short?.actor || [];
+
+          directors = Array.isArray(crew)
+            ? crew
+                .map((d) => d?.name)
+                .filter(Boolean)
+                .join(", ")
+            : "";
+          actors = Array.isArray(cast)
+            ? cast.map((a) => a?.name).filter(Boolean)
+            : [];
+
+          return {
+            type: "series",
+            title: show?.["#TITLE"] || title,
+            country: details?.short?.countryOfOrigin?.[0]?.name || "",
+            director: directors || "Unknown",
+            genre: Array.isArray(details?.short?.genre)
+              ? details.short.genre
+              : [],
+            shelf: "watchlist",
+            owned: false,
+            rating: 0,
+            watched: "",
+            poster: show?.["#IMG_POSTER"] || "",
+            body: details?.short?.description || "",
+          };
+        } catch (error) {
+          console.error("Series fetch failed:", error);
           return null;
         }
       }
@@ -638,4 +339,184 @@
           .trim()
           .toLowerCase();
       }
+    </script> <!-- Register HTML-based Preview Templates --> <script type="module">
+      import "https://cdn.jsdelivr.net/npm/decap-cms@^3.1.2";
+
+      // Wait for CMS to be available, then register preview templates
+      function registerPreviewTemplates() {
+        if (typeof CMS === "undefined") {
+          setTimeout(registerPreviewTemplates, 100);
+          return;
+        }
+
+        // Wait for React to be available (provided by Decap CMS)
+        if (!window.React || !window.React.createElement) {
+          setTimeout(registerPreviewTemplates, 100);
+          return;
+        }
+
+        // Use React directly from Decap CMS global
+        const h = window.React.createElement;
+
+        // Helper function to get author/director offset (for visual variety/rotation)
+        function getAuthorOffset(author) {
+          if (!author) return 0;
+          const charSum = author
+            .split("")
+            .reduce((sum, char) => sum + char.charCodeAt(0), 0);
+          return ((charSum % 5) - 2) * 2; // Range: -4 to 4 degrees
+        }
+
+        // Helper to format dates
+        function formatDate(dateStr) {
+          if (!dateStr) return "";
+          const date = new Date(dateStr);
+          return date.toLocaleDateString("en-US", {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+          });
+        }
+
+        // Helper to safely escape HTML
+        function escapeHtml(text) {
+          if (!text) return "";
+          const map = {
+            "&": "&amp;",
+            "<": "&lt;",
+            ">": "&gt;",
+            '"': "&quot;",
+            "'": "&#039;",
+          };
+          return String(text).replace(/[&<>"']/g, (m) => map[m]);
+        }
+
+        // Book Preview Template - returns HTML string
+        // Book Preview Template
+        CMS.registerPreviewTemplate("books", ({ entry, widgetFor }) => {
+          const data = entry.getIn(["data"]).toJS();
+
+          const authorArray = Array.isArray(data.author)
+            ? data.author
+            : data.author
+              ? [data.author]
+              : [];
+
+          return h(
+            "div",
+            { className: "my-custom-preview" },
+            h(
+              "div",
+              { className: "book-header" },
+              data.coverUrl &&
+                h("img", {
+                  src: data.coverUrl,
+                  style: { width: "100px", marginRight: "1rem" },
+                }),
+              h(
+                "div",
+                null,
+                h("h1", null, data.title),
+                data.subtitle && h("p", null, data.subtitle),
+                authorArray.length > 0 &&
+                  h("p", null, "By: ", authorArray.join(", ")),
+                data.published &&
+                  h("p", null, "Published: ", formatDate(data.published)),
+                data.isbn && h("p", null, "ISBN: ", data.isbn),
+                data.tags &&
+                  Array.isArray(data.tags) &&
+                  data.tags.length > 0 &&
+                  h("p", null, "Tags: ", data.tags.join(", ")),
+              ),
+            ),
+            h("article", { className: "prose" }, widgetFor("body")),
+          );
+        });
+
+        // Movie Preview Template
+        CMS.registerPreviewTemplate("movies", ({ entry, widgetFor }) => {
+          const data = entry.getIn(["data"]).toJS();
+
+          const directors = Array.isArray(data.director)
+            ? data.director
+            : data.director
+              ? data.director.split(",").map((s) => s.trim())
+              : ["Unknown"];
+
+          return h(
+            "div",
+            { className: "my-custom-preview" },
+            h(
+              "div",
+              { className: "movie-header" },
+              data.poster &&
+                h("img", {
+                  src: data.poster,
+                  style: { width: "100px", marginRight: "1rem" },
+                }),
+              h(
+                "div",
+                null,
+                h("h1", null, data.title),
+                h("p", null, "Directed by: ", directors.join(", ")),
+                data.actors &&
+                  Array.isArray(data.actors) &&
+                  data.actors.length > 0 &&
+                  h("p", null, "Cast: ", data.actors.slice(0, 3).join(", ")),
+                data.year && h("p", null, "Year: ", data.year),
+                data.genre &&
+                  Array.isArray(data.genre) &&
+                  data.genre.length > 0 &&
+                  h("p", null, "Genre: ", data.genre.join(", ")),
+              ),
+            ),
+            h("article", { className: "prose" }, widgetFor("body")),
+          );
+        });
+
+        // Series Preview Template
+        CMS.registerPreviewTemplate("series", ({ entry, widgetFor }) => {
+          const data = entry.getIn(["data"]).toJS();
+
+          const directors = Array.isArray(data.director)
+            ? data.director
+            : data.director
+              ? data.director.split(",").map((s) => s.trim())
+              : ["Unknown"];
+
+          return h(
+            "div",
+            { className: "my-custom-preview" },
+            h(
+              "div",
+              { className: "series-header" },
+              data.poster &&
+                h("img", {
+                  src: data.poster,
+                  style: { width: "100px", marginRight: "1rem" },
+                }),
+              h(
+                "div",
+                null,
+                h("h1", null, data.title),
+                h("p", null, "Created by: ", directors.join(", ")),
+                data.actors &&
+                  Array.isArray(data.actors) &&
+                  data.actors.length > 0 &&
+                  h("p", null, "Cast: ", data.actors.slice(0, 3).join(", ")),
+                data.year && h("p", null, "Year: ", data.year),
+                data.genre &&
+                  Array.isArray(data.genre) &&
+                  data.genre.length > 0 &&
+                  h("p", null, "Genre: ", data.genre.join(", ")),
+              ),
+            ),
+            h("article", { className: "prose" }, widgetFor("body")),
+          );
+        });
+
+        console.log("Preview templates registered successfully");
+      }
+
+      registerPreviewTemplates();
     </script> </body> </html>
