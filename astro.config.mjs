@@ -7,6 +7,9 @@ export default defineConfig({
   output: "static",
   site: "https://hryggrbyr.github.io",
   base: isProd ? "/lograry/" : "/",
+  devToolbar: {
+    enabled: false,
+  },
   vite: {
     ssr: {
       noExternal: ["decap-cms"],
