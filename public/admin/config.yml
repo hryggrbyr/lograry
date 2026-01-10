@@ -3,6 +3,7 @@ backend:
   name: github
   repo: hryggrbyr/lograry # Important: Update this!
   branch: main
+  site_domain: hryggrbyr.github.io
 
 # 2. Media: Tell Sveltia where to save cover images
 # public/images/covers will show up as /images/covers in your Astro code

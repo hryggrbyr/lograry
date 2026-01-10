@@ -1,85 +1,56 @@
-This specific **React Error #31** is occurring because of the "shim" you created for `React` in your `admin.astro` file.
+The `404` error you're seeing in that URL reveals the issue: **the `site_id` is incorrect.**
 
-### The Cause: The React Shim
+In Netlify Identity/Auth, the `site_id` shouldn't be your GitHub URL (`hryggrbyr.github.io`); it must be the **API ID** (a UUID like `12345678-abcd-...`) or the specific **Netlify subdomain** (like `your-site-name.netlify.app`) assigned by Netlify.
 
-In your script, you created a fallback `React` object to handle cases where `window.React` might be undefined.
+### Why it works on your computer but not your phone
 
-* **What's happening:** When Decap CMS loads, it eventually provides a real version of React. However, your code is manually creating an object with `{ type, props, _isReactElement: true }`.
-
-
-* **The Error:** Decap CMS's internal React engine encounters this "fake" element and doesn't know how to render it because it isn't a true React Fiber node. The error message explicitly mentions an `object with keys {type, props, _isReactElement}`—which matches your shim exactly.
-
-
+On your computer, you likely have a local cookie or an active session where the CMS has already cached the correct credentials. On your phone, you are starting a fresh "handshake." When the CMS sends that `hryggrbyr.github.io` string to Netlify, Netlify's API looks for a site with that internal ID, fails to find it, and returns a `404 Not Found`.
 
 ---
 
-### The Fix: Use the CMS Global React
+### How to Fix the 404
 
-You should not try to create your own `React.createElement` logic. Decap CMS exports the version of React it uses globally. You just need to ensure your templates wait for it to be ready.
+#### 1. Verify your `config.yml`
 
-Delete this section from your `admin.astro`:
+Check your `public/admin/config.yml` (or wherever your config lives). The `backend` section should look like this:
 
-```javascript
-// DELETE THIS ENTIRE BLOCK
-const React = window.React || {
-  createElement: (type, props, ...children) => { ... },
-  Fragment: Symbol.for("react.fragment"),
-};
-
-```
-
-**Replace it with this safer initialization:**
-
-```javascript
-function registerPreviewTemplates() {
-  // Use the React version provided by the CMS
-  const h = window.React.createElement;
-
-  CMS.registerPreviewTemplate("books", ({ entry, widgetFor }) => {
-    const data = entry.getIn(["data"]).toJS();
-
-    // Use 'h' (React.createElement) directly
-    return h("div", { className: "my-custom-preview" },
-      h("h1", null, data.title),
-      h("article", { className: "prose" }, widgetFor("body"))
-    );
-  });
-}
+```yaml
+backend:
+  name: github
+  repo: hryggrbyr/lograry # Your repo path
+  branch: main
+  site_domain: your-site-name.netlify.app # NOT your github.io address
 
 ```
+
+#### 2. Check Netlify Identity Settings
+
+1. Go to your **Netlify Dashboard**.
+2. Select your site.
+3. Go to **Site configuration** > **Site info**.
+4. Look for **API ID**. If you are using a custom auth setup, you sometimes need to use this UUID.
+5. Ensure **Identity** is enabled and **Git Gateway** is connected under "Services."
+
+#### 3. Update the External Provider
+
+If you are using GitHub as the external provider:
+
+* Go to **Site configuration** > **Identity** > **Registration**.
+* Under **External providers**, make sure GitHub is enabled.
 
 ---
 
-### Why the Preview shows HTML strings
+### Summary of the URL Error
 
-If your preview is currently showing raw tags (like `<p>content</p>`) instead of formatted text, it is usually because of one of two things:
+The URL you provided:
+`https://api.netlify.com/auth?provider=github&site_id=hryggrbyr.github.io`
 
-1.
-**Missing `widgetFor`:** You must use `widgetFor('body')` instead of `data.body`. `widgetFor` converts the Markdown into real React components; using `data.body` just prints the raw text string.
+Should actually look like:
+`https://api.netlify.com/auth?provider=github&site_id=xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
+*(Where the x's are your Netlify API ID)*
 
+### One last thing to check
 
-2. **CSS Isolation:** Decap CMS previews are inside an `iframe`. If you don't register your styles, the HTML is there but it has no styling, making it look like unformatted text.
+Since you are using **Astro**, check if your `BASE_URL` logic in `admin.astro` is accidentally appending something strange when viewed on a mobile browser. Sometimes mobile browsers handle relative paths differently if there is a trailing slash missing in the URL.
 
-
-
-### How to fix the "String" issue
-
-Ensure your template looks like this (which you already have partially implemented):
-
-*
-**Use `widgetFor("body")**` for the main content area.
-
-
-*
-**Inject your CSS** so the HTML elements (h1, p, etc.) actually look like a website:
-
-
-
-```javascript
-// In your initCMS function
-cms.registerPreviewStyle(`${BASE_URL}admin/preview.css`);
-[cite_start]``` [cite: 3]
-
-**Would you like me to provide a complete, cleaned-up version of the `registerPreviewTemplates` function that removes the broken shim and ensures the body renders correctly?**
-
-```
+**Would you like me to check your `config.yml` to see if the backend definition matches what Netlify expects?**
