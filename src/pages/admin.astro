@@ -437,8 +437,22 @@ const BASE_URL = import.meta.env.BASE_URL;
     /* Form Layout */
     .admin-grid {
       display: grid;
-      grid-template-columns: 1fr 350px;
+      /* Sidebar is 350px, content takes remaining 1fr.
+         If 1fr is less than 500px, it stacks. */
+      grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
       gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    /* Ensure the sidebar doesn't stretch weirdly when stacked */
+    .sidebar {
+      max-width: 350px;
+    }
+
+    @media screen and (max-width: 850px) {
+      .sidebar {
+        max-width: 100%; /* Allow full width only when stacked */
+      }
     }
 
     .index-card {
