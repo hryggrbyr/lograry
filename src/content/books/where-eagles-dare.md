@@ -1,18 +1,23 @@
 ---
-type: "book"
-title: "Where Eagles Dare"
+type: book
+title: Where Eagles Dare
+subtitle: ''
 author:
-  - "Alistair MacLean"
+  - Alistair MacLean
+director: null
 tags:
-  - "Adventure"
-shelf: "to-read"
-rating: "0"
-owned: "false"
-published: "1967"
-created: "2026-01-11"
-isbn: "https://covers.openlibrary.org/b/id/14891464-M.jpg"
+  - Adventure
+genre: null
+shelf: read
+rating: 3
+page_count: null
+owned: false
+created: 2026-01-11
+isbn: https://covers.openlibrary.org/b/id/14891464-M.jpg
+publisher: ''
+coverUrl: ''
 recommended_by:
-  name: ""
-  url: ""
+  name: ''
+  url: ''
 ---
 
