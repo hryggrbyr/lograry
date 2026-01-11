@@ -1,522 +1,358 @@
-<!DOCTYPE html><html lang="en" data-astro-cid-2zp6q64z> <head><meta charset="utf-8"><title>Lograry Admin</title><link rel="manifest" href="/lograry/manifest.json"><link href="/lograry/admin/config.yml" type="text/yaml" rel="shortcut config"><style>svg[data-astro-cid-2zp6q64z]{width:auto;height:1rlh}.confirmation-overlay[data-astro-cid-2zp6q64z]{border:2px solid #3a86ff;padding:1rem;background:#fff;border-radius:8px;margin:10px 0;box-shadow:0 4px 6px #0000001a;position:fixed;bottom:80px;left:20px;right:20px;max-width:400px;z-index:9998;color:#000;display:none}.confirmation-overlay[data-astro-cid-2zp6q64z].show{display:block}.preview-card[data-astro-cid-2zp6q64z]{display:flex;align-items:center;gap:10px;margin-bottom:10px}.preview-card[data-astro-cid-2zp6q64z] img[data-astro-cid-2zp6q64z]{max-width:50px;height:auto}.btn-confirm[data-astro-cid-2zp6q64z]{background:#3a86ff;color:#fff;border:none;padding:5px 10px;cursor:pointer;margin-right:10px}.btn-confirm[data-astro-cid-2zp6q64z]:hover{background:#2563eb}.btn-cancel[data-astro-cid-2zp6q64z]{background:#666;color:#fff;border:none;padding:5px 10px;cursor:pointer}.btn-cancel[data-astro-cid-2zp6q64z]:hover{background:#555}
-</style></head> <body data-astro-cid-2zp6q64z> <div id="nc-root" data-astro-cid-2zp6q64z></div> <div id="book-preview-overlay" class="confirmation-overlay" data-astro-cid-2zp6q64z> <p data-astro-cid-2zp6q64z><strong data-astro-cid-2zp6q64z>Is this correct?</strong></p> <div class="preview-card" id="preview-card-content" data-astro-cid-2zp6q64z> <img id="preview-cover" src="" alt="cover" width="50" data-astro-cid-2zp6q64z> <span id="preview-title-author" data-astro-cid-2zp6q64z></span> </div> <button id="btn-confirm" class="btn-confirm" data-astro-cid-2zp6q64z>
-✅ Yes, Fill Fields
-</button> <button id="btn-cancel" class="btn-cancel" data-astro-cid-2zp6q64z> ❌ No, Clear </button> </div> <script src="https://unpkg.com/js-yaml@4.1.0/dist/js-yaml.js"></script> <script type="module">
-      import "https://cdn.jsdelivr.net/npm/decap-cms@^3.1.2";
-    </script> <script>(function(){const BASE_URL = "/lograry/";
+<!DOCTYPE html><html lang="en" data-astro-cid-tnnyocjb> <head><title>Lograry | Archive Entry</title><meta name="description" content="Just another blog"><link rel="alternate" type="application/rss+xml" href="/feed.xml"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="application-name" content="lograry" data-name="lograry" data-version="2.0.4" data-geoid="en-GB"><meta name="format-detection" content="telephone=no"><meta name="format-detection" content="date=no"><meta name="format-detection" content="address=no"><meta name="format-detection" content="email=no"><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#222730"><meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta property="referrer" name="referrer" content="unsafe-url"><link rel="canonical" href="https://lograry.netlify.app/"><link rel="icon" href="images/favicons/favicon.ico"><meta http-equiv="X-Clacks-Overhead" content="GNU Terry Pratchett"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet"><link href="https://api.fontshare.com/v2/css?f[]=comico@400&display=swap" rel="stylesheet"><link rel="manifest" href="/manifest.json"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><style>*{margin:0;padding:0;line-height:calc(.5rem + 1em)}*,:before,:after{box-sizing:border-box}*:where(:not(fieldset,progress,meter)){border-width:0;border-style:solid;background-origin:border-box;background-repeat:no-repeat}html{block-size:100%;-webkit-text-size-adjust:none}@media(prefers-reduced-motion:no-preference){html:focus-within{scroll-behavior:smooth}}body{text-rendering:optimizeSpeed;min-block-size:100%}:where(img,svg,video,canvas,audio,iframe,embed,object){display:block}:where(img,svg,video){block-size:auto;max-inline-size:100%}:where(svg){stroke:none;fill:currentColor}:where(svg):where(:not([fill])){stroke:currentColor;fill:none;stroke-linecap:round;stroke-linejoin:round}:where(svg):where(:not([width])){inline-size:5rem}:where(input,button,textarea,select),:where(input[type=file])::-webkit-file-upload-button{color:inherit;font:inherit;font-size:inherit;letter-spacing:inherit;word-spacing:inherit}:where(textarea){resize:vertical}@supports (resize: block){:where(textarea){resize:block}}:where(p,h1,h2,h3,h4,h5,h6){overflow-wrap:break-word}h1{font-size:2em}:where(ul,ol){list-style-position:inside}:where(ul,ol)[role=list]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}:where(a[href],area,button,input,label[for],select,summary,textarea,[tabindex]:not([tabindex*="-"])){cursor:pointer;touch-action:manipulation}:where(input[type=file]){cursor:auto}:where(input[type=file])::-webkit-file-upload-button,:where(input[type=file])::file-selector-button{cursor:pointer}@media(prefers-reduced-motion:no-preference){:focus-visible{transition:outline-offset 145ms cubic-bezier(.25,0,.4,1)}:where(:not(:active)):focus-visible{transition-duration:.25s}}:where(:not(:active)):focus-visible{outline-offset:5px}:where(button,button[type],input[type=button],input[type=submit],input[type=reset]),:where(input[type=file])::-webkit-file-upload-button,:where(input[type=file])::file-selector-button{-webkit-tap-highlight-color:transparent;-webkit-touch-callout:none;user-select:none;text-align:center}:where(button,button[type],input[type=button],input[type=submit],input[type=reset])[disabled]{cursor:not-allowed}@view-transition{navigation:auto}
+</style>
+<link rel="stylesheet" href="/lograry/_astro/admin.DjS68iu_.css"></head> <body class="detail-page" data-astro-cid-tnnyocjb> <header style="margin-block-end: 2lh; padding-block: 1lh" data-astro-cid-tnnyocjb> <div class="wrapper gutters" data-astro-cid-tnnyocjb> <nav data-astro-cid-tnnyocjb> <a rel="home" href="/lograry/" data-astro-cid-tnnyocjb>lograry</a> <a href="/lograry/by-year/" data-astro-cid-tnnyocjb>By year</a> </nav> </div> </header> <main class="wrapper gutters flow" data-astro-cid-tnnyocjb>  <dialog id="auth-dialog" data-astro-cid-2zp6q64z> <div class="index-card auth-modal flow" data-astro-cid-2zp6q64z> <h2 style="font-family: monospace; border-bottom: 2px solid #000;" data-astro-cid-2zp6q64z>
+[RESTRICTED_ACCESS]
+</h2> <p style="font-family: monospace; font-size: 0.8rem; color: #666;" data-astro-cid-2zp6q64z>
+No GitHub credentials found in local storage. Please provide
+        authorization to access the archives.
+</p> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[GH_USER]</label> <input type="text" id="modal-gh-user" class="biro-input" placeholder="Username" data-astro-cid-2zp6q64z> </div> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[GH_TOKEN]</label> <input type="password" id="modal-gh-pat" class="biro-input" placeholder="ghp_xxxx..." data-astro-cid-2zp6q64z> </div> <button id="btn-auth-confirm" class="btn-stamped" data-astro-cid-2zp6q64z>INITIALIZE_SESSION</button> </div> </dialog> <div class="admin-container wrapper flow" data-astro-cid-2zp6q64z> <header class="page-section" style="border-bottom: 2px solid #000; padding-bottom: 1rem;" data-astro-cid-2zp6q64z> <h1 style="font-family: serif; margin-bottom: 1.5rem;" data-astro-cid-2zp6q64z>
+New Archive Entry
+</h1> <div class="field" data-astro-cid-2zp6q64z> <label for="media-type" style="font-family: monospace;" data-astro-cid-2zp6q64z>[COLLECTION_TYPE]</label> <select id="media-type" class="biro-input" data-astro-cid-2zp6q64z> <option value="books" data-astro-cid-2zp6q64z>📚 BOOKS</option> <option value="movies" data-astro-cid-2zp6q64z>🎬 FILMS</option> <option value="series" data-astro-cid-2zp6q64z>📺 TV SHOWS</option> </select> </div> </header> <hr data-astro-cid-2zp6q64z> <div class="admin-grid" data-astro-cid-2zp6q64z> <section class="index-card flow" data-astro-cid-2zp6q64z> <form id="entry-form" class="flow" data-astro-cid-2zp6q64z> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[TITLE]</label> <input type="text" id="field-title" class="biro-input" required data-astro-cid-2zp6q64z> </div> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[RECORD_CREATED]</label> <input type="date" id="field-created" class="biro-input" required data-astro-cid-2zp6q64z> </div> <div id="all-fields-container" class="flow" data-astro-cid-2zp6q64z> <div id="fields-books" data-media-only="books" class="flow" data-astro-cid-2zp6q64z> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[SUBTITLE]</label> <input type="text" id="field-subtitle" class="biro-input" data-astro-cid-2zp6q64z> </div> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[AUTHORS]</label> <input type="text" id="field-author" class="biro-input" placeholder="Comma separated..." data-astro-cid-2zp6q64z> </div> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[TAGS]</label> <div class="datalist-wrapper" data-astro-cid-2zp6q64z> <input type="text" id="field-tags" list="tag-suggestions" class="biro-input" placeholder="Type to search or add custom..." autocomplete="off" data-astro-cid-2zp6q64z> <datalist id="tag-suggestions" data-astro-cid-2zp6q64z> <option value="Addiction" data-astro-cid-2zp6q64z></option> <option value="Adventure" data-astro-cid-2zp6q64z></option> <option value="Aliens" data-astro-cid-2zp6q64z></option> <option value="AlternateHistory" data-astro-cid-2zp6q64z></option> <option value="America" data-astro-cid-2zp6q64z></option> <option value="Americana" data-astro-cid-2zp6q64z></option> <option value="Anthropology" data-astro-cid-2zp6q64z></option> <option value="Biography" data-astro-cid-2zp6q64z></option> <option value="BlackComedy" data-astro-cid-2zp6q64z></option> <option value="Bleak" data-astro-cid-2zp6q64z></option> <option value="Boys" data-astro-cid-2zp6q64z></option> <option value="BritishLiterature" data-astro-cid-2zp6q64z></option> <option value="Charming" data-astro-cid-2zp6q64z></option> <option value="Childhood" data-astro-cid-2zp6q64z></option> <option value="Classic" data-astro-cid-2zp6q64z></option> <option value="Code" data-astro-cid-2zp6q64z></option> <option value="Comedy" data-astro-cid-2zp6q64z></option> <option value="ComingOfAge" data-astro-cid-2zp6q64z></option> <option value="Crime" data-astro-cid-2zp6q64z></option> <option value="Cyberpunk" data-astro-cid-2zp6q64z></option> <option value="DarkComedy" data-astro-cid-2zp6q64z></option> <option value="DarkFantasy" data-astro-cid-2zp6q64z></option> <option value="Darkhumour" data-astro-cid-2zp6q64z></option> <option value="Demons" data-astro-cid-2zp6q64z></option> <option value="Design" data-astro-cid-2zp6q64z></option> <option value="Detective" data-astro-cid-2zp6q64z></option> <option value="Dragons" data-astro-cid-2zp6q64z></option> <option value="Drama" data-astro-cid-2zp6q64z></option> <option value="DrugSmuggling" data-astro-cid-2zp6q64z></option> <option value="Dystopia" data-astro-cid-2zp6q64z></option> <option value="England" data-astro-cid-2zp6q64z></option> <option value="Environment" data-astro-cid-2zp6q64z></option> <option value="Epic" data-astro-cid-2zp6q64z></option> <option value="Espionage" data-astro-cid-2zp6q64z></option> <option value="Family" data-astro-cid-2zp6q64z></option> <option value="Fantasy" data-astro-cid-2zp6q64z></option> <option value="Fiction" data-astro-cid-2zp6q64z></option> <option value="Folklore" data-astro-cid-2zp6q64z></option> <option value="Gentle" data-astro-cid-2zp6q64z></option> <option value="Ghosts" data-astro-cid-2zp6q64z></option> <option value="Goblins" data-astro-cid-2zp6q64z></option> <option value="HistoricalFantasy" data-astro-cid-2zp6q64z></option> <option value="HistoricalFiction" data-astro-cid-2zp6q64z></option> <option value="History" data-astro-cid-2zp6q64z></option> <option value="Horror" data-astro-cid-2zp6q64z></option> <option value="Hospital" data-astro-cid-2zp6q64z></option> <option value="Iceland" data-astro-cid-2zp6q64z></option> <option value="Ireland" data-astro-cid-2zp6q64z></option> <option value="Japan" data-astro-cid-2zp6q64z></option> <option value="JuvenileFiction" data-astro-cid-2zp6q64z></option> <option value="LGBT" data-astro-cid-2zp6q64z></option> <option value="Library" data-astro-cid-2zp6q64z></option> <option value="Magic" data-astro-cid-2zp6q64z></option> <option value="MagicalSchool" data-astro-cid-2zp6q64z></option> <option value="Medical" data-astro-cid-2zp6q64z></option> <option value="Military" data-astro-cid-2zp6q64z></option> <option value="ModernFairyTale" data-astro-cid-2zp6q64z></option> <option value="ModernFairytale" data-astro-cid-2zp6q64z></option> <option value="Music" data-astro-cid-2zp6q64z></option> <option value="Mystery" data-astro-cid-2zp6q64z></option> <option value="Mythology" data-astro-cid-2zp6q64z></option> <option value="Neurodivergent" data-astro-cid-2zp6q64z></option> <option value="Nonfiction" data-astro-cid-2zp6q64z></option> <option value="Norway" data-astro-cid-2zp6q64z></option> <option value="NovellaCollection" data-astro-cid-2zp6q64z></option> <option value="OpinionColumn" data-astro-cid-2zp6q64z></option> <option value="ParallelWorlds" data-astro-cid-2zp6q64z></option> <option value="Pirates" data-astro-cid-2zp6q64z></option> <option value="Police" data-astro-cid-2zp6q64z></option> <option value="PoliceProcedural" data-astro-cid-2zp6q64z></option> <option value="Politics" data-astro-cid-2zp6q64z></option> <option value="Postapocalyptic" data-astro-cid-2zp6q64z></option> <option value="Prison" data-astro-cid-2zp6q64z></option> <option value="Psychology" data-astro-cid-2zp6q64z></option> <option value="Publishing" data-astro-cid-2zp6q64z></option> <option value="Quest" data-astro-cid-2zp6q64z></option> <option value="Relationships" data-astro-cid-2zp6q64z></option> <option value="Religion" data-astro-cid-2zp6q64z></option> <option value="Romance" data-astro-cid-2zp6q64z></option> <option value="Romantasy" data-astro-cid-2zp6q64z></option> <option value="Satire" data-astro-cid-2zp6q64z></option> <option value="Scandinoir" data-astro-cid-2zp6q64z></option> <option value="Sci-fi" data-astro-cid-2zp6q64z></option> <option value="Science" data-astro-cid-2zp6q64z></option> <option value="Scotland" data-astro-cid-2zp6q64z></option> <option value="ScottishLiterature" data-astro-cid-2zp6q64z></option> <option value="SerialKiller" data-astro-cid-2zp6q64z></option> <option value="ShortStories" data-astro-cid-2zp6q64z></option> <option value="Software" data-astro-cid-2zp6q64z></option> <option value="Space" data-astro-cid-2zp6q64z></option> <option value="Steampunk" data-astro-cid-2zp6q64z></option> <option value="Suicide" data-astro-cid-2zp6q64z></option> <option value="Supernatural" data-astro-cid-2zp6q64z></option> <option value="Suspense" data-astro-cid-2zp6q64z></option> <option value="Sweden" data-astro-cid-2zp6q64z></option> <option value="SwordAndSorcery" data-astro-cid-2zp6q64z></option> <option value="TalkingAnimals" data-astro-cid-2zp6q64z></option> <option value="Thriller" data-astro-cid-2zp6q64z></option> <option value="TimeTravel" data-astro-cid-2zp6q64z></option> <option value="TransgressiveFiction" data-astro-cid-2zp6q64z></option> <option value="UrbanFantasy" data-astro-cid-2zp6q64z></option> <option value="Vampires" data-astro-cid-2zp6q64z></option> <option value="War" data-astro-cid-2zp6q64z></option> <option value="Werewolves" data-astro-cid-2zp6q64z></option> <option value="Witches" data-astro-cid-2zp6q64z></option> <option value="Wizards" data-astro-cid-2zp6q64z></option> <option value="WorkingClass" data-astro-cid-2zp6q64z></option> <option value="YoungAdult" data-astro-cid-2zp6q64z></option> <option value="Zombies" data-astro-cid-2zp6q64z></option> </datalist> </div> </div> <div class="field-row-multi" data-astro-cid-2zp6q64z> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[SHELF]</label> <select id="field-shelf" class="biro-input" data-astro-cid-2zp6q64z> <option value="to-read" data-astro-cid-2zp6q64z>TO-READ</option> <option value="reading" data-astro-cid-2zp6q64z>READING</option> <option value="read" data-astro-cid-2zp6q64z>READ</option> <option value="abandoned" data-astro-cid-2zp6q64z>ABANDONED</option> </select> </div> <div class="field" style="flex-basis: 30%;" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[RATING]</label> <input type="number" id="field-rating" class="biro-input" min="0" max="5" data-astro-cid-2zp6q64z> </div> <div class="field" style="flex-basis: 20%;" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[OWNED]</label> <input type="checkbox" id="field-owned" data-astro-cid-2zp6q64z> </div> </div> <div class="field-row-multi" data-astro-cid-2zp6q64z> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[START_DATE]</label> <input type="date" id="field-start_date" class="biro-input" data-astro-cid-2zp6q64z> </div> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[END_DATE]</label> <input type="date" id="field-end_date" class="biro-input" data-astro-cid-2zp6q64z> </div> </div> <div class="field-row-multi" data-astro-cid-2zp6q64z> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[PUBLISHER]</label> <input type="text" id="field-publisher" class="biro-input" data-astro-cid-2zp6q64z> </div> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[PUBLISHED]</label> <input type="text" id="field-published" class="biro-input" placeholder="YYYY-MM-DD" data-astro-cid-2zp6q64z> </div> </div> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[ISBN]</label> <input type="text" id="field-isbn" class="biro-input" data-astro-cid-2zp6q64z> </div> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[COVER_URL]</label> <input type="text" id="field-coverUrl" class="biro-input" data-astro-cid-2zp6q64z> </div> <div class="field-group-box" data-astro-cid-2zp6q64z> <span class="box-label" data-astro-cid-2zp6q64z>RECOMMENDED BY</span> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>Name</label> <input type="text" id="field-rec-name" class="biro-input" data-astro-cid-2zp6q64z> </div> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>URL</label> <input type="text" id="field-rec-url" class="biro-input" data-astro-cid-2zp6q64z> </div> </div> </div> <div class="field" data-media-only="movies" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[DIRECTOR]</label> <input type="text" id="field-director" class="biro-input" data-astro-cid-2zp6q64z> </div> <div class="field" data-media-only="movies" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[YEAR]</label> <input type="number" id="field-year" class="biro-input" data-astro-cid-2zp6q64z> </div> <div class="field" data-media-only="movies" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[SHELF]</label> <select id="field-shelf-movies" class="biro-input" data-astro-cid-2zp6q64z> <option value="watchlist" data-astro-cid-2zp6q64z>WATCHLIST</option> <option value="watching" data-astro-cid-2zp6q64z>WATCHING</option> <option value="watched" data-astro-cid-2zp6q64z>WATCHED</option> </select> </div> <div class="field" data-media-only="series" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[CREATOR]</label> <input type="text" id="field-creator" class="biro-input" data-astro-cid-2zp6q64z> </div> <div class="field" data-media-only="series" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[YEAR]</label> <input type="number" id="field-premiere-year" class="biro-input" data-astro-cid-2zp6q64z> </div> <div class="field" data-media-only="series" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[SHELF]</label> <select id="field-shelf-series" class="biro-input" data-astro-cid-2zp6q64z> <option value="watchlist" data-astro-cid-2zp6q64z>WATCHLIST</option> <option value="watching" data-astro-cid-2zp6q64z>WATCHING</option> <option value="watched" data-astro-cid-2zp6q64z>WATCHED</option> </select> </div> </div> <div class="field" data-astro-cid-2zp6q64z> <label data-astro-cid-2zp6q64z>[ANNOTATIONS]</label> <textarea id="field-body" class="biro-input" rows="8" data-astro-cid-2zp6q64z></textarea> </div> <div style="margin-top: 2rem;" data-astro-cid-2zp6q64z> <button type="submit" class="btn-stamped" data-astro-cid-2zp6q64z>COMMIT_TO_GITHUB</button> </div> </form> </section> <aside class="sidebar flow" data-astro-cid-2zp6q64z> <div class="reference-box flow" data-astro-cid-2zp6q64z> <h3 style="font-family: monospace; font-size: 0.8rem;" data-astro-cid-2zp6q64z>
+[API_REFERENCE_SEARCH]
+</h3> <input type="text" id="search-query" class="biro-input" placeholder="Search..." data-astro-cid-2zp6q64z> <button id="btn-search" class="btn-stamped" style="background: #555;" data-astro-cid-2zp6q64z>EXECUTE_FETCH</button> <p id="search-status" style="font-size: 0.7rem; font-family: monospace; color: #666;" data-astro-cid-2zp6q64z></p> </div> <button id="btn-logout" class="btn-stamped" style="background: #888; font-size: 0.7rem; width: 100%;" data-astro-cid-2zp6q64z>RESET_CREDENTIALS</button> </aside> </div> </div> <dialog id="selection-dialog" class="index-card selection-modal" data-astro-cid-2zp6q64z> <h3 style="font-family: monospace; border-bottom: 2px solid #000;" data-astro-cid-2zp6q64z>
+[SELECT_MATCHING_VOLUME]
+</h3> <div id="selection-list" class="flow" style="margin: 1.5rem 0; max-height: 400px; overflow-y: auto;" data-astro-cid-2zp6q64z></div> <div style="display: flex; gap: 1rem;" data-astro-cid-2zp6q64z> <button id="btn-apply-selection" class="btn-stamped" data-astro-cid-2zp6q64z>APPLY_INK</button> <button onclick="document.getElementById('selection-dialog').close()" class="btn-stamped" style="background:#888" data-astro-cid-2zp6q64z>DISCARD</button> </div> </dialog>   <script>
+    const mediaSelector = document.getElementById("media-type");
+    const authDialog = document.getElementById("auth-dialog");
 
-      // Initialize CMS and register preview styles
-      (function initCMS() {
-        const cms = window.CMS;
-        if (!cms) {
-          console.warn("CMS not available during init");
-          return;
-        }
-
-        try {
-          // Register preview styles - inject frontend CSS into the preview iframe
-          cms.registerPreviewStyle(`${BASE_URL}admin/preview.css`);
-          console.log("Preview styles registered");
-        } catch (e) {
-          console.warn("Failed to register preview styles:", e);
-        }
-      })();
-
-      // Service worker registration disabled during development to avoid caching and 404 issues.
-      // if ("serviceWorker" in navigator) {
-      //   window.addEventListener("load", () => {
-      //     navigator.serviceWorker.register(`${BASE_URL}api/sw.js`);
-      //   });
-      // }
-    })();</script> <script>
-      // Preview state management
-      let bookPreview = null;
-      let yamlString = "";
-
-      function showBookPreview(coverUrl, title, author) {
-        const bookPreviewOverlay = document.getElementById(
-          "book-preview-overlay",
-        );
-        const previewCover = document.getElementById("preview-cover");
-        const previewTitleAuthor = document.getElementById(
-          "preview-title-author",
-        );
-
-        if (previewCover) previewCover.src = coverUrl;
-        if (previewTitleAuthor) {
-          previewTitleAuthor.innerHTML = `<strong>${title}</strong><br />${author}`;
-        }
-
-        if (bookPreviewOverlay) {
-          bookPreviewOverlay.classList.add("show");
-        }
+    // Check for credentials immediately
+    function checkAuth() {
+      const user = localStorage.getItem("LOGRARY_USER");
+      const pat = localStorage.getItem("LOGRARY_PAT");
+      if (!user || !pat) {
+        authDialog.showModal();
       }
+    }
 
-      function hideBookPreview() {
-        const bookPreviewOverlay = document.getElementById(
-          "book-preview-overlay",
-        );
-        if (bookPreviewOverlay) {
-          bookPreviewOverlay.classList.remove("show");
-        }
+    document.getElementById("btn-auth-confirm").onclick = () => {
+      const user = document.getElementById("modal-gh-user").value;
+      const pat = document.getElementById("modal-gh-pat").value;
+      if (user && pat) {
+        localStorage.setItem("LOGRARY_USER", user);
+        localStorage.setItem("LOGRARY_PAT", pat);
+        authDialog.close();
       }
+    };
 
-      // Helper function to update draft fields via Decap CMS Redux store
-      function updateDraftFields(payload) {
-        const cms = window.CMS;
-        if (!cms) {
-          console.error("CMS not available");
-          return false;
-        }
+    document.getElementById("btn-logout").onclick = () => {
+      localStorage.removeItem("LOGRARY_USER");
+      localStorage.removeItem("LOGRARY_PAT");
+      location.reload();
+    };
 
-        const store = cms?.store;
-        if (!store) {
-          console.error("CMS store not available");
-          return false;
-        }
-
-        try {
-          const state = store.getState();
-          const draftData = state?.entryDraft?.entry?.data || {};
-          const merged = { ...draftData, ...payload };
-
-          store.dispatch({
-            type: "ENTRY_DRAFT_UPDATE",
-            payload: { data: merged },
-          });
-
-          return true;
-        } catch (error) {
-          console.error("Failed to update draft fields:", error);
-          return false;
-        }
-      }
-
-      // Helper to normalize date formats
-      function normalizeDate(value) {
-        if (!value) return "";
-        if (/^\d{4}$/.test(value)) return `${value}-01-01`;
-        if (/^\d{4}-\d{2}$/.test(value)) return `${value}-01`;
-        return value;
-      }
-
-      // Main function to apply fetched data to editor fields via Redux
-      async function applyToFields() {
-        try {
-          // Parse YAML and suppress warnings by catching console output
-          let data;
-          const originalWarn = console.warn;
-          console.warn = function (...args) {
-            // Suppress YAML warnings but allow other warnings through
-            if (!String(args[0]).includes("YAML")) {
-              originalWarn.apply(console, args);
-            }
-          };
-          data = jsyaml.load(yamlString);
-          console.warn = originalWarn;
-          console.log("YAML Data being applied:", data);
-
-          // Normalize date fields and convert nested structures to plain objects
-          const processedData = {};
-          const deepCopy = (obj) => {
-            if (obj instanceof Map) {
-              return Object.fromEntries(
-                Array.from(obj.entries()).map(([k, v]) => [k, deepCopy(v)]),
-              );
-            }
-            if (Array.isArray(obj)) {
-              return obj.map(deepCopy);
-            }
-            if (obj !== null && typeof obj === "object") {
-              return Object.entries(obj).reduce((acc, [k, v]) => {
-                acc[k] = deepCopy(v);
-                return acc;
-              }, {});
-            }
-            return obj;
-          };
-          for (const [key, value] of Object.entries(data)) {
-            if (key === "published") {
-              processedData[key] = normalizeDate(value);
-            } else {
-              processedData[key] = deepCopy(value);
-            }
-          }
-
-          // Use Redux dispatch to update all fields at once
-          const success = updateDraftFields(processedData);
-
-          if (success) {
-            console.log("Successfully updated draft fields via Redux");
-            setTimeout(() => {
-              hideBookPreview();
-            }, 300);
-          } else {
-            throw new Error("Redux dispatch failed");
-          }
-        } catch (error) {
-          console.error("Failed to populate fields:", error);
-          alert(`Failed to populate fields: ${error.message}`);
-        }
-      }
-
-      // Event listeners for preview buttons
+    // Toggle Field Visibility
+    function updateVisibility() {
       document
-        .getElementById("btn-confirm")
-        .addEventListener("click", applyToFields);
-      document
-        .getElementById("btn-cancel")
-        .addEventListener("click", hideBookPreview);
+        .querySelector(".admin-container")
+        .setAttribute("data-selection", mediaSelector.value);
+      // Pre-populate 'Created' field with today's date
+      const createdField = document.getElementById("field-created");
+      if (createdField && !createdField.value) {
+        createdField.value = new Date().toISOString().split("T")[0];
+      }
+    }
 
-      // Hide preview overlay when hash changes
-      window.addEventListener("hashchange", () => {
-        const bookPreviewOverlay = document.getElementById(
-          "book-preview-overlay",
-        );
-        if (bookPreviewOverlay && !window.location.hash.includes("/new")) {
-          bookPreviewOverlay.classList.remove("show");
+    mediaSelector.onchange = updateVisibility;
+    updateVisibility();
+    checkAuth();
+
+    // 1. The main Search Function [cite: 207]
+    async function fetchBook(query) {
+      const status = document.getElementById("search-status");
+
+      try {
+        // OpenLibrary Search API (No key required)
+        const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=5`;
+        const response = await fetch(url);
+        const data = await response.json();
+
+        if (!data.docs || data.docs.length === 0) {
+          status.innerText = "ERROR_ZERO_RESULTS";
+          return null;
         }
+
+        // Map raw data for our radio list [cite: 212-215]
+        const results = data.docs.map((book) => ({
+          title: book.title,
+          subtitle: book.subtitle || "",
+          author: book.author_name
+            ? book.author_name.join(", ")
+            : "Unknown Author",
+          year: book.first_publish_year || "",
+          publisher: book.publisher ? book.publisher[0] : "",
+          publish_date: book.publish_date ? book.publish_date[0] : "",
+          isbn: book.isbn ? book.isbn[0] : "",
+          coverId: book.cover_i
+            ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
+            : "",
+        }));
+
+        showBookSelectionModal(results);
+        return null; // Selection modal handles field population
+      } catch (err) {
+        console.error(err);
+        status.innerText = "API_CONNECTION_FAILED";
+        throw err;
+      }
+    }
+
+    // 2. The Selection UI Logic
+    function showBookSelectionModal(books) {
+      const dialog = document.getElementById("selection-dialog");
+      const list = document.getElementById("selection-list");
+
+      list.innerHTML = books
+        .map(
+          (book, index) => `
+        <label class="selection-item">
+          <input type="radio" name="book-choice" value='${JSON.stringify(book).replace(/'/g, "&apos;")}' ${index === 0 ? "checked" : ""}>
+          <div class="item-meta">
+            <strong>${book.title}</strong><br>
+            <span style="font-size: 0.8rem;">By ${book.author} (${book.year})</span>
+          </div>
+        </label>
+      `,
+        )
+        .join("");
+
+      dialog.showModal();
+
+      document.getElementById("btn-apply-selection").onclick = () => {
+        const selected = JSON.parse(
+          document.querySelector('input[name="book-choice"]:checked').value,
+        );
+
+        // Populate Fields [cite: 210-215]
+        document.getElementById("field-title").value = selected.title;
+        document.getElementById("field-subtitle").value = selected.subtitle;
+        document.getElementById("field-author").value = selected.author;
+        document.getElementById("field-isbn").value = selected.isbn;
+        document.getElementById("field-publisher").value = selected.publisher;
+        document.getElementById("field-published").value =
+          selected.publish_date || selected.year;
+        document.getElementById("field-coverUrl").value = selected.coverId;
+
+        dialog.close();
+        document.getElementById("search-status").innerText =
+          "INK_APPLIED_SUCCESSFULLY";
+      };
+    }
+
+    // Tie Search to specific APIs
+    document.getElementById("btn-search").onclick = async () => {
+      const query = document.getElementById("search-query").value;
+      const type = mediaSelector.value;
+      const status = document.getElementById("search-status");
+
+      status.innerText = "SEARCHING_ARCHIVES...";
+      try {
+        let data = null;
+        if (type === "books") data = await fetchBook(query);
+        else if (type === "movies") data = await getFullMovieData(query);
+        else data = await fetchSeries(query);
+
+        if (data) {
+          status.innerText = "MATCH_FOUND_APPLYING_INK...";
+          document.getElementById("field-title").value = data.title;
+          // Set Created Date automatically to today
+          document.getElementById("field-created").value = new Date()
+            .toISOString()
+            .split("T")[0];
+          if (type === "books") {
+            document.getElementById("field-title").value = data.title;
+            document.getElementById("field-subtitle").value =
+              data.subtitle || "";
+            document.getElementById("field-author").value = data.author; // OpenLibrary joined string
+            document.getElementById("field-isbn").value = data.isbn || "";
+            document.getElementById("field-publisher").value =
+              data.publisher || "";
+            document.getElementById("field-published").value =
+              data.publish_date || data.year || "";
+            document.getElementById("field-coverUrl").value =
+              data.coverId || "";
+          } else if (type === "movies") {
+            document.getElementById("field-director").value =
+              data.director || "";
+            document.getElementById("field-year").value = data.year || "";
+          } else if (type === "series") {
+            document.getElementById("field-creator").value =
+              data.director || "";
+            document.getElementById("field-premiere-year").value =
+              data.year || "";
+          }
+        }
+      } catch (e) {
+        status.innerText = "ERROR_ARCHIVE_NOT_FOUND";
+      }
+    };
+    document.getElementById("entry-form").onsubmit = async (e) => {
+      e.preventDefault();
+      const status = document.getElementById("search-status");
+      const submitBtn = e.target.querySelector('button[type="submit"]');
+      status.innerText = "PREPARING_ARCHIVE_ENTRY...";
+      // 1. Enter Loading State
+      status.innerHTML = `<span class="loading-dots">COMMITTING_TO_ARCHIVE</span>`;
+      submitBtn.disabled = true;
+      submitBtn.style.opacity = "0.5";
+      submitBtn.innerText = "INKING...";
+
+      const type = document.getElementById("media-type").value;
+      const title = document.getElementById("field-title").value;
+
+      const getArray = (id) => {
+        const val = document.getElementById(id)?.value;
+        return val
+          ? val
+              .split(",")
+              .map((t) => t.trim())
+              .filter((t) => t !== "")
+          : [];
+      };
+
+      // Base fields shared by all types
+      let entryData = {
+        type:
+          type === "books" ? "book" : type === "movies" ? "movie" : "series",
+        title: title,
+        shelf: document.getElementById(
+          type === "books" ? "field-shelf" : `field-shelf-${type}`,
+        ).value,
+        owned: document.getElementById("field-owned").checked,
+        rating: document.getElementById("field-rating").value
+          ? parseInt(document.getElementById("field-rating").value, 10)
+          : null,
+        body: document.getElementById("field-body").value, // Captured for the content area
+      };
+
+      // Type-specific field injection
+      if (type === "books") {
+        Object.assign(entryData, {
+          subtitle: document.getElementById("field-subtitle")?.value || "",
+          author: getArray("field-author"),
+          tags: getArray("field-tags"),
+          published: document.getElementById("field-published")?.value || "",
+          created: document.getElementById("field-created").value,
+          publisher: document.getElementById("field-publisher")?.value || "",
+          isbn: document.getElementById("field-isbn")?.value || "",
+          coverUrl: document.getElementById("field-coverUrl")?.value || "",
+          recommended_by: {
+            name: document.getElementById("field-rec-name")?.value || "",
+            url: document.getElementById("field-rec-url")?.value || "",
+          },
+        });
+      } else {
+        // Movies and Series specific fields
+        Object.assign(entryData, {
+          director:
+            document.getElementById(
+              type === "movies" ? "field-director" : "field-creator",
+            )?.value || "",
+          year: document.getElementById(
+            type === "movies" ? "field-year" : "field-premiere-year",
+          )?.value
+            ? parseInt(
+                document.getElementById(
+                  type === "movies" ? "field-year" : "field-premiere-year",
+                ).value,
+                10,
+              )
+            : null,
+          genre: getArray("field-tags"), // Map tags to genre for screen media
+          poster: document.getElementById("field-coverUrl")?.value || "", // Map coverUrl to poster
+        });
+      }
+
+      const body = entryData.body;
+      delete entryData.body; // Remove body from YAML frontmatter object
+
+      const fileName = `${title.toLowerCase().replace(/[^a-z0-9]/g, "-")}.md`;
+      const folder = `src/content/${type}`;
+
+      try {
+        const result = await pushToGitHub(folder, fileName, entryData, body);
+        // 2. Success State
+        status.innerHTML = `<span style="color: #2b9348; font-weight: bold;">✓ COMMIT_SUCCESSFUL_SHA: ${result.content.sha.substring(0, 7)}</span>`;
+        submitBtn.innerText = "STAMPED_SUCCESS";
+        submitBtn.style.background = "#2b9348";
+
+        // Optional: Reset form after 3 seconds
+        setTimeout(() => {
+          location.reload();
+        }, 3000);
+        status.innerText = "COMMIT_SUCCESSFUL";
+      } catch (err) {
+        status.innerText = "COMMIT_FAILED";
+        console.error(err);
+        // 3. Error State
+        status.innerHTML = `<span style="color: #ae2012;">⚠ COMMIT_FAILED_CHECK_CONSOLE</span>`;
+        submitBtn.disabled = false;
+        submitBtn.style.opacity = "1";
+        submitBtn.innerText = "RETRY_COMMIT";
+        console.error(err);
+      }
+    };
+
+    async function pushToGitHub(folder, fileName, data, body) {
+      const user = localStorage.getItem("LOGRARY_USER");
+      const pat = localStorage.getItem("LOGRARY_PAT");
+      const repo = "hryggrbyr/lograry";
+
+      // Construct YAML Frontmatter to match reference file exactly
+      // Inside pushToGitHub(folder, fileName, data, body)
+      let yaml = "---\n";
+      for (const [key, value] of Object.entries(data)) {
+        // Only include defined keys to match your collection schema
+        if (Array.isArray(value)) {
+          yaml +=
+            value.length === 0
+              ? `${key}: []\n`
+              : `${key}:\n${value.map((v) => `  - ${v}`).join("\n")}\n`;
+        } else if (typeof value === "object" && value !== null) {
+          yaml += `${key}:\n  name: '${value.name || ""}'\n  url: '${value.url || ""}'\n`;
+        } else if (
+          typeof value === "boolean" ||
+          typeof value === "number" ||
+          value === null
+        ) {
+          yaml += `${key}: ${value}\n`;
+        } else {
+          // Use single quotes for empty strings as seen in your reference file
+          const sanitizedValue = value === "" ? "''" : `"${value}"`;
+          yaml += `${key}: ${sanitizedValue}\n`;
+        }
+      }
+      yaml += "---\n\n" + body;
+
+      const path = `${folder}/${fileName}`;
+      const url = `https://api.github.com/repos/${repo}/contents/${path}`;
+
+      // Get SHA if file already exists to allow updates
+      let sha = null;
+      try {
+        const res = await fetch(url, {
+          headers: { Authorization: `token ${pat}` },
+        });
+        if (res.ok) {
+          const existing = await res.json();
+          sha = existing.sha;
+        }
+      } catch (e) {}
+
+      const response = await fetch(url, {
+        method: "PUT",
+        headers: {
+          Authorization: `token ${pat}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          message: `archive: add ${data.title}`,
+          content: btoa(unescape(encodeURIComponent(yaml))),
+          sha: sha,
+        }),
       });
 
-      // Helper to fetch book data from Google Books API
-      async function fetchBook(isbn) {
-        try {
-          const url = `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}`;
-          const res = await fetch(url);
-          const data = await res.json();
-
-          if (!data.items || data.items.length === 0) {
-            console.log("No book found for ISBN:", isbn);
-            return null;
-          }
-
-          const b = data.items[0].volumeInfo;
-          return {
-            type: "book",
-            title: b.title || "",
-            subtitle: b.subtitle || "",
-            author: b.authors ? b.authors.join(", ") : "",
-            published: b.publishedDate || "",
-            publisher: b.publisher || "",
-            page_count: b.pageCount || "",
-            isbn: isbn,
-            coverUrl: b.imageLinks?.thumbnail || "",
-            shelf: "to-read",
-            owned: false,
-            rating: 0,
-            body: b.description || "",
-          };
-        } catch (error) {
-          console.error("Failed to fetch book data:", error);
-          return null;
-        }
-      }
-
-      // Helper to fetch movie data from IMDb mirror
-      async function getFullMovieData(title) {
-        try {
-          // STEP 1: Search to get the IMDb ID
-          const searchRes = await fetch(
-            `https://imdb.iamidiotareyoutoo.com/search?q=${encodeURIComponent(title)}`,
-          );
-          const searchData = await searchRes.json();
-
-          if (!searchData.description || searchData.description.length === 0) {
-            console.log("No movie found:", title);
-            return null;
-          }
-
-          const basicInfo = searchData.description[0];
-          const imdbId = basicInfo["#IMDB_ID"];
-          if (!imdbId) {
-            console.log("No IMDb ID found");
-            return null;
-          }
-
-          // STEP 2: Fetch detailed info (Director, Runtime, Genres)
-          const detailRes = await fetch(
-            `https://imdb.iamidiotareyoutoo.com/main?id=${imdbId}`,
-          );
-          const details = await detailRes.json();
-
-          // STEP 3: Map to your specific fields
-          const short = details?.short || {};
-          const actorsFromShort = Array.isArray(short.actor)
-            ? short.actor.map((a) => a?.name).filter(Boolean)
-            : [];
-          const actorsFromBasic = basicInfo["#ACTORS"]
-            ? basicInfo["#ACTORS"].split(", ").map((s) => s.trim())
-            : [];
-
-          return {
-            type: "movie",
-            title: short.name || basicInfo["#TITLE"] || title,
-            country: short?.countryOfOrigin?.[0]?.name || "",
-            year: parseInt(basicInfo["#YEAR"]) || "",
-            director:
-              Array.isArray(short?.director) && short.director.length
-                ? short.director
-                    .map((d) => d?.name)
-                    .filter(Boolean)
-                    .join(", ")
-                : "Unknown",
-            actors: actorsFromShort.length ? actorsFromShort : actorsFromBasic,
-            genre: Array.isArray(short?.genre) ? short.genre : [],
-            length: short?.duration ? formatDuration(short.duration) : "",
-            shelf: "watchlist",
-            owned: false,
-            rating: 0,
-            watched: "",
-            poster: short?.image || basicInfo["#IMG_POSTER"] || "",
-            body:
-              short?.description ||
-              (basicInfo["#RANK"] ? `IMDb Rank: ${basicInfo["#RANK"]}` : ""),
-          };
-        } catch (error) {
-          console.error("Movie fetch failed:", error);
-          return null;
-        }
-      }
-
-      // Helper to fetch TV series data from IMDb mirror
-      async function fetchSeries(title) {
-        try {
-          const url = `https://imdb.iamidiotareyoutoo.com/search?q=${encodeURIComponent(title)}`;
-          const res = await fetch(url);
-          const arr = await res.json();
-
-          const show = arr.description?.[0];
-          const year = show?.["#YEAR"] ? parseInt(show["#YEAR"]) : "";
-
-          let directors = "";
-          let actors = [];
-
-          const dres = await fetch(
-            `https://imdb.iamidiotareyoutoo.com/main?id=${show?.["#IMDB_ID"]}`,
-          );
-          const details = await dres.json();
-          const crew = details?.short?.director || [];
-          const cast = details?.short?.actor || [];
-
-          directors = Array.isArray(crew)
-            ? crew
-                .map((d) => d?.name)
-                .filter(Boolean)
-                .join(", ")
-            : "";
-          actors = Array.isArray(cast)
-            ? cast.map((a) => a?.name).filter(Boolean)
-            : [];
-
-          return {
-            type: "series",
-            title: show?.["#TITLE"] || title,
-            country: details?.short?.countryOfOrigin?.[0]?.name || "",
-            director: directors || "Unknown",
-            genre: Array.isArray(details?.short?.genre)
-              ? details.short.genre
-              : [],
-            shelf: "watchlist",
-            owned: false,
-            rating: 0,
-            watched: "",
-            poster: show?.["#IMG_POSTER"] || "",
-            body: details?.short?.description || "",
-          };
-        } catch (error) {
-          console.error("Series fetch failed:", error);
-          return null;
-        }
-      }
-
-      // Helper to convert ISO 8601 duration (PT1H48M) to readable string (1h 48m)
-      function formatDuration(iso) {
-        if (!iso || typeof iso !== "string") return "";
-        return iso
-          .replace(/^PT/, "")
-          .replace(/H/, "h ")
-          .replace(/M/, "m")
-          .trim()
-          .toLowerCase();
-      }
-    </script> <!-- Register HTML-based Preview Templates --> <script type="module">
-      import "https://cdn.jsdelivr.net/npm/decap-cms@^3.1.2";
-
-      // Wait for CMS to be available, then register preview templates
-      function registerPreviewTemplates() {
-        if (typeof CMS === "undefined") {
-          setTimeout(registerPreviewTemplates, 100);
-          return;
-        }
-
-        // Wait for React to be available (provided by Decap CMS)
-        if (!window.React || !window.React.createElement) {
-          setTimeout(registerPreviewTemplates, 100);
-          return;
-        }
-
-        // Use React directly from Decap CMS global
-        const h = window.React.createElement;
-
-        // Helper function to get author/director offset (for visual variety/rotation)
-        function getAuthorOffset(author) {
-          if (!author) return 0;
-          const charSum = author
-            .split("")
-            .reduce((sum, char) => sum + char.charCodeAt(0), 0);
-          return ((charSum % 5) - 2) * 2; // Range: -4 to 4 degrees
-        }
-
-        // Helper to format dates
-        function formatDate(dateStr) {
-          if (!dateStr) return "";
-          const date = new Date(dateStr);
-          return date.toLocaleDateString("en-US", {
-            year: "numeric",
-            month: "short",
-            day: "numeric",
-          });
-        }
-
-        // Helper to safely escape HTML
-        function escapeHtml(text) {
-          if (!text) return "";
-          const map = {
-            "&": "&amp;",
-            "<": "&lt;",
-            ">": "&gt;",
-            '"': "&quot;",
-            "'": "&#039;",
-          };
-          return String(text).replace(/[&<>"']/g, (m) => map[m]);
-        }
-
-        // Book Preview Template - returns HTML string
-        // Book Preview Template
-        CMS.registerPreviewTemplate("books", ({ entry, widgetFor }) => {
-          const data = entry.getIn(["data"]).toJS();
-
-          const authorArray = Array.isArray(data.author)
-            ? data.author
-            : data.author
-              ? [data.author]
-              : [];
-
-          return h(
-            "div",
-            { className: "my-custom-preview" },
-            h(
-              "div",
-              { className: "book-header" },
-              data.coverUrl &&
-                h("img", {
-                  src: data.coverUrl,
-                  style: { width: "100px", marginRight: "1rem" },
-                }),
-              h(
-                "div",
-                null,
-                h("h1", null, data.title),
-                data.subtitle && h("p", null, data.subtitle),
-                authorArray.length > 0 &&
-                  h("p", null, "By: ", authorArray.join(", ")),
-                data.published &&
-                  h("p", null, "Published: ", formatDate(data.published)),
-                data.isbn && h("p", null, "ISBN: ", data.isbn),
-                data.tags &&
-                  Array.isArray(data.tags) &&
-                  data.tags.length > 0 &&
-                  h("p", null, "Tags: ", data.tags.join(", ")),
-              ),
-            ),
-            h("article", { className: "prose" }, widgetFor("body")),
-          );
-        });
-
-        // Movie Preview Template
-        CMS.registerPreviewTemplate("movies", ({ entry, widgetFor }) => {
-          const data = entry.getIn(["data"]).toJS();
-
-          const directors = Array.isArray(data.director)
-            ? data.director
-            : data.director
-              ? data.director.split(",").map((s) => s.trim())
-              : ["Unknown"];
-
-          return h(
-            "div",
-            { className: "my-custom-preview" },
-            h(
-              "div",
-              { className: "movie-header" },
-              data.poster &&
-                h("img", {
-                  src: data.poster,
-                  style: { width: "100px", marginRight: "1rem" },
-                }),
-              h(
-                "div",
-                null,
-                h("h1", null, data.title),
-                h("p", null, "Directed by: ", directors.join(", ")),
-                data.actors &&
-                  Array.isArray(data.actors) &&
-                  data.actors.length > 0 &&
-                  h("p", null, "Cast: ", data.actors.slice(0, 3).join(", ")),
-                data.year && h("p", null, "Year: ", data.year),
-                data.genre &&
-                  Array.isArray(data.genre) &&
-                  data.genre.length > 0 &&
-                  h("p", null, "Genre: ", data.genre.join(", ")),
-              ),
-            ),
-            h("article", { className: "prose" }, widgetFor("body")),
-          );
-        });
-
-        // Series Preview Template
-        CMS.registerPreviewTemplate("series", ({ entry, widgetFor }) => {
-          const data = entry.getIn(["data"]).toJS();
-
-          const directors = Array.isArray(data.director)
-            ? data.director
-            : data.director
-              ? data.director.split(",").map((s) => s.trim())
-              : ["Unknown"];
-
-          return h(
-            "div",
-            { className: "my-custom-preview" },
-            h(
-              "div",
-              { className: "series-header" },
-              data.poster &&
-                h("img", {
-                  src: data.poster,
-                  style: { width: "100px", marginRight: "1rem" },
-                }),
-              h(
-                "div",
-                null,
-                h("h1", null, data.title),
-                h("p", null, "Created by: ", directors.join(", ")),
-                data.actors &&
-                  Array.isArray(data.actors) &&
-                  data.actors.length > 0 &&
-                  h("p", null, "Cast: ", data.actors.slice(0, 3).join(", ")),
-                data.year && h("p", null, "Year: ", data.year),
-                data.genre &&
-                  Array.isArray(data.genre) &&
-                  data.genre.length > 0 &&
-                  h("p", null, "Genre: ", data.genre.join(", ")),
-              ),
-            ),
-            h("article", { className: "prose" }, widgetFor("body")),
-          );
-        });
-
-        console.log("Preview templates registered successfully");
-      }
-
-      registerPreviewTemplates();
-    </script> </body> </html>
+      if (!response.ok) throw new Error("GitHub API Response Error", response);
+      return await response.json();
+    }
+  </script>  </main> <footer style="margin-block-start: 4lh; padding-block: 1lh" data-astro-cid-tnnyocjb> <div class="wrapper gutters" data-astro-cid-tnnyocjb>
+Made with ❤️ and ☕ in the rainy part of the United Kingdom by <a href="https://thomasrigby.com" data-astro-cid-tnnyocjb>Thomas Rigby</a> </div> </footer> </body></html>
