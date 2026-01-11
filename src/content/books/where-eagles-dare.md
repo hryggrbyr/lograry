@@ -13,11 +13,10 @@ rating: 3
 page_count: null
 owned: false
 created: 2026-01-11
-isbn: https://covers.openlibrary.org/b/id/14891464-M.jpg
+isbn: ''
 publisher: ''
-coverUrl: ''
+coverUrl: ' https://covers.openlibrary.org/b/id/14891464-M.jpg'
 recommended_by:
   name: ''
   url: ''
 ---
-

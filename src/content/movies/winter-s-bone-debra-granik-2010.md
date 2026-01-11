@@ -8,7 +8,7 @@ actors: [Jennifer Lawrence, John Hawkes, Garret Dillahunt]
 genre: [Crime, Drama, Mystery]
 length: 100
 shelf: watchlist
-owned: false
+owned: true
 rating: 
 poster: "https://m.media-amazon.com/images/M/MV5BMjA0OTM3MDMxNF5BMl5BanBnXkFtZTcwMDY1MjI0Mw@@._V1_SX300.jpg"
 url: N/A

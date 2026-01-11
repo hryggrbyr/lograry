@@ -1,56 +1,94 @@
-The `404` error you're seeing in that URL reveals the issue: **the `site_id` is incorrect.**
+Building a custom "PAT-powered" admin page is the ultimate way to achieve a **permanent, zero-dependency** CMS. It turns your GitHub repository into its own backend, requiring no middleware, no Netlify, and no third-party services.
 
-In Netlify Identity/Auth, the `site_id` shouldn't be your GitHub URL (`hryggrbyr.github.io`); it must be the **API ID** (a UUID like `12345678-abcd-...`) or the specific **Netlify subdomain** (like `your-site-name.netlify.app`) assigned by Netlify.
+Since you've already built the API fetching logic and the UI in `admin.astro`, you just need to replace the Decap CMS "Save" button with a direct call to the GitHub API.
 
-### Why it works on your computer but not your phone
+### 1. The "Zero-Server" Auth Strategy
 
-On your computer, you likely have a local cookie or an active session where the CMS has already cached the correct credentials. On your phone, you are starting a fresh "handshake." When the CMS sends that `hryggrbyr.github.io` string to Netlify, Netlify's API looks for a site with that internal ID, fails to find it, and returns a `404 Not Found`.
+For your friends, the workflow would be:
 
----
+1. **Fork** the repo.
+2. **Generate a PAT** (one-time setup).
+3. **Enter PAT** on the Admin page (stored in `localStorage`).
 
-### How to Fix the 404
+### 2. The Implementation Bridge
 
-#### 1. Verify your `config.yml`
+To move away from Decap, you need a function that handles the "Commit" to GitHub. Paste this into your `admin.astro` `<script>` tag:
 
-Check your `public/admin/config.yml` (or wherever your config lives). The `backend` section should look like this:
+```javascript
+async function saveEntryToGithub(collection, filename, data, body) {
+  const token = localStorage.getItem('GH_PAT');
+  const user = localStorage.getItem('GH_USER'); // 'hryggrbyr' or forker's username
+  const repo = 'lograry';
 
-```yaml
-backend:
-  name: github
-  repo: hryggrbyr/lograry # Your repo path
-  branch: main
-  site_domain: your-site-name.netlify.app # NOT your github.io address
+  if (!token) return alert("Please set your GitHub PAT first!");
+
+  // Construct the frontmatter and content
+  const yaml = jsyaml.dump(data);
+  const fileContent = `---\n${yaml}---\n\n${body}`;
+  const path = `src/content/${collection}/${filename}.md`;
+
+  try {
+    // 1. Check if file exists to get its SHA (required for updates)
+    let sha = null;
+    const existingFile = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`, {
+      headers: { Authorization: `token ${token}` }
+    });
+
+    if (existingFile.ok) {
+      const fileData = await existingFile.json();
+      sha = fileData.sha;
+    }
+
+    // 2. Commit the file
+    const response = await fetch(`https://api.github.com/repos/${user}/${repo}/contents/${path}`, {
+      method: 'PUT',
+      headers: {
+        Authorization: `token ${token}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        message: `Add ${data.type}: ${data.title}`,
+        content: btoa(unescape(encodeURIComponent(fileContent))), // UTF-8 safe base64
+        sha: sha
+      }),
+    });
+
+    if (response.ok) {
+      alert("Success! Your entry is live.");
+    } else {
+      const err = await response.json();
+      alert(`Error: ${err.message}`);
+    }
+  } catch (e) {
+    console.error(e);
+  }
+}
 
 ```
 
-#### 2. Check Netlify Identity Settings
+### 3. The "Setup" README for Friends
 
-1. Go to your **Netlify Dashboard**.
-2. Select your site.
-3. Go to **Site configuration** > **Site info**.
-4. Look for **API ID**. If you are using a custom auth setup, you sometimes need to use this UUID.
-5. Ensure **Identity** is enabled and **Git Gateway** is connected under "Services."
+To make this "outlast you," your README instructions for your friends simply need to look like this:
 
-#### 3. Update the External Provider
+> ### 🚀 Quick Start
+>
+>
+> 1. **Fork** this repository.
+> 2. **Get a Token:** Go to [GitHub Token Settings](https://github.com/settings/tokens/new) and create a "Fine-grained token" with **Read/Write** access to your repo.
+> 3. **Open the Admin:** Go to `yourname.github.io/lograry/admin`.
+> 4. **Login:** Paste your token into the settings box. You are now a movie logger!
+>
+>
 
-If you are using GitHub as the external provider:
+### Why this is better than Decap CMS for Lograry
 
-* Go to **Site configuration** > **Identity** > **Registration**.
-* Under **External providers**, make sure GitHub is enabled.
+* **Mobile Friendly:** No heavy Decap JS bundle to crash your phone browser.
+* **One Repo Rule:** The app, the data, and the admin panel live together. If GitHub exists, your app works.
+* **API-Centric:** You can customize the "Search IMDb" UI exactly how you want it, without fighting Decap's layout constraints or "Node.removeChild" errors.
+* **Privacy:** The token stays in the user's browser; you never touch their data.
 
----
+### Next Steps
 
-### Summary of the URL Error
-
-The URL you provided:
-`https://api.netlify.com/auth?provider=github&site_id=hryggrbyr.github.io`
-
-Should actually look like:
-`https://api.netlify.com/auth?provider=github&site_id=xxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx`
-*(Where the x's are your Netlify API ID)*
-
-### One last thing to check
-
-Since you are using **Astro**, check if your `BASE_URL` logic in `admin.astro` is accidentally appending something strange when viewed on a mobile browser. Sometimes mobile browsers handle relative paths differently if there is a trailing slash missing in the URL.
-
-**Would you like me to check your `config.yml` to see if the backend definition matches what Netlify expects?**
+1. **Remove Decap:** Delete the `decap-cms-app.js` script tag from `admin.astro`.
+2. **Add a "Settings" Modal:** A simple input field that saves `GH_PAT` and `GH_USER` to `localStorage`.
+3. **Update your "Apply Fields" logic:** Instead of finding CMS inputs, have your "Yes, Fill Fields" button save to an internal JavaScript object, and then call `saveEntryToGithub` when they hit a final "Submit" button.
