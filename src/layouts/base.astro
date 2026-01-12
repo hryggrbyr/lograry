@@ -1,6 +1,7 @@
 ---
 import "@styles/reset.css";
 const { title = "Lograry", disableGlobalStyles = false } = Astro.props;
+!disableGlobalStyles && import("@styles/index.css");
 ---
 
 <html lang="en">
@@ -52,7 +53,6 @@ const { title = "Lograry", disableGlobalStyles = false } = Astro.props;
       rel="stylesheet"
     />
     <link rel="manifest" href="/manifest.json" />
-    {!disableGlobalStyles && <link rel="stylesheet" href="/index.css" />}
     <meta name="mobile-web-app-capable" content="yes" />
     <meta
       name="apple-mobile-web-app-status-bar-style"
