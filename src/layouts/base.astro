@@ -1,7 +1,10 @@
 ---
 import "@styles/reset.css";
 const { title = "Lograry", disableGlobalStyles = false } = Astro.props;
-!disableGlobalStyles && import("@styles/index.css");
+const currentPage = Astro.url.pathname;
+const includeAppStyles =
+  !disableGlobalStyles && !currentPage.includes("/admin");
+import(`@styles/${includeAppStyles ? "index.css" : "admin.css"}`);
 ---
 
 <html lang="en">

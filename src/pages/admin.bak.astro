@@ -1,16 +1,13 @@
 ---
-/* src/pages/admin.astro */
-import BaseLayout from "@layouts/base.astro";
 const BASE_URL = import.meta.env.BASE_URL;
+import BaseLayout from "@layouts/base.astro";
 ---
 
-<BaseLayout title="Lograry | Archive Entry" disableGlobalStyles={true}>
+<BaseLayout>
   <dialog id="auth-dialog">
     <div class="index-card auth-modal flow">
-      <h2 style="font-family: monospace; border-bottom: 2px solid #000;">
-        [RESTRICTED_ACCESS]
-      </h2>
-      <p style="font-family: monospace; font-size: 0.8rem; color: #666;">
+      <h2>[RESTRICTED_ACCESS]</h2>
+      <p>
         No GitHub credentials found in local storage. Please provide
         authorization to access the archives.
       </p>
@@ -26,7 +23,7 @@ const BASE_URL = import.meta.env.BASE_URL;
       <div class="field">
         <label>[GH_TOKEN]</label>
         <input
-          type="password"
+          type="text"
           id="modal-gh-pat"
           class="biro-input"
           placeholder="ghp_xxxx..."
@@ -39,24 +36,37 @@ const BASE_URL = import.meta.env.BASE_URL;
   </dialog>
 
   <div class="admin-container wrapper flow">
-    <header
-      class="page-section"
-      style="border-bottom: 2px solid #000; padding-bottom: 1rem;"
-    >
-      <h1 style="font-family: serif; margin-bottom: 1.5rem;">
-        New Archive Entry
-      </h1>
-      <div class="field">
-        <label for="media-type" style="font-family: monospace;"
-          >[COLLECTION_TYPE]</label
-        >
+    <header class="page-section">
+      <h1>New Archive Entry</h1>
+    </header>
+
+    <section class="stacker-half">
+      <form id="search-form" class="reference-box flow">
+        <h3>[API_REFERENCE_SEARCH]</h3>
+        <div class="field-row-multi">
+          <input
+            type="text"
+            id="search-query"
+            class="biro-input"
+            placeholder="Search..."
+          />
+          <button type="submit" id="btn-search" class="btn-stamped"
+            >EXECUTE_FETCH</button
+          >
+        </div>
+        <p id="search-status"></p>
+      </form>
+
+      <div class="field flow">
+        <label for="media-type"><h3>[COLLECTION_TYPE]</h3></label>
         <select id="media-type" class="biro-input">
           <option value="books">📚 BOOKS</option>
           <option value="movies">🎬 FILMS</option>
           <option value="series">📺 TV SHOWS</option>
         </select>
       </div>
-    </header>
+    </section>
+
     <hr />
 
     <div class="admin-grid">
@@ -222,7 +232,7 @@ const BASE_URL = import.meta.env.BASE_URL;
                     <option value="abandoned">ABANDONED</option>
                   </select>
                 </div>
-                <div class="field" style="flex-basis: 30%;">
+                <div class="field">
                   <label>[RATING]</label>
                   <input
                     type="number"
@@ -232,7 +242,7 @@ const BASE_URL = import.meta.env.BASE_URL;
                     max="5"
                   />
                 </div>
-                <div class="field" style="flex-basis: 20%;">
+                <div class="field">
                   <label>[OWNED]</label>
                   <input type="checkbox" id="field-owned" />
                 </div>
@@ -332,375 +342,61 @@ const BASE_URL = import.meta.env.BASE_URL;
             <textarea id="field-body" class="biro-input" rows="8"></textarea>
           </div>
 
-          <div style="margin-top: 2rem;">
+          <div>
             <button type="submit" class="btn-stamped">COMMIT_TO_GITHUB</button>
           </div>
         </form>
       </section>
 
       <aside class="sidebar flow">
-        <div class="reference-box flow">
-          <h3 style="font-family: monospace; font-size: 0.8rem;">
-            [API_REFERENCE_SEARCH]
-          </h3>
-          <input
-            type="text"
-            id="search-query"
-            class="biro-input"
-            placeholder="Search..."
-          />
-          <button id="btn-search" class="btn-stamped" style="background: #555;"
-            >EXECUTE_FETCH</button
-          >
-          <p
-            id="search-status"
-            style="font-size: 0.7rem; font-family: monospace; color: #666;"
-          >
-          </p>
-        </div>
-        <button
-          id="btn-logout"
-          class="btn-stamped"
-          style="background: #888; font-size: 0.7rem; width: 100%;"
-          >RESET_CREDENTIALS</button
-        >
+        <button id="btn-logout" class="btn-stamped">RESET_CREDENTIALS</button>
       </aside>
     </div>
   </div>
+
   <dialog id="selection-dialog" class="index-card selection-modal">
-    <h3 style="font-family: monospace; border-bottom: 2px solid #000;">
-      [SELECT_MATCHING_VOLUME]
-    </h3>
-    <div
-      id="selection-list"
-      class="flow"
-      style="margin: 1.5rem 0; max-height: 400px; overflow-y: auto;"
-    >
-    </div>
-    <div style="display: flex; gap: 1rem;">
+    <h3>[SELECT_MATCHING_VOLUME]</h3>
+    <div id="selection-list" class="flow"></div>
+    <div>
       <button id="btn-apply-selection" class="btn-stamped">APPLY_INK</button>
       <button
         onclick="document.getElementById('selection-dialog').close()"
-        class="btn-stamped"
-        style="background:#888">DISCARD</button
+        class="btn-stamped">DISCARD</button
       >
     </div>
   </dialog>
+
   <style is:global>
-    :root {
-      --primary: #2563eb;
-      --primary-hover: #1d4ed8;
-      --bg: #f8fafc;
-      --card-bg: #ffffff;
-      --text-main: #1e293b;
-      --text-muted: #64748b;
-      --border: #e2e8f0;
-      --success: #22c55e;
-      --error: #ef4444;
-    }
-
-    body {
-      background-color: var(--bg);
-      color: var(--text-main);
-      font-family:
-        "Inter",
-        system-ui,
-        -apple-system,
-        sans-serif;
-      line-height: 1.5;
-      margin: 0;
-    }
-
-    .wrapper {
-      max-width: 1200px;
-      margin: 2rem auto;
-      padding: 0 1.5rem;
-    }
-
-    /* Header Section */
-    header.page-section {
+    /* Stacker-half Utility (Every Layout Pattern) */
+    .stacker-half {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 2rem;
-      border-bottom: 1px solid var(--border) !important;
-      padding-bottom: 1.5rem !important;
-    }
-
-    h1 {
-      font-size: 1.875rem;
-      font-weight: 700;
-      margin: 0;
-      color: var(--text-main);
-    }
-
-    /* Form Layout */
-    .admin-grid {
-      display: grid;
-      /* Sidebar is 350px, content takes remaining 1fr.
-         If 1fr is less than 500px, it stacks. */
-      grid-template-columns: repeat(auto-fit, minmax(min(500px, 100%), 1fr));
+      flex-wrap: wrap;
       gap: 2rem;
-      margin-top: 2rem;
+      align-items: flex-end;
     }
 
-    /* Ensure the sidebar doesn't stretch weirdly when stacked */
-    .sidebar {
-      max-width: 350px;
-    }
-
-    @media screen and (max-width: 850px) {
-      .sidebar {
-        max-width: 100%; /* Allow full width only when stacked */
-      }
-    }
-
-    .index-card {
-      background: var(--card-bg);
-      padding: 2rem;
-      border-radius: 0.75rem;
-      border: 1px solid var(--border);
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    }
-
-    /* Input Styling */
-    .field {
-      display: flex;
-      flex-direction: column !important; /* Stacked for modern look */
-      gap: 0.5rem;
-      margin-bottom: 1.25rem;
-    }
-
-    .field label {
-      font-weight: 600;
-      font-size: 0.875rem;
-      color: var(--text-main);
-      text-transform: uppercase;
-      letter-spacing: 0.025em;
-    }
-
-    .biro-input,
-    select,
-    textarea {
-      width: 100%;
-      padding: 0.625rem 0.875rem;
-      border: 1px solid var(--border) !important;
-      border-radius: 0.5rem;
-      font-family: inherit !important;
-      font-size: 1rem;
-      background: var(--card-bg);
-      transition:
-        border-color 0.2s,
-        box-shadow 0.2s;
-      color: var(--text-main) !important;
-    }
-
-    .biro-input:focus {
-      outline: none;
-      border-color: var(--primary) !important;
-      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
-    }
-
-    /* Multi-column Rows */
-    .field-row-multi {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 1rem;
-    }
-
-    /* Buttons */
-    .btn-stamped {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.75rem 1.5rem;
-      background: var(--primary) !important;
-      color: white !important;
-      border: none !important;
-      border-radius: 0.5rem;
-      font-weight: 600;
-      font-size: 0.875rem;
-      cursor: pointer;
-      transition: background 0.2s;
-      width: 100%;
-      text-transform: none !important;
-    }
-
-    .btn-stamped:hover {
-      background: var(--primary-hover) !important;
-    }
-
-    /* Sidebar Boxes */
-    .reference-box {
-      background: #eff6ff;
-      padding: 1.5rem;
-      border-radius: 0.75rem;
-      border: 1px solid #dbeafe;
-    }
-
-    /* Loading State */
-    .loading-dots::after {
-      content: "...";
-      animation: dots 1.5s steps(5, end) infinite;
-    }
-
-    @keyframes dots {
-      0%,
-      20% {
-        content: ".";
-      }
-      40% {
-        content: "..";
-      }
-      60% {
-        content: "...";
-      }
-      80%,
-      100% {
-        content: "";
-      }
-    }
-
-    /* Status Indicators */
-    #search-status {
-      margin-top: 1rem;
-      padding: 0.75rem;
-      border-radius: 0.375rem;
-      background: var(--bg);
-      font-weight: 500;
-    }
-
-    /* Modal/Dialog Refinement */
-    dialog {
-      border-radius: 1rem;
-      padding: 2rem;
-      max-width: 500px;
-      border: 1px solid var(--border);
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-    }
-
-    dialog::backdrop {
-      background: rgba(15, 23, 42, 0.5);
-      backdrop-filter: blur(4px);
-    }
-  </style>
-  <style>
-    /* Aesthetic Styling */
-    .field {
-      display: flex;
-      flex-direction: row;
-      gap: 1rem;
-      align-items: baseline;
-      margin-bottom: 1rem;
-    }
-    .field label {
-      flex-basis: 25%;
-      font-family: monospace;
-      font-size: 0.75rem;
-      color: #666;
-    }
-    .field :not(label) {
+    .stacker-half > * {
       flex-grow: 1;
+      /* Becomes 100% width when container is < 40rem (approx 640px) */
+      flex-basis: calc((40rem - 100%) * 999);
     }
 
+    /* Ensure input row is cohesive */
     .field-row-multi {
       display: flex;
-      gap: 2rem;
-      width: 100%;
+      gap: 0.5rem;
+      align-items: center;
     }
 
-    .field-group-box {
-      border: 1px dotted #666;
-      padding: 1rem;
-      margin-top: 1rem;
-      position: relative;
-    }
-
-    .box-label {
-      position: absolute;
-      top: -10px;
-      left: 10px;
-      background: #fdfcf0; /* Matches index card bg */
-      padding: 0 5px;
-      font-family: monospace;
-      font-size: 0.7rem;
-    }
-
-    /* Custom Checkbox for the 'Owned' field */
-    input[type="checkbox"] {
-      width: 1.2rem;
-      height: 1.2rem;
-      accent-color: #000080;
-    }
-
-    .biro-input {
-      background: transparent;
-      border: none;
-      border-bottom: 1px dotted #000080;
-      font-family: "Courier New", Courier, monospace;
-      color: #000080;
-      padding: 0.5rem 0;
-    }
-
-    /* Modal Styling */
-    #auth-dialog {
-      border: none;
-      background: transparent;
-      padding: 0;
-      margin: auto;
-    }
-    #auth-dialog::backdrop {
-      background: rgba(0, 0, 0, 0.8);
-      backdrop-filter: blur(2px);
-    }
-    .auth-modal {
-      max-width: 450px;
-      border: 2px solid #000;
-    }
-
-    /* Toggle visibility via data-selection */
-    .field[data-media-only] {
-      display: none;
-    }
-    .admin-container[data-selection="books"] .field[data-media-only="books"] {
-      display: flex;
-    }
-    .admin-container[data-selection="movies"] .field[data-media-only="movies"] {
-      display: flex;
-    }
-    .admin-container[data-selection="series"] .field[data-media-only="series"] {
-      display: flex;
-    }
-
-    .admin-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 3rem;
-      margin-top: 2rem;
-    }
-    .index-card {
-      background: #fdfcf0;
-      padding: 2.5rem;
-      border: 1px solid #ddd;
-      box-shadow: 8px 8px 0px #eee;
-    }
-    .btn-stamped {
-      background: #3a86ff;
-      color: white;
-      border: none;
-      padding: 0.5rem 1.2rem;
-      font-family: monospace;
-      font-weight: bold;
-      text-transform: uppercase;
-      border-radius: 3px;
-      cursor: pointer;
-      border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    .field-row-multi input {
+      flex-grow: 1;
     }
   </style>
 
   <script is:inline>
     const mediaSelector = document.getElementById("media-type");
     const authDialog = document.getElementById("auth-dialog");
+    const searchForm = document.getElementById("search-form");
 
     // Check for credentials immediately
     function checkAuth() {
@@ -732,7 +428,6 @@ const BASE_URL = import.meta.env.BASE_URL;
       document
         .querySelector(".admin-container")
         .setAttribute("data-selection", mediaSelector.value);
-      // Pre-populate 'Created' field with today's date
       const createdField = document.getElementById("field-created");
       if (createdField && !createdField.value) {
         createdField.value = new Date().toISOString().split("T")[0];
@@ -743,22 +438,42 @@ const BASE_URL = import.meta.env.BASE_URL;
     updateVisibility();
     checkAuth();
 
-    // 1. The main Search Function [cite: 207]
-    async function fetchBook(query) {
+    // Search Form Handling (Handles Enter Key)
+    searchForm.onsubmit = async (e) => {
+      e.preventDefault();
+      const query = document.getElementById("search-query").value;
+      const type = mediaSelector.value;
       const status = document.getElementById("search-status");
 
+      if (!query) return;
+
+      status.innerText = "SEARCHING_ARCHIVES...";
       try {
-        // OpenLibrary Search API (No key required)
+        let data = null;
+        if (type === "books") data = await fetchBook(query);
+        else if (type === "movies") data = await getFullMovieData(query);
+        else data = await fetchSeries(query);
+
+        if (data) {
+          status.innerText = "MATCH_FOUND_APPLYING_INK...";
+          populateFields(data, type);
+        }
+      } catch (e) {
+        status.innerText = "ERROR_ARCHIVE_NOT_FOUND";
+      }
+    };
+
+    async function fetchBook(query) {
+      const status = document.getElementById("search-status");
+      try {
         const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=5`;
         const response = await fetch(url);
         const data = await response.json();
-
         if (!data.docs || data.docs.length === 0) {
           status.innerText = "ERROR_ZERO_RESULTS";
           return null;
         }
 
-        // Map raw data for our radio list [cite: 212-215]
         const results = data.docs.map((book) => ({
           title: book.title,
           subtitle: book.subtitle || "",
@@ -773,9 +488,8 @@ const BASE_URL = import.meta.env.BASE_URL;
             ? `https://covers.openlibrary.org/b/id/${book.cover_i}-M.jpg`
             : "",
         }));
-
         showBookSelectionModal(results);
-        return null; // Selection modal handles field population
+        return null;
       } catch (err) {
         console.error(err);
         status.innerText = "API_CONNECTION_FAILED";
@@ -783,101 +497,65 @@ const BASE_URL = import.meta.env.BASE_URL;
       }
     }
 
-    // 2. The Selection UI Logic
     function showBookSelectionModal(books) {
       const dialog = document.getElementById("selection-dialog");
       const list = document.getElementById("selection-list");
 
       list.innerHTML = books
-        .map(
-          (book, index) => `
-        <label class="selection-item">
-          <input type="radio" name="book-choice" value='${JSON.stringify(book).replace(/'/g, "&apos;")}' ${index === 0 ? "checked" : ""}>
-          <div class="item-meta">
-            <strong>${book.title}</strong><br>
-            <span style="font-size: 0.8rem;">By ${book.author} (${book.year})</span>
-          </div>
-        </label>
-      `,
-        )
+        .map((book, index) => {
+          // Fix: Use double quotes for the value attribute and avoid single quote collision
+          const bookData = JSON.stringify(book).replace(/'/g, "&apos;");
+          return `
+              <label class="selection-item">
+                <input type="radio" name="book-choice" value='${bookData}' ${index === 0 ? "checked" : ""}>
+                <div class="item-meta">
+                  <strong>${book.title}</strong><br>
+                  <span>By ${book.author} (${book.year})</span>
+                </div>
+              </label>
+            `;
+        })
         .join("");
-
       dialog.showModal();
 
       document.getElementById("btn-apply-selection").onclick = () => {
         const selected = JSON.parse(
           document.querySelector('input[name="book-choice"]:checked').value,
         );
-
-        // Populate Fields [cite: 210-215]
-        document.getElementById("field-title").value = selected.title;
-        document.getElementById("field-subtitle").value = selected.subtitle;
-        document.getElementById("field-author").value = selected.author;
-        document.getElementById("field-isbn").value = selected.isbn;
-        document.getElementById("field-publisher").value = selected.publisher;
-        document.getElementById("field-published").value =
-          selected.publish_date || selected.year;
-        document.getElementById("field-coverUrl").value = selected.coverId;
-
+        populateFields(selected, "books");
         dialog.close();
         document.getElementById("search-status").innerText =
           "INK_APPLIED_SUCCESSFULLY";
       };
     }
 
-    // Tie Search to specific APIs
-    document.getElementById("btn-search").onclick = async () => {
-      const query = document.getElementById("search-query").value;
-      const type = mediaSelector.value;
-      const status = document.getElementById("search-status");
-
-      status.innerText = "SEARCHING_ARCHIVES...";
-      try {
-        let data = null;
-        if (type === "books") data = await fetchBook(query);
-        else if (type === "movies") data = await getFullMovieData(query);
-        else data = await fetchSeries(query);
-
-        if (data) {
-          status.innerText = "MATCH_FOUND_APPLYING_INK...";
-          document.getElementById("field-title").value = data.title;
-          // Set Created Date automatically to today
-          document.getElementById("field-created").value = new Date()
-            .toISOString()
-            .split("T")[0];
-          if (type === "books") {
-            document.getElementById("field-title").value = data.title;
-            document.getElementById("field-subtitle").value =
-              data.subtitle || "";
-            document.getElementById("field-author").value = data.author; // OpenLibrary joined string
-            document.getElementById("field-isbn").value = data.isbn || "";
-            document.getElementById("field-publisher").value =
-              data.publisher || "";
-            document.getElementById("field-published").value =
-              data.publish_date || data.year || "";
-            document.getElementById("field-coverUrl").value =
-              data.coverId || "";
-          } else if (type === "movies") {
-            document.getElementById("field-director").value =
-              data.director || "";
-            document.getElementById("field-year").value = data.year || "";
-          } else if (type === "series") {
-            document.getElementById("field-creator").value =
-              data.director || "";
-            document.getElementById("field-premiere-year").value =
-              data.year || "";
-          }
-        }
-      } catch (e) {
-        status.innerText = "ERROR_ARCHIVE_NOT_FOUND";
+    function populateFields(data, type) {
+      document.getElementById("field-title").value = data.title;
+      document.getElementById("field-created").value = new Date()
+        .toISOString()
+        .split("T")[0];
+      if (type === "books") {
+        document.getElementById("field-subtitle").value = data.subtitle || "";
+        document.getElementById("field-author").value = data.author;
+        document.getElementById("field-isbn").value = data.isbn || "";
+        document.getElementById("field-publisher").value = data.publisher || "";
+        document.getElementById("field-published").value =
+          data.publish_date || data.year || "";
+        document.getElementById("field-coverUrl").value = data.coverId || "";
+      } else if (type === "movies") {
+        document.getElementById("field-director").value = data.director || "";
+        document.getElementById("field-year").value = data.year || "";
+      } else if (type === "series") {
+        document.getElementById("field-creator").value = data.director || "";
+        document.getElementById("field-premiere-year").value = data.year || "";
       }
-    };
+    }
+
     document.getElementById("entry-form").onsubmit = async (e) => {
       e.preventDefault();
       const status = document.getElementById("search-status");
       const submitBtn = e.target.querySelector('button[type="submit"]');
       status.innerText = "PREPARING_ARCHIVE_ENTRY...";
-      // 1. Enter Loading State
       status.innerHTML = `<span class="loading-dots">COMMITTING_TO_ARCHIVE</span>`;
       submitBtn.disabled = true;
       submitBtn.style.opacity = "0.5";
@@ -885,7 +563,6 @@ const BASE_URL = import.meta.env.BASE_URL;
 
       const type = document.getElementById("media-type").value;
       const title = document.getElementById("field-title").value;
-
       const getArray = (id) => {
         const val = document.getElementById(id)?.value;
         return val
@@ -896,7 +573,6 @@ const BASE_URL = import.meta.env.BASE_URL;
           : [];
       };
 
-      // Base fields shared by all types
       let entryData = {
         type:
           type === "books" ? "book" : type === "movies" ? "movie" : "series",
@@ -908,10 +584,9 @@ const BASE_URL = import.meta.env.BASE_URL;
         rating: document.getElementById("field-rating").value
           ? parseInt(document.getElementById("field-rating").value, 10)
           : null,
-        body: document.getElementById("field-body").value, // Captured for the content area
+        body: document.getElementById("field-body").value,
       };
 
-      // Type-specific field injection
       if (type === "books") {
         Object.assign(entryData, {
           subtitle: document.getElementById("field-subtitle")?.value || "",
@@ -928,7 +603,6 @@ const BASE_URL = import.meta.env.BASE_URL;
           },
         });
       } else {
-        // Movies and Series specific fields
         Object.assign(entryData, {
           director:
             document.getElementById(
@@ -944,33 +618,25 @@ const BASE_URL = import.meta.env.BASE_URL;
                 10,
               )
             : null,
-          genre: getArray("field-tags"), // Map tags to genre for screen media
-          poster: document.getElementById("field-coverUrl")?.value || "", // Map coverUrl to poster
+          genre: getArray("field-tags"),
+          poster: document.getElementById("field-coverUrl")?.value || "",
         });
       }
 
       const body = entryData.body;
-      delete entryData.body; // Remove body from YAML frontmatter object
-
+      delete entryData.body;
       const fileName = `${title.toLowerCase().replace(/[^a-z0-9]/g, "-")}.md`;
       const folder = `src/content/${type}`;
 
       try {
         const result = await pushToGitHub(folder, fileName, entryData, body);
-        // 2. Success State
         status.innerHTML = `<span style="color: #2b9348; font-weight: bold;">✓ COMMIT_SUCCESSFUL_SHA: ${result.content.sha.substring(0, 7)}</span>`;
         submitBtn.innerText = "STAMPED_SUCCESS";
         submitBtn.style.background = "#2b9348";
-
-        // Optional: Reset form after 3 seconds
         setTimeout(() => {
           location.reload();
         }, 3000);
-        status.innerText = "COMMIT_SUCCESSFUL";
       } catch (err) {
-        status.innerText = "COMMIT_FAILED";
-        console.error(err);
-        // 3. Error State
         status.innerHTML = `<span style="color: #ae2012;">⚠ COMMIT_FAILED_CHECK_CONSOLE</span>`;
         submitBtn.disabled = false;
         submitBtn.style.opacity = "1";
@@ -984,11 +650,8 @@ const BASE_URL = import.meta.env.BASE_URL;
       const pat = localStorage.getItem("LOGRARY_PAT");
       const repo = "hryggrbyr/lograry";
 
-      // Construct YAML Frontmatter to match reference file exactly
-      // Inside pushToGitHub(folder, fileName, data, body)
       let yaml = "---\n";
       for (const [key, value] of Object.entries(data)) {
-        // Only include defined keys to match your collection schema
         if (Array.isArray(value)) {
           yaml +=
             value.length === 0
@@ -1003,17 +666,14 @@ const BASE_URL = import.meta.env.BASE_URL;
         ) {
           yaml += `${key}: ${value}\n`;
         } else {
-          // Use single quotes for empty strings as seen in your reference file
           const sanitizedValue = value === "" ? "''" : `"${value}"`;
           yaml += `${key}: ${sanitizedValue}\n`;
         }
       }
       yaml += "---\n\n" + body;
-
       const path = `${folder}/${fileName}`;
       const url = `https://api.github.com/repos/${repo}/contents/${path}`;
 
-      // Get SHA if file already exists to allow updates
       let sha = null;
       try {
         const res = await fetch(url, {
@@ -1037,8 +697,7 @@ const BASE_URL = import.meta.env.BASE_URL;
           sha: sha,
         }),
       });
-
-      if (!response.ok) throw new Error("GitHub API Response Error", response);
+      if (!response.ok) throw new Error("GitHub API Response Error");
       return await response.json();
     }
   </script>
