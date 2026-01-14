@@ -3,10 +3,10 @@ title: "Cruel Intentions"
 type: "movies"
 created: ""
 shelf: "watched"
-rating: "0"
+rating: 3
 owned: true
 director: "Roger Kumble"
-year: "1999"
+year: 1999
 length: "1h 38m"
 genre:
   - "Drama"
