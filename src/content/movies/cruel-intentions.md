@@ -11,8 +11,13 @@ length: "1h 38m"
 genre:
   - "Drama"
   - "Romance"
+country: "US"
 actors:
-
+  - "Sarah Michelle Gellar"
+  - "Ryan Phillippe"
+  - "Reese Witherspoon"
+  - "Selma Blair"
+  - "Louise Fletcher"
 poster: "https://image.tmdb.org/t/p/w500/76cCsRtQ5MJBAqoigojXsLXLJwh.jpg"
 ---
 
