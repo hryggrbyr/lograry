@@ -1,6 +1,6 @@
 ---
 title: "Drop Dead Gorgeous"
-type: "movies"
+type: "movie"
 created: "2025-01-20"
 shelf: "watched"
 rating: 5
