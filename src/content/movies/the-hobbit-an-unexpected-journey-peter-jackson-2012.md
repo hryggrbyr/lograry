@@ -1,16 +1,21 @@
 ---
-type: movie
-country: New Zealand, United States
-title: "The Hobbit An Unexpected Journey"
-year: 2012
-director: Peter Jackson
-actors: [Martin Freeman, Ian McKellen, Richard Armitage]
-genre: [Adventure, Fantasy]
-length: 169
-shelf: watched
+title: "The Hobbit: An Unexpected Journey"
+type: "movie"
+created: ""
+shelf: "watched"
+rating: 0
 owned: false
-rating: 
-watched: 2012-12-31
+director: "Peter Jackson"
+year: 2012
+length: "169"
+genre:
+  - "Adventure"
+  - "Fantasy"
+country: "New Zealand, United States"
+actors:
+  - "Martin Freeman"
+  - "Ian McKellen"
+  - "Richard Armitage"
 poster: "https://m.media-amazon.com/images/M/MV5BMTcwNTE4MTUxMl5BMl5BanBnXkFtZTcwMDIyODM4OA@@._V1_SX300.jpg"
 ---
 
