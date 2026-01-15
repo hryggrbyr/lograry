@@ -1,31 +1,24 @@
 ---
-type: book
-tags:
-  - Steampunk
-  - Pirates
-  - Postapocalyptic
-  - England
-title: A Flight of Thieves
-subtitle: ~
-author:
-  - David Bridger
-publisher: ~
-published: ~
-page_count: ~
-isbn: ~
-description: ''
-coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
-shelf: read
+title: "A Flight of Thieves"
+type: "book"
+created: ""
+shelf: "read"
+rating: 4
 owned: true
-start_date: 2024-10-13T00:00:00.000Z
-end_date: 2024-10-17T00:00:00.000Z
-rating: ~
-recommended_by:
-  name: ~
-  url: ~
-created: 2024-10-18T00:00:00.000Z
-reviewUrl: ~
-bookshopUrl: ~
+subtitle: ""
+author:
+  - "David Bridger"
+tags:
+  - "Steampunk"
+  - "Pirates"
+  - "Postapocalyptic"
+  - "England"
+isbn: "9781629160078"
+published: "2013-10-02"
+publisher: "Hartwood Publishing"
+start_date: "2024-09-19"
+end_date: "2024-10-18"
+coverUrl: "https://covers.openlibrary.org/b/olid/-M.jpg"
 ---
 
 # A Flight of Thieves by David Bridger
