@@ -1,7 +1,7 @@
 ---
 type: "series"
 title: "A Kind of Spark"
-created: "2025-09-15"
+created: "2025-09-22"
 shelf: "watched"
 rating: 3
 director: "Marek Losey"
