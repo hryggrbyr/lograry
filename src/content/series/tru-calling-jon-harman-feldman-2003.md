@@ -6,10 +6,10 @@ shelf: "watched"
 rating: 3
 owned: true
 creator: "Jon Harman Feldman"
+director: "Various"
 year: 2003
 country: "US"
-actors:
-
+actors:  [Eliza Dushku, Zach Galifianakis, Shawn Reaves, Jason Priestley]
 genre:
   - "Sci-Fi"
   - "Fantasy"
