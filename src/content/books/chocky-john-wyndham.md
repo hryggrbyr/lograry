@@ -1,27 +1,20 @@
 ---
-type: book
-tags: []
-title: Chocky
-subtitle: ~
+type: "books"
+title: "Chocky"
+created: null
+shelf: "to-read"
+rating: 2
 author:
-  - John Wyndham
-publisher: ~
-published: ~
-page_count: ~
-isbn: ~
-description: ''
-coverUrl: 'https://covers.openlibrary.org/b/olid/OL25939187M-M.jpg'
-shelf: read
-owned: true
-start_date: 2024-07-28T00:00:00.000Z
-end_date: 2024-08-05T00:00:00.000Z
-rating: ~
-recommended_by:
-  name: ~
-  url: ~
-created: 2024-08-05T00:00:00.000Z
-reviewUrl: ~
-bookshopUrl: ~
+  - "John Wyndham"
+tags:
+
+start_date: null
+end_date: null
+published: null
+publisher: null
+page_count: null
+isbn: null
+coverUrl: "https://covers.openlibrary.org/b/olid/OL25939187M-M.jpg"
 ---
 
 # Chocky by John Wyndham
