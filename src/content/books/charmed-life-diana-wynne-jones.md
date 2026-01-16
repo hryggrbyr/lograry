@@ -1,27 +1,24 @@
 ---
-type: book
-tags: [ Fantasy, JuvenileFiction, Magic, Charming, Family ]
-title: Charmed Life
-subtitle: ~
+type: "books"
+title: "Charmed Life"
+created: null
+shelf: "to-read"
+rating: 0
 author:
-  - Diana Wynne Jones
-publisher: ~
-published: ~
-page_count: ~
-isbn: ~
-description: ''
-coverUrl: 'https://covers.openlibrary.org/b/olid/OL27051252M-M.jpg'
-shelf: read
-owned: true
-start_date: 2022-09-04T00:00:00.000Z
-end_date: 2022-09-28T00:00:00.000Z
-rating: ~
-recommended_by:
-  name: ~
-  url: ~
-created: 2022-12-18T00:00:00.000Z
-reviewUrl: ~
-bookshopUrl: ~
+  - "Diana Wynne Jones"
+tags:
+  - "Fantasy"
+  - "JuvenileFiction"
+  - "Magic"
+  - "Charming"
+  - "Family"
+start_date: null
+end_date: null
+published: null
+publisher: null
+page_count: null
+isbn: null
+coverUrl: "https://covers.openlibrary.org/b/olid/OL27051252M-M.jpg"
 ---
 
 # Charmed Life (Essential Modern Classics) by Diana Wynne Jones
