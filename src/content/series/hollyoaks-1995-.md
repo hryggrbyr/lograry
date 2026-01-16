@@ -6,7 +6,7 @@ year: 1995–
 director: N/A
 actors: [Nick Pickard, Ashley Taylor Dawson, Kieron Richardson]
 genre: [Drama, Romance]
-length: 30
+length: "30"
 shelf: watched
 owned: false
 rating: 

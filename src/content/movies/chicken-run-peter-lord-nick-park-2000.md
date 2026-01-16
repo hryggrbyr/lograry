@@ -6,7 +6,7 @@ year: 2000
 director: Peter Lord, Nick Park
 actors: [Mel Gibson, Julia Sawalha, Phil Daniels]
 genre: [Animation, Adventure, Comedy]
-length: 84
+length: "84"
 shelf: watched
 owned: false
 rating: 

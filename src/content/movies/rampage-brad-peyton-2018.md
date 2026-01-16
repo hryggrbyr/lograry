@@ -6,7 +6,7 @@ year: 2018
 director: Brad Peyton
 actors: [Dwayne Johnson, Naomie Harris, Malin Akerman]
 genre: [Action, Adventure, Sci-Fi]
-length: 107
+length: "107"
 shelf: watchlist
 owned: false
 rating: 

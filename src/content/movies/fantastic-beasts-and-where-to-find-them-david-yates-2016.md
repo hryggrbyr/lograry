@@ -6,7 +6,7 @@ year: 2016
 director: David Yates
 actors: [Eddie Redmayne, Katherine Waterston, Alison Sudol]
 genre: [Adventure, Family, Fantasy]
-length: 132
+length: "132"
 shelf: watched
 owned: false
 rating: 

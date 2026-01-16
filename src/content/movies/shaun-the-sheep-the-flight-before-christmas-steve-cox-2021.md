@@ -6,7 +6,7 @@ year: 2021
 director: Steve Cox
 actors: [Justin Fletcher, John Sparkes, Laura Aikman]
 genre: [Animation, Comedy, Family]
-length: 30
+length: "30"
 shelf: watched
 owned: false
 rating: 

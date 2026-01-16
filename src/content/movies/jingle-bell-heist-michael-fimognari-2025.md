@@ -6,7 +6,7 @@ year: 2025
 director: Michael Fimognari
 actors: [Olivia Holt, Connor Swindells, Lucy Punch]
 genre: [Comedy, Romance]
-length: 96
+length: "96"
 shelf: watchlist
 owned: false
 rating: 

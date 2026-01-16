@@ -6,7 +6,7 @@ year: 2015
 director: Yorgos Lanthimos
 actors: [Colin Farrell, Rachel Weisz, Jessica Barden]
 genre: [Drama, Romance, Sci-Fi]
-length: 119
+length: "119"
 shelf: watchlist
 owned: true
 rating: 

@@ -6,7 +6,7 @@ year: 1986
 director: Francis Ford Coppola
 actors: [Michael Jackson, Anjelica Huston, Dick Shawn]
 genre: [Short, Adventure, Fantasy]
-length: 17
+length: "17"
 shelf: watchlist
 owned: true
 rating: 

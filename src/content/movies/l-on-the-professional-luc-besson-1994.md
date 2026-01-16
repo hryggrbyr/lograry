@@ -6,7 +6,7 @@ year: 1994
 director: Luc Besson
 actors: [Jean Reno, Gary Oldman, Natalie Portman]
 genre: [Action, Crime, Drama]
-length: 110
+length: "110"
 shelf: watched
 owned: true
 rating: 

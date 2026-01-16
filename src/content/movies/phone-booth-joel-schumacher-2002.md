@@ -6,7 +6,7 @@ year: 2002
 director: Joel Schumacher
 actors: [Colin Farrell, Kiefer Sutherland, Forest Whitaker]
 genre: [Crime, Thriller]
-length: 81
+length: "81"
 shelf: watched
 owned: false
 rating: 

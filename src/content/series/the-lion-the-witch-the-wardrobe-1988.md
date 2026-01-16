@@ -6,7 +6,7 @@ year: 1988
 director: N/A
 actors: [Richard Dempsey, Sophie Cook, Jonathan R. Scott]
 genre: [Adventure, Drama, Family]
-length: 2
+length: "2"
 shelf: watched
 owned: false
 rating: 

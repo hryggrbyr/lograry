@@ -6,7 +6,7 @@ year: 1992
 director: Robert Zemeckis
 actors: [Meryl Streep, Bruce Willis, Goldie Hawn]
 genre: [Comedy, Fantasy, Horror]
-length: 104
+length: "104"
 shelf: watched
 owned: false
 rating: 

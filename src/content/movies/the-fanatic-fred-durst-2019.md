@@ -6,7 +6,7 @@ year: 2019
 director: Fred Durst
 actors: [John Travolta, Devon Sawa, Ana Golja]
 genre: [Crime, Drama, Mystery]
-length: 88
+length: "88"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2000
 director: David Twohy
 actors: [Radha Mitchell, Cole Hauser, Vin Diesel]
 genre: [Horror, Sci-Fi, Thriller]
-length: 109
+length: "109"
 shelf: watched
 owned: true
 rating: 

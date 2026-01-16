@@ -6,7 +6,7 @@ year: 1994
 director: Jefery Levy
 actors: [Stephen Dorff, Reese Witherspoon, Jake Busey]
 genre: [Comedy, Drama]
-length: 96
+length: "96"
 shelf: watched
 owned: false
 rating: 

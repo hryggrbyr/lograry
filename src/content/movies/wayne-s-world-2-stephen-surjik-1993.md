@@ -6,7 +6,7 @@ year: 1993
 director: Stephen Surjik
 actors: [Mike Myers, Dana Carvey, Christopher Walken]
 genre: [Comedy, Music]
-length: 95
+length: "95"
 shelf: watched
 owned: false
 rating: 

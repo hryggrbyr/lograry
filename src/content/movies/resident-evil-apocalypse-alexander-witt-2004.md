@@ -6,7 +6,7 @@ year: 2004
 director: Alexander Witt
 actors: [Milla Jovovich, Sienna Guillory, Eric Mabius]
 genre: [Action, Horror, Sci-Fi]
-length: 94
+length: "94"
 shelf: watched
 owned: true
 rating: 

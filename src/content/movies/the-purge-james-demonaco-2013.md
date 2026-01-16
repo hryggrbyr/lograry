@@ -6,7 +6,7 @@ year: 2013
 director: James DeMonaco
 actors: [Ethan Hawke, Lena Headey, Max Burkholder]
 genre: [Horror, Sci-Fi, Thriller]
-length: 85
+length: "85"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 1997
 director: Paul Verhoeven
 actors: [Casper Van Dien, Denise Richards, Dina Meyer]
 genre: [Action, Adventure, Sci-Fi]
-length: 129
+length: "129"
 shelf: watched
 owned: true
 rating: 

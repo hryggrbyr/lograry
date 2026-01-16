@@ -6,7 +6,7 @@ year: 2021
 director: Garth Jennings, Christophe Lourdelet
 actors: [Tori Kelly, Reese Witherspoon, Taron Egerton]
 genre: [Animation, Adventure, Comedy]
-length: 110
+length: "110"
 shelf: watched
 owned: true
 rating: 

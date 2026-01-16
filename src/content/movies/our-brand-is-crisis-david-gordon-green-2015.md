@@ -6,7 +6,7 @@ year: 2015
 director: David Gordon Green
 actors: [Sandra Bullock, Billy Bob Thornton, Anthony Mackie]
 genre: [Comedy, Drama]
-length: 107
+length: "107"
 shelf: watchlist
 owned: false
 rating: 

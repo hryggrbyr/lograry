@@ -6,7 +6,7 @@ year: 1994
 director: N/A
 actors: [Christopher Morris, Steve Coogan, Patrick Marber]
 genre: [Comedy]
-length: 30
+length: "30"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2023
 director: David Soren
 actors: [Keke Palmer, Michael Cera, Bobby Cannavale]
 genre: [Animation, Adventure, Comedy]
-length: 83
+length: "83"
 shelf: watched
 owned: false
 rating: 3

@@ -6,7 +6,7 @@ year: 2024
 director: Anna Perowne
 actors: [Warrick Brownlow-Pike, Jennie Dale, Justin Fletcher]
 genre: [Comedy, Theatre, Christmas, Family, Musical]
-length: 73
+length: "73"
 shelf: watched
 owned: false
 rating: 

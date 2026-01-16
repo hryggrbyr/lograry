@@ -6,7 +6,7 @@ year: 2015
 director: Brad Peyton
 actors: [Dwayne Johnson, Carla Gugino, Alexandra Daddario]
 genre: [Action, Adventure, Thriller]
-length: 114
+length: "114"
 shelf: watchlist
 owned: false
 rating: 

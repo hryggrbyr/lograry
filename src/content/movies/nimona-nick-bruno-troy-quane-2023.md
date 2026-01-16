@@ -6,7 +6,7 @@ year: 2023
 director: Nick Bruno, Troy Quane
 actors: [Chloë Grace Moretz, Riz Ahmed, Eugene Lee Yang, Frances Conroy]
 genre: [Animation, Action, Adventure, sci-fi, fantasy, lgbt]
-length: 101
+length: "101"
 shelf: watchlist
 owned: true
 rating: 

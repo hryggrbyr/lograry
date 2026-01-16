@@ -6,7 +6,7 @@ year: 1980
 director: Irvin Kershner
 actors: [Mark Hamill, Harrison Ford, Carrie Fisher]
 genre: [Action, Adventure, Fantasy]
-length: 124
+length: "124"
 shelf: watched
 owned: false
 rating: 

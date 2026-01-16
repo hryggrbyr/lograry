@@ -6,7 +6,7 @@ year: 2007–2012
 director: N/A
 actors: [Sofie Gråbøl, Morten Suurballe, Lars Mikkelsen]
 genre: [Crime, Drama, Mystery]
-length: 57
+length: "57"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2009
 director: Patrick Tatopoulos
 actors: [Rhona Mitra, Michael Sheen, Bill Nighy]
 genre: [Action, Fantasy, Thriller]
-length: 92
+length: "92"
 shelf: watched
 owned: false
 rating: 

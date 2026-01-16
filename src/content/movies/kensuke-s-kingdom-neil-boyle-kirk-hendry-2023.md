@@ -6,7 +6,7 @@ year: 2023
 director: Neil Boyle, Kirk Hendry
 actors: [Cillian Murphy, Raffey Cassidy, Sally Hawkins]
 genre: [Animation, Adventure]
-length: 85
+length: "85"
 shelf: watched
 owned: false
 rating: 3

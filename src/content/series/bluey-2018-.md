@@ -6,7 +6,7 @@ year: 2018–
 director: N/A
 actors: [David McCormack, Melanie Zanetti, Brad Elliott]
 genre: [Animation, Family]
-length: 7
+length: "7"
 shelf: watched
 owned: false
 rating: 

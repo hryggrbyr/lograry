@@ -6,7 +6,7 @@ year: 2012
 director: Rowan Athale
 actors: [Iwan Rheon, Luke Treadaway, Gerard Kearns]
 genre: [Crime, Drama, Thriller]
-length: 108
+length: "108"
 shelf: watchlist
 owned: true
 rating: 

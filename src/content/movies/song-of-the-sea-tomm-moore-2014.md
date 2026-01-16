@@ -6,7 +6,7 @@ year: 2014
 director: Tomm Moore
 actors: [David Rawle, Brendan Gleeson, Lisa Hannigan]
 genre: [Animation, Adventure, Drama]
-length: 93
+length: "93"
 shelf: watched
 owned: false
 rating: 4

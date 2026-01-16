@@ -6,7 +6,7 @@ year: 1985
 director: Richard Donner
 actors: [Sean Astin, Josh Brolin, Jeff Cohen]
 genre: [Adventure, Comedy, Family]
-length: 114
+length: "114"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2015
 director: Alex Gibney
 actors: [Paul Haggis, Jason Beghe, Spanky Taylor]
 genre: [Documentary]
-length: 119
+length: "119"
 shelf: watched
 owned: true
 rating: 

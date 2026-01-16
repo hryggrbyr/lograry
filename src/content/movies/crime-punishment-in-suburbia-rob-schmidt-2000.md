@@ -6,7 +6,7 @@ year: 2000
 director: Rob Schmidt
 actors: [Monica Keena, Ellen Barkin, Michael Ironside]
 genre: [Drama, Thriller]
-length: 100
+length: "100"
 shelf: watched
 owned: true
 rating: 

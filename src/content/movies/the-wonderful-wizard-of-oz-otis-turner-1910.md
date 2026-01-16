@@ -6,7 +6,7 @@ year: 1910
 director: Otis Turner
 actors: [Bebe Daniels, Hobart Bosworth, Eugenie Besserer]
 genre: [Adventure, Fantasy, Short]
-length: 13
+length: "13"
 shelf: watchlist
 owned: true
 rating: 

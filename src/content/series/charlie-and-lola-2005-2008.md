@@ -6,7 +6,7 @@ year: 2005–2008
 director: N/A
 actors: [Morgan Gayle, Ryan Harris, Daniel Mayers]
 genre: [Animation, Family]
-length: 22
+length: "22"
 shelf: watched
 owned: false
 rating: 

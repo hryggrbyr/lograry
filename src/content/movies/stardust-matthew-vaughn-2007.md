@@ -6,7 +6,7 @@ year: 2007
 director: Matthew Vaughn
 actors: [Charlie Cox, Claire Danes, Sienna Miller]
 genre: [Adventure, Fantasy, Romance]
-length: 127
+length: "127"
 shelf: watched
 owned: true
 rating: 

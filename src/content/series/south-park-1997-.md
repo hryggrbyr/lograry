@@ -6,7 +6,7 @@ year: 1997–
 director: N/A
 actors: [Trey Parker, Matt Stone, Isaac Hayes]
 genre: [Animation, Comedy]
-length: 22
+length: "22"
 shelf: watched
 owned: false
 rating: 

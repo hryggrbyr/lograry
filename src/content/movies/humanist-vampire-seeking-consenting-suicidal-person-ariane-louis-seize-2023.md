@@ -6,7 +6,7 @@ year: 2023
 director: Ariane Louis-Seize
 actors: [Sara Montpetit, Félix-Antoine Bénard, Steve Laplante]
 genre: [Comedy, Drama, Fantasy]
-length: 90
+length: "90"
 shelf: watchlist
 owned: false
 rating: 

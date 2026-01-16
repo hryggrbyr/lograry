@@ -6,7 +6,7 @@ year: 2022
 director: Daniel Espinosa
 actors: [Jared Leto, Matt Smith, Adria Arjona]
 genre: [Action, Adventure, Horror]
-length: 104
+length: "104"
 shelf: watched
 owned: false
 rating: 5

@@ -6,7 +6,7 @@ year: 1988
 director: Don Bluth
 actors: [Pat Hingle, Gabriel Damon, Helen Shaver]
 genre: [Animation, Adventure, Drama]
-length: 69
+length: "69"
 shelf: watched
 owned: false
 rating: 

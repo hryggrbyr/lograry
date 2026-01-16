@@ -6,7 +6,7 @@ year: 2017
 director: Hiromasa Yonebayashi
 actors: [Hana Sugisaki, Ryûnosuke Kamiki, Yûki Amami]
 genre: [Animation, Adventure, Family, magic, fantasy]
-length: 103
+length: "103"
 shelf: watched
 owned: false
 rating: 

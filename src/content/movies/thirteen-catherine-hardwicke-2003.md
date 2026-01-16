@@ -6,7 +6,7 @@ year: 2003
 director: Catherine Hardwicke
 actors: [Evan Rachel Wood, Holly Hunter, Nikki Reed]
 genre: [Drama]
-length: 100
+length: "100"
 shelf: watched
 owned: false
 rating: 

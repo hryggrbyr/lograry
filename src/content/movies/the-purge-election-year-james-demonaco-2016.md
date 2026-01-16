@@ -6,7 +6,7 @@ year: 2016
 director: James DeMonaco
 actors: [Frank Grillo, Elizabeth Mitchell, Mykelti Williamson]
 genre: [Action, Horror, Sci-Fi]
-length: 108
+length: "108"
 shelf: watched
 owned: false
 rating: 

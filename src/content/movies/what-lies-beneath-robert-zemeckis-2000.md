@@ -6,7 +6,7 @@ year: 2000
 director: Robert Zemeckis
 actors: [Harrison Ford, Michelle Pfeiffer, Katharine Towne]
 genre: [Drama, Horror, Mystery]
-length: 130
+length: "130"
 shelf: watched
 owned: false
 rating: 

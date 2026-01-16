@@ -6,7 +6,7 @@ year: 2024
 director: Bradley Walsh
 actors: [Jen Lilley, Nick Bateman, Steve Belford]
 genre: [Family, Christmas]
-length: 86
+length: "86"
 shelf: watchlist
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2021–2023
 director: N/A
 actors: [Laura Donnelly, Ann Skelly, Olivia Williams]
 genre: [Action, Drama, Fantasy]
-length: 58
+length: "58"
 shelf: watchlist
 owned: false
 rating: 

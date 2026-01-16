@@ -6,7 +6,7 @@ year: 2024
 director: Janeen Damian
 actors: [Lindsay Lohan, Ed Speleers, Alexander Vlahos]
 genre: [Comedy, Fantasy, Romance]
-length: 93
+length: "93"
 shelf: watched
 owned: false
 rating: 2

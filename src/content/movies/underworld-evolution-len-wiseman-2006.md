@@ -6,7 +6,7 @@ year: 2006
 director: Len Wiseman
 actors: [Kate Beckinsale, Scott Speedman, Bill Nighy]
 genre: [Action, Fantasy, Thriller]
-length: 106
+length: "106"
 shelf: watched
 owned: false
 rating: 

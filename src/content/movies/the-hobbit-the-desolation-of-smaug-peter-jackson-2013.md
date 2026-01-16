@@ -6,7 +6,7 @@ year: 2013
 director: Peter Jackson
 actors: [Ian McKellen, Martin Freeman, Richard Armitage]
 genre: [Adventure, Fantasy]
-length: 161
+length: "161"
 shelf: watched
 owned: false
 rating: 

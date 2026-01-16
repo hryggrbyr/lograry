@@ -6,7 +6,7 @@ year: 1997
 director: Stuart Urban
 actors: [Guinevere Turner, Christien Anholt, Tom Bell]
 genre: [Comedy, Drama]
-length: 100
+length: "100"
 shelf: watched
 owned: false
 rating: 

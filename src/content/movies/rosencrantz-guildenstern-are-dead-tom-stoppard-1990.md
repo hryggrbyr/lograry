@@ -6,7 +6,7 @@ year: 1990
 director: Tom Stoppard
 actors: [Gary Oldman, Tim Roth, Richard Dreyfuss, Iain Glen]
 genre: [Comedy, Drama]
-length: 117
+length: "117"
 shelf: watched
 owned: true
 rating: 4

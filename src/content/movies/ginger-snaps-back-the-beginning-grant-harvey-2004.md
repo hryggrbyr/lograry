@@ -6,7 +6,7 @@ year: 2004
 director: Grant Harvey
 actors: [Katharine Isabelle, Emily Perkins, Nathaniel Arcand]
 genre: [Drama, Horror, Thriller]
-length: 94
+length: "94"
 shelf: watched
 owned: false
 rating: 

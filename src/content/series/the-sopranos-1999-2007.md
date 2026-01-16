@@ -6,7 +6,7 @@ year: 1999–2007
 director: N/A
 actors: [James Gandolfini, Lorraine Bracco, Edie Falco]
 genre: [Crime, Drama]
-length: 55
+length: "55"
 shelf: watched
 owned: false
 rating: 

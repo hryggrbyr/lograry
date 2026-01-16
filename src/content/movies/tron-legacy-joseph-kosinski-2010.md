@@ -6,7 +6,7 @@ year: 2010
 director: Joseph Kosinski
 actors: [Jeff Bridges, Garrett Hedlund, Olivia Wilde]
 genre: [Action, Adventure, Sci-Fi]
-length: 125
+length: "125"
 shelf: watched
 owned: false
 rating: 

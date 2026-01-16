@@ -6,7 +6,7 @@ year: 1999
 director: Ron Howard
 actors: [Matthew McConaughey, Jenna Elfman, Geoffrey Blake]
 genre: [Comedy, Drama]
-length: 122
+length: "122"
 shelf: watchlist
 owned: false
 rating: 

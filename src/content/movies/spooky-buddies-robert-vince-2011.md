@@ -6,7 +6,7 @@ year: 2011
 director: Robert Vince
 actors: [Tucker Albrizzi, Diedrich Bader, Ameko Eks Mass Carroll, Max Charles]
 genre: [Family, Fantasy]
-length: 88
+length: "88"
 shelf: watched
 owned: true
 rating: 

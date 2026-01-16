@@ -6,7 +6,7 @@ year: 2011
 director: Zack Snyder
 actors: [Emily Browning, Vanessa Hudgens, Abbie Cornish]
 genre: [Action, Adventure, Fantasy]
-length: 110
+length: "110"
 shelf: watched
 owned: true
 rating: 5

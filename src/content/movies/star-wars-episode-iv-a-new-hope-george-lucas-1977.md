@@ -6,7 +6,7 @@ year: 1977
 director: George Lucas
 actors: [Mark Hamill, Harrison Ford, Carrie Fisher]
 genre: [Action, Adventure, Fantasy]
-length: 121
+length: "121"
 shelf: watched
 owned: false
 rating: 

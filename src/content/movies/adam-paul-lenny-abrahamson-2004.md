@@ -6,7 +6,7 @@ year: 2004
 director: Lenny Abrahamson
 actors: [Tom Murphy, Mark O'Halloran, Gavin Dowdall]
 genre: [Comedy, Drama]
-length: 83
+length: "83"
 shelf: watched
 owned: false
 rating: 

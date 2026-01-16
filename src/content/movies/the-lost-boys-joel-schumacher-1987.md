@@ -6,7 +6,7 @@ year: 1987
 director: Joel Schumacher
 actors: [Jason Patric, Corey Haim, Dianne Wiest]
 genre: [Comedy, Horror]
-length: 97
+length: "97"
 shelf: watched
 owned: false
 rating: 

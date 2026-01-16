@@ -6,7 +6,7 @@ year: 2018
 director: Gerard McMurray
 actors: [Y'lan Noel, Lex Scott Davis, Joivan Wade]
 genre: [Action, Horror, Sci-Fi]
-length: 97
+length: "97"
 shelf: watched
 owned: false
 rating: 

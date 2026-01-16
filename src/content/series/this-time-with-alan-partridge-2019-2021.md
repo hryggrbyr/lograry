@@ -6,7 +6,7 @@ year: 2019–2021
 director: N/A
 actors: [Steve Coogan, Susannah Fielding, Felicity Montagu]
 genre: [Comedy]
-length: 30
+length: "30"
 shelf: watched
 owned: false
 rating: 

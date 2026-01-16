@@ -6,7 +6,7 @@ year: 1984
 director: Hayao Miyazaki
 actors: [Sumi Shimamoto, Mahito Tsujimura, Hisako Kyôda]
 genre: [Animation, Adventure, Sci-Fi]
-length: 117
+length: "117"
 shelf: watched
 owned: true
 rating: 3

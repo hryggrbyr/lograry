@@ -6,7 +6,7 @@ year: 2000
 director: Tarsem Singh
 actors: [Jennifer Lopez, Vince Vaughn, Vincent D'Onofrio]
 genre: [Crime, Horror, Sci-Fi]
-length: 107
+length: "107"
 shelf: watched
 owned: true
 rating: 4

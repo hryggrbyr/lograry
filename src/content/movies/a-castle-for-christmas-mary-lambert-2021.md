@@ -6,7 +6,7 @@ year: 2021
 director: Mary Lambert
 actors: [Brooke Shields, Cary Elwes, Lee Ross]
 genre: [Adventure, Comedy, Drama]
-length: 98
+length: ""
 shelf: watched
 owned: false
 rating: 

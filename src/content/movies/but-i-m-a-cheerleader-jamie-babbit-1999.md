@@ -6,7 +6,7 @@ year: 1999
 director: Jamie Babbit
 actors: [Natasha Lyonne, Clea DuVall, Michelle Williams]
 genre: [Comedy, Drama, Romance]
-length: 85
+length: "85"
 shelf: watched
 owned: true
 rating: 3

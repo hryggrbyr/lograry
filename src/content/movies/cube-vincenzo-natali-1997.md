@@ -6,7 +6,7 @@ year: 1997
 director: Vincenzo Natali
 actors: [Nicole de Boer, Maurice Dean Wint, David Hewlett]
 genre: [Horror, Mystery, Sci-Fi]
-length: 90
+length: "90"
 shelf: watched
 owned: false
 rating: 

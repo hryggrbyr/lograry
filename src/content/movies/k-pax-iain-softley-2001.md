@@ -6,7 +6,7 @@ year: 2001
 director: Iain Softley
 actors: [Kevin Spacey, Jeff Bridges, Mary McCormack]
 genre: [Drama, Mystery, Sci-Fi]
-length: 120
+length: "120"
 shelf: watched
 owned: false
 rating: 

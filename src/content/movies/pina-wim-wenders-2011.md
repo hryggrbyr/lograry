@@ -6,7 +6,7 @@ year: 2011
 director: Wim Wenders
 actors: [Pina Bausch, Regina Advento, Malou Airaudo]
 genre: [Documentary, Music]
-length: 103
+length: "103"
 shelf: watchlist
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2008
 director: Dennis Gansel
 actors: [Jürgen Vogel, Frederick Lau, Max Riemelt]
 genre: [Drama, Thriller]
-length: 107
+length: "107"
 shelf: watched
 owned: false
 rating: 5

@@ -6,7 +6,7 @@ year: 1974
 director: Kevin Connor
 actors: [Doug McClure, John McEnery, Susan Penhaligon]
 genre: [Adventure, Fantasy]
-length: 91
+length: "91"
 shelf: watched
 owned: false
 rating: 

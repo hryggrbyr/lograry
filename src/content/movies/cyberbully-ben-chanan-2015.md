@@ -6,7 +6,7 @@ year: 2015
 director: Ben Chanan
 actors: [Maisie Williams, Ella Purnell, Wilson Haagens]
 genre: [Crime, Drama, Mystery]
-length: 62
+length: "62"
 shelf: watchlist
 owned: true
 rating: 

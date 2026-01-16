@@ -6,7 +6,7 @@ year: 1984
 director: Wolfgang Petersen
 actors: [Noah Hathaway, Barret Oliver, Tami Stronach]
 genre: [Adventure, Drama, Family]
-length: 102
+length: "102"
 shelf: watched
 owned: false
 rating: 

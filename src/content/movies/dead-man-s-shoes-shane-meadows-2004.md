@@ -6,7 +6,7 @@ year: 2004
 director: Shane Meadows
 actors: [Paddy Considine, Gary Stretch, Toby Kebbell]
 genre: [Crime, Drama, Thriller]
-length: 90
+length: "90"
 shelf: watched
 owned: false
 rating: 

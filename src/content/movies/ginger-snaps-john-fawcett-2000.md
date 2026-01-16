@@ -6,7 +6,7 @@ year: 2000
 director: John Fawcett
 actors: [Emily Perkins, Katharine Isabelle, Kris Lemche]
 genre: [Drama, Fantasy, Horror]
-length: 108
+length: "108"
 shelf: watched
 owned: false
 rating: 

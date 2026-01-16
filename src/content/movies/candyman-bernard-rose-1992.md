@@ -6,7 +6,7 @@ year: 1992
 director: Bernard Rose
 actors: [Virginia Madsen, Xander Berkeley, Tony Todd]
 genre: [Horror, Thriller]
-length: 99
+length: "99"
 shelf: watched
 owned: false
 rating: 

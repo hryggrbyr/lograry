@@ -6,7 +6,7 @@ year: 1992
 director: Cameron Crowe
 actors: [Bridget Fonda, Campbell Scott, Kyra Sedgwick]
 genre: [Comedy, Drama, Music]
-length: 99
+length: "99"
 shelf: watched
 owned: false
 rating: 3

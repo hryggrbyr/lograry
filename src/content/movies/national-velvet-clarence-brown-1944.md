@@ -6,7 +6,7 @@ year: 1944
 director: Clarence Brown
 actors: [Mickey Rooney, Elizabeth Taylor, Donald Crisp]
 genre: [Drama, Family, Sport]
-length: 123
+length: "123"
 shelf: watched
 owned: true
 rating: 

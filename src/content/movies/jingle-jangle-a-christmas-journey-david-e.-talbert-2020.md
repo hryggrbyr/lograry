@@ -6,7 +6,7 @@ year: 2020
 director: David E. Talbert
 actors: [Forest Whitaker, Keegan-Michael Key, Hugh Bonneville]
 genre: [Family, Fantasy, Musical, Christmas]
-length: 122
+length: "122"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2011
 director: Kenneth Branagh
 actors: [Chris Hemsworth, Anthony Hopkins, Natalie Portman]
 genre: [Action, Fantasy]
-length: 115
+length: "115"
 shelf: watched
 owned: false
 rating: 

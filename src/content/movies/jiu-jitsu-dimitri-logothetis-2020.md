@@ -6,7 +6,7 @@ year: 2020
 director: Dimitri Logothetis
 actors: [Alain Moussi, Nicolas Cage, Raymond Pinharry]
 genre: [Action, Sci-Fi, Thriller]
-length: 102
+length: "102"
 shelf: watchlist
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 1989
 director: Nick Park
 actors: [Peter Sallis]
 genre: [Animation, Short, Adventure]
-length: 23
+length: "23"
 shelf: watched
 owned: true
 rating: 

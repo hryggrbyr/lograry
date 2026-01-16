@@ -6,7 +6,7 @@ year: 2021
 director: Adam McKay
 actors: [Leonardo DiCaprio, Jennifer Lawrence, Meryl Streep]
 genre: [Comedy, Drama, Sci-Fi]
-length: 138
+length: "138"
 shelf: watchlist
 owned: false
 rating: 

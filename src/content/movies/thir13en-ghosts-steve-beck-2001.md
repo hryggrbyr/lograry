@@ -6,7 +6,7 @@ year: 2001
 director: Steve Beck
 actors: [Tony Shalhoub, Shannon Elizabeth, Embeth Davidtz]
 genre: [Fantasy, Horror]
-length: 91
+length: "91"
 shelf: watched
 owned: true
 rating: 

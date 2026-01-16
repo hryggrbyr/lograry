@@ -6,7 +6,7 @@ year: 2003–2007
 director: N/A
 actors: [Julian Barratt, Noel Fielding, Michael Fielding]
 genre: [Comedy, Fantasy, Musical]
-length: 30
+length: "30"
 shelf: watched
 owned: false
 rating: 

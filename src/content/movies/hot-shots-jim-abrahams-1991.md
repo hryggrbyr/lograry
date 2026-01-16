@@ -6,7 +6,7 @@ year: 1991
 director: Jim Abrahams
 actors: [Charlie Sheen, Cary Elwes, Valeria Golino]
 genre: [Action, Comedy]
-length: 85
+length: "85"
 shelf: watched
 owned: false
 rating: 

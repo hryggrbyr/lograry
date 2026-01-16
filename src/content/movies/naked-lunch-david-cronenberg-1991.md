@@ -6,7 +6,7 @@ year: 1991
 director: David Cronenberg
 actors: [Peter Weller, Judy Davis, Ian Holm]
 genre: [Drama, Mystery]
-length: 115
+length: "115"
 shelf: watched
 owned: false
 rating: 

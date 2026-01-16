@@ -6,7 +6,7 @@ year: 1983
 director: Richard Marquand
 actors: [Mark Hamill, Harrison Ford, Carrie Fisher]
 genre: [Action, Adventure, Fantasy]
-length: 131
+length: "131"
 shelf: watched
 owned: false
 rating: 

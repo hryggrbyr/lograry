@@ -6,7 +6,7 @@ year: 2006
 director: Gore Verbinski
 actors: [Johnny Depp, Orlando Bloom, Keira Knightley]
 genre: [Action, Adventure, Fantasy]
-length: 151
+length: "151"
 shelf: watched
 owned: true
 rating: 

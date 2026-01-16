@@ -6,7 +6,7 @@ year: 1986
 director: Hayao Miyazaki
 actors: [Mayumi Tanaka, Keiko Yokozawa, Kotoe Hatsui]
 genre: [Animation, Adventure, Family]
-length: 124
+length: "124"
 shelf: watched
 owned: true
 rating: 4

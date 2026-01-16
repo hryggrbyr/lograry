@@ -6,7 +6,7 @@ year: 2015
 director: Christopher McQuarrie
 actors: [Tom Cruise, Rebecca Ferguson, Jeremy Renner]
 genre: [Action, Adventure, Thriller]
-length: 131
+length: "131"
 shelf: watched
 owned: false
 rating: 

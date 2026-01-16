@@ -6,7 +6,7 @@ year: 2007
 director: Gore Verbinski
 actors: [Johnny Depp, Orlando Bloom, Keira Knightley]
 genre: [Action, Adventure, Fantasy]
-length: 169
+length: "169"
 shelf: watched
 owned: true
 rating: 

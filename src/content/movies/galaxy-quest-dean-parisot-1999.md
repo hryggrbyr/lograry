@@ -6,7 +6,7 @@ year: 1999
 director: Dean Parisot
 actors: [Tim Allen, Sigourney Weaver, Alan Rickman]
 genre: [Adventure, Comedy, Sci-Fi]
-length: 102
+length: "102"
 shelf: watched
 owned: false
 rating: 

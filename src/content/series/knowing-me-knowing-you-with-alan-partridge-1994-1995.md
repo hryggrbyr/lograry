@@ -6,7 +6,7 @@ year: 1994–1995
 director: N/A
 actors: [Steve Coogan, Rebecca Front, Patrick Marber]
 genre: [Comedy]
-length: 45
+length: "45"
 shelf: watched
 owned: false
 rating: 

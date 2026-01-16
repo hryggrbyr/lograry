@@ -6,7 +6,7 @@ year: 2016–2017
 director: N/A
 actors: [Samuel Barnett, Elijah Wood, Hannah Marks]
 genre: [Action, Adventure, Comedy]
-length: 59S
+length: "59"S
 shelf: watched
 owned: false
 rating: 

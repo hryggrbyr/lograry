@@ -6,7 +6,7 @@ year: 1996
 director: Matthew Bright
 actors: [Reese Witherspoon, Kiefer Sutherland, Bokeem Woodbine]
 genre: [Crime, Drama, Thriller]
-length: 104
+length: "104"
 shelf: watched
 owned: true
 rating: 

@@ -6,7 +6,7 @@ year: 1979
 director: Robert Wise
 actors: [William Shatner, Leonard Nimoy, DeForest Kelley]
 genre: [Adventure, Mystery, Sci-Fi]
-length: 143
+length: "143"
 shelf: watched
 owned: false
 rating: 

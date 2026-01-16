@@ -6,7 +6,7 @@ year: 2008
 director: Noboru Iguchi
 actors: [Minase Yashiro, Asami, Nobuhiro Nishihara]
 genre: [Action, Comedy, Horror]
-length: 96
+length: "96"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2009
 director: Robert Vince
 actors: [F.T. Anderson, Diedrich Bader, Field Cate, Kendall Cross]
 genre: [Adventure, Family, Fantasy, Sci-Fi]
-length: 84
+length: "84"
 shelf: watched
 owned: true
 rating: 

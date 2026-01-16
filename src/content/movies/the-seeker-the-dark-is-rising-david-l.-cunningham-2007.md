@@ -6,7 +6,7 @@ year: 2007
 director: David L. Cunningham
 actors: [Alexander Ludwig, Ian McShane, Christopher Eccleston]
 genre: [Adventure, Drama, Family]
-length: 99
+length: "99"
 shelf: watchlist
 owned: false
 rating: 

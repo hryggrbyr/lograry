@@ -6,7 +6,7 @@ year: 1987
 director: Bruce Robinson
 actors: [Richard E. Grant, Paul McGann, Richard Griffiths]
 genre: [Comedy, Drama]
-length: 107
+length: "107"
 shelf: watched
 owned: true
 rating: 

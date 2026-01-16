@@ -6,7 +6,7 @@ year: 2013–2018
 director: N/A
 actors: [Kevin Spacey, Michel Gill, Robin Wright]
 genre: [Drama, Thriller]
-length: 51
+length: "51"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2001
 director: N/A
 actors: [Atsuko Enomoto, Masaya Onosaka, Jun Fukuyama]
 genre: [Animation, Action, Comedy]
-length: 25
+length: "25"
 shelf: watched
 owned: false
 rating: 

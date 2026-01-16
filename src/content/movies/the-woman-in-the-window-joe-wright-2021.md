@@ -6,7 +6,7 @@ year: 2021
 director: Joe Wright
 actors: [Amy Adams, Gary Oldman, Anthony Mackie]
 genre: [Crime, Drama, Mystery]
-length: 100
+length: "100"
 shelf: watched
 owned: false
 rating: 

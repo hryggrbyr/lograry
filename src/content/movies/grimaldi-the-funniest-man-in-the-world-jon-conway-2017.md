@@ -6,7 +6,7 @@ year: 2017
 director: Jon Conway
 actors: [Barry Chuckle, Paul Chuckle, David Essex]
 genre: [Short, Comedy, Drama]
-length: 23
+length: "23"
 shelf: watchlist
 owned: false
 rating: 

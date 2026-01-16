@@ -6,7 +6,7 @@ year: 1988
 director: David Zucker
 actors: [Leslie Nielsen, Priscilla Presley, O.J. Simpson]
 genre: [Comedy, Crime]
-length: 85
+length: "85"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 1993
 director: Roger Avary
 actors: [Eric Stoltz, Julie Delpy, Martin Raymond]
 genre: [Crime, Drama, Thriller]
-length: 96
+length: "96"
 shelf: watched
 owned: false
 rating: 

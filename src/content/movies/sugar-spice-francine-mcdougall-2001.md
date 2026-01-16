@@ -6,7 +6,7 @@ year: 2001
 director: Francine McDougall
 actors: [Marla Sokoloff, Marley Shelton, Melissa George]
 genre: [Comedy, Crime]
-length: 81
+length: "81"
 shelf: watched
 owned: true
 rating: 

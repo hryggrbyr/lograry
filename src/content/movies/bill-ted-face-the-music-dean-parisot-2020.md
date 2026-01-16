@@ -6,7 +6,7 @@ year: 2020
 director: Dean Parisot
 actors: [Keanu Reeves, Alex Winter, Kristen Schaal]
 genre: [Adventure, Comedy, Music]
-length: 91
+length: "91"
 shelf: watchlist
 owned: true
 rating: 

@@ -6,7 +6,7 @@ year: 2024
 director: Sean Cronin
 actors: [Arifin Putra, Eloise Lovell Anderson, Sean Cronin]
 genre: [Horror]
-length: 108
+length: "108"
 shelf: watchlist
 owned: false
 rating: 

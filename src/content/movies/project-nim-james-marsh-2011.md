@@ -6,7 +6,7 @@ year: 2011
 director: James Marsh
 actors: [Nim Chimpsky, Stephanie LaFarge, Herbert Terrace]
 genre: [Documentary]
-length: 93
+length: "93"
 shelf: watchlist
 owned: true
 rating: 

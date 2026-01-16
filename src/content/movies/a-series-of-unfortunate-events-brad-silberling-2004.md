@@ -6,7 +6,7 @@ year: 2004
 director: Brad Silberling
 actors: [Jim Carrey, Jude Law, Meryl Streep]
 genre: [Adventure, Comedy, Family]
-length: 108
+length: "108"
 shelf: watched
 owned: true
 rating: 

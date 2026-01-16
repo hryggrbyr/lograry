@@ -6,7 +6,7 @@ year: 2025
 director: Edgar Wright
 actors: [Glen Powell, Alyssa Benn, Sienna Benn, Josh Brolin, Michael Cera, William H Macy]
 genre: [Action, Adventure, Sci-Fi]
-length: 133
+length: "133"
 shelf: watchlist
 owned: false
 rating: 

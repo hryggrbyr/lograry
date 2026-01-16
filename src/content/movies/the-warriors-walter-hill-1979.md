@@ -6,7 +6,7 @@ year: 1979
 director: Walter Hill
 actors: [Michael Beck, James Remar, Dorsey Wright]
 genre: [Action, Crime, Thriller]
-length: 93
+length: "93"
 shelf: watchlist
 owned: true
 rating: 

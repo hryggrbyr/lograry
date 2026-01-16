@@ -6,7 +6,7 @@ year: 1992
 director: Geoffrey Wright
 actors: [Russell Crowe, Daniel Pollock, Jacqueline McKenzie]
 genre: [Crime, Drama, Thriller]
-length: 94
+length: "94"
 shelf: watched
 owned: false
 rating: 

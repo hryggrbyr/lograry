@@ -6,7 +6,7 @@ year: 1979
 director: George Miller
 actors: [Mel Gibson, Joanne Samuel, Hugh Keays-Byrne]
 genre: [Action, Adventure, Sci-Fi]
-length: 88
+length: "88"
 shelf: watched
 owned: false
 rating: 

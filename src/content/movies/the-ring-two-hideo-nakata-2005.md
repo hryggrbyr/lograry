@@ -6,7 +6,7 @@ year: 2005
 director: Hideo Nakata
 actors: [Naomi Watts, David Dorfman, Sissy Spacek]
 genre: [Horror, Mystery]
-length: 110
+length: "110"
 shelf: watched
 owned: true
 rating: 

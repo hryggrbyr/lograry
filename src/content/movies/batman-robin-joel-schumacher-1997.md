@@ -6,7 +6,7 @@ year: 1997
 director: Joel Schumacher
 actors: [Arnold Schwarzenegger, George Clooney, Chris O'Donnell]
 genre: [Action, Sci-Fi]
-length: 125
+length: "125"
 shelf: watched
 owned: false
 rating: 

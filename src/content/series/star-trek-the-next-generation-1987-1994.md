@@ -6,7 +6,7 @@ year: 1987–1994
 director: N/A
 actors: [Patrick Stewart, Brent Spiner, Jonathan Frakes]
 genre: [Action, Adventure, Drama]
-length: 44
+length: "44"
 shelf: watched
 owned: false
 rating: 

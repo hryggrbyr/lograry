@@ -6,7 +6,7 @@ year: 2014
 director: Riley Stearns
 actors: [Leland Orser, Mary Elizabeth Winstead, Chris Ellis]
 genre: [Drama, Mystery, Thriller]
-length: 89
+length: "89"
 shelf: watched
 owned: false
 rating: 4

@@ -6,7 +6,7 @@ year: 2025
 director: Joshua Baker
 actors: [Louis Theroux, Matan Cohen, Ari Abramowitz]
 genre: [Documentary]
-length: 62
+length: "62"
 shelf: watchlist
 owned: true
 rating: 

@@ -6,7 +6,7 @@ year: 2024
 director: Sean Baker
 actors: [Mikey Madison, Paul Weissman, Yura Borisov]
 genre: [Comedy, Drama, Romance]
-length: 139
+length: "139"
 shelf: watchlist
 owned: false
 rating: 

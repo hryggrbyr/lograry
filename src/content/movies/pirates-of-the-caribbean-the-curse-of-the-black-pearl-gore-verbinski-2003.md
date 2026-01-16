@@ -6,7 +6,7 @@ year: 2003
 director: Gore Verbinski
 actors: [Johnny Depp, Geoffrey Rush, Orlando Bloom]
 genre: [Action, Adventure, Fantasy]
-length: 143
+length: "143"
 shelf: watched
 owned: true
 rating: 

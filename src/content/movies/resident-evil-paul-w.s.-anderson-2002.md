@@ -6,7 +6,7 @@ year: 2002
 director: Paul W.S. Anderson
 actors: [Milla Jovovich, Michelle Rodriguez, Ryan McCluskey]
 genre: [Action, Horror, Sci-Fi]
-length: 100
+length: "100"
 shelf: watched
 owned: true
 rating: 

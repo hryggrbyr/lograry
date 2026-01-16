@@ -6,7 +6,7 @@ year: 1991
 director: David Zucker
 actors: [Leslie Nielsen, Priscilla Presley, George Kennedy]
 genre: [Comedy, Crime]
-length: 85
+length: "85"
 shelf: watched
 owned: false
 rating: 

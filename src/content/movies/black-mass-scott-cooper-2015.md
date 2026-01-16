@@ -6,7 +6,7 @@ year: 2015
 director: Scott Cooper
 actors: [Johnny Depp, Joel Edgerton, Benedict Cumberbatch]
 genre: [Biography, Crime, Drama]
-length: 123
+length: "123"
 shelf: watchlist
 owned: true
 rating: 

@@ -6,7 +6,7 @@ year: 2001
 director: Stuart Gordon
 actors: [Ezra Godden, Francisco Rabal, Raquel Meroño]
 genre: [Fantasy, Horror, Mystery]
-length: 98
+length: ""
 shelf: watched
 owned: true
 rating: 

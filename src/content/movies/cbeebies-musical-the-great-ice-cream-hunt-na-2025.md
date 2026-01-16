@@ -6,7 +6,7 @@ year: 2025
 director: Geoff Coward
 actors: [Joanna Adeyinka-Burford, Warrick Brownlow-Pike, Jennie Dale, Andy Day, Rebecca Keatley]
 genre: [Comedy, Theatre, Family, Musical]
-length: 56
+length: "56"
 shelf: watched
 owned: false
 rating: 

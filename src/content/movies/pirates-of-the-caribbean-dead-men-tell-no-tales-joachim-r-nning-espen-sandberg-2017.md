@@ -6,7 +6,7 @@ year: 2017
 director: Joachim Rønning, Espen Sandberg
 actors: [Johnny Depp, Javier Bardem, Geoffrey Rush]
 genre: [Action, Adventure, Fantasy]
-length: 129
+length: "129"
 shelf: watchlist
 owned: true
 rating: 

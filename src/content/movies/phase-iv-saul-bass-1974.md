@@ -6,7 +6,7 @@ year: 1974
 director: Saul Bass
 actors: [Nigel Davenport, Michael Murphy, Lynne Frederick]
 genre: [Horror, Sci-Fi, Thriller]
-length: 84
+length: "84"
 shelf: watched
 owned: true
 rating: 

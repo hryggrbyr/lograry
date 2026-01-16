@@ -6,7 +6,7 @@ year: 2008
 director: Iain Softley
 actors: [Brendan Fraser, Andy Serkis, Eliza Bennett, Helen Mirren]
 genre: [Adventure, Family, Fantasy]
-length: 106
+length: "106"
 shelf: watched
 owned: false
 rating: 

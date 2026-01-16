@@ -6,7 +6,7 @@ year: 1991
 director: Ate de Jong
 actors: [Phoebe Cates, Rik Mayall, Marsha Mason]
 genre: [Comedy, Drama, Fantasy]
-length: 103
+length: "103"
 shelf: watched
 owned: false
 rating: 

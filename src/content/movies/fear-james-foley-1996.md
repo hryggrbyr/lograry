@@ -6,7 +6,7 @@ year: 1996
 director: James Foley
 actors: [Mark Wahlberg, Reese Witherspoon, William Petersen]
 genre: [Drama, Thriller]
-length: 97
+length: "97"
 shelf: watched
 owned: true
 rating: 

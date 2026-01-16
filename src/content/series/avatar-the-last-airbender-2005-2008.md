@@ -6,7 +6,7 @@ year: 2005–2008
 director: N/A
 actors: [Dee Bradley Baker, Zach Tyler Eisen, Mae Whitman]
 genre: [Animation, Action, Adventure]
-length: 23
+length: "23"
 shelf: watched
 owned: false
 rating: 

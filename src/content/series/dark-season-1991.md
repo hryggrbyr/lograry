@@ -6,7 +6,7 @@ year: 1991
 director: N/A
 actors: [Ben Chandler, Brigit Forsyth, Victoria Lambert]
 genre: [Adventure, Family, Sci-Fi]
-length: 25
+length: "25"
 shelf: watchlist
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 1992
 director: Penelope Spheeris
 actors: [Mike Myers, Dana Carvey, Rob Lowe]
 genre: [Comedy, Music]
-length: 94
+length: "94"
 shelf: watched
 owned: false
 rating: 

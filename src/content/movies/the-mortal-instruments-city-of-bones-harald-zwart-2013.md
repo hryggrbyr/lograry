@@ -6,7 +6,7 @@ year: 2013
 director: Harald Zwart
 actors: [Lily Collins, Jamie Campbell Bower, Robert Sheehan]
 genre: [Action, Adventure, Fantasy]
-length: 130
+length: "130"
 shelf: watchlist
 owned: false
 rating: 

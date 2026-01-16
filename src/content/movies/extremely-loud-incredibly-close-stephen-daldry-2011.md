@@ -6,7 +6,7 @@ year: 2011
 director: Stephen Daldry
 actors: [Thomas Horn, Tom Hanks, Sandra Bullock]
 genre: [Adventure, Drama, Mystery]
-length: 129
+length: "129"
 shelf: watchlist
 owned: false
 rating: 

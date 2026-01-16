@@ -6,7 +6,7 @@ year: 2021
 director: Everardo Gout
 actors: [Ana de la Reguera, Tenoch Huerta, Josh Lucas]
 genre: [Action, Crime, Drama]
-length: 103
+length: "103"
 shelf: watched
 owned: false
 rating: 

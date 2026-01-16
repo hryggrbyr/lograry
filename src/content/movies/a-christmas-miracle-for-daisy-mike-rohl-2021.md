@@ -6,7 +6,7 @@ year: 2021
 director: Mike Rohl
 actors: [Jill Wagner, Nick Bateman, Rubi Tupper]
 genre: [Romance, Christmas]
-length: 85
+length: "85"
 shelf: watched
 owned: false
 rating: 3

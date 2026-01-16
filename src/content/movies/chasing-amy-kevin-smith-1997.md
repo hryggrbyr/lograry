@@ -6,7 +6,7 @@ year: 1997
 director: Kevin Smith
 actors: [Ben Affleck, Joey Lauren Adams, Ethan Suplee]
 genre: [Comedy, Drama, Romance]
-length: 113
+length: "113"
 shelf: watched
 owned: false
 rating: 

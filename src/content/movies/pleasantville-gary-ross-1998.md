@@ -6,7 +6,7 @@ year: 1998
 director: Gary Ross
 actors: [Tobey Maguire, Jeff Daniels, Joan Allen]
 genre: [Comedy, Drama, Fantasy]
-length: 124
+length: "124"
 shelf: watched
 owned: false
 rating: 

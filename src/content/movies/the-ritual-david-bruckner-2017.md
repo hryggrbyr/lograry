@@ -6,7 +6,7 @@ year: 2017
 director: David Bruckner
 actors: [Rafe Spall, Arsher Ali, Robert James-Collier]
 genre: [Horror, Mystery, Thriller]
-length: 94
+length: "94"
 shelf: watched
 owned: false
 rating: 

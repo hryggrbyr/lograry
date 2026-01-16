@@ -6,7 +6,7 @@ year: 2011
 director: Rob Marshall
 actors: [Johnny Depp, Penélope Cruz, Ian McShane]
 genre: [Action, Adventure, Fantasy]
-length: 136
+length: "136"
 shelf: watched
 owned: true
 rating: 

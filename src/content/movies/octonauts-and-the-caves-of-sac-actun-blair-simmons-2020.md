@@ -6,7 +6,7 @@ year: 2020
 director: Blair Simmons
 actors: [Teresa Gallagher, Wayne Grayson, Simon Greenall]
 genre: [Animation, family, adventure, sea, TalkingAnimals]
-length: 72
+length: "72"
 shelf: watched
 owned: false
 rating: 

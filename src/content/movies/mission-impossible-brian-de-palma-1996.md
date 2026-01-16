@@ -6,7 +6,7 @@ year: 1996
 director: Brian De Palma
 actors: [Tom Cruise, Jon Voight, Emmanuelle Béart]
 genre: [Action, Adventure, Thriller]
-length: 110
+length: "110"
 shelf: watched
 owned: false
 rating: 

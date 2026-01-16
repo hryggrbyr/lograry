@@ -6,7 +6,7 @@ year: 2021
 director: Nia DaCosta
 actors: [Yahya Abdul-Mateen II, Teyonah Parris, Nathan Stewart-Jarrett]
 genre: [Horror, Thriller]
-length: 91
+length: "91"
 shelf: watched
 owned: false
 rating: 

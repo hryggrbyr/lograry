@@ -6,7 +6,7 @@ year: 2013
 director: John Krokidas
 actors: [Daniel Radcliffe, Dane DeHaan, Michael C. Hall]
 genre: [Biography, Drama, Romance]
-length: 104
+length: "104"
 shelf: watched
 owned: false
 rating: 

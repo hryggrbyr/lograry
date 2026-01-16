@@ -6,7 +6,7 @@ year: 2021
 director: Michael Rianda, Jeff Rowe
 actors: [Abbi Jacobson, Danny McBride, Maya Rudolph]
 genre: [Animation, Adventure, Comedy]
-length: 114
+length: "114"
 shelf: watched
 owned: true
 rating: 

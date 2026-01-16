@@ -6,7 +6,7 @@ year: 2021
 director: Tanya Wexler
 actors: [Kate Beckinsale, Jai Courtney, Stanley Tucci]
 genre: [Action, Comedy, Crime]
-length: 91
+length: "91"
 shelf: watchlist
 owned: false
 rating: 

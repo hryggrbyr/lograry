@@ -6,7 +6,7 @@ year: 2020
 director: Blair Simmons
 actors: [Paul Buckley, Simon Foster, Teresa Gallagher]
 genre: [Animation, family, adventure, sea, TalkingAnimals, musical]
-length: 47
+length: "47"
 shelf: watched
 owned: false
 rating: 

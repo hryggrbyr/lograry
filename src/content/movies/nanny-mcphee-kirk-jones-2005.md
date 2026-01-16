@@ -6,7 +6,7 @@ year: 2005
 director: Kirk Jones
 actors: [Emma Thompson, Colin Firth, Angela Lansbury, Kelly MacDonald]
 genre: [Comedy, Family, Fantasy]
-length: 97
+length: "97"
 shelf: watched
 owned: false
 rating: 

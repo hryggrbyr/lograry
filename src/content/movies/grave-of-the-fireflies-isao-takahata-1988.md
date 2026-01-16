@@ -6,7 +6,7 @@ year: 1988
 director: Isao Takahata
 actors: [Tsutomu Tatsumi, Ayano Shiraishi, Akemi Yamaguchi]
 genre: [Animation, Drama, War]
-length: 88
+length: "88"
 shelf: watchlist
 owned: true
 rating: 

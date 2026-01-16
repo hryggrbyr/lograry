@@ -6,7 +6,7 @@ year: 2007–2009
 director: N/A
 actors: [Derek Jacobi, Nick Kellington, Andy Wareham]
 genre: [Adventure, Comedy, Family]
-length: 30
+length: "30"
 shelf: watched
 owned: false
 rating: 

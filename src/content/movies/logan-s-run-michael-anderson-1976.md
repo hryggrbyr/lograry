@@ -6,7 +6,7 @@ year: 1976
 director: Michael Anderson
 actors: [Michael York, Jenny Agutter, Richard Jordan]
 genre: [Action, Adventure, Sci-Fi]
-length: 119
+length: "119"
 shelf: watched
 owned: false
 rating: 

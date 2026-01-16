@@ -6,7 +6,7 @@ year: 1994
 director: Peter Segal
 actors: [Leslie Nielsen, Priscilla Presley, George Kennedy]
 genre: [Comedy, Crime]
-length: 83
+length: "83"
 shelf: watched
 owned: false
 rating: 

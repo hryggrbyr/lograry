@@ -6,7 +6,7 @@ year: 2012
 director: Andrew Porter, Simon Stephens
 actors: [Andrew Scott]
 genre: [Short, Drama]
-length: 33
+length: "33"
 shelf: watched
 owned: true
 rating: 

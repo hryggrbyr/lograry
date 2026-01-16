@@ -6,7 +6,7 @@ year: 1984
 director: Leonard Nimoy
 actors: [William Shatner, Leonard Nimoy, DeForest Kelley]
 genre: [Action, Adventure, Sci-Fi]
-length: 105
+length: "105"
 shelf: watched
 owned: false
 rating: 

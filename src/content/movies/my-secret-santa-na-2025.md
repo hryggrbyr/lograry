@@ -6,7 +6,7 @@ year: 2025
 director: Mike Rohl
 actors: [ Alexandra Breckenridge, Ryan Eggold, Tia Mowry ]
 genre: [ comedy, romance, Christmas ]
-length: 90
+length: "90"
 shelf: watched
 owned: false
 rating: 4

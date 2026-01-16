@@ -6,7 +6,7 @@ year: 2023
 director: Don McBrearty
 actors: [Chad Michael Murray, Christa Taylor Brown, Marcia Bennett]
 genre: [Romance]
-length: 85
+length: "85"
 shelf: watchlist
 owned: false
 rating: 

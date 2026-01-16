@@ -6,7 +6,7 @@ year: 2021
 director: Blair Simmons, Qin Zhou
 actors: [Teresa Gallagher, Simon Greenall, Michael Murphy]
 genre: [Animation, family, adventure, sea, TalkingAnimals]
-length: 72
+length: "72"
 shelf: watched
 owned: false
 rating: 

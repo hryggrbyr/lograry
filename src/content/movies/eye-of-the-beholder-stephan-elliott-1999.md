@@ -6,7 +6,7 @@ year: 1999
 director: Stephan Elliott
 actors: [Ewan McGregor, Ashley Judd, Patrick Bergin]
 genre: [Drama, Mystery, Thriller]
-length: 109
+length: "109"
 shelf: watched
 owned: true
 rating: 

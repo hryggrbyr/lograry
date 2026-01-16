@@ -6,7 +6,7 @@ year: 2013
 director: Gil Junger
 actors: [Francia Raisa, Mike 'The Miz' Mizanin, Will Greenberg]
 genre: [Action, Comedy]
-length: 90
+length: "90"
 shelf: watched
 owned: true
 rating: 

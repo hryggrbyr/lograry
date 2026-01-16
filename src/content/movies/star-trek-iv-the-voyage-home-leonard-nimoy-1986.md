@@ -6,7 +6,7 @@ year: 1986
 director: Leonard Nimoy
 actors: [William Shatner, Leonard Nimoy, DeForest Kelley]
 genre: [Adventure, Comedy, Sci-Fi]
-length: 119
+length: "119"
 shelf: watched
 owned: false
 rating: 

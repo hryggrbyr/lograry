@@ -6,7 +6,7 @@ year: 1997–2003
 director: N/A
 actors: [Sarah Michelle Gellar, Nicholas Brendon, Alyson Hannigan]
 genre: [Action, Adventure, Drama]
-length: 44
+length: "44"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2012
 director: Rupert Sanders
 actors: [Kristen Stewart, Chris Hemsworth, Charlize Theron]
 genre: [Action, Adventure, Drama]
-length: 127
+length: "127"
 shelf: watched
 owned: false
 rating: 

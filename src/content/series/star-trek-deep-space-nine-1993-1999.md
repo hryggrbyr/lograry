@@ -6,7 +6,7 @@ year: 1993–1999
 director: N/A
 actors: [Avery Brooks, Rene Auberjonois, Cirroc Lofton]
 genre: [Action, Adventure, Drama]
-length: 45
+length: "45"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2010
 director: Hiromasa Yonebayashi
 actors: [Bridgit Mendler, Amy Poehler, Will Arnett]
 genre: [Animation, Adventure, Drama]
-length: 94
+length: "94"
 shelf: watched
 owned: true
 rating: 4

@@ -6,7 +6,7 @@ year: 1997
 director: N/A
 actors: [Michael French, Chloë Annett, Sue Johnston]
 genre: [Crime, Drama, Mystery]
-length: 50
+length: "50"
 shelf: watched
 owned: false
 rating: 

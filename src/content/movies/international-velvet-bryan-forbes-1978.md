@@ -6,7 +6,7 @@ year: 1978
 director: Bryan Forbes
 actors: [Tatum O'Neal, Christopher Plummer, Anthony Hopkins]
 genre: [Drama, Family, Sport]
-length: 127
+length: "127"
 shelf: watched
 owned: true
 rating: 

@@ -6,7 +6,7 @@ year: 1982
 director: Nicholas Meyer
 actors: [William Shatner, Leonard Nimoy, DeForest Kelley]
 genre: [Action, Adventure, Sci-Fi]
-length: 113
+length: "113"
 shelf: watched
 owned: false
 rating: 

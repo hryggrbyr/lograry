@@ -6,7 +6,7 @@ year: 2014
 director: James DeMonaco
 actors: [Frank Grillo, Carmen Ejogo, Zach Gilford]
 genre: [Action, Horror, Sci-Fi]
-length: 103
+length: "103"
 shelf: watched
 owned: false
 rating: 

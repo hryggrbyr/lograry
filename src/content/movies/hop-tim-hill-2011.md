@@ -6,7 +6,7 @@ year: 2011
 director: Tim Hill
 actors: [Russell Brand, James Marsden, Elizabeth Perkins]
 genre: [Animation, Adventure, Comedy]
-length: 95
+length: "95"
 shelf: watched
 owned: false
 rating: 2

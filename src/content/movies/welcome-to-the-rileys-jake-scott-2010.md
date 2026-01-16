@@ -6,7 +6,7 @@ year: 2010
 director: Jake Scott
 actors: [James Gandolfini, Kristen Stewart, Melissa Leo]
 genre: [Drama]
-length: 110
+length: "110"
 shelf: watched
 owned: false
 rating: 4

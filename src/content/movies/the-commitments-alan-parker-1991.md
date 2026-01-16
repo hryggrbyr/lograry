@@ -6,7 +6,7 @@ year: 1991
 director: Alan Parker
 actors: [Robert Arkins, Michael Aherne, Angeline Ball]
 genre: [Comedy, Drama, Music]
-length: 118
+length: "118"
 shelf: watched
 owned: true
 rating: 5

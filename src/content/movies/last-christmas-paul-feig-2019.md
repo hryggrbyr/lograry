@@ -6,7 +6,7 @@ year: 2019
 director: Paul Feig
 actors: [Emilia Clarke, Henry Golding, Emma Thompson, Boris Isakovic, Michelle Yeoh]
 genre: [Comedy, Drama, Fantasy, Christmas]
-length: 103
+length: "103"
 shelf: watched
 owned: false
 rating: 5

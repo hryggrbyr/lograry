@@ -6,7 +6,7 @@ year: 1986
 director: Alex Cox
 actors: [Gary Oldman, Chloe Webb, David Hayman]
 genre: [Biography, Drama, Music]
-length: 112
+length: "112"
 shelf: watched
 owned: true
 rating: 

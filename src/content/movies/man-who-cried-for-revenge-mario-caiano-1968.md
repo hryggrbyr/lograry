@@ -6,7 +6,7 @@ year: 1968
 director: Mario Caiano
 actors: [Anthony Steffen, William Berger, Ida Galli]
 genre: [Western]
-length: 94
+length: "94"
 shelf: watched
 owned: false
 rating: 3

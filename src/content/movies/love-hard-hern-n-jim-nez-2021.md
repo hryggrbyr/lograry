@@ -6,7 +6,7 @@ year: 2021
 director: Hernán Jiménez
 actors: [Nina Dobrev, Jimmy O. Yang, Darren Barnet]
 genre: [Comedy, Romance]
-length: 104
+length: "104"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 2004
 director: Lucile Hadzihalilovic
 actors: [Zoé Auclair, Lea Bridarolli, Bérangère Haubruge]
 genre: [Drama, Mystery]
-length: 122
+length: "122"
 shelf: watched
 owned: true
 rating: 

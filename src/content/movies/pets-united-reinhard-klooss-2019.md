@@ -6,7 +6,7 @@ year: 2019
 director: Reinhard Klooss
 actors: [Patrick Roche, Natalie Dormer, Felix Auer]
 genre: [Animation, Adventure, Comedy]
-length: 89
+length: "89"
 shelf: watched
 owned: false
 rating: 2

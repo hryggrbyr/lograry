@@ -6,7 +6,7 @@ year: 1990
 director: Renny Harlin
 actors: [Bruce Willis, William Atherton, Bonnie Bedelia]
 genre: [Action, Thriller]
-length: 124
+length: "124"
 shelf: watched
 owned: false
 rating: 

@@ -6,7 +6,7 @@ year: 1993
 director: Jim Abrahams
 actors: [Charlie Sheen, Lloyd Bridges, Valeria Golino]
 genre: [Action, Comedy]
-length: 86
+length: "86"
 shelf: watched
 owned: false
 rating: 

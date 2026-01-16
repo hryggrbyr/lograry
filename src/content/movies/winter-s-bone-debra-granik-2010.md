@@ -6,7 +6,7 @@ year: 2010
 director: Debra Granik
 actors: [Jennifer Lawrence, John Hawkes, Garret Dillahunt]
 genre: [Crime, Drama, Mystery]
-length: 100
+length: "100"
 shelf: watchlist
 owned: true
 rating: 

@@ -6,7 +6,7 @@ year: 2006
 director: David Bowers, Sam Fell
 actors: [Hugh Jackman, Kate Winslet, Ian McKellen]
 genre: [Animation, Action, Adventure]
-length: 85
+length: "85"
 shelf: watched
 owned: false
 rating: 

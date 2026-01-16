@@ -6,7 +6,7 @@ year: 2024
 director: Mike Flanagan
 actors: [Tom Hiddleston, Jacob Tremblay, Benjamin Pajak]
 genre: [Drama, Fantasy, Sci-Fi]
-length: 111
+length: "111"
 shelf: watchlist
 owned: false
 rating: 

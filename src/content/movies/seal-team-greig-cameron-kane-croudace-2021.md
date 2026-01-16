@@ -6,7 +6,7 @@ year: 2021
 director: Greig Cameron, Kane Croudace
 actors: [J.K. Simmons, Dolph Lundgren, Sharlto Copley]
 genre: [Animation, Action, Comedy]
-length: 101
+length: "101"
 shelf: watched
 owned: false
 rating: 3

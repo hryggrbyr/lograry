@@ -6,7 +6,7 @@ year: 2003–2007
 director: N/A
 actors: [Mischa Barton, Adam Brody, Peter Gallagher]
 genre: [Comedy, Drama, Romance]
-length: 40S
+length: "40"S
 shelf: watched
 owned: false
 rating: 3

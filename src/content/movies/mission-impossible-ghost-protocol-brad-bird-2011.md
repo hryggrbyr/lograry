@@ -6,7 +6,7 @@ year: 2011
 director: Brad Bird
 actors: [Tom Cruise, Jeremy Renner, Simon Pegg]
 genre: [Action, Adventure, Thriller]
-length: 132
+length: "132"
 shelf: watched
 owned: false
 rating: 

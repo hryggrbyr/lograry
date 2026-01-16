@@ -6,7 +6,7 @@ year: 2004
 director: Brett Sullivan
 actors: [Emily Perkins, Brendan Fletcher, Katharine Isabelle]
 genre: [Horror, Thriller]
-length: 94
+length: "94"
 shelf: watched
 owned: false
 rating: 

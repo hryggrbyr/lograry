@@ -6,7 +6,7 @@ year: 2022
 director: Maclain Nelson
 actors: [Lacey Chabert, Wes Brown, Stephen Tobolowsky]
 genre: [Comedy, Drama, Christmas]
-length: 84
+length: "84"
 shelf: watched
 owned: false
 rating: 

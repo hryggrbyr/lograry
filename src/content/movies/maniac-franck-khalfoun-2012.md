@@ -6,7 +6,7 @@ year: 2012
 director: Franck Khalfoun
 actors: [Elijah Wood, Nora Arnezeder, America Olivo]
 genre: [Crime, Horror, Thriller]
-length: 89
+length: "89"
 shelf: watched
 owned: false
 rating: 

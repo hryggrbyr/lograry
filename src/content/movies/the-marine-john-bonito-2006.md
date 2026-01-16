@@ -6,7 +6,7 @@ year: 2006
 director: John Bonito
 actors: [John Cena, Kelly Carlson, Robert Patrick]
 genre: [Action, Comedy, Drama]
-length: 92
+length: "92"
 shelf: watched
 owned: true
 rating: 

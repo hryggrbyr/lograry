@@ -6,7 +6,7 @@ year: 2003
 director: Len Wiseman
 actors: [Kate Beckinsale, Scott Speedman, Shane Brolly]
 genre: [Action, Fantasy, Thriller]
-length: 121
+length: "121"
 shelf: watched
 owned: false
 rating: 
