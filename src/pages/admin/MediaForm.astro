@@ -1,0 +1,544 @@
+---
+/**
+ * MediaForm.astro
+ * Reusable form component for Books, Films, and TV Shows.
+ * Encapsulates UI, State, and Data Mapping.
+ */
+const { initialData = {}, title = "" } = Astro.props;
+
+const get = (key) => initialData[key] ?? "";
+
+// Helper to handle array fields in the UI
+const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
+---
+
+<style>
+  .media-form-wrapper {
+    --color-brand-admin: hsl(25, 95%, 55%);
+    --color-brand-admin-tint: hsl(25, 95%, 50%);
+  }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border: 1px solid #ccc;
+    padding: 1.5rem;
+    margin: 0;
+  }
+  legend {
+    padding: 0 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    color: #555;
+  }
+  .field-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .field-row > div {
+    flex: 1;
+    min-width: 180px;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  input,
+  select,
+  textarea {
+    font: inherit;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  input[type="checkbox"] {
+    width: auto;
+  }
+  .btn-submit-main {
+    appearance: none;
+    background-color: var(--color-brand-admin);
+    color: white;
+    cursor: pointer;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .btn-submit-main:hover {
+    background-color: var(--color-brand-admin-tint);
+  }
+
+  /* Logic to hide/show sections based on data-selection on the wrapper */
+  #media-form-context[data-selection="books"] .only-movies,
+  #media-form-context[data-selection="books"] .only-series {
+    display: none;
+  }
+
+  #media-form-context[data-selection="movies"] .only-books,
+  #media-form-context[data-selection="movies"] .only-series {
+    display: none;
+  }
+
+  #media-form-context[data-selection="series"] .only-books,
+  #media-form-context[data-selection="series"] .only-movies {
+    display: none;
+  }
+</style>
+
+<div class="media-form-wrapper">
+  {title && <h2 style="margin-top:0">{title}</h2>}
+
+  <form id="entry-form" class="flow">
+    <input
+      type="hidden"
+      id="field-type"
+      name="type"
+      value={get("type") || "books"}
+    />
+
+    <div id="media-form-context" data-selection={get("type") || "books"}>
+      <div class="flow">
+        <fieldset>
+          <legend>General Information</legend>
+          <div class="field-row">
+            <div>
+              <label for="field-title">Title</label>
+              <input
+                type="text"
+                id="field-title"
+                name="title"
+                value={get("title")}
+                required
+              />
+            </div>
+            <div>
+              <label for="field-created">Log Date</label>
+              <input
+                type="date"
+                id="field-created"
+                name="created"
+                value={get("created")}
+              />
+            </div>
+          </div>
+          <div class="field-row">
+            <div>
+              <label for="field-shelf">Status / Shelf</label>
+              <select
+                id="field-shelf"
+                name="shelf"
+                data-initial-value={get("shelf")}
+              >
+              </select>
+            </div>
+            <div>
+              <label for="field-rating">Rating (0-10)</label>
+              <input
+                type="number"
+                id="field-rating"
+                name="rating"
+                min="0"
+                max="10"
+                value={get("rating") || 0}
+              />
+            </div>
+            <div
+              style="display: flex; align-items: flex-end; padding-bottom: 0.5rem; gap: 0.5rem;"
+            >
+              <input
+                type="checkbox"
+                id="field-owned"
+                name="owned"
+                checked={initialData.owned}
+              />
+              <label for="field-owned" style="margin-bottom: 0;"
+                >Owned / Physical</label
+              >
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="only-books">
+          <legend>Book Details</legend>
+          <div class="field-row">
+            <div>
+              <label for="field-author">Author(s) <small>(CSV)</small></label>
+              <input
+                type="text"
+                id="field-author"
+                name="author"
+                value={arrayToCsv(get("author"))}
+              />
+            </div>
+            <div>
+              <label for="field-tags">Tags <small>(CSV)</small></label>
+              <input
+                type="text"
+                id="field-tags"
+                name="tags"
+                value={arrayToCsv(get("tags"))}
+              />
+            </div>
+          </div>
+          <div class="field-row">
+            <div>
+              <label for="field-start_date">Started</label>
+              <input
+                type="date"
+                id="field-start_date"
+                name="start_date"
+                value={get("start_date")}
+              />
+            </div>
+            <div>
+              <label for="field-end_date">Finished</label>
+              <input
+                type="date"
+                id="field-end_date"
+                name="end_date"
+                value={get("end_date")}
+              />
+            </div>
+          </div>
+          <div class="field-row">
+            <div>
+              <label for="field-publisher">Publisher</label>
+              <input
+                type="text"
+                id="field-publisher"
+                name="publisher"
+                value={get("publisher")}
+              />
+            </div>
+            <div>
+              <label for="field-published">Release Date</label>
+              <input
+                type="date"
+                id="field-published"
+                name="published"
+                value={get("published")}
+              />
+            </div>
+          </div>
+          <div class="field-row">
+            <div>
+              <label for="field-page_count">Page Count</label>
+              <input
+                type="number"
+                id="field-page_count"
+                name="page_count"
+                value={get("page_count")}
+              />
+            </div>
+            <div>
+              <label for="field-isbn">ISBN</label>
+              <input
+                type="text"
+                id="field-isbn"
+                name="isbn"
+                value={get("isbn")}
+              />
+            </div>
+          </div>
+          <label for="field-coverUrl">Cover Image URL</label>
+          <input
+            type="text"
+            id="field-coverUrl"
+            name="coverUrl"
+            value={get("coverUrl")}
+          />
+        </fieldset>
+
+        <fieldset class="only-movies">
+          <legend>Film Details</legend>
+          <div class="field-row">
+            <div>
+              <label for="field-director">Director</label>
+              <input
+                type="text"
+                id="field-director"
+                name="director"
+                value={get("director")}
+              />
+            </div>
+            <div>
+              <label for="field-year">Release Year</label>
+              <input
+                type="text"
+                id="field-year"
+                name="year"
+                value={get("year")}
+              />
+            </div>
+          </div>
+          <div class="field-row">
+            <div>
+              <label for="field-country">Country</label>
+              <input
+                type="text"
+                id="field-country"
+                name="country"
+                value={get("country")}
+              />
+            </div>
+            <div>
+              <label for="field-watched">Watched Date</label>
+              <input
+                type="date"
+                id="field-watched"
+                name="watched"
+                value={get("watched")}
+              />
+            </div>
+          </div>
+          <div class="field-row">
+            <div>
+              <label for="field-length">Length</label>
+              <input
+                type="text"
+                id="field-length"
+                name="length"
+                value={get("length")}
+              />
+            </div>
+            <div>
+              <label for="field-genre">Genre <small>(CSV)</small></label>
+              <input
+                type="text"
+                id="field-genre"
+                name="genre"
+                value={arrayToCsv(get("genre"))}
+              />
+            </div>
+          </div>
+          <label for="field-actors">Actors <small>(CSV)</small></label>
+          <input
+            type="text"
+            id="field-actors"
+            name="actors"
+            value={arrayToCsv(get("actors"))}
+          />
+          <label for="field-poster">Poster URL</label>
+          <input
+            type="text"
+            id="field-poster"
+            name="poster"
+            value={get("poster")}
+          />
+        </fieldset>
+
+        <fieldset class="only-series">
+          <legend>TV Show Details</legend>
+          <div class="field-row">
+            <div>
+              <label for="field-creator-series">Creator</label>
+              <input
+                type="text"
+                id="field-creator-series"
+                name="creator_series"
+                value={get("creator")}
+              />
+            </div>
+            <div>
+              <label for="field-director-series">Director</label>
+              <input
+                type="text"
+                id="field-director-series"
+                name="director_series"
+                value={get("director")}
+              />
+            </div>
+            <div>
+              <label for="field-year-series">Release Year</label>
+              <input
+                type="text"
+                id="field-year-series"
+                name="year_series"
+                value={get("year")}
+              />
+            </div>
+          </div>
+          <div class="field-row">
+            <div>
+              <label for="field-country-series">Country</label>
+              <input
+                type="text"
+                id="field-country-series"
+                name="country_series"
+                value={get("country")}
+              />
+            </div>
+            <div>
+              <label for="field-watched-series">Last Watched</label>
+              <input
+                type="date"
+                id="field-watched-series"
+                name="watched_series"
+                value={get("watched")}
+              />
+            </div>
+          </div>
+          <div class="field-row">
+            <div>
+              <label for="field-length-series">Length</label>
+              <input
+                type="text"
+                id="field-length-series"
+                name="length_series"
+                value={get("length")}
+              />
+            </div>
+            <div>
+              <label for="field-genre-series">Genre <small>(CSV)</small></label>
+              <input
+                type="text"
+                id="field-genre-series"
+                name="genre_series"
+                value={arrayToCsv(get("genre"))}
+              />
+            </div>
+          </div>
+          <label for="field-actors-series">Actors <small>(CSV)</small></label>
+          <input
+            type="text"
+            id="field-actors-series"
+            name="actors_series"
+            value={arrayToCsv(get("actors"))}
+          />
+          <label for="field-poster-series">Poster URL</label>
+          <input
+            type="text"
+            id="field-poster-series"
+            name="poster_series"
+            value={get("poster")}
+          />
+        </fieldset>
+      </div>
+    </div>
+
+    <fieldset>
+      <legend>Annotations</legend>
+      <textarea
+        id="field-body"
+        name="body"
+        rows="8"
+        placeholder="Write your thoughts here...">{get("body")}</textarea
+      >
+    </fieldset>
+
+    <button type="submit" class="btn-submit-main" id="btn-submit-github"
+      >COMMIT_TO_GITHUB</button
+    >
+  </form>
+</div>
+
+<script is:inline>
+  /**
+   * Updates the Shelf dropdown based on the active collection type.
+   */
+  function initMediaForm() {
+    const wrapper = document.getElementById("media-form-context");
+    if (!wrapper) return;
+    const shelfSelector = document.getElementById("field-shelf");
+    const type = wrapper.getAttribute("data-selection");
+    const initialShelf = shelfSelector.getAttribute("data-initial-value");
+
+    shelfSelector.innerHTML = "";
+
+    // Strictly matched to your config.ts Enums
+    const options =
+      type === "books"
+        ? ["to-read", "reading", "read", "abandoned"]
+        : ["watched", "watching", "watchlist"];
+
+    options.forEach((o) => {
+      const opt = new Option(o.toUpperCase(), o);
+      if (o === initialShelf) opt.selected = true;
+      shelfSelector.add(opt);
+    });
+  }
+
+  /**
+   * DATA MAPPING FUNCTION
+   * Centralizes how form fields are converted into a clean JS object.
+   */
+  window.getMediaFormData = () => {
+    const form = document.getElementById("entry-form");
+    const fd = new FormData(form);
+    const type = fd.get("type");
+    const fromCsv = (name) =>
+      fd
+        .get(name)
+        ?.toString()
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean) || [];
+
+    // Base Metadata + NEW OWNED BOOLEAN
+    const data = {
+      type: type,
+      title: fd.get("title"),
+      created: fd.get("created"),
+      shelf: fd.get("shelf"),
+      rating: parseInt(fd.get("rating")) || 0,
+      owned: fd.get("owned") === "on",
+    };
+
+    // Type Specific Mapping
+    if (type === "books") {
+      Object.assign(data, {
+        author: fromCsv("author"),
+        tags: fromCsv("tags"),
+        start_date: fd.get("start_date") || null,
+        end_date: fd.get("end_date") || null,
+        published: fd.get("published") || null,
+        publisher: fd.get("publisher") || null,
+        page_count: parseInt(fd.get("page_count")) || null,
+        isbn: fd.get("isbn") || null,
+        coverUrl: fd.get("coverUrl") || null,
+      });
+    } else if (type === "movies") {
+      Object.assign(data, {
+        director: fd.get("director"),
+        year: fd.get("year"),
+        country: fd.get("country"),
+        watched: fd.get("watched"),
+        length: fd.get("length") || null,
+        genre: fromCsv("genre"),
+        actors: fromCsv("actors"),
+        poster: fd.get("poster") || null,
+      });
+    } else if (type === "series") {
+      Object.assign(data, {
+        creator: fd.get("creator_series"),
+        year: fd.get("year_series"),
+        country: fd.get("country_series"),
+        watched: fd.get("watched_series"),
+        length: fd.get("length_series") || null,
+        genre: fromCsv("genre_series"),
+        actors: fromCsv("actors_series"),
+        poster: fd.get("poster_series") || null,
+      });
+    }
+
+    return {
+      entryData: data,
+      body: fd.get("body"),
+      type,
+    };
+  };
+
+  // Run on load
+  initMediaForm();
+
+  // Re-run if a parent page triggers a type switch
+  document.addEventListener("form-type-change", initMediaForm);
+</script>

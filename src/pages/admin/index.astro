@@ -2,33 +2,28 @@
 const title = "Admin";
 import { getCollection } from "astro:content";
 import Header from "./header.astro";
+import MediaForm from "./MediaForm.astro";
 
-// Fetch collections
 const book = await getCollection("books");
 const movie = await getCollection("movies");
 const series = await getCollection("series");
 
-// Helper for Year Formatting
 const formatYear = (dateStr) => {
   if (!dateStr) return "—";
   return String(dateStr).match(/\d{4}/)?.[0] || dateStr;
 };
 
-// Abstraction Helper for Table Rows
 const processItemData = (item) => {
   const data = item.data;
-  const creatorField = data.author || data.director || data.creator;
+  const creatorField = data.author || data.director;
   const creator = Array.isArray(creatorField)
     ? creatorField.join(", ")
     : creatorField || "—";
   const year = formatYear(data.published || data.year);
-
-  // Serialize full object for the data attribute
   const safeData = JSON.stringify({ ...data, body: item.body }).replace(
     /'/g,
     "&apos;",
   );
-
   return { creator, year, safeData };
 };
 
@@ -55,65 +50,11 @@ const collections = { book, movie, series };
         margin-inline: auto;
         font-family: system-ui, sans-serif;
       }
-
-      .controls {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 1.5rem;
-        align-items: flex-end;
-      }
-      .controls > div {
-        flex: 1;
-      }
-      .stacker {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1.5rem;
-        align-items: center;
-      }
-
-      .stacker > * {
-        flex-grow: 1;
-        flex-basis: calc((40rem - 100%) * 999);
-      }
-      .flow > * + * {
-        margin-block-start: 1.5rem;
-      }
-
-      input,
-      select,
-      textarea {
-        padding: 0.6rem;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        width: 100%;
-        margin-bottom: 0.5rem;
-        font: inherit;
-      }
-      label {
-        font-weight: bold;
-        font-size: 0.8rem;
-        margin-bottom: 0.2rem;
-        display: block;
-      }
-
-      .checkbox-group {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        height: 100%;
-        padding-top: 1rem;
-      }
-      input[type="checkbox"] {
-        width: auto;
-        margin: 0;
-      }
-
       table {
         width: 100%;
         border-collapse: collapse;
-        table-layout: fixed;
         margin-top: 1rem;
+        table-layout: fixed;
       }
       th,
       td {
@@ -125,22 +66,17 @@ const collections = { book, movie, series };
         white-space: nowrap;
       }
       th {
-        background: #f4f4f4;
-        position: sticky;
-        top: 0;
+        background: #f9f9f9;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        color: #666;
       }
-
       tbody tr {
         cursor: pointer;
-        transition: background 0.15s;
       }
       tbody tr:hover {
         background-color: #fff4ed;
       }
-      tr.hidden {
-        display: none;
-      }
-
       [data-table-section] {
         display: none;
       }
@@ -149,108 +85,31 @@ const collections = { book, movie, series };
       body[data-selection="series"] [data-table-section="series"] {
         display: block;
       }
-
       dialog {
         width: 95%;
-        max-width: 80vw;
-        border: none;
+        max-width: 75rem;
+        border: 1px solid #ddd;
         border-radius: 8px;
         padding: 2rem;
-        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
       }
-      dialog::backdrop {
-        background: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(3px);
-      }
-      fieldset {
-        border: 1px solid #eee;
-        padding: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 4px;
-      }
-      legend {
-        font-weight: bold;
-        font-size: 0.75rem;
-        text-transform: uppercase;
-        color: #666;
-        padding: 0 0.5rem;
-      }
-
-      .field-row {
-        display: flex;
-        gap: 1rem;
-        flex-wrap: wrap;
-        margin-bottom: 0.5rem;
-      }
-      .field-row > div {
-        flex: 1;
-        min-width: 150px;
-      }
-
-      [data-edit-only] {
-        display: none;
-      }
-      dialog[data-type="book"] [data-edit-only="book"],
-      dialog[data-type="movie"] [data-edit-only="movie"],
-      dialog[data-type="series"] [data-edit-only="series"] {
-        display: block;
-      }
-
-      .modal-actions {
-        display: flex;
-        gap: 1rem;
-        margin-top: 1.5rem;
-      }
-      .btn-save {
-        background: var(--color-brand-admin);
-        color: white;
-        border: none;
-        padding: 0.8rem 2rem;
-        font-weight: bold;
-        cursor: pointer;
-        border-radius: 4px;
-        flex: 2;
-      }
-      .btn-cancel {
-        background: #eee;
-        border: none;
-        padding: 0.8rem 1rem;
-        cursor: pointer;
-        border-radius: 4px;
-        flex: 1;
+      .flow > * + * {
+        margin-block-start: 1.5rem;
       }
     </style>
   </head>
   <body class="flow" data-selection="book">
-    <header class="stacker">
-      <h1>{title}</h1>
+    <header
+      style="display:flex; justify-content: space-between; align-items:center;"
+    >
+      <h1>Archive</h1>
       <Header />
     </header>
 
-    <section class="controls">
-      <div>
-        <label>Collection</label>
-        <select id="media-type">
-          <option value="book">📚 BOOKS</option>
-          <option value="movie">🎬 FILMS</option>
-          <option value="series">📺 TV SHOWS</option>
-        </select>
-      </div>
-      <div>
-        <label>Filter Search</label>
-        <input type="text" id="search-query" placeholder="Type to filter..." />
-      </div>
-      <div>
-        <label>Sort By</label>
-        <select id="sort-order">
-          <option value="title-asc">Title (A-Z)</option>
-          <option value="title-desc">Title (Z-A)</option>
-          <option value="creator-asc">Creator (A-Z)</option>
-          <option value="year-desc">Year (Newest)</option>
-          <option value="year-asc">Year (Oldest)</option>
-        </select>
-      </div>
-    </section>
+    <select id="media-type-filter" style="width: auto; padding: 0.5rem;">
+      <option value="book">BOOKS</option>
+      <option value="movie">FILMS</option>
+      <option value="series">TV SHOWS</option>
+    </select>
 
     {
       Object.entries(collections).map(([type, items]) => (
@@ -258,10 +117,12 @@ const collections = { book, movie, series };
           <table>
             <thead>
               <tr>
-                <th>Title</th>
-                <th>Creator</th>
-                <th>Year</th>
-                <th>Status</th>
+                <>
+                  <th>Title</th>
+                  <th>Creator</th>
+                  <th>Year</th>
+                  <th>Status</th>
+                </>
               </tr>
             </thead>
             <tbody>
@@ -269,18 +130,13 @@ const collections = { book, movie, series };
                 const { creator, year, safeData } = processItemData(item);
                 return (
                   <tr
-                    tabindex="0"
-                    role="link"
-                    data-title={item.data.title}
-                    data-creator={creator}
-                    data-year={year}
-                    data-item-data={safeData}
                     onclick={`openEditPanel('${type}', JSON.parse(this.dataset.itemData))`}
+                    data-item-data={safeData}
                   >
                     <td>{item.data.title}</td>
                     <td>{creator}</td>
                     <td>{year}</td>
-                    <td>{item.data.shelf || item.data.status}</td>
+                    <td>{item.data.shelf}</td>
                   </tr>
                 );
               })}
@@ -291,481 +147,203 @@ const collections = { book, movie, series };
     }
 
     <dialog id="edit-panel">
-      <form id="edit-form">
-        <h2 id="edit-header">Edit Entry</h2>
-        <input type="hidden" id="edit-original-title" />
-
-        <fieldset>
-          <legend>Core Metadata</legend>
-          <div class="field-row">
-            <div style="flex: 2;">
-              <label>Title</label><input type="text" id="edit-title" required />
-            </div>
-            <div>
-              <label>Rating</label><input
-                type="number"
-                id="edit-rating"
-                min="0"
-                max="5"
-                step="0.5"
-              />
-            </div>
-            <div class="checkbox-group">
-              <input type="checkbox" id="edit-owned" />
-              <label for="edit-owned" style="margin:0;">Owned</label>
-            </div>
-          </div>
-        </fieldset>
-
-        <div data-edit-only="book">
-          <fieldset>
-            <legend>Author & Classification</legend>
-            <div class="field-row">
-              <div style="flex: 2;">
-                <label>Subtitle</label><input
-                  type="text"
-                  id="edit-book-subtitle"
-                />
-              </div>
-              <div>
-                <label>Authors (CSV)</label><input
-                  type="text"
-                  id="edit-book-author"
-                />
-              </div>
-            </div>
-            <div class="field-row">
-              <div>
-                <label>Tags (CSV)</label><input
-                  type="text"
-                  id="edit-book-tags"
-                />
-              </div>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Reading Timeline</legend>
-            <div class="field-row">
-              <div>
-                <label>Start Date</label><input
-                  type="date"
-                  id="edit-book-start"
-                />
-              </div>
-              <div>
-                <label>End Date</label><input type="date" id="edit-book-end" />
-              </div>
-            </div>
-          </fieldset>
-          <fieldset>
-            <legend>Publication</legend>
-            <div class="field-row">
-              <div>
-                <label>Publisher</label><input
-                  type="text"
-                  id="edit-book-publisher"
-                />
-              </div>
-              <div>
-                <label>Published Date</label><input
-                  type="text"
-                  id="edit-book-published"
-                />
-              </div>
-              <div>
-                <label>ISBN</label><input type="text" id="edit-book-isbn" />
-              </div>
-            </div>
-            <div>
-              <label>Cover Image URL</label><input
-                type="text"
-                id="edit-book-coverUrl"
-              />
-            </div>
-          </fieldset>
-        </div>
-
-        <div data-edit-only="movie">
-          <fieldset>
-            <legend>Film Details</legend>
-            <div class="field-row">
-              <div>
-                <label>Director</label><input
-                  type="text"
-                  id="edit-movie-director"
-                />
-              </div>
-              <div>
-                <label>Year</label><input type="number" id="edit-movie-year" />
-              </div>
-              <div>
-                <label>Runtime</label><input
-                  type="text"
-                  id="edit-movie-length"
-                />
-              </div>
-            </div>
-            <div class="field-row">
-              <div>
-                <label>Country</label><input
-                  type="text"
-                  id="edit-movie-country"
-                />
-              </div>
-              <div>
-                <label>Actors (CSV)</label><input
-                  type="text"
-                  id="edit-movie-actors"
-                />
-              </div>
-            </div>
-            <div>
-              <label>Genres (CSV)</label><input
-                type="text"
-                id="edit-movie-genre"
-              />
-            </div>
-            <div>
-              <label>Poster URL</label><input
-                type="text"
-                id="edit-movie-poster"
-              />
-            </div>
-          </fieldset>
-        </div>
-
-        <div data-edit-only="series">
-          <fieldset>
-            <legend>Television Details</legend>
-            <div class="field-row">
-              <div>
-                <label>Creator</label><input
-                  type="text"
-                  id="edit-series-creator"
-                />
-              </div>
-              <div>
-                <label>Premiere Year</label><input
-                  type="number"
-                  id="edit-series-year"
-                />
-              </div>
-              <div>
-                <label>Country</label><input
-                  type="text"
-                  id="edit-series-country"
-                />
-              </div>
-            </div>
-            <div>
-              <label>Genres (CSV)</label><input
-                type="text"
-                id="edit-series-genre"
-              />
-            </div>
-            <div>
-              <label>Poster URL</label><input
-                type="text"
-                id="edit-series-poster"
-              />
-            </div>
-          </fieldset>
-        </div>
-
-        <fieldset>
-          <legend>Status & Review</legend>
-          <div class="field-row">
-            <div>
-              <label>Shelf Status</label><select id="edit-shelf"></select>
-            </div>
-            <div>
-              <label>Log Date</label><input type="date" id="edit-created" />
-            </div>
-          </div>
-          <label>Annotations / Notes</label>
-          <textarea id="edit-body" rows="6"></textarea>
-        </fieldset>
-
-        <div class="modal-actions">
-          <button
-            type="button"
-            class="btn-cancel"
-            onclick="document.getElementById('edit-panel').close()"
-            >Cancel</button
-          >
-          <button type="submit" class="btn-save">Commit to GitHub</button>
-        </div>
-      </form>
+      <MediaForm title="Edit Entry" />
+      <button
+        onclick="document.getElementById('edit-panel').close()"
+        style="margin-top:1rem; background:#666">CANCEL</button
+      >
     </dialog>
 
-    <script is:inline>
-      const mediaSelector = document.getElementById("media-type");
-      const searchInput = document.getElementById("search-query");
-      const sortSelector = document.getElementById("sort-order");
-      const editPanel = document.getElementById("edit-panel");
+    <script>
+      import { generateFilename, pushToGitHub } from "@lib/pushToGithub";
 
-      mediaSelector.onchange = () => {
-        document.body.setAttribute("data-selection", mediaSelector.value);
-        filterTable();
-      };
+      // Filter Logic
+      const filter = document.getElementById(
+        "media-type-filter",
+      ) as HTMLSelectElement;
+      filter.onchange = () =>
+        document.body.setAttribute("data-selection", filter.value);
 
-      function filterTable() {
-        const query = searchInput.value.toLowerCase();
-        const activeType = mediaSelector.value;
-        const rows = document.querySelectorAll(
-          `[data-table-section="${activeType}"] tbody tr`,
-        );
-        rows.forEach((row) => {
-          const text = (row.dataset.title + row.dataset.creator).toLowerCase();
-          row.classList.toggle("hidden", !text.includes(query));
-        });
-      }
-
-      function sortTable() {
-        const activeType = mediaSelector.value;
-        const tbody = document.querySelector(
-          `[data-table-section="${activeType}"] tbody`,
-        );
-        const rows = Array.from(tbody.querySelectorAll("tr"));
-        const order = sortSelector.value;
-
-        rows.sort((a, b) => {
-          const valA = {
-            t: a.dataset.title?.toLowerCase(),
-            c: a.dataset.creator?.toLowerCase(),
-            y: parseInt(a.dataset.year) || 0,
-          };
-          const valB = {
-            t: b.dataset.title?.toLowerCase(),
-            c: b.dataset.creator?.toLowerCase(),
-            y: parseInt(b.dataset.year) || 0,
-          };
-          if (order === "title-asc") return valA.t.localeCompare(valB.t);
-          if (order === "title-desc") return valB.t.localeCompare(valA.t);
-          if (order === "creator-asc") return valA.c.localeCompare(valB.c);
-          if (order === "year-desc") return valB.y - valA.y;
-          if (order === "year-asc") return valA.y - valB.y;
-          return 0;
-        });
-        rows.forEach((row) => tbody.appendChild(row));
-      }
-
+      // Edit Panel Logic
       window.openEditPanel = (type, data) => {
-        editPanel.setAttribute("data-type", type);
-        document.getElementById("edit-original-title").value = data.title;
-        document.getElementById("edit-title").value = data.title;
-        document.getElementById("edit-rating").value = data.rating || 0;
-        document.getElementById("edit-owned").checked = !!data.owned;
-        document.getElementById("edit-created").value = data.created || "";
-        document.getElementById("edit-body").value = data.body || "";
+        const componentType =
+          type === "book" ? "books" : type === "movie" ? "movies" : "series";
+        const wrapper = document.getElementById("media-form-context");
 
-        const shelf = document.getElementById("edit-shelf");
-        shelf.innerHTML = "";
-        const opts =
-          type === "book"
-            ? ["to-read", "reading", "read", "abandoned"]
-            : ["watchlist", "watching", "watched"];
-        opts.forEach((o) => shelf.add(new Option(o.toUpperCase(), o)));
-        shelf.value = data.shelf || data.status;
+        wrapper.setAttribute("data-selection", componentType);
+        (document.getElementById("field-type") as HTMLInputElement).value =
+          componentType;
+        document.dispatchEvent(new CustomEvent("form-type-change"));
 
-        if (type === "book") {
-          document.getElementById("edit-book-author").value = Array.isArray(
-            data.author,
-          )
-            ? data.author.join(", ")
-            : data.author || "";
-          document.getElementById("edit-book-subtitle").value =
-            data.subtitle || "";
-          document.getElementById("edit-book-isbn").value = data.isbn || "";
-          document.getElementById("edit-book-published").value =
-            data.published || "";
-          document.getElementById("edit-book-publisher").value =
-            data.publisher || "";
-          document.getElementById("edit-book-tags").value = Array.isArray(
-            data.tags,
-          )
-            ? data.tags.join(", ")
-            : "";
-          document.getElementById("edit-book-start").value =
-            data.start_date || "";
-          document.getElementById("edit-book-end").value = data.end_date || "";
-          document.getElementById("edit-book-coverUrl").value =
-            data.coverUrl || "";
-        } else if (type === "movie") {
-          document.getElementById("edit-movie-director").value =
-            data.director || "";
-          document.getElementById("edit-movie-year").value = data.year || "";
-          document.getElementById("edit-movie-length").value =
+        // Populate Common
+        (document.getElementById("field-title") as HTMLInputElement).value =
+          data.title || "";
+        (document.getElementById("field-created") as HTMLInputElement).value =
+          data.created || "";
+        (document.getElementById("field-rating") as HTMLInputElement).value =
+          data.rating || 0;
+        (document.getElementById("field-body") as HTMLTextAreaElement).value =
+          data.body || "";
+        document
+          .getElementById("field-shelf")
+          .setAttribute("data-initial-value", data.shelf || "");
+
+        const toCsv = (val) =>
+          Array.isArray(val) ? val.join(", ") : val || "";
+
+        // Populate Type Specific
+        if (componentType === "books") {
+          (document.getElementById("field-author") as HTMLInputElement).value =
+            toCsv(data.author);
+          (document.getElementById("field-tags") as HTMLInputElement).value =
+            toCsv(data.tags);
+          (
+            document.getElementById("field-start_date") as HTMLInputElement
+          ).value = data.start_date || "";
+          (
+            document.getElementById("field-end_date") as HTMLInputElement
+          ).value = data.end_date || "";
+          (
+            document.getElementById("field-publisher") as HTMLInputElement
+          ).value = data.publisher || "";
+          (
+            document.getElementById("field-published") as HTMLInputElement
+          ).value = data.published || "";
+          (
+            document.getElementById("field-page_count") as HTMLInputElement
+          ).value = data.page_count || "";
+          (document.getElementById("field-isbn") as HTMLInputElement).value =
+            data.isbn || "";
+          (
+            document.getElementById("field-coverUrl") as HTMLInputElement
+          ).value = data.coverUrl || "";
+        } else if (componentType === "movies") {
+          (
+            document.getElementById("field-director") as HTMLInputElement
+          ).value = data.director || "";
+          (document.getElementById("field-year") as HTMLInputElement).value =
+            data.year || "";
+          (document.getElementById("field-country") as HTMLInputElement).value =
+            data.country || "";
+          (document.getElementById("field-watched") as HTMLInputElement).value =
+            data.watched || "";
+          (document.getElementById("field-length") as HTMLInputElement).value =
             data.length || "";
-          document.getElementById("edit-movie-country").value =
-            data.country || "";
-          document.getElementById("edit-movie-actors").value = Array.isArray(
-            data.actors,
-          )
-            ? data.actors.join(", ")
-            : "";
-          document.getElementById("edit-movie-genre").value = Array.isArray(
-            data.genre,
-          )
-            ? data.genre.join(", ")
-            : data.genre || "";
-          document.getElementById("edit-movie-poster").value =
+          (document.getElementById("field-genre") as HTMLInputElement).value =
+            toCsv(data.genre);
+          (document.getElementById("field-actors") as HTMLInputElement).value =
+            toCsv(data.actors);
+          (document.getElementById("field-poster") as HTMLInputElement).value =
             data.poster || "";
-        } else if (type === "series") {
-          document.getElementById("edit-series-creator").value =
-            data.creator || "";
-          document.getElementById("edit-series-year").value = data.year || "";
-          document.getElementById("edit-series-country").value =
-            data.country || "";
-          document.getElementById("edit-series-genre").value = Array.isArray(
-            data.genre,
-          )
-            ? data.genre.join(", ")
-            : data.genre || "";
-          document.getElementById("edit-series-poster").value =
-            data.poster || "";
+        } else if (componentType === "series") {
+          (
+            document.getElementById("field-director-series") as HTMLInputElement
+          ).value = data.director || "";
+          (
+            document.getElementById("field-year-series") as HTMLInputElement
+          ).value = data.year || "";
+          (
+            document.getElementById("field-country-series") as HTMLInputElement
+          ).value = data.country || "";
+          (
+            document.getElementById("field-watched-series") as HTMLInputElement
+          ).value = data.watched || "";
+          (
+            document.getElementById("field-length-series") as HTMLInputElement
+          ).value = data.length || "";
+          (
+            document.getElementById("field-genre-series") as HTMLInputElement
+          ).value = toCsv(data.genre);
+          (
+            document.getElementById("field-actors-series") as HTMLInputElement
+          ).value = toCsv(data.actors);
+          (
+            document.getElementById("field-poster-series") as HTMLInputElement
+          ).value = data.poster || "";
         }
-        editPanel.showModal();
+
+        (
+          document.getElementById("edit-panel") as HTMLDialogElement
+        ).showModal();
       };
 
-      document.getElementById("edit-form").onsubmit = async (e) => {
+      // Submit logic
+      document.getElementById("entry-form").onsubmit = async (e) => {
         e.preventDefault();
-        const type = editPanel.getAttribute("data-type");
+        const btn = document.getElementById(
+          "btn-submit-github",
+        ) as HTMLButtonElement;
+        btn.disabled = true;
+        btn.innerText = "UPDATING...";
 
-        const entryData = {
-          title: document.getElementById("edit-title").value,
-          type: type,
-          created: document.getElementById("edit-created").value,
-          shelf: document.getElementById("edit-shelf").value,
-          rating: Number(document.getElementById("edit-rating").value) || 0,
-          owned: document.getElementById("edit-owned").checked,
-        };
-
-        const slugify = (str) =>
-          str
-            .toLowerCase()
-            .replace(/[^a-z0-9]/g, "-")
-            .replace(/-+/g, "-")
-            .replace(/^-|-$/g, "");
-
-        let fileName = "";
-        const titleSlug = slugify(entryData.title);
-
-        if (type === "book") {
-          const authors = document
-            .getElementById("edit-book-author")
-            .value.split(",")
+        const formData = new FormData(e.target as HTMLFormElement);
+        const type = formData.get("type") as string;
+        const fromCsv = (name) =>
+          formData
+            .get(name)
+            .toString()
+            .split(",")
             .map((s) => s.trim())
-            .filter((s) => s);
-          Object.assign(entryData, {
-            subtitle: document.getElementById("edit-book-subtitle").value,
-            author: authors,
-            tags: document
-              .getElementById("edit-book-tags")
-              .value.split(",")
-              .map((s) => s.trim())
-              .filter((s) => s),
-            isbn: document.getElementById("edit-book-isbn").value,
-            published: document.getElementById("edit-book-published").value,
-            publisher: document.getElementById("edit-book-publisher").value,
-            start_date: document.getElementById("edit-book-start").value,
-            end_date: document.getElementById("edit-book-end").value,
-            coverUrl: document.getElementById("edit-book-coverUrl").value,
-          });
-          fileName = `${titleSlug}-${slugify(authors[0] || "unknown")}.md`;
-        } else if (type === "movie") {
-          const director = document.getElementById("edit-movie-director").value;
-          const year =
-            Number(document.getElementById("edit-movie-year").value) || 0;
-          Object.assign(entryData, {
-            director: director,
-            year: year,
-            length: document.getElementById("edit-movie-length").value,
-            genre: document
-              .getElementById("edit-movie-genre")
-              .value.split(",")
-              .map((s) => s.trim())
-              .filter((s) => s),
-            country:
-              document.getElementById("edit-movie-country").value || "Unknown",
-            actors: document
-              .getElementById("edit-movie-actors")
-              .value.split(",")
-              .map((s) => s.trim())
-              .filter((s) => s),
-            poster: document.getElementById("edit-movie-poster").value,
-          });
-          fileName = `${titleSlug}-${slugify(director || "unknown")}-${year}.md`;
-        } else if (type === "series") {
-          const creator = document.getElementById("edit-series-creator").value;
-          const year =
-            Number(document.getElementById("edit-series-year").value) || 0;
-          Object.assign(entryData, {
-            creator: creator,
-            year: year,
-            country:
-              document.getElementById("edit-series-country").value || "Unknown",
-            actors: [],
-            genre: document
-              .getElementById("edit-series-genre")
-              .value.split(",")
-              .map((s) => s.trim())
-              .filter((s) => s),
-            poster: document.getElementById("edit-series-poster").value,
-          });
-          fileName = `${titleSlug}-${slugify(creator || "unknown")}-${year}.md`;
-        }
+            .filter(Boolean);
 
-        // Updated folder logic to use 'movie' (singular) for movies while preserving content collection 'movies' if necessary
-        const githubFolder = {
-          book: "books",
-          movie: "movies",
-          series: "series",
+        const entryData: any = {
+          type,
+          title: formData.get("title"),
+          created: formData.get("created"),
+          shelf: formData.get("shelf"),
+          rating: parseInt(formData.get("rating") as string) || 0,
         };
-        await pushToGitHub(
-          `src/content/${githubFolder[type]}`,
-          fileName,
-          entryData,
-          document.getElementById("edit-body").value,
-        );
-        location.reload();
-      };
 
-      async function pushToGitHub(folder, fileName, data, body) {
-        const pat = localStorage.getItem("LOGRARY_PAT");
-        let yaml = "---\n";
-        for (const [k, v] of Object.entries(data)) {
-          if (Array.isArray(v)) {
-            yaml += `${k}:\n${v.map((i) => `  - "${i}"`).join("\n")}\n`;
-          } else if (typeof v === "boolean" || typeof v === "number") {
-            yaml += `${k}: ${v}\n`;
-          } else {
-            yaml += `${k}: "${v}"\n`;
-          }
+        if (type === "books") {
+          Object.assign(entryData, {
+            author: fromCsv("author"),
+            tags: fromCsv("tags"),
+            start_date: formData.get("start_date") || null,
+            end_date: formData.get("end_date") || null,
+            published: formData.get("published") || null,
+            publisher: formData.get("publisher") || null,
+            page_count: parseInt(formData.get("page_count") as string) || null,
+            isbn: formData.get("isbn") || null,
+            coverUrl: formData.get("coverUrl") || null,
+          });
+        } else if (type === "movies") {
+          Object.assign(entryData, {
+            director: formData.get("director"),
+            year: formData.get("year"),
+            country: formData.get("country"),
+            watched: formData.get("watched"),
+            length: formData.get("length") || null,
+            genre: fromCsv("genre"),
+            actors: fromCsv("actors"),
+            poster: formData.get("poster") || null,
+          });
+        } else if (type === "series") {
+          Object.assign(entryData, {
+            director: formData.get("director_series"),
+            year: formData.get("year_series"),
+            country: formData.get("country_series"),
+            watched: formData.get("watched_series"),
+            length: formData.get("length_series") || null,
+            genre: fromCsv("genre_series"),
+            actors: fromCsv("actors_series"),
+            poster: formData.get("poster_series") || null,
+          });
         }
-        yaml += "---\n\n" + body;
-        const url = `https://api.github.com/repos/hryggrbyr/lograry/contents/${folder}/${fileName}`;
-        const check = await fetch(url, {
-          headers: { Authorization: `token ${pat}` },
-        });
-        const sha = check.ok ? (await check.json()).sha : null;
 
-        await fetch(url, {
-          method: "PUT",
-          headers: {
-            Authorization: `token ${pat}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            message: `archive: update ${data.title}`,
-            content: btoa(unescape(encodeURIComponent(yaml))),
-            sha,
-          }),
-        });
-      }
-
-      searchInput.addEventListener("input", filterTable);
-      sortSelector.addEventListener("change", sortTable);
+        try {
+          const fileName = generateFilename(entryData, type);
+          await pushToGitHub(
+            `src/content/${type}`,
+            fileName,
+            entryData,
+            formData.get("body") as string,
+          );
+          location.reload();
+        } catch (err) {
+          alert(err);
+          btn.disabled = false;
+        }
+      };
     </script>
   </body>
 </html>

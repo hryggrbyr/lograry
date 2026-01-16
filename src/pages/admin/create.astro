@@ -1,6 +1,7 @@
 ---
 const title = "New Archive Entry";
 import Header from "./header.astro";
+import MediaForm from "./MediaForm.astro";
 ---
 
 <!doctype html>
@@ -17,7 +18,6 @@ import Header from "./header.astro";
       * {
         box-sizing: border-box;
       }
-
       body {
         margin: 0;
         padding: 2rem;
@@ -25,7 +25,6 @@ import Header from "./header.astro";
         margin-inline: auto;
         font-family: system-ui, sans-serif;
       }
-
       input,
       select,
       textarea,
@@ -33,15 +32,6 @@ import Header from "./header.astro";
         font: inherit;
         width: 100%;
       }
-
-      input[type="checkbox"] {
-        width: auto;
-      }
-
-      textarea {
-        resize: vertical;
-      }
-
       button {
         appearance: none;
         background-color: var(--color-brand-admin);
@@ -53,151 +43,38 @@ import Header from "./header.astro";
         width: auto;
         font-weight: bold;
       }
-
       button:hover {
         background-color: var(--color-brand-admin-tint);
       }
-
       button:disabled {
         opacity: 0.5;
         cursor: not-allowed;
       }
-
-      fieldset {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        border: 1px solid #ccc;
-        padding: 1.5rem;
-        margin: 0;
-        width: 100%;
-      }
-
-      legend {
-        padding: 0 0.5rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-size: 0.85rem;
-        letter-spacing: 0.05em;
-      }
-
-      form {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        align-items: stretch;
-        justify-content: flex-start;
-      }
-
       .stacker {
         display: flex;
         flex-wrap: wrap;
         gap: 1.5rem;
         align-items: center;
       }
-
-      .stacker > * {
-        flex-grow: 1;
-        flex-basis: calc((40rem - 100%) * 999);
-      }
-
       .prominent-tools {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
         align-items: flex-start;
       }
-
       .prominent-tools > * {
         flex: 1;
         min-width: 300px;
       }
-
-      .search-input-group {
-        display: flex;
-        gap: 0.5rem;
-      }
-
-      .search-input-group input {
-        flex-grow: 1;
-      }
-
-      .field-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-      }
-
-      .field-row > div {
-        flex: 1;
-        min-width: 150px;
-      }
-
-      .checkbox-field {
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-        height: 100%;
-        padding-top: 1.5rem;
-      }
-
       label {
         display: block;
         margin-bottom: 0.35rem;
         font-weight: 500;
         font-size: 0.9rem;
       }
-
-      dialog {
-        border: 2px solid var(--color-brand-admin);
-        border-radius: 0.5rem;
-        padding: 2rem;
-        max-width: 40rem;
-        margin: auto;
-      }
-
-      dialog::backdrop {
-        backdrop-filter: blur(4px);
-        background: rgba(0, 0, 0, 0.5);
-      }
-
-      #selection-list {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        max-height: 50vh;
-        overflow-y: auto;
-        margin: 1.5rem 0;
-      }
-
-      .selection-item {
-        display: flex;
-        gap: 1rem;
-        padding: 0.75rem;
-        border: 1px solid #ddd;
-        border-radius: 0.25rem;
-        cursor: pointer;
-      }
-
-      .selection-item:has(input:checked) {
-        border-color: var(--color-brand-admin);
-        background-color: hsla(25, 95%, 55%, 0.1);
-      }
-
-      [data-media-only] {
-        display: none;
-      }
-
-      .admin-container[data-selection="books"] [data-media-only="books"],
-      .admin-container[data-selection="movies"] [data-media-only="movies"],
-      .admin-container[data-selection="series"] [data-media-only="series"] {
-        display: block;
-      }
-
       .flow > * + * {
         margin-block-start: 1.5rem;
       }
-
       hr {
         border: none;
         border-top: 1px solid #eee;
@@ -206,34 +83,10 @@ import Header from "./header.astro";
     </style>
   </head>
   <body class="flow">
-    <dialog id="auth-dialog">
-      <div class="flow">
-        <h2>Restricted Access</h2>
-        <p>
-          No GitHub credentials found. Please authorize to access the archives.
-        </p>
-        <fieldset>
-          <div>
-            <label for="modal-gh-user">GitHub Username</label>
-            <input type="text" id="modal-gh-user" placeholder="Username" />
-          </div>
-          <div>
-            <label for="modal-gh-pat">Personal Access Token</label>
-            <input
-              type="password"
-              id="modal-gh-pat"
-              placeholder="ghp_xxxx..."
-            />
-          </div>
-        </fieldset>
-        <button id="btn-auth-confirm">INITIALIZE_SESSION</button>
-      </div>
-    </dialog>
-
-    <div class="admin-container wrapper flow">
+    <div class="admin-container flow">
       <header class="stacker">
         <h1>{title}</h1>
-        <div style="display: flex; justify-content: flex-end;">
+        <div style="display: flex; justify-content: flex-end; gap: 1rem;">
           <Header />
           <button id="btn-logout">SIGN_OUT</button>
         </div>
@@ -241,520 +94,128 @@ import Header from "./header.astro";
 
       <section class="prominent-tools">
         <div>
-          <label for="media-type">[COLLECTION_TYPE]</label>
+          <label for="media-type">Collection Type</label>
           <select id="media-type">
             <option value="books">📚 BOOKS</option>
             <option value="movies">🎬 FILMS</option>
             <option value="series">📺 TV SHOWS</option>
           </select>
         </div>
-
-        <form id="search-form">
-          <label for="search-query">[API_REFERENCE_SEARCH]</label>
-          <div class="search-input-group">
-            <input
-              type="text"
-              id="search-query"
-              placeholder="Search archives..."
-            />
-            <button type="submit" id="btn-search">EXECUTE_FETCH</button>
-          </div>
-          <p id="search-status" aria-live="polite"></p>
-        </form>
       </section>
 
       <hr />
-
-      <form id="entry-form" class="flow">
-        <fieldset>
-          <legend>Core Metadata</legend>
-          <div class="field-row">
-            <div style="flex: 2;">
-              <label for="field-title">Title</label>
-              <input type="text" id="field-title" required />
-            </div>
-            <div>
-              <label for="field-created">Record Created</label>
-              <input type="date" id="field-created" required />
-            </div>
-          </div>
-          <div class="field-row">
-            <div>
-              <label for="field-shelf">Shelf / Status</label>
-              <select id="field-shelf">
-                <option value="to-read">TO-READ</option>
-                <option value="reading">READING</option>
-                <option value="read">READ</option>
-                <option value="abandoned">ABANDONED</option>
-              </select>
-            </div>
-            <div>
-              <label for="field-rating">Rating (0-5)</label>
-              <input
-                type="number"
-                id="field-rating"
-                min="0"
-                max="5"
-                step="1"
-                value="0"
-              />
-            </div>
-          </div>
-        </fieldset>
-
-        <div id="all-fields-container" class="flow">
-          <div id="fields-books" data-media-only="books" class="flow">
-            <fieldset>
-              <legend>Author & Classification</legend>
-              <div class="field-row">
-                <div style="flex: 2;">
-                  <label for="field-subtitle">Subtitle</label>
-                  <input type="text" id="field-subtitle" />
-                </div>
-                <div>
-                  <label for="field-author">Authors (CSV)</label>
-                  <input
-                    type="text"
-                    id="field-author"
-                    placeholder="J.R.R. Tolkien, etc."
-                  />
-                </div>
-              </div>
-              <div class="field-row">
-                <div style="flex: 2;">
-                  <label for="field-tags">Tags (CSV)</label>
-                  <input
-                    type="text"
-                    id="field-tags"
-                    placeholder="Fiction, History..."
-                  />
-                </div>
-                <div class="checkbox-field">
-                  <input type="checkbox" id="field-owned" />
-                  <label for="field-owned" style="margin:0;">Owned</label>
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <legend>Reading Timeline</legend>
-              <div class="field-row">
-                <div>
-                  <label for="field-start_date">Start Date</label>
-                  <input type="date" id="field-start_date" />
-                </div>
-                <div>
-                  <label for="field-end_date">End Date</label>
-                  <input type="date" id="field-end_date" />
-                </div>
-              </div>
-            </fieldset>
-
-            <fieldset>
-              <legend>Publication Details</legend>
-              <div class="field-row">
-                <div>
-                  <label for="field-publisher">Publisher</label>
-                  <input type="text" id="field-publisher" />
-                </div>
-                <div>
-                  <label for="field-published">Published Date</label>
-                  <input
-                    type="text"
-                    id="field-published"
-                    placeholder="YYYY-MM-DD"
-                  />
-                </div>
-                <div>
-                  <label for="field-isbn">ISBN</label>
-                  <input type="text" id="field-isbn" />
-                </div>
-              </div>
-              <div>
-                <label for="field-coverUrl">Cover Image URL</label>
-                <input type="text" id="field-coverUrl" />
-              </div>
-            </fieldset>
-          </div>
-
-          <div data-media-only="movies" class="flow">
-            <fieldset>
-              <legend>Film Details</legend>
-              <div class="field-row">
-                <div>
-                  <label for="field-director">Director</label>
-                  <input type="text" id="field-director" />
-                </div>
-                <div>
-                  <label for="field-year">Release Year</label>
-                  <input type="number" id="field-year" />
-                </div>
-                <div>
-                  <label for="field-length">Length</label>
-                  <input type="text" id="field-length" placeholder="1h 45m" />
-                </div>
-              </div>
-              <div>
-                <label for="field-genre">Genres (CSV)</label>
-                <input
-                  type="text"
-                  id="field-genre"
-                  placeholder="Sci-Fi, Drama..."
-                />
-              </div>
-              <div>
-                <label for="field-poster">Poster URL</label>
-                <input type="text" id="field-poster" />
-              </div>
-            </fieldset>
-          </div>
-
-          <div data-media-only="series" class="flow">
-            <fieldset>
-              <legend>Television Details</legend>
-              <div class="field-row">
-                <div>
-                  <label for="field-creator">Creator</label>
-                  <input type="text" id="field-creator" />
-                </div>
-                <div>
-                  <label for="field-premiere-year">Premiere Year</label>
-                  <input type="number" id="field-premiere-year" />
-                </div>
-                <div>
-                  <label for="field-country">Country</label>
-                  <input type="text" id="field-country" />
-                </div>
-              </div>
-              <div>
-                <label for="field-genre-series">Genres (CSV)</label>
-                <input
-                  type="text"
-                  id="field-genre-series"
-                  placeholder="Comedy, Mystery..."
-                />
-              </div>
-              <div>
-                <label for="field-poster-series">Poster URL</label>
-                <input type="text" id="field-poster-series" />
-              </div>
-            </fieldset>
-          </div>
-        </div>
-
-        <fieldset>
-          <legend>Annotations</legend>
-          <textarea
-            id="field-body"
-            rows="8"
-            placeholder="Enter review or notes..."></textarea>
-        </fieldset>
-
-        <button type="submit" id="btn-submit-github">COMMIT_TO_GITHUB</button>
-      </form>
+      <MediaForm />
     </div>
 
-    <dialog id="selection-dialog">
-      <h3>Select Matching Entry</h3>
-      <div id="selection-list"></div>
-      <div class="stacker">
-        <button id="btn-apply-selection">APPLY_INK</button>
-        <button
-          type="button"
-          onclick="document.getElementById('selection-dialog').close()"
-          style="background:#666">DISCARD</button
-        >
-      </div>
-    </dialog>
+    <script>
+      import { generateFilename, pushToGitHub } from "@lib/pushToGithub";
 
-    <script is:inline>
-      const mediaSelector = document.getElementById("media-type");
-      const shelfSelector = document.getElementById("field-shelf");
-      const authDialog = document.getElementById("auth-dialog");
-      const searchForm = document.getElementById("search-form");
-      const entryForm = document.getElementById("entry-form");
-      const status = document.getElementById("search-status");
+      const mediaSelector = document.getElementById(
+        "media-type",
+      ) as HTMLSelectElement;
+      const entryForm = document.getElementById(
+        "entry-form",
+      ) as HTMLFormElement;
 
-      function checkAuth() {
-        const user = localStorage.getItem("LOGRARY_USER");
-        const pat = localStorage.getItem("LOGRARY_PAT");
-        if (!user || !pat) authDialog.showModal();
-      }
-
-      document.getElementById("btn-auth-confirm").onclick = () => {
-        const user = document.getElementById("modal-gh-user").value;
-        const pat = document.getElementById("modal-gh-pat").value;
-        if (user && pat) {
-          localStorage.setItem("LOGRARY_USER", user);
-          localStorage.setItem("LOGRARY_PAT", pat);
-          authDialog.close();
-        }
-      };
-
+      // Handle Logout
       document.getElementById("btn-logout").onclick = () => {
-        localStorage.removeItem("LOGRARY_USER");
-        localStorage.removeItem("LOGRARY_PAT");
+        localStorage.clear();
         location.reload();
       };
 
-      function updateVisibility() {
+      // Type Switcher Logic
+      mediaSelector.onchange = () => {
         const type = mediaSelector.value;
-        document
-          .querySelector(".admin-container")
-          .setAttribute("data-selection", type);
+        const wrapper = document.getElementById("media-form-context");
+        const typeHiddenInput = document.getElementById(
+          "field-type",
+        ) as HTMLInputElement;
 
-        // Update Shelf Options based on media type
-        shelfSelector.innerHTML = "";
-        if (type === "books") {
-          const options = ["to-read", "reading", "read", "abandoned"];
-          options.forEach((o) =>
-            shelfSelector.add(new Option(o.toUpperCase(), o)),
-          );
-        } else {
-          const options = ["watchlist", "watching", "watched"];
-          options.forEach((o) =>
-            shelfSelector.add(new Option(o.toUpperCase(), o)),
-          );
-        }
+        wrapper.setAttribute("data-selection", type);
+        typeHiddenInput.value = type;
 
-        if (!document.getElementById("field-created").value) {
-          document.getElementById("field-created").value = new Date()
-            .toISOString()
-            .split("T")[0];
-        }
-      }
-
-      mediaSelector.onchange = updateVisibility;
-      updateVisibility();
-      checkAuth();
-
-      searchForm.onsubmit = async (e) => {
-        e.preventDefault();
-        const query = document.getElementById("search-query").value;
-        if (!query) return;
-
-        status.innerText = "FETCHING_DATA...";
-        const type = mediaSelector.value;
-
-        try {
-          if (type === "books") {
-            const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=5`;
-            const res = await fetch(url);
-            const data = await res.json();
-            const results = data.docs.map((b) => ({
-              type: "books",
-              title: b.title,
-              subtitle: b.subtitle || "",
-              author: b.author_name?.join(", ") || "Unknown",
-              published: b.first_publish_year || "",
-              publisher: b.publisher?.[0] || "",
-              isbn: b.isbn?.[0] || "",
-              cover: b.cover_i
-                ? `https://covers.openlibrary.org/b/id/${b.cover_i}-M.jpg`
-                : "",
-            }));
-            renderSelectionModal(results);
-          } else if (type === "movies") {
-            const url = `https://imdb.iamidiotareyoutoo.com/search?q=${encodeURIComponent(query)}`;
-            const res = await fetch(url);
-            const data = await res.json();
-            const results = data.description.map((m) => ({
-              type: "movies",
-              title: m["#TITLE"],
-              year: m["#YEAR"],
-              imdbId: m["#IMDB_ID"],
-              poster: m["#IMG_POSTER"],
-              meta: m["#ACTORS"],
-            }));
-            renderSelectionModal(results);
-          } else if (type === "series") {
-            const url = `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(query)}`;
-            const res = await fetch(url);
-            const data = await res.json();
-            const results = data.map((s) => ({
-              type: "series",
-              title: s.show.name,
-              year: s.show.premiered?.slice(0, 4),
-              id: s.show.id,
-              poster: s.show.image?.medium || "",
-              meta: s.show.network?.name || s.show.webChannel?.name || "",
-            }));
-            renderSelectionModal(results);
-          }
-          status.innerText = "SELECT_ENTRY_BELOW";
-        } catch (err) {
-          status.innerText = "ERROR_FETCH_FAILED";
-        }
+        // Notify MediaForm to update its internal Enum options
+        document.dispatchEvent(new CustomEvent("form-type-change"));
       };
 
-      function renderSelectionModal(items) {
-        const list = document.getElementById("selection-list");
-        list.innerHTML = items
-          .map(
-            (item, i) => `
-          <label class="selection-item">
-            <input type="radio" name="item-choice" value='${JSON.stringify(item).replace(/'/g, "&apos;")}' ${i === 0 ? "checked" : ""}>
-            <div>
-              <strong>${item.title}</strong> (${item.year || item.published || "?"})<br>
-              <small>${item.meta || item.author || ""}</small>
-            </div>
-          </label>
-        `,
-          )
-          .join("");
-        document.getElementById("selection-dialog").showModal();
-
-        document.getElementById("btn-apply-selection").onclick = async () => {
-          const selected = JSON.parse(
-            document.querySelector('input[name="item-choice"]:checked').value,
-          );
-          await populateFields(selected);
-          document.getElementById("selection-dialog").close();
-          status.innerText = "FIELDS_POPULATED";
-        };
-      }
-
-      async function populateFields(data) {
-        document.getElementById("field-title").value = data.title;
-
-        if (data.type === "books") {
-          document.getElementById("field-subtitle").value = data.subtitle;
-          document.getElementById("field-author").value = data.author;
-          document.getElementById("field-published").value = data.published;
-          document.getElementById("field-publisher").value = data.publisher;
-          document.getElementById("field-isbn").value = data.isbn;
-          document.getElementById("field-coverUrl").value = data.cover;
-        } else if (data.type === "movies") {
-          document.getElementById("field-year").value = data.year;
-          document.getElementById("field-poster").value = data.poster;
-          try {
-            const res = await fetch(
-              `https://imdb.iamidiotareyoutoo.com/main?id=${data.imdbId}`,
-            );
-            const detail = await res.json();
-            const s = detail.short || {};
-            document.getElementById("field-director").value = Array.isArray(
-              s.director,
-            )
-              ? s.director.map((d) => d.name).join(", ")
-              : s.director?.name || "";
-            document.getElementById("field-genre").value = Array.isArray(
-              s.genre,
-            )
-              ? s.genre.join(", ")
-              : "";
-            document.getElementById("field-length").value = s.duration
-              ? s.duration.replace("PT", "").toLowerCase()
-              : "";
-          } catch (e) {}
-        } else if (data.type === "series") {
-          document.getElementById("field-premiere-year").value = data.year;
-          document.getElementById("field-poster-series").value = data.poster;
-          try {
-            const res = await fetch(`https://api.tvmaze.com/shows/${data.id}`);
-            const show = await res.json();
-            document.getElementById("field-country").value =
-              show.network?.country?.name || "";
-            document.getElementById("field-genre-series").value =
-              show.genres?.join(", ") || "";
-          } catch (e) {}
-        }
-      }
-
+      // Form Submission
       entryForm.onsubmit = async (e) => {
         e.preventDefault();
-        const btn = document.getElementById("btn-submit-github");
-        status.innerText = "COMMITTING_TO_GITHUB...";
+        const btn = document.getElementById(
+          "btn-submit-github",
+        ) as HTMLButtonElement;
         btn.disabled = true;
+        btn.innerText = "COMMITTING...";
 
-        const type = mediaSelector.value;
-        const entryData = {
-          title: document.getElementById("field-title").value,
-          created: document.getElementById("field-created").value,
-          shelf: shelfSelector.value,
-          rating: parseInt(document.getElementById("field-rating").value) || 0,
+        const formData = new FormData(entryForm);
+        const type = formData.get("type") as string;
+        const fromCsv = (name: string) =>
+          formData
+            .get(name)
+            ?.toString()
+            .split(",")
+            .map((s) => s.trim())
+            .filter(Boolean) || [];
+
+        const entryData: any = {
+          type: type,
+          title: formData.get("title"),
+          created: formData.get("created"),
+          shelf: formData.get("shelf"),
+          rating: parseInt(formData.get("rating") as string) || 0,
         };
 
         if (type === "books") {
           Object.assign(entryData, {
-            author: document
-              .getElementById("field-author")
-              .value.split(",")
-              .map((s) => s.trim()),
-            isbn: document.getElementById("field-isbn").value,
-            coverUrl: document.getElementById("field-coverUrl").value,
-            owned: document.getElementById("field-owned").checked,
+            author: fromCsv("author"),
+            tags: fromCsv("tags"),
+            start_date: formData.get("start_date") || null,
+            end_date: formData.get("end_date") || null,
+            published: formData.get("published") || null,
+            publisher: formData.get("publisher") || null,
+            page_count: parseInt(formData.get("page_count") as string) || null,
+            isbn: formData.get("isbn") || null,
+            coverUrl: formData.get("coverUrl") || null,
           });
         } else if (type === "movies") {
           Object.assign(entryData, {
-            director: document.getElementById("field-director").value,
-            year: parseInt(document.getElementById("field-year").value),
-            length: document.getElementById("field-length").value,
+            director: formData.get("director"),
+            year: formData.get("year"),
+            country: formData.get("country"),
+            watched: formData.get("watched"),
+            length: formData.get("length") || null,
+            genre: fromCsv("genre"),
+            actors: fromCsv("actors"),
+            poster: formData.get("poster") || null,
           });
         } else if (type === "series") {
           Object.assign(entryData, {
-            creator: document.getElementById("field-creator").value,
-            year: parseInt(
-              document.getElementById("field-premiere-year").value,
-            ),
+            director: formData.get("director_series"),
+            year: formData.get("year_series"),
+            country: formData.get("country_series"),
+            watched: formData.get("watched_series"),
+            length: formData.get("length_series") || null,
+            genre: fromCsv("genre_series"),
+            actors: fromCsv("actors_series"),
+            poster: formData.get("poster_series") || null,
           });
         }
 
-        const fileName = `${entryData.title.toLowerCase().replace(/[^a-z0-9]/g, "-")}.md`;
-        const folder = `src/content/${type}`;
-        const body = document.getElementById("field-body").value;
-
         try {
-          await pushToGitHub(folder, fileName, entryData, body);
-          status.innerText = "✓ ARCHIVE_UPDATED";
-          setTimeout(() => location.reload(), 2000);
+          const fileName = generateFilename(entryData, type);
+          await pushToGitHub(
+            `src/content/${type}`,
+            fileName,
+            entryData,
+            formData.get("body") as string,
+          );
+          location.href = "/";
         } catch (err) {
-          status.innerText = "⚠ COMMIT_FAILED";
+          alert("Error: " + err);
           btn.disabled = false;
+          btn.innerText = "RETRY_COMMIT";
         }
       };
-
-      async function pushToGitHub(folder, fileName, data, body) {
-        const user = localStorage.getItem("LOGRARY_USER");
-        const pat = localStorage.getItem("LOGRARY_PAT");
-        const repo = "hryggrbyr/lograry";
-
-        let yaml = "---\n";
-        for (const [key, val] of Object.entries(data)) {
-          if (Array.isArray(val)) {
-            yaml += `${key}:\n${val.map((v) => `  - "${v}"`).join("\n")}\n`;
-          } else {
-            yaml += `${key}: "${val}"\n`;
-          }
-        }
-        yaml += "---\n\n" + body;
-
-        const path = `${folder}/${fileName}`;
-        const url = `https://api.github.com/repos/${repo}/contents/${path}`;
-
-        let sha = null;
-        const check = await fetch(url, {
-          headers: { Authorization: `token ${pat}` },
-        });
-        if (check.ok) {
-          const file = await check.json();
-          sha = file.sha;
-        }
-
-        const res = await fetch(url, {
-          method: "PUT",
-          headers: {
-            Authorization: `token ${pat}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            message: `archive: add ${data.title}`,
-            content: btoa(unescape(encodeURIComponent(yaml))),
-            sha: sha,
-          }),
-        });
-        if (!res.ok) throw new Error();
-      }
     </script>
   </body>
 </html>
