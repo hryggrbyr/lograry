@@ -6,7 +6,7 @@ year: 2006
 director: N/A
 actors: [Peter Krause, Julianna Margulies, Peter Jacobson]
 genre: [Action, Fantasy, Mystery]
-length: "51"S
+length: "51"
 shelf: watched
 owned: false
 rating: 
