@@ -3,8 +3,8 @@ type: series
 country: US
 title: "Tru Calling"
 year: 2003
-creator: "Jon Harman Feldman"
-director: null
+creator: "Jon Harmon Feldman"
+director: "Various"
 actors: [Eliza Dushku, Zach Galifianakis, Shawn Reaves, Jason Priestley]
 genre: [Sci-Fi, Fantasy, Drama, Mystery]
 length: "2 seasons (26 episodes)"
