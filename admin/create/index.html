@@ -1,293 +1,105 @@
 <!DOCTYPE html><html lang="en" data-astro-cid-duaiafye> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>New Archive Entry</title><style>nav[data-astro-cid-fcji5xpj]{display:flex;flex-wrap:wrap;gap:2ch;align-items:center;margin-inline-end:2ch}a[data-astro-cid-fcji5xpj].btn-primary{text-decoration:none;padding:.25lh 2ch;border:1px solid currentColor;color:canvasText;line-height:1lh;vertical-align:center}
-:root{--color-brand-admin: hsl(25, 95%, 55%);--color-brand-admin-tint: hsl(25, 95%, 50%)}[data-astro-cid-duaiafye]{box-sizing:border-box}body{margin:0;padding:2rem;max-width:80rem;margin-inline:auto;font-family:system-ui,sans-serif}input[data-astro-cid-duaiafye],select[data-astro-cid-duaiafye],textarea[data-astro-cid-duaiafye],button[data-astro-cid-duaiafye]{font:inherit;width:100%}input[data-astro-cid-duaiafye][type=checkbox]{width:auto}textarea[data-astro-cid-duaiafye]{resize:vertical}button[data-astro-cid-duaiafye]{appearance:none;background-color:var(--color-brand-admin);color:#fff;cursor:pointer;border:none;padding:.75rem 1.5rem;border-radius:.25rem;width:auto;font-weight:700}button[data-astro-cid-duaiafye]:hover{background-color:var(--color-brand-admin-tint)}button[data-astro-cid-duaiafye]:disabled{opacity:.5;cursor:not-allowed}fieldset[data-astro-cid-duaiafye]{display:flex;flex-direction:column;gap:1rem;border:1px solid #ccc;padding:1.5rem;margin:0;width:100%}legend[data-astro-cid-duaiafye]{padding:0 .5rem;font-weight:700;text-transform:uppercase;font-size:.85rem;letter-spacing:.05em}form[data-astro-cid-duaiafye]{display:flex;flex-direction:column;gap:1.5rem;align-items:stretch;justify-content:flex-start}.stacker[data-astro-cid-duaiafye]{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center}.stacker[data-astro-cid-duaiafye]>[data-astro-cid-duaiafye]{flex-grow:1;flex-basis:calc((40rem - 100%)*999)}.prominent-tools[data-astro-cid-duaiafye]{display:flex;flex-wrap:wrap;gap:2rem;align-items:flex-start}.prominent-tools[data-astro-cid-duaiafye]>[data-astro-cid-duaiafye]{flex:1;min-width:300px}.search-input-group[data-astro-cid-duaiafye]{display:flex;gap:.5rem}.search-input-group[data-astro-cid-duaiafye] input[data-astro-cid-duaiafye]{flex-grow:1}.field-row[data-astro-cid-duaiafye]{display:flex;flex-wrap:wrap;gap:1rem}.field-row[data-astro-cid-duaiafye]>div[data-astro-cid-duaiafye]{flex:1;min-width:150px}.checkbox-field[data-astro-cid-duaiafye]{display:flex;align-items:center;gap:.5rem;height:100%;padding-top:1.5rem}label[data-astro-cid-duaiafye]{display:block;margin-bottom:.35rem;font-weight:500;font-size:.9rem}dialog[data-astro-cid-duaiafye]{border:2px solid var(--color-brand-admin);border-radius:.5rem;padding:2rem;max-width:40rem;margin:auto}dialog[data-astro-cid-duaiafye]::backdrop{backdrop-filter:blur(4px);background:#00000080}#selection-list[data-astro-cid-duaiafye]{display:flex;flex-direction:column;gap:.5rem;max-height:50vh;overflow-y:auto;margin:1.5rem 0}.selection-item[data-astro-cid-duaiafye]{display:flex;gap:1rem;padding:.75rem;border:1px solid #ddd;border-radius:.25rem;cursor:pointer}.selection-item[data-astro-cid-duaiafye]:has(input:checked){border-color:var(--color-brand-admin);background-color:#f97a1f1a}[data-astro-cid-duaiafye][data-media-only]{display:none}.admin-container[data-astro-cid-duaiafye][data-selection=books] [data-astro-cid-duaiafye][data-media-only=books],.admin-container[data-astro-cid-duaiafye][data-selection=movies] [data-astro-cid-duaiafye][data-media-only=movies],.admin-container[data-astro-cid-duaiafye][data-selection=series] [data-astro-cid-duaiafye][data-media-only=series]{display:block}.flow[data-astro-cid-duaiafye]>[data-astro-cid-duaiafye]+[data-astro-cid-duaiafye]{margin-block-start:1.5rem}hr[data-astro-cid-duaiafye]{border:none;border-top:1px solid #eee;margin:2rem 0}
-</style></head> <body class="flow" data-astro-cid-duaiafye> <dialog id="auth-dialog" data-astro-cid-duaiafye> <div class="flow" data-astro-cid-duaiafye> <h2 data-astro-cid-duaiafye>Restricted Access</h2> <p data-astro-cid-duaiafye>
-No GitHub credentials found. Please authorize to access the archives.
-</p> <fieldset data-astro-cid-duaiafye> <div data-astro-cid-duaiafye> <label for="modal-gh-user" data-astro-cid-duaiafye>GitHub Username</label> <input type="text" id="modal-gh-user" placeholder="Username" data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="modal-gh-pat" data-astro-cid-duaiafye>Personal Access Token</label> <input type="password" id="modal-gh-pat" placeholder="ghp_xxxx..." data-astro-cid-duaiafye> </div> </fieldset> <button id="btn-auth-confirm" data-astro-cid-duaiafye>INITIALIZE_SESSION</button> </div> </dialog> <div class="admin-container wrapper flow" data-astro-cid-duaiafye> <header class="stacker" data-astro-cid-duaiafye> <h1 data-astro-cid-duaiafye>New Archive Entry</h1> <div style="display: flex; justify-content: flex-end;" data-astro-cid-duaiafye> <nav data-astro-cid-fcji5xpj> <a class="btn-primary" href="/" data-astro-cid-fcji5xpj>Frontend</a> <a class="btn-primary" href="/admin" data-astro-cid-fcji5xpj>Gallery</a> <a class="btn-primary" href="/admin/create" data-astro-cid-fcji5xpj>Add new</a> </nav> <button id="btn-logout" data-astro-cid-duaiafye>SIGN_OUT</button> </div> </header> <section class="prominent-tools" data-astro-cid-duaiafye> <div data-astro-cid-duaiafye> <label for="media-type" data-astro-cid-duaiafye>[COLLECTION_TYPE]</label> <select id="media-type" data-astro-cid-duaiafye> <option value="books" data-astro-cid-duaiafye>📚 BOOKS</option> <option value="movies" data-astro-cid-duaiafye>🎬 FILMS</option> <option value="series" data-astro-cid-duaiafye>📺 TV SHOWS</option> </select> </div> <form id="search-form" data-astro-cid-duaiafye> <label for="search-query" data-astro-cid-duaiafye>[API_REFERENCE_SEARCH]</label> <div class="search-input-group" data-astro-cid-duaiafye> <input type="text" id="search-query" placeholder="Search archives..." data-astro-cid-duaiafye> <button type="submit" id="btn-search" data-astro-cid-duaiafye>EXECUTE_FETCH</button> </div> <p id="search-status" aria-live="polite" data-astro-cid-duaiafye></p> </form> </section> <hr data-astro-cid-duaiafye> <form id="entry-form" class="flow" data-astro-cid-duaiafye> <fieldset data-astro-cid-duaiafye> <legend data-astro-cid-duaiafye>Core Metadata</legend> <div class="field-row" data-astro-cid-duaiafye> <div style="flex: 2;" data-astro-cid-duaiafye> <label for="field-title" data-astro-cid-duaiafye>Title</label> <input type="text" id="field-title" required data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-created" data-astro-cid-duaiafye>Record Created</label> <input type="date" id="field-created" required data-astro-cid-duaiafye> </div> </div> <div class="field-row" data-astro-cid-duaiafye> <div data-astro-cid-duaiafye> <label for="field-shelf" data-astro-cid-duaiafye>Shelf / Status</label> <select id="field-shelf" data-astro-cid-duaiafye> <option value="to-read" data-astro-cid-duaiafye>TO-READ</option> <option value="reading" data-astro-cid-duaiafye>READING</option> <option value="read" data-astro-cid-duaiafye>READ</option> <option value="abandoned" data-astro-cid-duaiafye>ABANDONED</option> </select> </div> <div data-astro-cid-duaiafye> <label for="field-rating" data-astro-cid-duaiafye>Rating (0-5)</label> <input type="number" id="field-rating" min="0" max="5" step="1" value="0" data-astro-cid-duaiafye> </div> </div> </fieldset> <div id="all-fields-container" class="flow" data-astro-cid-duaiafye> <div id="fields-books" data-media-only="books" class="flow" data-astro-cid-duaiafye> <fieldset data-astro-cid-duaiafye> <legend data-astro-cid-duaiafye>Author & Classification</legend> <div class="field-row" data-astro-cid-duaiafye> <div style="flex: 2;" data-astro-cid-duaiafye> <label for="field-subtitle" data-astro-cid-duaiafye>Subtitle</label> <input type="text" id="field-subtitle" data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-author" data-astro-cid-duaiafye>Authors (CSV)</label> <input type="text" id="field-author" placeholder="J.R.R. Tolkien, etc." data-astro-cid-duaiafye> </div> </div> <div class="field-row" data-astro-cid-duaiafye> <div style="flex: 2;" data-astro-cid-duaiafye> <label for="field-tags" data-astro-cid-duaiafye>Tags (CSV)</label> <input type="text" id="field-tags" placeholder="Fiction, History..." data-astro-cid-duaiafye> </div> <div class="checkbox-field" data-astro-cid-duaiafye> <input type="checkbox" id="field-owned" data-astro-cid-duaiafye> <label for="field-owned" style="margin:0;" data-astro-cid-duaiafye>Owned</label> </div> </div> </fieldset> <fieldset data-astro-cid-duaiafye> <legend data-astro-cid-duaiafye>Reading Timeline</legend> <div class="field-row" data-astro-cid-duaiafye> <div data-astro-cid-duaiafye> <label for="field-start_date" data-astro-cid-duaiafye>Start Date</label> <input type="date" id="field-start_date" data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-end_date" data-astro-cid-duaiafye>End Date</label> <input type="date" id="field-end_date" data-astro-cid-duaiafye> </div> </div> </fieldset> <fieldset data-astro-cid-duaiafye> <legend data-astro-cid-duaiafye>Publication Details</legend> <div class="field-row" data-astro-cid-duaiafye> <div data-astro-cid-duaiafye> <label for="field-publisher" data-astro-cid-duaiafye>Publisher</label> <input type="text" id="field-publisher" data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-published" data-astro-cid-duaiafye>Published Date</label> <input type="text" id="field-published" placeholder="YYYY-MM-DD" data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-isbn" data-astro-cid-duaiafye>ISBN</label> <input type="text" id="field-isbn" data-astro-cid-duaiafye> </div> </div> <div data-astro-cid-duaiafye> <label for="field-coverUrl" data-astro-cid-duaiafye>Cover Image URL</label> <input type="text" id="field-coverUrl" data-astro-cid-duaiafye> </div> </fieldset> </div> <div data-media-only="movies" class="flow" data-astro-cid-duaiafye> <fieldset data-astro-cid-duaiafye> <legend data-astro-cid-duaiafye>Film Details</legend> <div class="field-row" data-astro-cid-duaiafye> <div data-astro-cid-duaiafye> <label for="field-director" data-astro-cid-duaiafye>Director</label> <input type="text" id="field-director" data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-year" data-astro-cid-duaiafye>Release Year</label> <input type="number" id="field-year" data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-length" data-astro-cid-duaiafye>Length</label> <input type="text" id="field-length" placeholder="1h 45m" data-astro-cid-duaiafye> </div> </div> <div data-astro-cid-duaiafye> <label for="field-genre" data-astro-cid-duaiafye>Genres (CSV)</label> <input type="text" id="field-genre" placeholder="Sci-Fi, Drama..." data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-poster" data-astro-cid-duaiafye>Poster URL</label> <input type="text" id="field-poster" data-astro-cid-duaiafye> </div> </fieldset> </div> <div data-media-only="series" class="flow" data-astro-cid-duaiafye> <fieldset data-astro-cid-duaiafye> <legend data-astro-cid-duaiafye>Television Details</legend> <div class="field-row" data-astro-cid-duaiafye> <div data-astro-cid-duaiafye> <label for="field-creator" data-astro-cid-duaiafye>Creator</label> <input type="text" id="field-creator" data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-premiere-year" data-astro-cid-duaiafye>Premiere Year</label> <input type="number" id="field-premiere-year" data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-country" data-astro-cid-duaiafye>Country</label> <input type="text" id="field-country" data-astro-cid-duaiafye> </div> </div> <div data-astro-cid-duaiafye> <label for="field-genre-series" data-astro-cid-duaiafye>Genres (CSV)</label> <input type="text" id="field-genre-series" placeholder="Comedy, Mystery..." data-astro-cid-duaiafye> </div> <div data-astro-cid-duaiafye> <label for="field-poster-series" data-astro-cid-duaiafye>Poster URL</label> <input type="text" id="field-poster-series" data-astro-cid-duaiafye> </div> </fieldset> </div> </div> <fieldset data-astro-cid-duaiafye> <legend data-astro-cid-duaiafye>Annotations</legend> <textarea id="field-body" rows="8" placeholder="Enter review or notes..." data-astro-cid-duaiafye></textarea> </fieldset> <button type="submit" id="btn-submit-github" data-astro-cid-duaiafye>COMMIT_TO_GITHUB</button> </form> </div> <dialog id="selection-dialog" data-astro-cid-duaiafye> <h3 data-astro-cid-duaiafye>Select Matching Entry</h3> <div id="selection-list" data-astro-cid-duaiafye></div> <div class="stacker" data-astro-cid-duaiafye> <button id="btn-apply-selection" data-astro-cid-duaiafye>APPLY_INK</button> <button type="button" onclick="document.getElementById('selection-dialog').close()" style="background:#666" data-astro-cid-duaiafye>DISCARD</button> </div> </dialog> <script>
-      const mediaSelector = document.getElementById("media-type");
-      const shelfSelector = document.getElementById("field-shelf");
-      const authDialog = document.getElementById("auth-dialog");
-      const searchForm = document.getElementById("search-form");
-      const entryForm = document.getElementById("entry-form");
-      const status = document.getElementById("search-status");
+.media-form-wrapper[data-astro-cid-jpuypu7x]{--color-brand-admin: hsl(25, 95%, 55%);--color-brand-admin-tint: hsl(25, 95%, 50%)}fieldset[data-astro-cid-jpuypu7x]{display:flex;flex-direction:column;gap:1rem;border:1px solid #ccc;padding:1.5rem;margin:0}legend[data-astro-cid-jpuypu7x]{padding:0 .5rem;font-weight:700;text-transform:uppercase;font-size:.85rem;color:#555}.field-row[data-astro-cid-jpuypu7x]{display:flex;flex-wrap:wrap;gap:1rem}.field-row[data-astro-cid-jpuypu7x]>div[data-astro-cid-jpuypu7x]{flex:1;min-width:180px}label[data-astro-cid-jpuypu7x]{display:block;margin-bottom:.35rem;font-weight:500;font-size:.9rem}input[data-astro-cid-jpuypu7x],select[data-astro-cid-jpuypu7x],textarea[data-astro-cid-jpuypu7x]{font:inherit;width:100%;padding:.5rem;border:1px solid #ccc;border-radius:4px}input[data-astro-cid-jpuypu7x][type=checkbox]{width:auto}.btn-submit-main[data-astro-cid-jpuypu7x]{appearance:none;background-color:var(--color-brand-admin);color:#fff;cursor:pointer;border:none;padding:1rem;border-radius:.25rem;font-weight:700;text-transform:uppercase;width:100%;margin-top:1rem}.btn-submit-main[data-astro-cid-jpuypu7x]:hover{background-color:var(--color-brand-admin-tint)}#media-form-context[data-astro-cid-jpuypu7x][data-selection=books] .only-movies[data-astro-cid-jpuypu7x],#media-form-context[data-astro-cid-jpuypu7x][data-selection=books] .only-series[data-astro-cid-jpuypu7x],#media-form-context[data-astro-cid-jpuypu7x][data-selection=movies] .only-books[data-astro-cid-jpuypu7x],#media-form-context[data-astro-cid-jpuypu7x][data-selection=movies] .only-series[data-astro-cid-jpuypu7x],#media-form-context[data-astro-cid-jpuypu7x][data-selection=series] .only-books[data-astro-cid-jpuypu7x],#media-form-context[data-astro-cid-jpuypu7x][data-selection=series] .only-movies[data-astro-cid-jpuypu7x]{display:none}
+:root{--color-brand-admin: hsl(25, 95%, 55%);--color-brand-admin-tint: hsl(25, 95%, 50%)}[data-astro-cid-duaiafye]{box-sizing:border-box}body{margin:0;padding:2rem;max-width:80rem;margin-inline:auto;font-family:system-ui,sans-serif}input[data-astro-cid-duaiafye],select[data-astro-cid-duaiafye],textarea[data-astro-cid-duaiafye],button[data-astro-cid-duaiafye]{font:inherit;width:100%}button[data-astro-cid-duaiafye]{appearance:none;background-color:var(--color-brand-admin);color:#fff;cursor:pointer;border:none;padding:.75rem 1.5rem;border-radius:.25rem;width:auto;font-weight:700}button[data-astro-cid-duaiafye]:hover{background-color:var(--color-brand-admin-tint)}button[data-astro-cid-duaiafye]:disabled{opacity:.5;cursor:not-allowed}.stacker[data-astro-cid-duaiafye]{display:flex;flex-wrap:wrap;gap:1.5rem;align-items:center}.prominent-tools[data-astro-cid-duaiafye]{display:flex;flex-wrap:wrap;gap:2rem;align-items:flex-start}.prominent-tools[data-astro-cid-duaiafye]>[data-astro-cid-duaiafye]{flex:1;min-width:300px}label[data-astro-cid-duaiafye]{display:block;margin-bottom:.35rem;font-weight:500;font-size:.9rem}.flow[data-astro-cid-duaiafye]>[data-astro-cid-duaiafye]+[data-astro-cid-duaiafye]{margin-block-start:1.5rem}hr[data-astro-cid-duaiafye]{border:none;border-top:1px solid #eee;margin:2rem 0}
+</style></head> <body class="flow" data-astro-cid-duaiafye> <div class="admin-container flow" data-astro-cid-duaiafye> <header class="stacker" data-astro-cid-duaiafye> <h1 data-astro-cid-duaiafye>New Archive Entry</h1> <div style="display: flex; justify-content: flex-end; gap: 1rem;" data-astro-cid-duaiafye> <nav data-astro-cid-fcji5xpj> <a class="btn-primary" href="/" data-astro-cid-fcji5xpj>Frontend</a> <a class="btn-primary" href="/admin" data-astro-cid-fcji5xpj>Gallery</a> <a class="btn-primary" href="/admin/create" data-astro-cid-fcji5xpj>Add new</a> </nav> <button id="btn-logout" data-astro-cid-duaiafye>SIGN_OUT</button> </div> </header> <section class="prominent-tools" data-astro-cid-duaiafye> <div data-astro-cid-duaiafye> <label for="media-type" data-astro-cid-duaiafye>Collection Type</label> <select id="media-type" data-astro-cid-duaiafye> <option value="books" data-astro-cid-duaiafye>📚 BOOKS</option> <option value="movies" data-astro-cid-duaiafye>🎬 FILMS</option> <option value="series" data-astro-cid-duaiafye>📺 TV SHOWS</option> </select> </div> </section> <hr data-astro-cid-duaiafye> <div class="media-form-wrapper" data-astro-cid-jpuypu7x>  <form id="entry-form" class="flow" data-astro-cid-jpuypu7x> <input type="hidden" id="field-type" name="type" value="books" data-astro-cid-jpuypu7x> <div id="media-form-context" data-selection="books" data-astro-cid-jpuypu7x> <div class="flow" data-astro-cid-jpuypu7x> <fieldset data-astro-cid-jpuypu7x> <legend data-astro-cid-jpuypu7x>General Information</legend> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-title" data-astro-cid-jpuypu7x>Title</label> <input type="text" id="field-title" name="title" value required data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-created" data-astro-cid-jpuypu7x>Log Date</label> <input type="date" id="field-created" name="created" value data-astro-cid-jpuypu7x> </div> </div> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-shelf" data-astro-cid-jpuypu7x>Status / Shelf</label> <select id="field-shelf" name="shelf" data-initial-value data-astro-cid-jpuypu7x></select> </div> <div data-astro-cid-jpuypu7x> <label for="field-rating" data-astro-cid-jpuypu7x>Rating (0-10)</label> <input type="number" id="field-rating" name="rating" min="0" max="10" value="0" data-astro-cid-jpuypu7x> </div> <div style="display: flex; align-items: flex-end; padding-bottom: 0.5rem; gap: 0.5rem;" data-astro-cid-jpuypu7x> <input type="checkbox" id="field-owned" name="owned" data-astro-cid-jpuypu7x> <label for="field-owned" style="margin-bottom: 0;" data-astro-cid-jpuypu7x>Owned / Physical</label> </div> </div> </fieldset> <fieldset class="only-books" data-astro-cid-jpuypu7x> <legend data-astro-cid-jpuypu7x>Book Details</legend> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-author" data-astro-cid-jpuypu7x>Author(s) <small data-astro-cid-jpuypu7x>(CSV)</small></label> <input type="text" id="field-author" name="author" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-tags" data-astro-cid-jpuypu7x>Tags <small data-astro-cid-jpuypu7x>(CSV)</small></label> <input type="text" id="field-tags" name="tags" value data-astro-cid-jpuypu7x> </div> </div> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-start_date" data-astro-cid-jpuypu7x>Started</label> <input type="date" id="field-start_date" name="start_date" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-end_date" data-astro-cid-jpuypu7x>Finished</label> <input type="date" id="field-end_date" name="end_date" value data-astro-cid-jpuypu7x> </div> </div> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-publisher" data-astro-cid-jpuypu7x>Publisher</label> <input type="text" id="field-publisher" name="publisher" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-published" data-astro-cid-jpuypu7x>Release Date</label> <input type="date" id="field-published" name="published" value data-astro-cid-jpuypu7x> </div> </div> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-page_count" data-astro-cid-jpuypu7x>Page Count</label> <input type="number" id="field-page_count" name="page_count" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-isbn" data-astro-cid-jpuypu7x>ISBN</label> <input type="text" id="field-isbn" name="isbn" value data-astro-cid-jpuypu7x> </div> </div> <label for="field-coverUrl" data-astro-cid-jpuypu7x>Cover Image URL</label> <input type="text" id="field-coverUrl" name="coverUrl" value data-astro-cid-jpuypu7x> </fieldset> <fieldset class="only-movies" data-astro-cid-jpuypu7x> <legend data-astro-cid-jpuypu7x>Film Details</legend> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-director" data-astro-cid-jpuypu7x>Director</label> <input type="text" id="field-director" name="director" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-year" data-astro-cid-jpuypu7x>Release Year</label> <input type="text" id="field-year" name="year" value data-astro-cid-jpuypu7x> </div> </div> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-country" data-astro-cid-jpuypu7x>Country</label> <input type="text" id="field-country" name="country" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-watched" data-astro-cid-jpuypu7x>Watched Date</label> <input type="date" id="field-watched" name="watched" value data-astro-cid-jpuypu7x> </div> </div> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-length" data-astro-cid-jpuypu7x>Length</label> <input type="text" id="field-length" name="length" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-genre" data-astro-cid-jpuypu7x>Genre <small data-astro-cid-jpuypu7x>(CSV)</small></label> <input type="text" id="field-genre" name="genre" value data-astro-cid-jpuypu7x> </div> </div> <label for="field-actors" data-astro-cid-jpuypu7x>Actors <small data-astro-cid-jpuypu7x>(CSV)</small></label> <input type="text" id="field-actors" name="actors" value data-astro-cid-jpuypu7x> <label for="field-poster" data-astro-cid-jpuypu7x>Poster URL</label> <input type="text" id="field-poster" name="poster" value data-astro-cid-jpuypu7x> </fieldset> <fieldset class="only-series" data-astro-cid-jpuypu7x> <legend data-astro-cid-jpuypu7x>TV Show Details</legend> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-creator-series" data-astro-cid-jpuypu7x>Creator</label> <input type="text" id="field-creator-series" name="creator_series" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-director-series" data-astro-cid-jpuypu7x>Director</label> <input type="text" id="field-director-series" name="director_series" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-year-series" data-astro-cid-jpuypu7x>Release Year</label> <input type="text" id="field-year-series" name="year_series" value data-astro-cid-jpuypu7x> </div> </div> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-country-series" data-astro-cid-jpuypu7x>Country</label> <input type="text" id="field-country-series" name="country_series" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-watched-series" data-astro-cid-jpuypu7x>Last Watched</label> <input type="date" id="field-watched-series" name="watched_series" value data-astro-cid-jpuypu7x> </div> </div> <div class="field-row" data-astro-cid-jpuypu7x> <div data-astro-cid-jpuypu7x> <label for="field-length-series" data-astro-cid-jpuypu7x>Length</label> <input type="text" id="field-length-series" name="length_series" value data-astro-cid-jpuypu7x> </div> <div data-astro-cid-jpuypu7x> <label for="field-genre-series" data-astro-cid-jpuypu7x>Genre <small data-astro-cid-jpuypu7x>(CSV)</small></label> <input type="text" id="field-genre-series" name="genre_series" value data-astro-cid-jpuypu7x> </div> </div> <label for="field-actors-series" data-astro-cid-jpuypu7x>Actors <small data-astro-cid-jpuypu7x>(CSV)</small></label> <input type="text" id="field-actors-series" name="actors_series" value data-astro-cid-jpuypu7x> <label for="field-poster-series" data-astro-cid-jpuypu7x>Poster URL</label> <input type="text" id="field-poster-series" name="poster_series" value data-astro-cid-jpuypu7x> </fieldset> </div> </div> <fieldset data-astro-cid-jpuypu7x> <legend data-astro-cid-jpuypu7x>Annotations</legend> <textarea id="field-body" name="body" rows="8" placeholder="Write your thoughts here..." data-astro-cid-jpuypu7x></textarea> </fieldset> <button type="submit" class="btn-submit-main" id="btn-submit-github" data-astro-cid-jpuypu7x>COMMIT_TO_GITHUB</button> </form> </div> <script>
+  /**
+   * Updates the Shelf dropdown based on the active collection type.
+   */
+  function initMediaForm() {
+    const wrapper = document.getElementById("media-form-context");
+    if (!wrapper) return;
+    const shelfSelector = document.getElementById("field-shelf");
+    const type = wrapper.getAttribute("data-selection");
+    const initialShelf = shelfSelector.getAttribute("data-initial-value");
 
-      function checkAuth() {
-        const user = localStorage.getItem("LOGRARY_USER");
-        const pat = localStorage.getItem("LOGRARY_PAT");
-        if (!user || !pat) authDialog.showModal();
-      }
+    shelfSelector.innerHTML = "";
 
-      document.getElementById("btn-auth-confirm").onclick = () => {
-        const user = document.getElementById("modal-gh-user").value;
-        const pat = document.getElementById("modal-gh-pat").value;
-        if (user && pat) {
-          localStorage.setItem("LOGRARY_USER", user);
-          localStorage.setItem("LOGRARY_PAT", pat);
-          authDialog.close();
-        }
-      };
+    // Strictly matched to your config.ts Enums
+    const options =
+      type === "books"
+        ? ["to-read", "reading", "read", "abandoned"]
+        : ["watched", "watching", "watchlist"];
 
-      document.getElementById("btn-logout").onclick = () => {
-        localStorage.removeItem("LOGRARY_USER");
-        localStorage.removeItem("LOGRARY_PAT");
-        location.reload();
-      };
+    options.forEach((o) => {
+      const opt = new Option(o.toUpperCase(), o);
+      if (o === initialShelf) opt.selected = true;
+      shelfSelector.add(opt);
+    });
+  }
 
-      function updateVisibility() {
-        const type = mediaSelector.value;
-        document
-          .querySelector(".admin-container")
-          .setAttribute("data-selection", type);
+  /**
+   * DATA MAPPING FUNCTION
+   * Centralizes how form fields are converted into a clean JS object.
+   */
+  window.getMediaFormData = () => {
+    const form = document.getElementById("entry-form");
+    const fd = new FormData(form);
+    const type = fd.get("type");
+    const fromCsv = (name) =>
+      fd
+        .get(name)
+        ?.toString()
+        .split(",")
+        .map((s) => s.trim())
+        .filter(Boolean) || [];
 
-        // Update Shelf Options based on media type
-        shelfSelector.innerHTML = "";
-        if (type === "books") {
-          const options = ["to-read", "reading", "read", "abandoned"];
-          options.forEach((o) =>
-            shelfSelector.add(new Option(o.toUpperCase(), o)),
-          );
-        } else {
-          const options = ["watchlist", "watching", "watched"];
-          options.forEach((o) =>
-            shelfSelector.add(new Option(o.toUpperCase(), o)),
-          );
-        }
+    // Base Metadata + NEW OWNED BOOLEAN
+    const data = {
+      type: type,
+      title: fd.get("title"),
+      created: fd.get("created"),
+      shelf: fd.get("shelf"),
+      rating: parseInt(fd.get("rating")) || 0,
+      owned: fd.get("owned") === "on",
+    };
 
-        if (!document.getElementById("field-created").value) {
-          document.getElementById("field-created").value = new Date()
-            .toISOString()
-            .split("T")[0];
-        }
-      }
+    // Type Specific Mapping
+    if (type === "books") {
+      Object.assign(data, {
+        author: fromCsv("author"),
+        tags: fromCsv("tags"),
+        start_date: fd.get("start_date") || null,
+        end_date: fd.get("end_date") || null,
+        published: fd.get("published") || null,
+        publisher: fd.get("publisher") || null,
+        page_count: parseInt(fd.get("page_count")) || null,
+        isbn: fd.get("isbn") || null,
+        coverUrl: fd.get("coverUrl") || null,
+      });
+    } else if (type === "movies") {
+      Object.assign(data, {
+        director: fd.get("director"),
+        year: fd.get("year"),
+        country: fd.get("country"),
+        watched: fd.get("watched"),
+        length: fd.get("length") || null,
+        genre: fromCsv("genre"),
+        actors: fromCsv("actors"),
+        poster: fd.get("poster") || null,
+      });
+    } else if (type === "series") {
+      Object.assign(data, {
+        creator: fd.get("creator_series"),
+        year: fd.get("year_series"),
+        country: fd.get("country_series"),
+        watched: fd.get("watched_series"),
+        length: fd.get("length_series") || null,
+        genre: fromCsv("genre_series"),
+        actors: fromCsv("actors_series"),
+        poster: fd.get("poster_series") || null,
+      });
+    }
 
-      mediaSelector.onchange = updateVisibility;
-      updateVisibility();
-      checkAuth();
+    return {
+      entryData: data,
+      body: fd.get("body"),
+      type,
+    };
+  };
 
-      searchForm.onsubmit = async (e) => {
-        e.preventDefault();
-        const query = document.getElementById("search-query").value;
-        if (!query) return;
+  // Run on load
+  initMediaForm();
 
-        status.innerText = "FETCHING_DATA...";
-        const type = mediaSelector.value;
-
-        try {
-          if (type === "books") {
-            const url = `https://openlibrary.org/search.json?q=${encodeURIComponent(query)}&limit=5`;
-            const res = await fetch(url);
-            const data = await res.json();
-            const results = data.docs.map((b) => ({
-              type: "books",
-              title: b.title,
-              subtitle: b.subtitle || "",
-              author: b.author_name?.join(", ") || "Unknown",
-              published: b.first_publish_year || "",
-              publisher: b.publisher?.[0] || "",
-              isbn: b.isbn?.[0] || "",
-              cover: b.cover_i
-                ? `https://covers.openlibrary.org/b/id/${b.cover_i}-M.jpg`
-                : "",
-            }));
-            renderSelectionModal(results);
-          } else if (type === "movies") {
-            const url = `https://imdb.iamidiotareyoutoo.com/search?q=${encodeURIComponent(query)}`;
-            const res = await fetch(url);
-            const data = await res.json();
-            const results = data.description.map((m) => ({
-              type: "movies",
-              title: m["#TITLE"],
-              year: m["#YEAR"],
-              imdbId: m["#IMDB_ID"],
-              poster: m["#IMG_POSTER"],
-              meta: m["#ACTORS"],
-            }));
-            renderSelectionModal(results);
-          } else if (type === "series") {
-            const url = `https://api.tvmaze.com/search/shows?q=${encodeURIComponent(query)}`;
-            const res = await fetch(url);
-            const data = await res.json();
-            const results = data.map((s) => ({
-              type: "series",
-              title: s.show.name,
-              year: s.show.premiered?.slice(0, 4),
-              id: s.show.id,
-              poster: s.show.image?.medium || "",
-              meta: s.show.network?.name || s.show.webChannel?.name || "",
-            }));
-            renderSelectionModal(results);
-          }
-          status.innerText = "SELECT_ENTRY_BELOW";
-        } catch (err) {
-          status.innerText = "ERROR_FETCH_FAILED";
-        }
-      };
-
-      function renderSelectionModal(items) {
-        const list = document.getElementById("selection-list");
-        list.innerHTML = items
-          .map(
-            (item, i) => `
-          <label class="selection-item">
-            <input type="radio" name="item-choice" value='${JSON.stringify(item).replace(/'/g, "&apos;")}' ${i === 0 ? "checked" : ""}>
-            <div>
-              <strong>${item.title}</strong> (${item.year || item.published || "?"})<br>
-              <small>${item.meta || item.author || ""}</small>
-            </div>
-          </label>
-        `,
-          )
-          .join("");
-        document.getElementById("selection-dialog").showModal();
-
-        document.getElementById("btn-apply-selection").onclick = async () => {
-          const selected = JSON.parse(
-            document.querySelector('input[name="item-choice"]:checked').value,
-          );
-          await populateFields(selected);
-          document.getElementById("selection-dialog").close();
-          status.innerText = "FIELDS_POPULATED";
-        };
-      }
-
-      async function populateFields(data) {
-        document.getElementById("field-title").value = data.title;
-
-        if (data.type === "books") {
-          document.getElementById("field-subtitle").value = data.subtitle;
-          document.getElementById("field-author").value = data.author;
-          document.getElementById("field-published").value = data.published;
-          document.getElementById("field-publisher").value = data.publisher;
-          document.getElementById("field-isbn").value = data.isbn;
-          document.getElementById("field-coverUrl").value = data.cover;
-        } else if (data.type === "movies") {
-          document.getElementById("field-year").value = data.year;
-          document.getElementById("field-poster").value = data.poster;
-          try {
-            const res = await fetch(
-              `https://imdb.iamidiotareyoutoo.com/main?id=${data.imdbId}`,
-            );
-            const detail = await res.json();
-            const s = detail.short || {};
-            document.getElementById("field-director").value = Array.isArray(
-              s.director,
-            )
-              ? s.director.map((d) => d.name).join(", ")
-              : s.director?.name || "";
-            document.getElementById("field-genre").value = Array.isArray(
-              s.genre,
-            )
-              ? s.genre.join(", ")
-              : "";
-            document.getElementById("field-length").value = s.duration
-              ? s.duration.replace("PT", "").toLowerCase()
-              : "";
-          } catch (e) {}
-        } else if (data.type === "series") {
-          document.getElementById("field-premiere-year").value = data.year;
-          document.getElementById("field-poster-series").value = data.poster;
-          try {
-            const res = await fetch(`https://api.tvmaze.com/shows/${data.id}`);
-            const show = await res.json();
-            document.getElementById("field-country").value =
-              show.network?.country?.name || "";
-            document.getElementById("field-genre-series").value =
-              show.genres?.join(", ") || "";
-          } catch (e) {}
-        }
-      }
-
-      entryForm.onsubmit = async (e) => {
-        e.preventDefault();
-        const btn = document.getElementById("btn-submit-github");
-        status.innerText = "COMMITTING_TO_GITHUB...";
-        btn.disabled = true;
-
-        const type = mediaSelector.value;
-        const entryData = {
-          title: document.getElementById("field-title").value,
-          created: document.getElementById("field-created").value,
-          shelf: shelfSelector.value,
-          rating: parseInt(document.getElementById("field-rating").value) || 0,
-        };
-
-        if (type === "books") {
-          Object.assign(entryData, {
-            author: document
-              .getElementById("field-author")
-              .value.split(",")
-              .map((s) => s.trim()),
-            isbn: document.getElementById("field-isbn").value,
-            coverUrl: document.getElementById("field-coverUrl").value,
-            owned: document.getElementById("field-owned").checked,
-          });
-        } else if (type === "movies") {
-          Object.assign(entryData, {
-            director: document.getElementById("field-director").value,
-            year: parseInt(document.getElementById("field-year").value),
-            length: document.getElementById("field-length").value,
-          });
-        } else if (type === "series") {
-          Object.assign(entryData, {
-            creator: document.getElementById("field-creator").value,
-            year: parseInt(
-              document.getElementById("field-premiere-year").value,
-            ),
-          });
-        }
-
-        const fileName = `${entryData.title.toLowerCase().replace(/[^a-z0-9]/g, "-")}.md`;
-        const folder = `src/content/${type}`;
-        const body = document.getElementById("field-body").value;
-
-        try {
-          await pushToGitHub(folder, fileName, entryData, body);
-          status.innerText = "✓ ARCHIVE_UPDATED";
-          setTimeout(() => location.reload(), 2000);
-        } catch (err) {
-          status.innerText = "⚠ COMMIT_FAILED";
-          btn.disabled = false;
-        }
-      };
-
-      async function pushToGitHub(folder, fileName, data, body) {
-        const user = localStorage.getItem("LOGRARY_USER");
-        const pat = localStorage.getItem("LOGRARY_PAT");
-        const repo = "hryggrbyr/lograry";
-
-        let yaml = "---\n";
-        for (const [key, val] of Object.entries(data)) {
-          if (Array.isArray(val)) {
-            yaml += `${key}:\n${val.map((v) => `  - "${v}"`).join("\n")}\n`;
-          } else {
-            yaml += `${key}: "${val}"\n`;
-          }
-        }
-        yaml += "---\n\n" + body;
-
-        const path = `${folder}/${fileName}`;
-        const url = `https://api.github.com/repos/${repo}/contents/${path}`;
-
-        let sha = null;
-        const check = await fetch(url, {
-          headers: { Authorization: `token ${pat}` },
-        });
-        if (check.ok) {
-          const file = await check.json();
-          sha = file.sha;
-        }
-
-        const res = await fetch(url, {
-          method: "PUT",
-          headers: {
-            Authorization: `token ${pat}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            message: `archive: add ${data.title}`,
-            content: btoa(unescape(encodeURIComponent(yaml))),
-            sha: sha,
-          }),
-        });
-        if (!res.ok) throw new Error();
-      }
-    </script> </body> </html>
+  // Re-run if a parent page triggers a type switch
+  document.addEventListener("form-type-change", initMediaForm);
+</script> </div> <script type="module" src="/lograry/_astro/create.astro_astro_type_script_index_0_lang.BNf-yV49.js"></script> </body> </html>
