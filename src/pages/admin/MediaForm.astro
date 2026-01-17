@@ -2,7 +2,7 @@
 /**
  * MediaForm.astro
  * Reusable form component for Books, Films, and TV Shows.
- * Encapsulates UI, State, and Data Mapping.
+ * Fully synced with config.ts schema.
  */
 const { initialData = {}, title = "" } = Astro.props;
 
@@ -76,17 +76,14 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
     background-color: var(--color-brand-admin-tint);
   }
 
-  /* Logic to hide/show sections based on data-selection on the wrapper */
   #media-form-context[data-selection="books"] .only-movies,
   #media-form-context[data-selection="books"] .only-series {
     display: none;
   }
-
   #media-form-context[data-selection="movies"] .only-books,
   #media-form-context[data-selection="movies"] .only-series {
     display: none;
   }
-
   #media-form-context[data-selection="series"] .only-books,
   #media-form-context[data-selection="series"] .only-movies {
     display: none;
@@ -135,9 +132,7 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
               <select
                 id="field-shelf"
                 name="shelf"
-                data-initial-value={get("shelf")}
-              >
-              </select>
+                data-initial-value={get("shelf")}></select>
             </div>
             <div>
               <label for="field-rating">Rating (0-10)</label>
@@ -348,15 +343,6 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
               />
             </div>
             <div>
-              <label for="field-director-series">Director</label>
-              <input
-                type="text"
-                id="field-director-series"
-                name="director_series"
-                value={get("director")}
-              />
-            </div>
-            <div>
               <label for="field-year-series">Release Year</label>
               <input
                 type="text"
@@ -426,11 +412,8 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
 
     <fieldset>
       <legend>Annotations</legend>
-      <textarea
-        id="field-body"
-        name="body"
-        rows="8"
-        placeholder="Write your thoughts here...">{get("body")}</textarea
+      <textarea id="field-body" name="body" rows="8" placeholder="Notes..."
+        >{get("body")}</textarea
       >
     </fieldset>
 
@@ -441,9 +424,6 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
 </div>
 
 <script is:inline>
-  /**
-   * Updates the Shelf dropdown based on the active collection type.
-   */
   function initMediaForm() {
     const wrapper = document.getElementById("media-form-context");
     if (!wrapper) return;
@@ -452,8 +432,6 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
     const initialShelf = shelfSelector.getAttribute("data-initial-value");
 
     shelfSelector.innerHTML = "";
-
-    // Strictly matched to your config.ts Enums
     const options =
       type === "books"
         ? ["to-read", "reading", "read", "abandoned"]
@@ -466,10 +444,6 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
     });
   }
 
-  /**
-   * DATA MAPPING FUNCTION
-   * Centralizes how form fields are converted into a clean JS object.
-   */
   window.getMediaFormData = () => {
     const form = document.getElementById("entry-form");
     const fd = new FormData(form);
@@ -482,17 +456,16 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
         .map((s) => s.trim())
         .filter(Boolean) || [];
 
-    // Base Metadata + NEW OWNED BOOLEAN
+    // The core metadata
     const data = {
       type: type,
       title: fd.get("title"),
-      created: fd.get("created"),
+      created: fd.get("created"), // This handles log_date
       shelf: fd.get("shelf"),
       rating: parseInt(fd.get("rating")) || 0,
       owned: fd.get("owned") === "on",
     };
 
-    // Type Specific Mapping
     if (type === "books") {
       Object.assign(data, {
         author: fromCsv("author"),
@@ -510,7 +483,7 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
         director: fd.get("director"),
         year: fd.get("year"),
         country: fd.get("country"),
-        watched: fd.get("watched"),
+        watched: fd.get("watched") || null, // Shared date field
         length: fd.get("length") || null,
         genre: fromCsv("genre"),
         actors: fromCsv("actors"),
@@ -521,7 +494,7 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
         creator: fd.get("creator_series"),
         year: fd.get("year_series"),
         country: fd.get("country_series"),
-        watched: fd.get("watched_series"),
+        watched: fd.get("watched_series") || null, // This was missing mapping!
         length: fd.get("length_series") || null,
         genre: fromCsv("genre_series"),
         actors: fromCsv("actors_series"),
@@ -529,16 +502,9 @@ const arrayToCsv = (arr) => (Array.isArray(arr) ? arr.join(", ") : arr || "");
       });
     }
 
-    return {
-      entryData: data,
-      body: fd.get("body"),
-      type,
-    };
+    return { entryData: data, body: fd.get("body"), type };
   };
 
-  // Run on load
   initMediaForm();
-
-  // Re-run if a parent page triggers a type switch
   document.addEventListener("form-type-change", initMediaForm);
 </script>

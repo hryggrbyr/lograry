@@ -4,6 +4,7 @@ title: "A Kind of Spark"
 created: "2025-09-22"
 shelf: "watched"
 rating: 3
+creator: "Elle McNicoll"
 director: "Marek Losey"
 year: "2023"
 country: "United Kingdom"
