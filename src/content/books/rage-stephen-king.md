@@ -1,6 +1,6 @@
 ---
 type: book
-tags: []
+tags: [ social, ComingOfAge, psychological thriller, thriller ]
 title: Rage
 subtitle: ''
 author:
@@ -11,9 +11,9 @@ page_count: ~
 isbn: ~
 description: ''
 coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
-shelf: to-read
+shelf: reading
 owned: true
-start_date: ~
+start_date: 2026-02-03
 end_date: ~
 rating: ~
 recommended_by:

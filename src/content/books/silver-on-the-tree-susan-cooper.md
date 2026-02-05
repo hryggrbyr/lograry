@@ -12,10 +12,10 @@ tags:
   - folklore
   - magic
   - wizards
-shelf: reading
+shelf: read
 owned: true
 start_date: 2026-01-02
-end_date: ''
+end_date: 2026-02-03
 published: 1977-05-10
 created: ''
 rating: null

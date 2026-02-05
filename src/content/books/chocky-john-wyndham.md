@@ -7,7 +7,7 @@ rating: 2
 author:
   - "John Wyndham"
 tags:
-
+  - "sci-fi"
 start_date: null
 end_date: null
 published: null
