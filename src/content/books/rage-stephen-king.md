@@ -1,27 +1,23 @@
 ---
-type: book
-tags: [ social, ComingOfAge, psychological thriller, thriller ]
-title: Rage
-subtitle: ''
+type: "books"
+title: "Rage"
+created: "2026-02-07"
+shelf: "read"
+rating: 5
 author:
-  - Stephen King
-publisher: New English Library Ltd
-published: 1983-02-01T08:00:00.000Z
-page_count: ~
-isbn: ~
-description: ''
-coverUrl: 'https://covers.openlibrary.org/b/olid/-M.jpg'
-shelf: reading
-owned: true
-start_date: 2026-02-03
-end_date: ~
-rating: ~
-recommended_by:
-  name: ~
-  url: ~
-created: ~
-reviewUrl: ~
-bookshopUrl: ~
+  - "Stephen King"
+tags:
+  - "social"
+  - "ComingOfAge"
+  - "psychological thriller"
+  - "thriller"
+start_date: "2026-02-03"
+end_date: "2026-02-07"
+published: null
+publisher: "New English Library Ltd"
+page_count: null
+isbn: null
+coverUrl: "https://covers.openlibrary.org/b/olid/-M.jpg"
 ---
 
 # Rage by Stephen King
