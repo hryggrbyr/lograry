@@ -10,7 +10,7 @@ country: "United States"
 watched: "2026-02-05"
 length: null
 genre:
-
+ - documentary
 actors:
   - "Charlie Sheen"
 poster: null
